@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1124738275",
+      "tag": "vless-1122091246",
       "server": "31.56.189.27",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -12,12 +12,32 @@
         "server_name": "srv-21bac9.vless.monster",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "freegrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 628549",
+      "server": "31.58.181.88",
+      "server_port": 8443,
+      "uuid": "93a8f0b3-4c97-4d14-999c-c207a55b70b0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc"
+        }
       }
     },
     {

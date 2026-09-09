@@ -3,10 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: freegrpc
-  name: vless-1124738275
+  name: vless-1122091246
   network: grpc
   port: 2087
   server: 31.56.189.27
@@ -15,10 +15,23 @@ proxies:
   type: vless
   udp: true
   uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 628549
+  port: 8443
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  server: 31.58.181.88
+  servername: tradingview.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1124738275
+  - vless-1122091246
+  - 🏳️ ShatakVPN 628549
   type: select
 rules:
 - MATCH,PROXY
