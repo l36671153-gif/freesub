@@ -2,25 +2,28 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🏳️ ShatakVPN 620028",
-      "server": "107.189.19.27",
-      "server_port": 443,
-      "uuid": "813a385c-f26f-48b5-9bbb-53204a9c5bcc",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.dodostatic.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sgocj9v63XdHU04TV3-Pk141YPIT_E-UgLr9u4OkE0E",
-          "short_id": "d27201f7bf5874f9"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "[openproxylist.com] ES 14317086",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-11052",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-16132",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
     },
     {
       "type": "direct",

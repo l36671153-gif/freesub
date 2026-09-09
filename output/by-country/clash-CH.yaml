@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-857107263
+- name: hysteria2-1098338335
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   port: 8443
   server: 104.165.205.42
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: speedtestmark.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-857107263
+  - hysteria2-1098338335
   type: select
 rules:
 - MATCH,PROXY

@@ -5,26 +5,18 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1151222974
+  name: 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443
   port: 443
-  server: 50.7.248.234
-  servername: viper-22.moriarty-web.com
+  server: 144.31.5.3
+  servername: pl4.moritech.net
   tls: true
   type: vless
   udp: true
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- cipher: aes-256-cfb
-  name: shadowsocks-819466521
-  password: aQqJbtwFGcCCaeL3
-  port: 9063
-  server: 217.30.10.44
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1151222974
-  - shadowsocks-819466521
+  - 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443
   type: select
 rules:
 - MATCH,PROXY

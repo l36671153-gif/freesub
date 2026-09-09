@@ -3,9 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 942301
+  name: 🇷🇺 ShatakVPN 535189
   port: 443
   reality-opts:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
@@ -17,22 +17,23 @@ proxies:
   udp: true
   uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
 - client-fingerprint: firefox
-  name: 🏳️ ShatakVPN 425790
+  flow: xtls-rprx-vision
+  name: 🇷🇺 ShatakVPN 868440
   port: 443
   reality-opts:
-    public-key: bY0-zlTOPCaEWDMw_BTzuzJW513tl6Hc61n4Z-q1cHE
-    short-id: 8f892fa1
-  server: 94.156.155.27
-  servername: www.telekom.de
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  server: 144.31.50.236
+  servername: yandex.ru
   tls: true
   type: vless
   udp: true
-  uuid: 218fd696-e3a2-4c33-b397-a5f13a82969e
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 942301
-  - 🏳️ ShatakVPN 425790
+  - 🇷🇺 ShatakVPN 535189
+  - 🇷🇺 ShatakVPN 868440
   type: select
 rules:
 - MATCH,PROXY

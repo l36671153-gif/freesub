@@ -3,21 +3,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 127723",
-      "server": "89.36.161.222",
-      "server_port": 2083,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "tag": "🔒 VL-WS-TLS 🇸🇪 SE-202.155.11.249 443",
+      "server": "202.155.11.249",
+      "server_port": 443,
+      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
-        "server_name": "laoye.in-gect.fun",
+        "server_name": "cf2.rumedia-cdn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf2.rumedia-cdn.com"
+        }
       }
     },
     {

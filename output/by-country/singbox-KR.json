@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "vmess-650631549",
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-956723733",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

@@ -4,44 +4,20 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1167245006
+  name: vless-1167245811
   port: 443
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
+  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
   servername: updates.cdn-apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
-- client-fingerprint: chrome
-  name: vless-1186755718
-  port: 443
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  server: 6342844e-tla000-tlpfci-1jdha.hk3.hyhuawei.com
-  servername: updates.cdn-apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: de629d50-1711-11ed-bd7c-f23c913c8d2b
-- client-fingerprint: chrome
-  name: vless-1202800801
-  port: 443
-  reality-opts:
-    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  server: a95a660c-tla000-tpw4i4-1pckg.hk3.hyhuawei.com
-  servername: updates.cdn-apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1167245006
-  - vless-1186755718
-  - vless-1202800801
+  - vless-1167245811
   type: select
 rules:
 - MATCH,PROXY

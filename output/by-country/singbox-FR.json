@@ -3,29 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 676839",
-      "server": "45.144.28.39",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "usejh2.neobo-tooth.ru"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 France",
-      "server": "51.83.192.80",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "vless",
-      "tag": "🏳️ ShatakVPN 637647",
+      "tag": "vless-742974932",
       "server": "45.144.28.39",
       "server_port": 2083,
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
@@ -34,12 +12,32 @@
         "server_name": "usejh2.neobo-tooth.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1175310397",
+      "server": "54.37.136.194",
+      "server_port": 2053,
+      "uuid": "2211972b-a45a-4951-a640-6173d573e637",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM",
+          "short_id": "bfc5464d84de3b3b"
+        }
       }
     },
     {
