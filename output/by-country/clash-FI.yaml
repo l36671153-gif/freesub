@@ -5,32 +5,34 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 249214
+  name: '[openproxylist.com] FI 15622057'
   port: 443
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  server: 2.26.178.187
+  server: brightharbor.download
   servername: localhost
   tls: true
   type: vless
   udp: true
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-- name: 🏳️ ShatakVPN 173544
-  network: ws
-  port: 8080
-  server: 65.109.185.234
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1205358051
+  port: 443
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  server: 31.77.199.182
+  servername: fi2.yservice.help
+  tls: true
   type: vless
   udp: true
-  uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
-  ws-opts:
-    headers:
-      Host: italic.dearhossein-taktaz.ir
-    path: /
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 249214
-  - 🏳️ ShatakVPN 173544
+  - '[openproxylist.com] FI 15622057'
+  - vless-1205358051
   type: select
 rules:
 - MATCH,PROXY

@@ -5,21 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 667203
+  name: '[openproxylist.com] CH 15648163'
   port: 443
   reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  server: 88.119.176.24
-  servername: lit9.helper-internet.com
+    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
+    short-id: 84be686ea1d16478
+  server: 131.123.34.42
+  servername: sheetpeek.com
   tls: true
   type: vless
   udp: true
-  uuid: ae8e0f7d-b661-41ca-b55d-d8c383adb2f8
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 667203
+  - '[openproxylist.com] CH 15648163'
   type: select
 rules:
 - MATCH,PROXY

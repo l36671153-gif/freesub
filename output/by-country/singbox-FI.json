@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 249214",
-      "server": "2.26.178.187",
+      "tag": "[openproxylist.com] FI 15622057",
+      "server": "brightharbor.download",
       "server_port": 443,
       "uuid": "6429d27e-a7d4-4e04-ae57-e88243fbbfe3",
       "flow": "xtls-rprx-vision",
@@ -23,15 +23,22 @@
     },
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 173544",
-      "server": "65.109.185.234",
-      "server_port": 8080,
-      "uuid": "83fd52e3-c8d4-4ba6-abf4-445b99fec0f0",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "italic.dearhossein-taktaz.ir"
+      "tag": "vless-1205358051",
+      "server": "31.77.199.182",
+      "server_port": 443,
+      "uuid": "c09cfd91-b234-4998-9bed-a0211b7f5c3c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi2.yservice.help",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04",
+          "short_id": "abcd1234"
         }
       }
     },

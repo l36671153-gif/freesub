@@ -3,24 +3,78 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 182568
-  password: dongtaiwang.com
-  port: 22000
-  server: 62.210.124.146
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
-  port: 443
-  server: 162.19.10.99
-  servername: nasnet-162191099-direct.mbghalibaf.com
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-650669482
+  network: grpc
+  port: 2083
+  server: usejh2.neobo-tooth.ru
+  servername: usejh2.neobo-tooth.ru
   tls: true
   type: vless
   udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- name: 🏳️ ShatakVPN 220287
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 954522
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-816611169
+  network: grpc
+  port: 2083
+  server: 45.144.28.39
+  servername: usejh2.neobo-tooth.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+- name: 🏳️ ShatakVPN 978645
+  network: ws
+  port: 2096
+  server: 45.144.28.39
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: /
+- name: 🏳️ ShatakVPN 205023
+  network: ws
+  port: 2096
+  server: 45.144.28.39
+  type: vless
+  udp: true
+  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
+  ws-opts:
+    headers:
+      Host: usejh2.neobo-tooth.ru
+    path: /
+- client-fingerprint: chrome
+  name: '[openproxylist.com] FR 15392676'
+  port: 2053
+  reality-opts:
+    public-key: UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag
+    short-id: 4868e772d098f0af
+  server: 51.77.217.70
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c543f005-59f7-40c1-9ae6-37505691d5be
+- name: vless-1226554660
   network: ws
   port: 2096
   server: 45.144.28.39
@@ -33,9 +87,13 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 182568
-  - 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
-  - 🏳️ ShatakVPN 220287
+  - vless-650669482
+  - 🏳️ ShatakVPN 954522
+  - vless-816611169
+  - 🏳️ ShatakVPN 978645
+  - 🏳️ ShatakVPN 205023
+  - '[openproxylist.com] FR 15392676'
+  - vless-1226554660
   type: select
 rules:
 - MATCH,PROXY
