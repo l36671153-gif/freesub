@@ -1,0 +1,41 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🏳️ ShatakVPN 541397
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.178
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- name: '德国 #1'
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.181
+  skip-cert-verify: false
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 789737
+  port: 8443
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  server: 31.58.181.88
+  servername: tradingview.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 93a8f0b3-4c97-4d14-999c-c207a55b70b0
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 541397
+  - '德国 #1'
+  - 🏳️ ShatakVPN 789737
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

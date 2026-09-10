@@ -1,0 +1,46 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- grpc-opts:
+    grpc-service-name: security.debian.org
+  name: '[openproxylist.com] GR 15557032'
+  network: grpc
+  port: 2083
+  server: 185.126.238.87
+  type: vless
+  udp: true
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+- grpc-opts:
+    grpc-service-name: security.debian.org
+  name: 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 207ms
+  network: grpc
+  port: 2083
+  server: 185.126.238.87
+  type: vless
+  udp: true
+  uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 127187
+  port: 40443
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  server: 94.241.174.157
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '[openproxylist.com] GR 15557032'
+  - 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 207ms
+  - 🏳️ ShatakVPN 127187
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

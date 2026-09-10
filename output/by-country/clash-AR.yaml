@@ -5,21 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 183822
-  port: 21874
+  name: 🏳️ ShatakVPN 138970
+  port: 443
   reality-opts:
-    public-key: 75sTDYJk8ylA97-aBhAlF1tU4OaCfdOaOSIBshPW7Bs
-    short-id: 42e853a5559e1032
-  server: 43.217.16.8
-  servername: www.amd.com
+    public-key: SiSky02wHz-S0TDHKFTdYhnrlT8Y3CfRsekZlcdLXDY
+    short-id: fd55b698ee8c3629
+  server: 38.180.186.202
+  servername: zvukipro.com
   tls: true
   type: vless
   udp: true
-  uuid: 85dd8227-0f12-4826-a712-6313211774b5
+  uuid: be77dc02-5753-4018-8115-2e91f8b92823
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 183822
+  - 🏳️ ShatakVPN 138970
   type: select
 rules:
 - MATCH,PROXY

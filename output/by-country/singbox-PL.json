@@ -2,15 +2,80 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "🎡59@oneclickvpnkeys",
+      "server": "go1.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 744855",
+      "server": "194.61.121.93",
+      "server_port": 7538,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U9YAoqBgg5VyGBc6vQv1sN"
+    },
+    {
       "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443",
-      "server": "144.31.5.3",
+      "tag": "vless-1201061230",
+      "server": "191.44.113.220",
+      "server_port": 443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central-pl-1.hanvpn.biz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NjIuu35vz5MthSzqd6kt8PbXbZxCCL2Rb2GbpMCRTEY",
+          "short_id": "12e3b7681806bc97"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1151222974",
+      "server": "50.7.248.234",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl4.moritech.net",
+        "server_name": "viper-22.moriarty-web.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 Warsaw  14  Poland",
+      "server": "64.176.73.160",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "VJtsgllDDJfNmaTe"
+    },
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 899292",
+      "server": "144.31.5.64",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl6.moritech.net",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"

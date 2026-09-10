@@ -5,33 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 244ms
-  port: 40443
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  server: 5.253.30.99
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1211278496
-  port: 443
-  reality-opts:
-    public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
-    short-id: 72104d27a0f5f62e
-  server: 2.56.124.241
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 257ms
+  name: vless-1122093248
   port: 40443
   reality-opts:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
@@ -45,9 +19,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 244ms
-  - vless-1211278496
-  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 257ms
+  - vless-1122093248
   type: select
 rules:
 - MATCH,PROXY

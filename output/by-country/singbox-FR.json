@@ -3,40 +3,75 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-742974932",
+      "tag": "🏳️ ShatakVPN 324169",
       "server": "45.144.28.39",
-      "server_port": 2083,
+      "server_port": 2096,
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🇱🇹 LT-88.216.69.144 443",
+      "server": "88.216.69.144",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-4d64f1370eeb",
       "tls": {
         "enabled": true,
-        "server_name": "usejh2.neobo-tooth.ru",
+        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "ios"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/4d64f1370eeb/loc-0",
+        "headers": {
+          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1175310397",
-      "server": "54.37.136.194",
+      "tag": "🏳️ ShatakVPN 581556",
+      "server": "51.77.217.70",
       "server_port": 2053,
-      "uuid": "2211972b-a45a-4951-a640-6173d573e637",
+      "uuid": "c543f005-59f7-40c1-9ae6-37505691d5be",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "UKvonm_uE7TSwksQIVQuNYgYwmcidr_g4lDIE2JW_Ag",
+          "short_id": "4868e772d098f0af"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 687830",
+      "server": "213.136.92.67",
+      "server_port": 443,
+      "uuid": "af348651-1624-4710-b55f-0307a22d891f",
+      "tls": {
+        "enabled": true,
+        "server_name": "status.play.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3nFTPdoFnfcwN1xnLwegJmBycLqRH6TRsrbD2XnQbjM",
-          "short_id": "bfc5464d84de3b3b"
+          "public_key": "jvJPfOHtnr2sH79qG-rEtJHFbr36_7Ag7ARsUmtSDQo",
+          "short_id": "5030"
         }
       }
     },

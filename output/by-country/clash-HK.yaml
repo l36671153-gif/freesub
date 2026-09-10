@@ -3,16 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-4524389
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-760606797
   port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
-  type: hysteria2
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  server: 162.128.157.164
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+- client-fingerprint: qq
+  name: vless-1221773906
+  port: 443
+  reality-opts:
+    public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
+  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
+  servername: updates.cdn-apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-732295725
+  name: vless-718045315
   port: 443
   reality-opts:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
@@ -24,22 +41,31 @@ proxies:
   udp: true
   uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
 - client-fingerprint: chrome
-  name: vless-1167245811
+  name: vless-1224100294
   port: 443
   reality-opts:
     public-key: bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4
-  server: 619c9ae2-tla000-tls5or-6gn6.hk3.hyhuawei.com
+  server: 9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com
   servername: updates.cdn-apple.com
   tls: true
   type: vless
   udp: true
-  uuid: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
+  uuid: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+- name: hysteria2-4524389
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2🇨🇳
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-760606797
+  - vless-1221773906
+  - vless-718045315
+  - vless-1224100294
   - hysteria2-4524389
-  - vless-732295725
-  - vless-1167245811
   type: select
 rules:
 - MATCH,PROXY
