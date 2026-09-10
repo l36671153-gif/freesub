@@ -4,21 +4,33 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: vless-1219649195
-  network: grpc
-  port: 2087
-  server: 65.109.185.234
-  servername: italic.dearhossein-taktaz.ir
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 249214
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: 2.26.178.187
+  servername: localhost
   tls: true
   type: vless
   udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- name: 🏳️ ShatakVPN 173544
+  network: ws
+  port: 8080
+  server: 65.109.185.234
+  type: vless
+  udp: true
   uuid: 83fd52e3-c8d4-4ba6-abf4-445b99fec0f0
+  ws-opts:
+    headers:
+      Host: italic.dearhossein-taktaz.ir
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1219649195
+  - 🏳️ ShatakVPN 249214
+  - 🏳️ ShatakVPN 173544
   type: select
 rules:
 - MATCH,PROXY

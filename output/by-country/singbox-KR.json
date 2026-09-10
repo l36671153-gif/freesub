@@ -3,49 +3,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "hysteria2-1093669534",
-      "server": "152.67.200.82",
+      "tag": "hysteria2-1149856388",
+      "server": "150-230-252-217.liao.kdns.fr",
       "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "password": "9cfc9458e48c028ec03ff86ebc71c744",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1220607166",
-      "server": "kr1-r.link-t7.com",
-      "server_port": 10046,
-      "uuid": "D2436339-0F26-479A-8064-4D91C2B93652",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "update"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-266962492",
-      "server": "3.36.93.74",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-003.fastervpn.world",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },

@@ -4,20 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1044132095
-  port: 29860
-  reality-opts:
-    public-key: g7I81MzpM7J6K9WLbZdaMPS9We6GYeeNY3EKRvyiKW4
-    short-id: c992a34f288be189
-  server: 3.112.47.207
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7460547d-e83c-4843-b404-9142b22261a7
-- client-fingerprint: chrome
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 107ms
+  name: vless-1186766704
   port: 443
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
@@ -29,100 +16,73 @@ proxies:
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1014333534
-  port: 29860
+  name: vless-1019921578
+  port: 30203
   reality-opts:
-    public-key: g7I81MzpM7J6K9WLbZdaMPS9We6GYeeNY3EKRvyiKW4
-    short-id: c992a34f288be189
-  server: 3.112.47.207
-  servername: www.intel.com
+    public-key: dsJ2WwzENgTAgd8okJPXLpwzdsDjU67mBEnhUhgvvTk
+    short-id: 40150721499a92
+  server: 18.177.61.231
+  servername: www.sony.com
   tls: true
   type: vless
   udp: true
-  uuid: 7460547d-e83c-4843-b404-9142b22261a7
+  uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
+- client-fingerprint: unsafe
+  name: 🏳️ ShatakVPN 607568
+  network: ws
+  port: 443
+  server: 104.21.33.59
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1221242407
-  port: 24620
-  reality-opts:
-    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
-    short-id: db2cb3b3c2dbb711
-  server: 13.231.7.104
-  servername: www.amd.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
-- alterId: 0
-  cipher: auto
-  name: vmess-1224465516
-  port: 18112
-  server: 168.110.60.104
-  type: vmess
-  udp: true
-  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1019527275
-  port: 24620
-  reality-opts:
-    public-key: eZthMfn0kQJFNr_srk502fr8yUHMoHQ7Oh3v4_HfTBI
-    short-id: db2cb3b3c2dbb711
-  server: 13.231.7.104
-  servername: www.amd.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b969ef8f-7bdb-474f-9481-d8f3c5686fb8
-- cipher: aes-128-gcm
-  name: shadowsocks-218
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-  udp: true
-- name: vless-1038685483
-  port: 443
-  server: 137.220.221.179
-  type: vless
-  udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- client-fingerprint: firefox
-  name: vless-1223050025
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 107ms
   port: 443
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
-  server: freshjuniper.download
+  server: 130.12.102.62
+  servername: localhost
   tls: true
   type: vless
   udp: true
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1020947680
-  port: 48086
-  reality-opts:
-    public-key: qq9vUmReS92PojPLpSyUY_c6CydUUtut7ffxc3V0LTo
-    short-id: 7083d685446ce576
-  server: 3.112.131.211
-  servername: www.nvidia.com
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇯🇵 JP-38.175.203.11 443
+  port: 443
+  server: 38.175.203.11
+  servername: oulucloud.706666.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 620ca966-d78b-4c88-a5c9-acf13c7d252f
+  uuid: 1b8ec962-6e6f-4fc3-a9a4-c8a6fc907796
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: '[openproxylist.com] JP 15527830'
+  port: 30203
+  reality-opts:
+    public-key: dsJ2WwzENgTAgd8okJPXLpwzdsDjU67mBEnhUhgvvTk
+    short-id: 40150721499a92
+  server: 18.177.61.231
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0346a35f-8e11-4b33-852d-00fa9c642878
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1044132095
+  - vless-1186766704
+  - vless-1019921578
+  - 🏳️ ShatakVPN 607568
   - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 107ms
-  - vless-1014333534
-  - vless-1221242407
-  - vmess-1224465516
-  - vless-1019527275
-  - shadowsocks-218
-  - vless-1038685483
-  - vless-1223050025
-  - vless-1020947680
+  - 🔒 VL-TCP-TLS 🇯🇵 JP-38.175.203.11 443
+  - '[openproxylist.com] JP 15527830'
   type: select
 rules:
 - MATCH,PROXY

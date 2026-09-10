@@ -3,55 +3,38 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 856446
-  network: ws
-  port: 2087
-  server: 130.94.115.231
-  type: vless
-  udp: true
-  uuid: 8a51f3d9-30cc-44e6-8d31-700211a29066
-  ws-opts:
-    headers: {}
-    path: /721740e567c7
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-827281118
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-692622873
-  port: 41373
+  name: vless-904861930
+  port: 443
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
 - cipher: aes-256-gcm
+  name: 🇨🇦 Toronto  ON  Canada
+  password: fbcec76953a2d173
+  port: 20111
+  server: 166.88.130.218
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 🇨🇦 Canada
-  password: cdBIDV42DCwnfIN
-  port: 8119
-  server: 51.79.64.198
+  password: FD3rCuOsxOay
+  port: 8388
+  server: 15.235.75.71
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 856446
-  - vless-827281118
-  - vless-692622873
+  - vless-904861930
+  - 🇨🇦 Toronto  ON  Canada
   - 🇨🇦 Canada
   type: select
 rules:
