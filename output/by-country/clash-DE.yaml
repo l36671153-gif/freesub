@@ -3,61 +3,81 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 419536
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1141972456
+  port: 3443
+  reality-opts:
+    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
+    short-id: a1b2c3d4
+  server: 31.56.189.224
+  servername: special.aeternavpn.space
+  tls: true
+  type: vless
   udp: true
-- name: 🏳️ ShatakVPN 391073
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1183916743
+  port: 3443
+  reality-opts:
+    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
+    short-id: a1b2c3d4
+  server: 31.56.189.224
+  servername: special.aeternavpn.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: 92089155-6602-4122-86d4-fe6de20e8c4d
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.156.232.254 443
+  network: ws
   port: 443
-  server: 144.31.148.87
-  skip-cert-verify: true
-  sni: replay.wwwinternetvideo.click
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: '[openproxylist.com] DE 13135746'
-  password: 1hhrqrokj3ag
-  port: 8388
-  server: 209.46.102.22
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 187136
-  port: 4777
-  reality-opts:
-    public-key: 8ZL2JgDP9gHkgGTbGF-uK8omfWkFplZnCH0N2_U18Uo
-    short-id: 01115788253bc845
-  server: 207.241.172.98
-  servername: amp-api-edge.apps.apple.com
+  server: 94.156.232.254
+  servername: cf6.rumedia-cdn.com
   tls: true
   type: vless
   udp: true
-  uuid: ad554ef2-a860-41da-8ecf-7b2dfbb1df32
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+  ws-opts:
+    headers:
+      Host: cf6.rumedia-cdn.com
+    path: /cdn/v3/live
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 534842
-  port: 4777
-  reality-opts:
-    public-key: 8ZL2JgDP9gHkgGTbGF-uK8omfWkFplZnCH0N2_U18Uo
-    short-id: 01115788253bc845
-  server: 207.241.172.254
-  servername: amp-api-edge.apps.apple.com
+  name: 🏳️ ShatakVPN 232003
+  network: ws
+  port: 443
+  server: 94.156.232.254
+  servername: cf6.rumedia-cdn.com
   tls: true
   type: vless
   udp: true
-  uuid: 9222652c-be81-4171-9d07-ebcdbd2a82ab
+  uuid: 03c48eca-e0aa-4e18-998c-1f53f1de293c
+  ws-opts:
+    headers:
+      Host: cf6.rumedia-cdn.com
+    path: /cdn/v3/live
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1001513630
+  port: 443
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  server: 144.31.168.95
+  servername: eu-central.cendora.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 419536
-  - 🏳️ ShatakVPN 391073
-  - '[openproxylist.com] DE 13135746'
-  - 🏳️ ShatakVPN 187136
-  - 🏳️ ShatakVPN 534842
+  - vless-1141972456
+  - vless-1183916743
+  - 🔒 VL-WS-TLS 🇩🇪 DE-94.156.232.254 443
+  - 🏳️ ShatakVPN 232003
+  - vless-1001513630
   type: select
 rules:
 - MATCH,PROXY

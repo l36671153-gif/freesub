@@ -3,23 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: '[openproxylist.com] CH 15648163'
+  name: vless-1230998998
   port: 443
   reality-opts:
-    public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
-    short-id: 84be686ea1d16478
-  server: 131.123.34.42
-  servername: sheetpeek.com
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  server: 45.90.59.15
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
 proxy-groups:
 - name: PROXY
   proxies:
-  - '[openproxylist.com] CH 15648163'
+  - vless-1230998998
   type: select
 rules:
 - MATCH,PROXY
