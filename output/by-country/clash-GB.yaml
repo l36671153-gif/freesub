@@ -1,0 +1,29 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 564279
+  port: 22324
+  server: 66.163.117.58
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: aes-256-cfb
+  name: shadowsocks-1198924869
+  password: amazonskr05
+  port: 443
+  server: 3.8.209.170
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 564279
+  - shadowsocks-1198924869
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

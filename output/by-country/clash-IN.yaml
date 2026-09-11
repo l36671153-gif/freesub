@@ -3,8 +3,15 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1107805220
+- name: hysteria2-1200292042
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-in-001.fastervpn.world
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- client-fingerprint: chrome
+  name: vless-1201186295
   port: 2053
   reality-opts:
     public-key: R06_DTSjzQI9DswvRz9OqSBECfSwlpCMPR4DCc9oXyw
@@ -18,7 +25,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1107805220
+  - hysteria2-1200292042
+  - vless-1201186295
   type: select
 rules:
 - MATCH,PROXY

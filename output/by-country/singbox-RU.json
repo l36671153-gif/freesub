@@ -3,11 +3,27 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 Moscow  MOW  Russia",
-      "server": "46.17.42.166",
-      "server_port": 10661,
+      "tag": "🇷🇺 St Petersburg  SPE  Russia",
+      "server": "194.87.196.13",
+      "server_port": 30111,
       "method": "aes-256-gcm",
-      "password": "6b39ae3234dfd68b"
+      "password": "4938e975724d0ed1"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 Moscow  MOW  Russia",
+      "server": "138.124.68.88",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Y2ZlN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 Russia",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/63vp7pdl1GXaTpa6kkWd2+3tq3/szSAWueVKo26xM8="
     },
     {
       "type": "direct",

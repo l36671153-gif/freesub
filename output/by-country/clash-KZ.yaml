@@ -3,17 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🎡79@oneclickvpnkeys
-  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
-  port: 443
-  server: 46.247.41.120
-  skip-cert-verify: false
-  sni: kz03hy01.tcp-reset-club.net
-  type: hysteria2
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
+  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 164ms
+  network: grpc
+  port: 9882
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aa
+  server: 91.224.87.22
+  servername: dl.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🎡79@oneclickvpnkeys
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 164ms
   type: select
 rules:
 - MATCH,PROXY

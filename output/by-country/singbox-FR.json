@@ -3,23 +3,11 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇫🇷 France",
-      "server": "51.83.192.80",
+      "tag": "🏳️ ShatakVPN 803530",
+      "server": "51.255.13.232",
       "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-589844073",
-      "server": "151.247.197.253",
-      "server_port": 36723,
-      "password": "Krab9Hyst2_Rk7pQ2xL",
-      "tls": {
-        "enabled": true,
-        "server_name": "151.247.197.253",
-        "insecure": true
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "BqnqToih0PbU"
     },
     {
       "type": "direct",

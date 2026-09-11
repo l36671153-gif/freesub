@@ -3,9 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-656230710
+  name: vless-720888904
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -16,13 +16,52 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- name: hysteria2-1122515613
+- name: '@V2ray_confiig #1'
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 15.223.122.197
   skip-cert-verify: true
-  sni: 15.223.122.197
+  sni: t.me
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-200282613
+  port: 443
+  reality-opts:
+    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
+    short-id: b9f8d3f8
+  server: 216.152.147.28
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1019921577
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-692622873
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
 - cipher: aes-256-gcm
   name: 🇨🇦 Canada
   password: cdBIDV42DCwnfIN
@@ -30,9 +69,9 @@ proxies:
   server: 51.79.85.185
   type: ss
   udp: true
-- client-fingerprint: qq
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-827281118
+  name: vless-1109835478
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -43,19 +82,13 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-734969288
-  port: 443
-  reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  server: 158.69.112.254
-  servername: www.speedtest.net
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 245069
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 51.79.49.116
+  type: ss
   udp: true
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
 - cipher: aes-256-gcm
   name: shadowsocks-809724024
   password: cdBIDV42DCwnfIN
@@ -63,55 +96,26 @@ proxies:
   server: 51.79.64.198
   type: ss
   udp: true
-- name: hysteria2-1030361951
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.183.81
-  skip-cert-verify: true
-  sni: 15.223.183.81
-  type: hysteria2
-- name: hysteria2-1016364146
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: t.me
-  type: hysteria2
 - cipher: aes-256-gcm
-  name: shadowsocks-496614106
+  name: 🏳️ ShatakVPN 580219
   password: zDNVedRFPQexG9v
   port: 445
   server: 51.222.12.127
   type: ss
   udp: true
-- name: hysteria2-200394189
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-ca-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-ca-001.fastervpn.world
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇨🇦 QC  Canada_1
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.222.155.113
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-656230710
-  - hysteria2-1122515613
+  - vless-720888904
+  - '@V2ray_confiig #1'
+  - vless-200282613
+  - vless-1019921577
+  - vless-692622873
   - 🇨🇦 Canada
-  - vless-827281118
-  - vless-734969288
+  - vless-1109835478
+  - 🏳️ ShatakVPN 245069
   - shadowsocks-809724024
-  - hysteria2-1030361951
-  - hysteria2-1016364146
-  - shadowsocks-496614106
-  - hysteria2-200394189
-  - 🇨🇦 QC  Canada_1
+  - 🏳️ ShatakVPN 580219
   type: select
 rules:
 - MATCH,PROXY
