@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🏳️ ShatakVPN 662961",
-      "server": "144.31.148.87",
+      "tag": "hysteria2-757486810",
+      "server": "replay.wwwinternetvideo.click",
       "server_port": 443,
       "password": "2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f",
       "tls": {
@@ -12,6 +12,34 @@
         "server_name": "replay.wwwinternetvideo.click",
         "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Frankfurt am Main  HE  Germany",
+      "server": "87.83.220.214",
+      "server_port": 10210,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c032c3833d4b86b9"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-738907388",
+      "server": "player.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
+      "tls": {
+        "enabled": true,
+        "server_name": "player.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Frankfurt am Main  HE  Germany_1",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "direct",

@@ -2,53 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "香港|@ripaojiedian",
-      "server": "v10.hdacd.com",
-      "server_port": 30807,
-      "uuid": "cbb3f877-d1fb-344c-87a9-d153bffd5484",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1245377718",
-      "server": "220.246.184.228",
-      "server_port": 443,
-      "uuid": "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "updates.cdn-apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1229810759",
-      "server": "9ed08d0c-tlheo0-tvb36r-1qwom.hk3.hyhuawei.com",
-      "server_port": 443,
-      "uuid": "8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "updates.cdn-apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bE6ws6dFPflj8WVJMGwtso0WOaiSmBOHM2muQO2Uul4"
-        }
-      }
-    },
-    {
       "type": "direct",
       "tag": "direct"
     },

@@ -2,38 +2,43 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1197829908",
-      "server": "94.183.209.43",
+      "type": "hysteria2",
+      "tag": "hysteria2-589844075",
+      "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
-      "uuid": "5e7ecc47-e424-4653-876e-c7515a2c82b4",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {}
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 212708",
-      "server": "185.223.57.10",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443",
+      "server": "144.31.5.3",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "pl4.moritech.net",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY"
         }
-      },
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "[openproxylist.com] PL 15457074",
+      "server": "94.183.209.59",
+      "server_port": 443,
+      "uuid": "d23cb516-40db-4aa4-8142-6b45ff882f90",
       "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
+        "type": "ws",
+        "path": "/",
+        "headers": {}
       }
     },
     {

@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 943445
+- name: hysteria2-1200292042
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.29
+  server: vpn-in-001.fastervpn.world
   skip-cert-verify: true
-  sni: 202.146.222.29
+  sni: 127.0.0.1
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 943445
+  - hysteria2-1200292042
   type: select
 rules:
 - MATCH,PROXY

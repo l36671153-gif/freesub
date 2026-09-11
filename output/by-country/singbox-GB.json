@@ -2,76 +2,23 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1157522828",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "a8444f42-8aa2-4ef2-8755-2b0d82415fc6",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "T10K4VspJ7ZIptzXTqFL0k-lgV2a8ekf7RedogymJzo",
-          "short_id": "949023ece91caa7c"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "[openproxylist.com]  15663868",
+      "server": "134.65.57.209",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k+7rncQXn80XA="
     },
     {
-      "type": "vless",
-      "tag": "vless-1048867173",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "hysteria2-1005126986",
+      "server": "labs.frkn.org",
+      "server_port": 443,
+      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
       "tls": {
         "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1221434668",
-      "server": "78.129.208.44",
-      "server_port": 421,
-      "uuid": "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "chistomat.dry.care",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg",
-          "short_id": "a1facbc8575701ae"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1245369769",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
+        "server_name": "labs.frkn.org",
+        "insecure": true
       }
     },
     {
