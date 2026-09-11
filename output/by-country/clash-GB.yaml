@@ -3,26 +3,60 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🏳️ ShatakVPN 564279
-  port: 22324
-  server: 66.163.117.58
-  type: vmess
+- client-fingerprint: random
+  name: vless-1157522828
+  port: 2053
+  reality-opts:
+    public-key: T10K4VspJ7ZIptzXTqFL0k-lgV2a8ekf7RedogymJzo
+    short-id: 949023ece91caa7c
+  server: 51.89.194.151
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
   udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: aes-256-cfb
-  name: shadowsocks-1198924869
-  password: amazonskr05
-  port: 443
-  server: 3.8.209.170
-  type: ss
+  uuid: a8444f42-8aa2-4ef2-8755-2b0d82415fc6
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1048867173
+  port: 51847
+  reality-opts:
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  server: 3.9.135.156
+  servername: www.tesla.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1221434668
+  port: 421
+  reality-opts:
+    public-key: zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg
+    short-id: a1facbc8575701ae
+  server: 78.129.208.44
+  servername: chistomat.dry.care
+  tls: true
+  type: vless
+  udp: true
+  uuid: a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18
+- grpc-opts:
+    grpc-service-name: vless
+  name: vless-1245369769
+  network: grpc
+  port: 2083
+  server: 66.90.104.42
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 564279
-  - shadowsocks-1198924869
+  - vless-1157522828
+  - vless-1048867173
+  - vless-1221434668
+  - vless-1245369769
   type: select
 rules:
 - MATCH,PROXY

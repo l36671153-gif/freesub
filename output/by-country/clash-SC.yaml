@@ -3,18 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1138304671
-  port: 54321
-  server: 156.226.183.181
-  type: vmess
-  udp: true
-  uuid: d3bcc1f1-6294-4f68-bcf3-c3bcb2001520
+- name: 🏳️ ShatakVPN 140428
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  port: 8080
+  server: 138.124.0.168
+  skip-cert-verify: true
+  sni: hopp-legend-se.roxa.org
+  type: hysteria2
+- name: '英国 #2'
+  password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
+  port: 8080
+  server: 138.124.0.168
+  skip-cert-verify: true
+  sni: hopp-legend-se.roxa.org
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1138304671
+  - 🏳️ ShatakVPN 140428
+  - '英国 #2'
   type: select
 rules:
 - MATCH,PROXY
