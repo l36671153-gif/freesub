@@ -3,7 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '英国 #2'
+- name: 🏳️ ShatakVPN 954750
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   port: 8080
   server: 138.124.0.168
@@ -13,7 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - '英国 #2'
+  - 🏳️ ShatakVPN 954750
   type: select
 rules:
 - MATCH,PROXY

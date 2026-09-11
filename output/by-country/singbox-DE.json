@@ -2,44 +2,78 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-757486810",
-      "server": "replay.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f",
-      "tls": {
-        "enabled": true,
-        "server_name": "replay.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
       "tag": "🇩🇪 Frankfurt am Main  HE  Germany",
-      "server": "87.83.220.214",
-      "server_port": 10210,
+      "server": "8.209.74.72",
+      "server_port": 20001,
       "method": "chacha20-ietf-poly1305",
-      "password": "c032c3833d4b86b9"
+      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-738907388",
+      "tag": "hysteria2-730511437",
       "server": "player.wwwinternetvideo.click",
       "server_port": 443,
       "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
       "tls": {
         "enabled": true,
         "server_name": "player.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 Frankfurt am Main  HE  Germany_1",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "type": "vless",
+      "tag": "vless-1064122887",
+      "server": "82.24.203.20",
+      "server_port": 2087,
+      "uuid": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326",
+      "transport": {
+        "type": "ws",
+        "path": "/fd5ba98a3970",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1236880268",
+      "server": "144.31.168.95",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1229830844",
+      "server": "207.241.172.254",
+      "server_port": 4777,
+      "uuid": "12a9194f-16fc-4fb9-a6eb-441c076b70e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amp-api-edge.apps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8ZL2JgDP9gHkgGTbGF-uK8omfWkFplZnCH0N2_U18Uo",
+          "short_id": "01115788253bc845"
+        }
+      }
     },
     {
       "type": "direct",

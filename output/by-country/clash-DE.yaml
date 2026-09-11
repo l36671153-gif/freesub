@@ -3,41 +3,64 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-757486810
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  port: 443
-  server: replay.wwwinternetvideo.click
-  skip-cert-verify: true
-  sni: replay.wwwinternetvideo.click
-  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪 Frankfurt am Main  HE  Germany
-  password: c032c3833d4b86b9
-  port: 10210
-  server: 87.83.220.214
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
   type: ss
   udp: true
-- name: hysteria2-738907388
+- name: hysteria2-730511437
   password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
   port: 443
   server: player.wwwinternetvideo.click
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: player.wwwinternetvideo.click
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇩🇪 Frankfurt am Main  HE  Germany_1
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- name: vless-1064122887
+  network: ws
+  port: 2087
+  server: 82.24.203.20
+  type: vless
   udp: true
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  ws-opts:
+    headers: {}
+    path: /fd5ba98a3970
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1236880268
+  port: 443
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  server: 144.31.168.95
+  servername: eu-central.cendora.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1229830844
+  port: 4777
+  reality-opts:
+    public-key: 8ZL2JgDP9gHkgGTbGF-uK8omfWkFplZnCH0N2_U18Uo
+    short-id: 01115788253bc845
+  server: 207.241.172.254
+  servername: amp-api-edge.apps.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 12a9194f-16fc-4fb9-a6eb-441c076b70e2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-757486810
   - 🇩🇪 Frankfurt am Main  HE  Germany
-  - hysteria2-738907388
-  - 🇩🇪 Frankfurt am Main  HE  Germany_1
+  - hysteria2-730511437
+  - vless-1064122887
+  - vless-1236880268
+  - vless-1229830844
   type: select
 rules:
 - MATCH,PROXY

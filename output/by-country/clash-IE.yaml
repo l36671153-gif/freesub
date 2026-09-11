@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: shadowsocks-283
-  password: qwerREWQ@@
-  port: 13979
-  server: 221.139.79.57
+  name: shadowsocks-1110270326
+  password: amazonskr05
+  port: 443
+  server: 3.254.74.220
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-283
+  - shadowsocks-1110270326
   type: select
 rules:
 - MATCH,PROXY

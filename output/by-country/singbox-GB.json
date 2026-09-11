@@ -3,23 +3,27 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "[openproxylist.com]  15663868",
-      "server": "134.65.57.209",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "wzbgRLlSeDwxHX6xLVVxKk93K5k5N8k+7rncQXn80XA="
+      "tag": "🇬🇧 Portsmouth  ENG  United Kingdom",
+      "server": "149.102.132.184",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1005126986",
-      "server": "labs.frkn.org",
-      "server_port": 443,
-      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
-      "tls": {
-        "enabled": true,
-        "server_name": "labs.frkn.org",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-717969008",
+      "server": "149.102.132.184",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1251465971",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
     },
     {
       "type": "direct",

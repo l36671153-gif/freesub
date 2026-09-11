@@ -3,39 +3,28 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-589844075
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  port: 443
-  server: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443
+  name: 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443
   port: 443
-  server: 144.31.5.3
-  servername: pl4.moritech.net
+  server: 144.31.2.33
+  servername: pl3.moritech.net
   tls: true
   type: vless
   udp: true
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- name: '[openproxylist.com] PL 15457074'
-  network: ws
+- name: 🏳️ ShatakVPN 883690
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
-  server: 94.183.209.59
-  type: vless
-  udp: true
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  ws-opts:
-    headers: {}
-    path: /
+  server: 144.31.93.126
+  skip-cert-verify: true
+  sni: admin.wwwinternetvideo.click
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-589844075
-  - 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.5.3 443
-  - '[openproxylist.com] PL 15457074'
+  - 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443
+  - 🏳️ ShatakVPN 883690
   type: select
 rules:
 - MATCH,PROXY
