@@ -3,23 +3,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "[openproxylist.com] IN 15269929",
-      "server": "5.253.42.164",
-      "server_port": 40443,
-      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
-      "flow": "xtls-rprx-vision",
+      "tag": "vless-1258041070",
+      "server": "170.168.97.8",
+      "server_port": 8443,
+      "uuid": "3f9f2bda-0b9c-8469-7381-a73de2255619",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "download.nvidia.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
-          "short_id": "68a8"
+          "public_key": "D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {

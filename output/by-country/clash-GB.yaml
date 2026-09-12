@@ -3,6 +3,27 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: random
+  name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 122ms
+  port: 443
+  reality-opts:
+    public-key: YRKpNLfduSsOl3l-CCUkhZDEjvcKytnuELqnWjLZI1M
+    short-id: 98fa0b00d09419f7
+  server: 51.38.70.192
+  servername: play.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9343f183-7a16-4bdd-9c65-b0c21feca40b
+- grpc-opts:
+    grpc-service-name: vless
+  name: 🆔madshopx 🔓 VL-GRPC-N/A ❔ XX 117ms
+  network: grpc
+  port: 2083
+  server: 66.90.104.42
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - cipher: aes-256-gcm
   name: 🇬🇧 Portsmouth  ENG  United Kingdom
   password: g5h5jleTRSyO3Rk4
@@ -10,26 +31,36 @@ proxies:
   server: 149.102.132.184
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: shadowsocks-717969008
-  password: g5h5jleTRSyO3Rk4
-  port: 80
-  server: 149.102.132.184
-  type: ss
+- grpc-opts:
+    grpc-service-name: vless
+  name: vless-1245422997
+  network: grpc
+  port: 2083
+  server: 66.90.104.42
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1251465971
-  password: c58d16e593d44f42
-  port: 11001
-  server: 158.173.221.214
-  type: ss
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-721488603
+  port: 443
+  reality-opts:
+    public-key: RVj8E6YuWeOq9XzIVLQCKM39qa-Cknp-GYvVAA1UPFo
+    short-id: 72cceb78
+  server: 138.124.125.211
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 1996007c-e7bc-464b-999b-cac28cec6c3e
 proxy-groups:
 - name: PROXY
   proxies:
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 122ms
+  - 🆔madshopx 🔓 VL-GRPC-N/A ❔ XX 117ms
   - 🇬🇧 Portsmouth  ENG  United Kingdom
-  - shadowsocks-717969008
-  - shadowsocks-1251465971
+  - vless-1245422997
+  - vless-721488603
   type: select
 rules:
 - MATCH,PROXY

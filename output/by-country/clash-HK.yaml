@@ -3,44 +3,41 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1008564930
-  port: 443
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  server: vj37-1936vtw.fincore.top
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-- name: 🏳️ ShatakVPN 660493
+- name: hysteria2-107825281
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
   sni: 202.146.222.29
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: '[openproxylist.com] HK 15125993'
-  network: ws
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1260283825
   port: 443
-  server: u2frxj0g13vdi0wo.v.3dns.vip
-  servername: U2FRxj0G13vDI0Wo.v.3dns.vip
+  reality-opts:
+    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
+    short-id: ef7c4e4302bd52d7
+  server: hk.gigobingo.ru
+  servername: hk.gigobingo.ru
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: U2FRxj0G13vDI0Wo.v.3dns.vip
-    path: /ws-vmess
-- client-fingerprint: safari
+  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1235362885
+  name: vless-1254027230
+  port: 41923
+  reality-opts:
+    public-key: 7YfjX8TsT3HL0ZzvovjEDOLCM142j3bFcorv-Gs-m2Y
+  server: 45.144.137.129
+  servername: dash.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b28936a7-c11a-4147-8806-b66efd1658a8
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1235362844
   port: 64136
   reality-opts:
     public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
@@ -50,9 +47,16 @@ proxies:
   type: vless
   udp: true
   uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
+- name: hysteria2-705682240
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1242344751
+  name: vless-1233319716
   port: 64136
   reality-opts:
     public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
@@ -62,9 +66,16 @@ proxies:
   type: vless
   udp: true
   uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
-- client-fingerprint: chrome
+- name: hysteria2-1066924718
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 178ms
+  name: vless-757466708
   port: 443
   reality-opts:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
@@ -78,12 +89,14 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1008564930
-  - 🏳️ ShatakVPN 660493
-  - '[openproxylist.com] HK 15125993'
-  - vless-1235362885
-  - vless-1242344751
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 178ms
+  - hysteria2-107825281
+  - vless-1260283825
+  - vless-1254027230
+  - vless-1235362844
+  - hysteria2-705682240
+  - vless-1233319716
+  - hysteria2-1066924718
+  - vless-757466708
   type: select
 rules:
 - MATCH,PROXY

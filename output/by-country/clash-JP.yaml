@@ -3,61 +3,41 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-975967538
-  network: ws
-  port: 443
-  server: 162.159.254.3
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-10287041
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: vless-663902649
-  port: 443
-  server: 137.220.221.179
-  type: vless
-  udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1048736472
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
 - name: vless-656041581
   port: 443
   server: 137.220.221.179
   type: vless
   udp: true
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1014382059
+  name: vless-961883341
+  port: 50159
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  server: 154.31.114.248
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-734963290
+  port: 443
+  reality-opts:
+    public-key: h2GGazCHLBtmIUxiCxGUvsaEF8mGi8xFeCcI14sAJTI
+    short-id: 4bbe62498d4cc3c9
+  server: 156.231.113.153
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3340c44a-042e-4dfd-b82c-33192d56ba98
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1010711649
   port: 11690
   reality-opts:
     public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
@@ -69,7 +49,7 @@ proxies:
   udp: true
   uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.70.21 443
+  name: vless-1087325754
   network: ws
   port: 443
   server: 104.21.70.21
@@ -82,17 +62,10 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- cipher: aes-256-gcm
-  name: shadowsocks-951685696
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
-  type: ss
-  udp: true
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-665034487
-  port: 19645
+  name: vless-26652141
+  port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -102,26 +75,15 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- cipher: aes-128-gcm
-  name: '[openproxylist.com] JP 1291802'
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-975967538
-  - vless-10287041
-  - vless-663902649
-  - vless-1048736472
   - vless-656041581
-  - vless-1014382059
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.70.21 443
-  - shadowsocks-951685696
-  - vless-665034487
-  - '[openproxylist.com] JP 1291802'
+  - vless-961883341
+  - vless-734963290
+  - vless-1010711649
+  - vless-1087325754
+  - vless-26652141
   type: select
 rules:
 - MATCH,PROXY
