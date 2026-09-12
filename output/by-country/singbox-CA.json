@@ -3,45 +3,69 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-202736776",
-      "server": "158.69.112.254",
-      "server_port": 443,
-      "uuid": "661f395d-b153-4199-a04b-693f5fe7f261",
+      "tag": "vless-46267",
+      "server": "130.107.73.148",
+      "server_port": 41373,
+      "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.speedtest.net",
+        "server_name": "google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y",
-          "short_id": "3d3c1e645f763ee3"
+          "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
+          "short_id": "0e"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-874745011",
-      "server": "209.200.246.148",
-      "server_port": 443,
-      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
+      "tag": "vless-206379848",
+      "server": "130.107.73.148",
+      "server_port": 41373,
+      "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
-          "short_id": "f98843107912e782"
+          "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
+          "short_id": "0e"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "[openproxylist.com] CA 15587307",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-842256759",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 215996",
+      "server": "15.235.75.71",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "FD3rCuOsxOay"
     },
     {
       "type": "direct",

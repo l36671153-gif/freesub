@@ -4,42 +4,52 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🏳️ ShatakVPN 697258
-  network: grpc
-  port: 2083
-  server: 45.144.28.39
-  servername: usejh2.neobo-tooth.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
+  name: 🏳️ ShatakVPN 286969
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 62.210.91.2
+  server: 62.210.91.10
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: 🇫🇷FR_1|4.7MB/s
-  port: 22222
-  server: 15.237.145.224
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 985901
+  port: 443
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
   type: vless
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- name: 🏳️ ShatakVPN 699242
+  password: dongtaiwang.com
+  port: 22000
+  server: 62.210.124.146
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 949611
+  port: 443
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 697258
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
-  - 🇫🇷FR_1|4.7MB/s
+  - 🏳️ ShatakVPN 286969
+  - 🏳️ ShatakVPN 985901
+  - 🏳️ ShatakVPN 699242
+  - 🏳️ ShatakVPN 949611
   type: select
 rules:
 - MATCH,PROXY

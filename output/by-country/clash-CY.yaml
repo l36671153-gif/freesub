@@ -5,21 +5,35 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: '[openproxylist.com] IN 15269929'
+  name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 233ms
   port: 40443
   reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  server: 5.253.42.164
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  server: 5.253.30.99
   servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-694353446
+  port: 40443
+  reality-opts:
+    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
+    short-id: 84fc
+  server: 5.253.42.163
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
 proxy-groups:
 - name: PROXY
   proxies:
-  - '[openproxylist.com] IN 15269929'
+  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 233ms
+  - vless-694353446
   type: select
 rules:
 - MATCH,PROXY

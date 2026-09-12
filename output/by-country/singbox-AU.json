@@ -2,21 +2,9 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1060574022",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "vmess-101274522",
-      "server": "134.195.196.211",
+      "tag": "vmess-650629579",
+      "server": "38.91.107.49",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",
@@ -24,33 +12,12 @@
     },
     {
       "type": "vmess",
-      "tag": "vmess-650631518",
-      "server": "134.195.196.211",
+      "tag": "vmess-655845745",
+      "server": "149.88.23.207",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",
       "alter_id": 0
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1245733513",
-      "server": "51.161.204.242",
-      "server_port": 443,
-      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
-          "short_id": "d15c17cef9b2e456"
-        }
-      }
     },
     {
       "type": "direct",
