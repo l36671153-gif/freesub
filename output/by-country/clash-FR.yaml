@@ -3,49 +3,56 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '[openproxylist.com] FR 12723523'
-  network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  type: vless
-  udp: true
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  ws-opts:
-    headers: {}
-    path: /vless/
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: '[openproxylist.com] FR 15448799'
-  network: grpc
-  port: 2083
-  server: usejh2.neobo-tooth.ru
-  servername: usejh2.neobo-tooth.ru
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 102ms
+  port: 2053
+  reality-opts:
+    public-key: dRLd_E_GYCkCcwxLN5EcRQYsREKqisb26_ZSehxUpWY
+    short-id: 1eb8ea8dae937ae0
+  server: 45.144.28.39
+  servername: vk.ru
   tls: true
   type: vless
   udp: true
   uuid: 70e20b2e-3b1f-4c25-9a3d-9240570391bb
-- cipher: chacha20-ietf-poly1305
-  name: 🇫🇷 France
-  password: BqnqToih0PbU
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 537180
+  password: itzvpn@321
   port: 8388
-  server: 51.255.13.232
+  server: 51.83.192.80
   type: ss
   udp: true
-- name: 🏳️ ShatakVPN 118139
-  password: dongtaiwang.com
-  port: 22000
-  server: 62.210.124.146
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 834022
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 845497
+  port: 443
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 proxy-groups:
 - name: PROXY
   proxies:
-  - '[openproxylist.com] FR 12723523'
-  - '[openproxylist.com] FR 15448799'
-  - 🇫🇷 France
-  - 🏳️ ShatakVPN 118139
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 102ms
+  - 🏳️ ShatakVPN 537180
+  - 🏳️ ShatakVPN 834022
+  - 🏳️ ShatakVPN 845497
   type: select
 rules:
 - MATCH,PROXY

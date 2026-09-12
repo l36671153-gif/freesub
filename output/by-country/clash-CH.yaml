@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 印度
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-in-001.fastervpn.world
+- name: hysteria2-858183556
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  port: 8443
+  server: 104.165.205.40
   skip-cert-verify: true
-  sni: vpn-in-001.fastervpn.world
+  sni: speedtestmark.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 印度
+  - hysteria2-858183556
   type: select
 rules:
 - MATCH,PROXY
