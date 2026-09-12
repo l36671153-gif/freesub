@@ -3,22 +3,75 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1254028046",
-      "server": "45.152.64.9",
-      "server_port": 11763,
-      "uuid": "fe564b09-1fd8-4053-934b-3106350e4272",
+      "tag": "vless-1235362867",
+      "server": "45.152.65.157",
+      "server_port": 30521,
+      "uuid": "e6752712-f10c-4c8c-8308-d80b70a2b87a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "aws.amazon.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ"
+          "public_key": "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1235362774",
+      "server": "45.152.65.157",
+      "server_port": 30521,
+      "uuid": "e6752712-f10c-4c8c-8308-d80b70a2b87a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-810023482",
+      "server": "95.154.196.61",
+      "server_port": 443,
+      "uuid": "e5d917f5-fc78-455e-bbb5-81d08715f3d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "strapi.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM",
+          "short_id": "e4a1b53b03eff60d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1005580180",
+      "server": "labs.frkn.org",
+      "server_port": 443,
+      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
+      "tls": {
+        "enabled": true,
+        "server_name": "labs.frkn.org",
+        "insecure": true
       }
     },
     {

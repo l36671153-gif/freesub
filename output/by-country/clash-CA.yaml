@@ -3,61 +3,85 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-46267
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-206379848
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
 - cipher: aes-256-gcm
-  name: '[openproxylist.com] CA 15587307'
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 51.222.200.165
+  name: 🏳️ ShatakVPN 673004
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.79.85.185
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-293233479
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1249801518
+  password: 3ssumf2
+  port: 443
+  server: 142.4.216.225
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: shadowsocks-842256759
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.222.155.113
+  name: 🇨🇦 Canada
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 51.79.64.198
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 215996
+  name: shadowsocks-415242973
   password: FD3rCuOsxOay
   port: 8388
   server: 15.235.75.71
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 920449
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.222.12.127
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1250111358
+  port: 443
+  reality-opts:
+    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
+    short-id: af7e79b5
+  server: 66.70.179.124
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+- cipher: aes-128-gcm
+  name: shadowsocks-208
+  password: shadowsocks
+  port: 443
+  server: 149.22.95.183
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-46267
-  - vless-206379848
-  - '[openproxylist.com] CA 15587307'
-  - shadowsocks-842256759
-  - 🏳️ ShatakVPN 215996
+  - 🏳️ ShatakVPN 673004
+  - vless-293233479
+  - shadowsocks-1249801518
+  - 🇨🇦 Canada
+  - shadowsocks-415242973
+  - 🏳️ ShatakVPN 920449
+  - vless-1250111358
+  - shadowsocks-208
   type: select
 rules:
 - MATCH,PROXY

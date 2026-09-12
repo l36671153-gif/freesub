@@ -5,20 +5,55 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1254028046
-  port: 11763
+  name: vless-1235362867
+  port: 30521
   reality-opts:
-    public-key: V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ
-  server: 45.152.64.9
-  servername: www.amazon.com
+    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
+  server: 45.152.65.157
+  servername: aws.amazon.com
   tls: true
   type: vless
   udp: true
-  uuid: fe564b09-1fd8-4053-934b-3106350e4272
+  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-1235362774
+  port: 30521
+  reality-opts:
+    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
+  server: 45.152.65.157
+  servername: aws.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-810023482
+  port: 443
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  server: 95.154.196.61
+  servername: strapi.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+- name: hysteria2-1005580180
+  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+  port: 443
+  server: labs.frkn.org
+  skip-cert-verify: true
+  sni: labs.frkn.org
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1254028046
+  - vless-1235362867
+  - vless-1235362774
+  - vless-810023482
+  - hysteria2-1005580180
   type: select
 rules:
 - MATCH,PROXY
