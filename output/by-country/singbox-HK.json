@@ -3,54 +3,74 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1235362769",
-      "server": "45.136.14.251",
-      "server_port": 23974,
-      "uuid": "8aea14f7-5a77-4fa7-9924-f3921abc4cc2",
+      "tag": "vless-1244738579",
+      "server": "45.144.137.55",
+      "server_port": 10766,
+      "uuid": "2b61c167-5563-43ab-94a0-7d02c0a27ca5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "www.paypal.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hFaO787_gkKJuZYllnq-L0ZMiEqiCY80q2_xbP2CNRA"
+          "public_key": "U9z66G173U5ROhQvuyRf7SmkViqn1juXjvsy88dWtEk"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1235362816",
-      "server": "193.134.211.201",
-      "server_port": 64136,
-      "uuid": "cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "🔒 VM-WS-TLS 🇭🇰 HK-47.83.19.148 443",
+      "server": "47.83.19.148",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "dash.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE"
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-540983040",
-      "server": "202.146.222.89",
+      "tag": "hysteria2-656706481",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.89",
+        "server_name": "202.146.222.29",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1235755645",
+      "server": "45.144.137.55",
+      "server_port": 10766,
+      "uuid": "2b61c167-5563-43ab-94a0-7d02c0a27ca5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.paypal.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "U9z66G173U5ROhQvuyRf7SmkViqn1juXjvsy88dWtEk"
+        }
       }
     },
     {

@@ -3,133 +3,71 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🔒 VL-TCP-TLS 🇳🇱 NL-31.76.76.28 8443
-  port: 8443
-  server: 31.76.76.28
-  servername: neth4.lckdwn.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 The Netherlands
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.48
+  server: 82.38.31.211
   type: ss
   udp: true
-- name: 🏳️ ShatakVPN 463024
-  password: wrSuBorIlf
-  port: 443
-  server: 72.56.116.57
-  skip-cert-verify: true
-  sni: hys9.wba-pn.ru
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-202747798
-  port: 443
-  reality-opts:
-    public-key: cudJBi1zLMATgg_nlqMK5O6Lshlv8EQ2BBQjxbpF4AY
-    short-id: eedf31ed
-  server: 139.64.166.55
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-183
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.179
+  type: ss
   udp: true
-  uuid: c743b343-b1c9-4e44-98a9-274df2015727
-- name: 🏳️ ShatakVPN 134234
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 The Netherlands_1
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.132
+  type: ss
+  udp: true
+- name: hysteria2-1030509349
   password: CnVfXXvMzh
   port: 443
   server: 72.56.92.120
   skip-cert-verify: true
-  sni: hys13.wba-pn.ru
-  type: hysteria2
-- name: 🏳️ ShatakVPN 546402
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  port: 8443
-  server: 46.229.243.139
-  skip-cert-verify: true
-  sni: grape-turbo-fr.roxa.org
+  sni: 72.56.92.120
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 Amsterdam  NH  The Netherlands
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.126.122
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 650716
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.98
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 The Netherlands_1
+  name: shadowsocks-184
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.2
+  server: 193.29.139.151
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 144077
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.12
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 580448
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.93
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 The Netherlands_2
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.35
+  server: 82.38.31.202
   type: ss
   udp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: TunService
-  name: 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 44ms
-  network: grpc
-  port: 8443
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-189
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
+  udp: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-812523639
+  port: 40443
   reality-opts:
-    public-key: EG3y7UktGRlzSZZ2oXT_YaO2gVP4ca3Xe6AQ0u9A5DQ
-  server: 147.78.182.3
-  servername: download.nvidia.com
+    public-key: D_ks4Yyk4-osnWBxCFvd0_UEgohUXvR2zJoWQg1CACU
+    short-id: c84f
+  server: 72.56.81.165
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 8bf3e040-8ac9-5d0e-304f-9b735e145de8
+  uuid: 4bf5a71c-d726-4585-b095-7396675706d5
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 151631
+  name: 🏳️ ShatakVPN 972530
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -140,13 +78,80 @@ proxies:
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: 🏳️ ShatakVPN 222373
+- name: 🏳️ ShatakVPN 863292
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   port: 8443
-  server: 46.229.243.132
-  skip-cert-verify: true
+  server: 46.229.243.131
+  skip-cert-verify: false
   sni: grape-turbo-fr.roxa.org
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 577590
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.86
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 The Netherlands_3
+  password: 4a2rfixophdjffa8KVA4Aa
+  port: 8080
+  server: 193.29.139.234
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 The Netherlands_4
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.214
+  type: ss
+  udp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-703656402
+  port: 443
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+  server: free-amsterdam-node-1.cloudwidecdn.com
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 The Netherlands_5
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.149
+  type: ss
+  udp: true
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-828017779
+  port: 443
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+  server: 86.54.28.75
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-11028
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.207
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-952061994
@@ -160,175 +165,130 @@ proxies:
   type: vless
   udp: true
   uuid: c743b343-b1c9-4e44-98a9-274df2015727
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 The Netherlands_3
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.28
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 304514
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.103
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 The Netherlands_4
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.218
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: '[openproxylist.com] NL 5790345'
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.3
-  type: ss
-  udp: true
-- name: 🛠️64@oneclickvpnkeys
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  port: 8443
-  server: 46.229.243.145
-  skip-cert-verify: true
-  sni: grape-turbo-fr.roxa.org
-  type: hysteria2
-- name: hysteria2-591436862
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  port: 8443
-  server: 46.229.243.131
-  skip-cert-verify: true
-  sni: grape-turbo-fr.roxa.org
-  type: hysteria2
-- name: hysteria2-1003163675
-  password: EkF2Yw0Lc7
+- name: 🏳️ ShatakVPN 566869
+  password: BWAFlp8g53
   port: 443
-  server: hys34.wba-pn.ru
-  skip-cert-verify: false
-  sni: hys34.wba-pn.ru
+  server: 72.56.102.31
+  skip-cert-verify: true
+  sni: 72.56.102.31
   type: hysteria2
-- client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 718599
-  port: 8443
-  server: 193.23.194.167
-  servername: neth.lckdwn.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 32349ee8-8551-45fa-a265-8704cec72936
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-11024
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.195
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: vless-1204622291
-  port: 8443
-  server: 31.76.76.28
-  servername: neth4.lckdwn.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 The Netherlands_5
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.204
-  type: ss
-  udp: true
-- name: 🏳️ ShatakVPN 503308
-  network: ws
-  port: 80
-  server: 163.172.214.188
-  type: vless
-  udp: true
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  ws-opts:
-    headers:
-      Host: SC-TheNetherlands1.09vpn.com
-    path: /vless/
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 123614
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.58.239
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 666619
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.126.122
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 The Netherlands_6
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.215
+  server: 193.29.139.188
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 The Netherlands_7
   password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.48
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: vless-813371788
   port: 443
-  server: 82.38.31.162
+  reality-opts:
+    public-key: tWRR3W8jBAQKBUujLzL7Xri3WXy3F08OxHYrkSOnlAc
+    short-id: 52a6
+  server: 147.45.145.127
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 534cbbe2-cc36-4f2d-8fb0-90410e7148c9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: '[openproxylist.com] NL 14278252'
+  port: 40443
+  reality-opts:
+    public-key: fWzCKXwvMXaacsl1DdFb1vKQ9l9cTK1G7udqmaYHL0Y
+    short-id: 01d1bf2d4755d40c
+  server: 72.56.92.177
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4480161e-2c59-4d37-8736-675c9af32bf1
+- name: '[openproxylist.com] NL 14744657'
+  network: ws
+  port: 12068
+  server: 85.17.145.65
+  type: vless
+  udp: true
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  ws-opts:
+    headers:
+      Host: mypanel.unixzone.us
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 Amsterdam  NH  The Netherlands
+  password: eVC634QvVk5l
+  port: 8388
+  server: 188.116.23.244
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇱 The Netherlands_8
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.219
+  type: ss
+  udp: true
+- name: 🏳️ ShatakVPN 674526
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 46.229.243.137
+  skip-cert-verify: false
+  sni: grape-turbo-fr.roxa.org
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 553533
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
-  server: 82.38.31.175
+  server: 82.38.31.162
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇳🇱 Amsterdam  NH  The Netherlands_1
+  password: shadowsocks
+  port: 443
+  server: 158.173.20.208
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-TCP-TLS 🇳🇱 NL-31.76.76.28 8443
   - 🇳🇱 The Netherlands
-  - 🏳️ ShatakVPN 463024
-  - vless-202747798
-  - 🏳️ ShatakVPN 134234
-  - 🏳️ ShatakVPN 546402
-  - 🇳🇱 Amsterdam  NH  The Netherlands
-  - 🏳️ ShatakVPN 650716
+  - shadowsocks-183
   - 🇳🇱 The Netherlands_1
-  - 🏳️ ShatakVPN 144077
-  - 🏳️ ShatakVPN 580448
+  - hysteria2-1030509349
+  - shadowsocks-184
   - 🇳🇱 The Netherlands_2
-  - 🆔v2ray1_ng 🔒 VL-GRPC- ❔ XX 44ms
-  - 🏳️ ShatakVPN 151631
-  - 🏳️ ShatakVPN 222373
-  - vless-952061994
+  - shadowsocks-189
+  - vless-812523639
+  - 🏳️ ShatakVPN 972530
+  - 🏳️ ShatakVPN 863292
+  - 🏳️ ShatakVPN 577590
   - 🇳🇱 The Netherlands_3
-  - 🏳️ ShatakVPN 304514
   - 🇳🇱 The Netherlands_4
-  - '[openproxylist.com] NL 5790345'
-  - 🛠️64@oneclickvpnkeys
-  - hysteria2-591436862
-  - hysteria2-1003163675
-  - 🏳️ ShatakVPN 718599
-  - shadowsocks-11024
-  - vless-1204622291
+  - vless-703656402
   - 🇳🇱 The Netherlands_5
-  - 🏳️ ShatakVPN 503308
-  - 🏳️ ShatakVPN 123614
-  - 🏳️ ShatakVPN 666619
+  - vless-828017779
+  - shadowsocks-11028
+  - vless-952061994
+  - 🏳️ ShatakVPN 566869
   - 🇳🇱 The Netherlands_6
   - 🇳🇱 The Netherlands_7
+  - vless-813371788
+  - '[openproxylist.com] NL 14278252'
+  - '[openproxylist.com] NL 14744657'
+  - 🇳🇱 Amsterdam  NH  The Netherlands
   - 🇳🇱 The Netherlands_8
+  - 🏳️ ShatakVPN 674526
+  - 🏳️ ShatakVPN 553533
+  - 🇳🇱 Amsterdam  NH  The Netherlands_1
   type: select
 rules:
 - MATCH,PROXY

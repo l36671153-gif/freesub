@@ -2,49 +2,8 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🏳️ ShatakVPN 626356",
-      "server": "144.31.221.57",
-      "server_port": 443,
-      "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
-      "tls": {
-        "enabled": true,
-        "server_name": "player.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "vless-1063029564",
-      "server": "144.31.168.95",
-      "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu-central.cendora.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 820923",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 | DEU",
+      "tag": "vless-1275624760",
       "server": "31.76.20.209",
       "server_port": 443,
       "uuid": "827a0eb0-21bf-4bce-96ef-0a7bac5d68f5",
@@ -54,7 +13,7 @@
         "server_name": "de.pinkmoon.pro",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -64,34 +23,57 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇺🇸 美国 | USA",
-      "server": "179.253.246.156",
-      "server_port": 8443,
-      "uuid": "4ec2c66e-becd-4c51-9d6d-9ef74b27c95a",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Frankfurt am Main  HE  Germany",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 130556",
+      "server": "144.31.148.87",
+      "server_port": 443,
+      "password": "2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f",
       "tls": {
         "enabled": true,
-        "server_name": "decf.xzdq.eu.org",
+        "server_name": "replay.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 106ms",
+      "server": "144.31.168.95",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central.cendora.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/539e86",
-        "headers": {
-          "Host": "decf.xzdq.eu.org"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 Karlsruhe  BW  Germany",
-      "server": "2.58.81.221",
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 657791",
+      "server": "144.31.221.57",
       "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "kKEd0rBrd56Furjz"
+      "password": "V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8",
+      "tls": {
+        "enabled": true,
+        "server_name": "player.wwwinternetvideo.click",
+        "insecure": true
+      }
     },
     {
       "type": "direct",

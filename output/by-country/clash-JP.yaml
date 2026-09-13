@@ -3,30 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-855773350
-  port: 443
-  reality-opts:
-    public-key: h2GGazCHLBtmIUxiCxGUvsaEF8mGi8xFeCcI14sAJTI
-    short-id: 4bbe62498d4cc3c9
-  server: 156.231.113.153
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3340c44a-042e-4dfd-b82c-33192d56ba98
-- cipher: aes-256-gcm
-  name: 🇯🇵 Tokyo  13  Japan
-  password: 3eOFeNssde7PYYMv
-  port: 80
-  server: 84.247.155.196
-  type: ss
-  udp: true
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-855580709
-  port: 19645
+  name: vless-701259234
+  port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -36,36 +16,66 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- cipher: aes-128-gcm
-  name: 🇯🇵 Tokyo  13  Japan_1
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-  udp: true
-- name: vless-1225789963
+- name: vless-702719096
   port: 443
   server: 137.220.221.179
   type: vless
   udp: true
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- alterId: 0
-  cipher: auto
-  name: vmess-1122508704
-  port: 4433
-  server: 45.32.57.118
-  type: vmess
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1015080082
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  servername: www.sony.com
+  tls: true
+  type: vless
   udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- name: vless-656041581
+  port: 443
+  server: 137.220.221.179
+  type: vless
+  udp: true
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1011139750
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1048993114
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  servername: www.tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-855773350
-  - 🇯🇵 Tokyo  13  Japan
-  - vless-855580709
-  - 🇯🇵 Tokyo  13  Japan_1
-  - vless-1225789963
-  - vmess-1122508704
+  - vless-701259234
+  - vless-702719096
+  - vless-1015080082
+  - vless-656041581
+  - vless-1011139750
+  - vless-1048993114
   type: select
 rules:
 - MATCH,PROXY

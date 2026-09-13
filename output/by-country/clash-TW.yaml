@@ -3,6 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- alterId: 0
+  cipher: auto
+  name: vmess-655628140
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- alterId: 0
+  cipher: auto
+  name: 🆔surfboardv2ray 🔓 VM-TCP-N/A 🇹🇼 TW 188ms
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - name: hysteria2-1101789988
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -10,88 +26,21 @@ proxies:
   skip-cert-verify: true
   sni: https
   type: hysteria2
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1143617112
-  port: 40800
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  server: 104.199.219.172
-  servername: www.intel.com
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: vmess-656231634
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
   udp: true
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1062041208
-  port: 21776
-  reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  server: 34.80.164.239
-  servername: www.tesla.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1159791247
-  port: 34376
-  reality-opts:
-    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
-    short-id: 8dbafb690450d8a9
-  server: 34.81.129.171
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
-- name: hysteria2-892566578
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1028233037
-  port: 34376
-  reality-opts:
-    public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
-    short-id: 8dbafb690450d8a9
-  server: 34.81.129.171
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1193015757
-  port: 40800
-  reality-opts:
-    public-key: zohUbvPLKVBwzuDmZNsaXXFYZSKA9_xEhdUyURChrgo
-    short-id: 186e4c2732d61a3d
-  server: 104.199.219.172
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5859f6a7-cda1-47c2-8353-fcdee281f31d
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 proxy-groups:
 - name: PROXY
   proxies:
+  - vmess-655628140
+  - 🆔surfboardv2ray 🔓 VM-TCP-N/A 🇹🇼 TW 188ms
   - hysteria2-1101789988
-  - vless-1143617112
-  - vless-1062041208
-  - vless-1159791247
-  - hysteria2-892566578
-  - vless-1028233037
-  - vless-1193015757
+  - vmess-656231634
   type: select
 rules:
 - MATCH,PROXY

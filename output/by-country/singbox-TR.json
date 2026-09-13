@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 108ms",
+      "server": "shop.neexbyte.ir",
+      "server_port": 8443,
+      "uuid": "464bc502-f963-45b6-81e3-e33d18427506",
+      "tls": {
+        "enabled": true,
+        "server_name": "shop.neexbyte.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.91.222 443",
+      "server": "162.159.91.222",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-723a643df685",
+      "tls": {
+        "enabled": true,
+        "server_name": "n3zaxce7u0es.crzl48eiuses.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/723a643df685/loc-0",
+        "headers": {
+          "Host": "n3zaxce7u0es.crzl48eiuses.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

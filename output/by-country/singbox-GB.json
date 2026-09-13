@@ -2,96 +2,60 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "vless-1275248528",
+      "server": "lond.2clash.ru",
+      "server_port": 443,
+      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lond.2clash.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg",
+          "short_id": "32434434567654"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "shadowsocks-27285",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
+      "tag": "🇬🇧 Portsmouth  ENG  United Kingdom",
+      "server": "149.102.149.207",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "LXchLsIwtCeUAUgu"
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-658428968",
-      "server": "vpn-uk-002.fastervpn.world",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-696780678",
+      "server": "149.102.132.184",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-uk-002.fastervpn.world",
-        "insecure": true
-      }
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
     },
     {
       "type": "vless",
-      "tag": "vless-1245422997",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-810585257",
-      "server": "5.152.223.97",
+      "tag": "vless-1278331205",
+      "server": "31.76.39.135",
       "server_port": 443,
-      "uuid": "be5b6ad6-8184-4b63-82ac-3bc00c09c98c",
+      "uuid": "3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "strapi.io",
+        "server_name": "lond.2clash.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs",
-          "short_id": "1aa9f3c9021280c0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1255161020",
-      "server": "vf2nd.goonars.com",
-      "server_port": 443,
-      "uuid": "02722550-1915-4629-a653-cbe95e594f70",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apiv12nd.goonars.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OINuDFEDTdmtFR8QRxAZfQIMPA-wJxfGN1LjB3TFUHo",
-          "short_id": "535a3304"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1223729863",
-      "server": "78.129.208.44",
-      "server_port": 421,
-      "uuid": "a3c861cb-e1e7-4ad6-8be2-7c2314ec6f18",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "chistomat.dry.care",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zUdAvpr07q1Yd0Om-jc4-Vu4Un5tVird8FGoN-7W9Tg",
-          "short_id": "a1facbc8575701ae"
+          "public_key": "F_ws7uB6_86TsgsC2wUnVT0Jp1qqTgmR0ucRwPRhETg",
+          "short_id": "32434434567654"
         }
       }
     },
