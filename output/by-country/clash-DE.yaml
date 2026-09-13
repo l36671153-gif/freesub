@@ -4,60 +4,53 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1275624760
-  port: 443
+  name: vless-679541115
+  port: 40443
   reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  server: 31.76.20.209
-  servername: de.pinkmoon.pro
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
+  server: 93.152.217.41
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪 Frankfurt am Main  HE  Germany
-  password: PWpjPo3tqhPN4yRZ
-  port: 20001
-  server: 8.209.74.72
-  type: ss
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+- name: 🏳️ ShatakVPN 834106
+  network: ws
+  port: 2087
+  server: 163.8.195.241
+  type: vless
   udp: true
-- name: 🏳️ ShatakVPN 130556
-  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
-  port: 443
-  server: 144.31.148.87
-  skip-cert-verify: true
-  sni: replay.wwwinternetvideo.click
-  type: hysteria2
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  ws-opts:
+    headers: {}
+    path: /29c8fed7ca22
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 106ms
-  port: 443
+  name: vless-673696613
+  port: 40443
   reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  server: 144.31.168.95
-  servername: eu-central.cendora.ru
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
+  server: 93.152.217.41
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- name: 🏳️ ShatakVPN 657791
-  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
-  port: 443
-  server: 144.31.221.57
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+- name: hysteria2-742970030
+  password: zhangyang
+  port: 6443
+  server: 130.61.50.75
   skip-cert-verify: true
-  sni: player.wwwinternetvideo.click
+  sni: https%3a%2f%2fwww.calmloud.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1275624760
-  - 🇩🇪 Frankfurt am Main  HE  Germany
-  - 🏳️ ShatakVPN 130556
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 106ms
-  - 🏳️ ShatakVPN 657791
+  - vless-679541115
+  - 🏳️ ShatakVPN 834106
+  - vless-673696613
+  - hysteria2-742970030
   type: select
 rules:
 - MATCH,PROXY

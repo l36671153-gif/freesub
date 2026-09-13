@@ -3,61 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-468892439
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-913472676
   port: 443
-  server: vpn-ca-001.fastervpn.world
-  skip-cert-verify: true
-  sni: css.rbxcdn.com
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-415242973
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 494301
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.222.12.127
   type: ss
   udp: true
-- client-fingerprint: chrome
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: vless-1274668699
+  name: vless-742664269
   port: 443
   reality-opts:
-    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
-    short-id: 3d3c1e645f763ee3
-  server: 158.69.112.254
-  servername: www.speedtest.net
+    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
+    short-id: b9f8d3f8
+  server: 216.152.147.28
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
-- name: hysteria2-200394189
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-ca-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-ca-001.fastervpn.world
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1257526766
-  port: 443
-  reality-opts:
-    public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
-    short-id: af7e79b5
-  server: 66.70.179.124
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c8f9e08d-7d07-4059-9f71-0b014b9e0ec7
+  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-468892439
-  - shadowsocks-415242973
-  - vless-1274668699
-  - hysteria2-200394189
-  - vless-1257526766
+  - vless-913472676
+  - 🏳️ ShatakVPN 494301
+  - vless-742664269
   type: select
 rules:
 - MATCH,PROXY
