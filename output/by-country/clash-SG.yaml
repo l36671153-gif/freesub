@@ -3,42 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-470978000
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-1278914871
-  port: 43840
-  reality-opts:
-    public-key: tDzxVcXg6zzA1r0I_1j2y4vE0zkgmIVX3_Jf0UG1AnA
-    short-id: ac4b9f02123aa50b
-  server: 54.255.121.205
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f053b140-9673-4ac5-bc8b-587bfd2c8fd8
-- name: hysteria2-1286550602
-  password: 9b5ebb1c-5221-4381-850e-0b5eaac603e2
-  port: 8443
-  server: sg03.459292.xyz
-  skip-cert-verify: true
-  sni: localhost
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 180ms
+  name: vless-828107773
   port: 443
   reality-opts:
     public-key: bMcyxNueltQhz5Kuxcf8odDStWHowYfLhKNdCbUweDc
@@ -49,27 +16,21 @@ proxies:
   type: vless
   udp: true
   uuid: 607801ac-dbdd-4938-a167-129015d9978e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-561636598
-  port: 443
-  reality-opts:
-    public-key: UOLfRKeEoVxkp-APTF2OlvFkKSoiR2mWzUuhSWxcVmQ
-    short-id: 133a3f10a1581047
-  server: 206.206.78.36
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: vmess-485686942
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
   udp: true
-  uuid: e3f0c894-0f76-4683-a751-6a93da8fd14d
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1015042547
+  name: vless-1045022791
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
+  server: sg2-8sb.6121999.dpdns.org
   servername: sg2-8sb.6121999.dpdns.org
   tls: true
   type: vless
@@ -78,12 +39,9 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-470978000
-  - vless-1278914871
-  - hysteria2-1286550602
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 180ms
-  - vless-561636598
-  - vless-1015042547
+  - vless-828107773
+  - vmess-485686942
+  - vless-1045022791
   type: select
 rules:
 - MATCH,PROXY

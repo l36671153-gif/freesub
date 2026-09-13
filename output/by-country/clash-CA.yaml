@@ -3,23 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🇨🇦 Toronto  ON  Canada
-  password: fbcec76953a2d173
-  port: 60111
-  server: 166.88.130.218
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇨🇦 QC  Canada
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 51.222.141.125
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-202736775
+  name: vless-18572420
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-91983783
   port: 443
   reality-opts:
     public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
@@ -32,7 +31,47 @@ proxies:
   uuid: 661f395d-b153-4199-a04b-693f5fe7f261
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-51783
+  name: vless-656230633
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- name: hysteria2-722298619
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-ca-001.fastervpn.world
+  skip-cert-verify: true
+  sni: whatsapp.com
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-24252274
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- cipher: chacha20-ietf-poly1305
+  name: 🇨🇦 Canada
+  password: 3ssumf2
+  port: 443
+  server: ca225.vpnbook.com
+  type: ss
+  udp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-700285021
   port: 443
   reality-opts:
     public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
@@ -46,10 +85,13 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇨🇦 Toronto  ON  Canada
-  - 🇨🇦 QC  Canada
-  - vless-202736775
-  - vless-51783
+  - vless-18572420
+  - vless-91983783
+  - vless-656230633
+  - hysteria2-722298619
+  - vless-24252274
+  - 🇨🇦 Canada
+  - vless-700285021
   type: select
 rules:
 - MATCH,PROXY
