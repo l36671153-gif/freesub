@@ -3,39 +3,47 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🇩🇪 Düsseldorf  NW  Germany
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 213.202.208.199
-  type: ss
+- name: hysteria2-868400792
+  password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
+  port: 443
+  server: 144.31.221.57
+  skip-cert-verify: false
+  sni: player.wwwinternetvideo.click
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪 德国 | DEU_1
+  port: 443
+  reality-opts:
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+  server: 89.39.121.239
+  servername: de.pinkmoon.pro
+  tls: true
+  type: vless
   udp: true
-- name: 🏳️ ShatakVPN 509604
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+- name: 🏳️ ShatakVPN 113216
   password: V1UQuwa-4PRIDW2paxrPe58RcxXHPGyFIGS-5QojaM8
   port: 443
   server: 144.31.221.57
   skip-cert-verify: true
   sni: player.wwwinternetvideo.click
   type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1290482194
-  port: 12345
-  reality-opts:
-    public-key: 1N8CIM6v_TgbIDNneyEPNQ92hyq5Eyh_irJWOXKDBDw
-    short-id: 2b368990a94e8cbb
-  server: 207.241.172.98
-  servername: sheets.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8c6bd2f-5df0-478a-977d-e6664de27352
+- name: 🏳️ ShatakVPN 512701
+  password: 2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f
+  port: 443
+  server: 144.31.148.87
+  skip-cert-verify: true
+  sni: replay.wwwinternetvideo.click
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇩🇪 Düsseldorf  NW  Germany
-  - 🏳️ ShatakVPN 509604
-  - vless-1290482194
+  - hysteria2-868400792
+  - 🇩🇪 德国 | DEU_1
+  - 🏳️ ShatakVPN 113216
+  - 🏳️ ShatakVPN 512701
   type: select
 rules:
 - MATCH,PROXY

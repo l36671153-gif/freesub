@@ -3,61 +3,43 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1236880277
-  port: 30521
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-  server: 45.152.65.157
-  servername: aws.amazon.com
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 908606
+  port: 22324
+  server: 66.163.117.58
+  type: vmess
   udp: true
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1242550382
-  port: 30521
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-  server: 45.152.65.157
-  servername: aws.amazon.com
-  tls: true
-  type: vless
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: vmess-296358832
+  port: 22324
+  server: 66.163.117.58
+  type: vmess
   udp: true
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1238193994
-  port: 11763
-  reality-opts:
-    public-key: V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ
-  server: 45.152.64.9
-  servername: www.amazon.com
-  tls: true
-  type: vless
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: aes-256-gcm
+  name: 🇬🇧 City of London  ENG  United Kingdom
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  type: ss
   udp: true
-  uuid: fe564b09-1fd8-4053-934b-3106350e4272
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1235362774
-  port: 30521
-  reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-  server: 45.152.65.157
-  servername: aws.amazon.com
-  tls: true
-  type: vless
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1290815181
+  password: etWHWAsjCiGbHaessIM5QuQfSZ8qjOUGlo0fyhpFkDw=
+  port: 61312
+  server: 129.151.95.27
+  type: ss
   udp: true
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1236880277
-  - vless-1242550382
-  - vless-1238193994
-  - vless-1235362774
+  - 🏳️ ShatakVPN 908606
+  - vmess-296358832
+  - 🇬🇧 City of London  ENG  United Kingdom
+  - shadowsocks-1290815181
   type: select
 rules:
 - MATCH,PROXY

@@ -2,84 +2,38 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1236880277",
-      "server": "45.152.65.157",
-      "server_port": 30521,
-      "uuid": "e6752712-f10c-4c8c-8308-d80b70a2b87a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
-        }
-      }
+      "type": "vmess",
+      "tag": "🏳️ ShatakVPN 908606",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     },
     {
-      "type": "vless",
-      "tag": "vless-1242550382",
-      "server": "45.152.65.157",
-      "server_port": 30521,
-      "uuid": "e6752712-f10c-4c8c-8308-d80b70a2b87a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
-        }
-      }
+      "type": "vmess",
+      "tag": "vmess-296358832",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     },
     {
-      "type": "vless",
-      "tag": "vless-1238193994",
-      "server": "45.152.64.9",
-      "server_port": 11763,
-      "uuid": "fe564b09-1fd8-4053-934b-3106350e4272",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "V3mjjvp5OFn8TNw7WK0RR2p7l9sVX2v7Zr56ag3QkiQ"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇬🇧 City of London  ENG  United Kingdom",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
-      "type": "vless",
-      "tag": "vless-1235362774",
-      "server": "45.152.65.157",
-      "server_port": 30521,
-      "uuid": "e6752712-f10c-4c8c-8308-d80b70a2b87a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "aws.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1290815181",
+      "server": "129.151.95.27",
+      "server_port": 61312,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "etWHWAsjCiGbHaessIM5QuQfSZ8qjOUGlo0fyhpFkDw="
     },
     {
       "type": "direct",

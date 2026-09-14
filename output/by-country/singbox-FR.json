@@ -3,23 +3,44 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1197832078",
-      "server": "45.144.28.39",
-      "server_port": 2096,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.206.254 443",
+      "server": "172.67.206.254",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-5a26a30b00dc",
+      "tls": {
+        "enabled": true,
+        "server_name": "4qzsz6e8u00s.tlzw8le6ubhs.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {}
+        "path": "/stream/PANEL_ZEUS/5a26a30b00dc",
+        "headers": {
+          "Host": "4qzsz6e8u00s.tlzw8le6ubhs.workers.dev"
+        }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇷 France",
-      "server": "51.83.192.80",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
+      "type": "vless",
+      "tag": "vless-816611169",
+      "server": "45.144.28.39",
+      "server_port": 2083,
+      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "tls": {
+        "enabled": true,
+        "server_name": "usejh2.neobo-tooth.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
     },
     {
       "type": "direct",
