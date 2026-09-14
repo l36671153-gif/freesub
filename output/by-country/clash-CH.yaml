@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: hysteria2-855659706
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  port: 8443
+  server: 104.165.205.40
+  skip-cert-verify: false
+  sni: speedtestmark.com
+  type: hysteria2
+- name: hysteria2-857107263
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  port: 8443
+  server: 104.165.205.42
+  skip-cert-verify: false
+  sni: speedtestmark.com
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - hysteria2-855659706
+  - hysteria2-857107263
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
