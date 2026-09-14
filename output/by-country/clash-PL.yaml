@@ -3,17 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 434501
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  port: 443
-  server: 144.31.49.47
-  skip-cert-verify: true
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: TunService
-  name: 🏳️ ShatakVPN 817302
+  name: 🏳️ ShatakVPN 873904
   network: grpc
   port: 33743
   reality-opts:
@@ -27,8 +20,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 434501
-  - 🏳️ ShatakVPN 817302
+  - 🏳️ ShatakVPN 873904
   type: select
 rules:
 - MATCH,PROXY

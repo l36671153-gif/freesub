@@ -5,20 +5,20 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1242346609
-  port: 30521
+  name: vless-1272899310
+  port: 443
   reality-opts:
-    public-key: TsiUxIyOUQqEhPYWJ2HAlM-ecuOiHbH5ZTnaFdGdNU8
-  server: 45.152.65.157
-  servername: aws.amazon.com
+    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
+  server: 143.246.193.215
+  servername: www.blocket.se
   tls: true
   type: vless
   udp: true
-  uuid: e6752712-f10c-4c8c-8308-d80b70a2b87a
+  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1242346609
+  - vless-1272899310
   type: select
 rules:
 - MATCH,PROXY

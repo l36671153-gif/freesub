@@ -3,28 +3,57 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1014144004",
-      "server": "35.221.158.209",
-      "server_port": 32981,
-      "uuid": "41b96ee9-ee5e-455f-9753-187a9dead97a",
+      "tag": "vless-1062041208",
+      "server": "34.80.164.239",
+      "server_port": 21776,
+      "uuid": "b0399730-1618-4727-8ddd-2baf94ab90d6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "JSn0GPz1WOSTUDBxN_XYnhgb2Jpjc2LpfBTzX1j3V2E",
-          "short_id": "70f4b7a4c40636"
+          "public_key": "nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA",
+          "short_id": "79b6f82800c68925"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 718611",
+      "server": "36.224.152.189",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1040387510",
+      "server": "34.80.184.198",
+      "server_port": 44848,
+      "uuid": "b0342e8a-a25e-4e30-b598-d9391b0df4c9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "w9vWLOHjl46krA8IEpGoPI9scTL0rFdjCtjdukJDciU",
+          "short_id": "2338740580a5de"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1019747843",
+      "tag": "vless-1159791247",
       "server": "34.81.129.171",
       "server_port": 34376,
       "uuid": "bf8cc771-51a0-4395-810f-1f135325cfc1",
@@ -34,7 +63,7 @@
         "server_name": "www.sony.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -44,16 +73,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-307174592",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇹🇼 New Taipei City  NWT  Taiwan",
+      "server": "36.224.152.189",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
       "type": "direct",
