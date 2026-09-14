@@ -3,17 +3,44 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🇰🇷 Seoul  11  South Korea_1
-  password: faBAoD54k87UJG7
-  port: 2376
-  server: 141.164.45.187
-  type: ss
+- client-fingerprint: firefox
+  name: vless-1260284733
+  port: 2053
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
   udp: true
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-667136237
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-650671509
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.36.93.74
+  skip-cert-verify: true
+  sni: 3.36.93.74
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇰🇷 Seoul  11  South Korea_1
+  - vless-1260284733
+  - vless-667136237
+  - hysteria2-650671509
   type: select
 rules:
 - MATCH,PROXY

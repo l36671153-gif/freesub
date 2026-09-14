@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 印度
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-in-001.fastervpn.world
+- name: ⛽87@oneclickvpnkeys
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.181
   skip-cert-verify: true
-  sni: vpn-in-001.fastervpn.world
+  sni: hopp-romania-new.roxa.org
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 印度
+  - ⛽87@oneclickvpnkeys
   type: select
 rules:
 - MATCH,PROXY
