@@ -3,73 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-4524389
+- name: hysteria2-483633863
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
+  sni: vk.com
   type: hysteria2
-- name: hysteria2-467980788
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- alterId: 0
+  cipher: auto
+  name: '[openproxylist.com] HK 6461962'
+  network: ws
   port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https://t.me/clashv8🇨🇳
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1233319716
-  port: 64136
-  reality-opts:
-    public-key: yi2t6WsgV_77ANrZf2xcfrSaJihtFVDQ5O_Ddt0n9SE
-  server: 193.134.211.201
-  servername: dash.cloudflare.com
+  server: www.shopify.com
+  servername: yoga-suggesting-recording-calls.trycloudflare.com
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: cb0d51da-de26-4e29-b3db-a7fbbf9a4b8c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-813407624
-  port: 443
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  server: vj37-1936vtw.fincore.top
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
-- name: hysteria2-650663575
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: 202.146.222.174
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1255270129
-  port: 28708
-  reality-opts:
-    public-key: PjK10ZYHB6YOio0IrKYpNkH2mKEabgSvZhOy-hc9TUo
-  server: 45.136.15.18
-  servername: www.paypal.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: df766295-facc-4ae9-a3f1-6c48ad5d721f
+  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  ws-opts:
+    headers:
+      Host: yoga-suggesting-recording-calls.trycloudflare.com
+    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-4524389
-  - hysteria2-467980788
-  - vless-1233319716
-  - vless-813407624
-  - hysteria2-650663575
-  - vless-1255270129
+  - hysteria2-483633863
+  - '[openproxylist.com] HK 6461962'
   type: select
 rules:
 - MATCH,PROXY

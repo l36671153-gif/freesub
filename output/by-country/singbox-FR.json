@@ -3,26 +3,36 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-694391514",
-      "server": "usejh2.neobo-tooth.ru",
-      "server_port": 2083,
-      "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.50.143 443",
+      "server": "104.21.50.143",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-5a26a30b00dc",
       "tls": {
         "enabled": true,
-        "server_name": "usejh2.neobo-tooth.ru",
+        "server_name": "4qzsz6e8u00s.tlzw8le6ubhs.workers.dev",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "unsafe"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/stream/PANEL_ZEUS/5a26a30b00dc",
+        "headers": {
+          "Host": "4qzsz6e8u00s.tlzw8le6ubhs.workers.dev"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-602178043",
+      "tag": "vless-1314767252",
+      "server": "20.79.103.216",
+      "server_port": 2043,
+      "uuid": "980820ca-1720-4c32-9dc1-bc3fda7cbd08"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-561641520",
       "server": "usejh2.neobo-tooth.ru",
       "server_port": 2083,
       "uuid": "70e20b2e-3b1f-4c25-9a3d-9240570391bb",
@@ -37,27 +47,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🏳️ ShatakVPN 483251",
-      "server": "62.210.91.10",
-      "server_port": 23576,
-      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fuck.rkn",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
-          "short_id": "01"
-        }
       }
     },
     {

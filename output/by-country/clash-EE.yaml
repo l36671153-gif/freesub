@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-656161252
+  name: vless-970024036
   port: 8443
   server: 94.183.170.135
   servername: estproxy4.lockdwn.com
@@ -15,7 +15,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-656161252
+  - vless-970024036
   type: select
 rules:
 - MATCH,PROXY

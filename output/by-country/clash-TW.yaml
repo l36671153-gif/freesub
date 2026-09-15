@@ -5,40 +5,35 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1062041208
-  port: 21776
+  name: vless-1071893222
+  port: 30837
   reality-opts:
-    public-key: nm6jFiI7_auZ15UMqpeEbiITrK4OR2rfFTqXhe5pMFA
-    short-id: 79b6f82800c68925
-  server: 34.80.164.239
-  servername: www.tesla.com
+    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
+    short-id: 97101ba788915e5a
+  server: 35.201.163.218
+  servername: www.sony.com
   tls: true
   type: vless
   udp: true
-  uuid: b0399730-1618-4727-8ddd-2baf94ab90d6
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 718611
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  port: 50099
-  server: 36.224.152.189
-  type: ss
+  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
+- name: 🏳️ ShatakVPN 643789
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 207ms
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
   udp: true
-- client-fingerprint: edge
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1040387510
-  port: 44848
-  reality-opts:
-    public-key: w9vWLOHjl46krA8IEpGoPI9scTL0rFdjCtjdukJDciU
-    short-id: 2338740580a5de
-  server: 34.80.184.198
-  servername: www.tesla.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b0342e8a-a25e-4e30-b598-d9391b0df4c9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1159791247
+  name: vless-1028227123
   port: 34376
   reality-opts:
     public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
@@ -49,21 +44,13 @@ proxies:
   type: vless
   udp: true
   uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 New Taipei City  NWT  Taiwan
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-  port: 50099
-  server: 36.224.152.189
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1062041208
-  - 🏳️ ShatakVPN 718611
-  - vless-1040387510
-  - vless-1159791247
-  - 🇹🇼 New Taipei City  NWT  Taiwan
+  - vless-1071893222
+  - 🏳️ ShatakVPN 643789
+  - 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 207ms
+  - vless-1028227123
   type: select
 rules:
 - MATCH,PROXY
