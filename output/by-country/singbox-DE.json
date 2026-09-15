@@ -2,36 +2,17 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 94ms",
-      "server": "163.8.195.241",
-      "server_port": 2087,
-      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
+      "type": "vmess",
+      "tag": "[openproxylist.com] DE 15433905",
+      "server": "68.183.209.180",
+      "server_port": 80,
+      "uuid": "d5121154-ced6-460d-a9fd-5892027ab4a0",
+      "security": "auto",
+      "alter_id": 0,
       "transport": {
         "type": "ws",
-        "path": "/29c8fed7ca22",
+        "path": "/graphql",
         "headers": {}
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1141365831",
-      "server": "144.31.168.95",
-      "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu-central.cendora.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
-        }
       }
     },
     {

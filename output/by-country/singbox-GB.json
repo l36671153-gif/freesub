@@ -2,32 +2,36 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-27285",
-      "server": "146.70.61.18",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "vless-824220258",
-      "server": "95.154.196.61",
+      "tag": "[openproxylist.com] FI 15217031",
+      "server": "87.239.249.137",
       "server_port": 443,
-      "uuid": "e5d917f5-fc78-455e-bbb5-81d08715f3d6",
+      "uuid": "67eb6b17-7797-4ded-bf52-423c4c5f6cbd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "strapi.io",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM",
-          "short_id": "e4a1b53b03eff60d"
+          "public_key": "G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY",
+          "short_id": "91af08b1ce1f"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "嘎",
+      "server": "vpn-uk-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-uk-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
