@@ -3,37 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1071893222
-  port: 30837
-  reality-opts:
-    public-key: LXPNhrAGxr_QE4YCdJfKE40ebsPNIHnLbydhl6bipCo
-    short-id: 97101ba788915e5a
-  server: 35.201.163.218
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 85a6bd94-83a9-4e80-849f-c06d7011d1a4
-- name: 🏳️ ShatakVPN 643789
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 160.187.100.109
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 207ms
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1028227123
+  name: vless-1054459318
   port: 34376
   reality-opts:
     public-key: Atq4Fo_Mg48QtKXagBW9jnhaQSDUCiKgnATB2EU6OHU
@@ -44,13 +16,33 @@ proxies:
   type: vless
   udp: true
   uuid: bf8cc771-51a0-4395-810f-1f135325cfc1
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1108730484
+  port: 28364
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  server: 104.199.134.231
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+- alterId: 0
+  cipher: auto
+  name: vmess-650629576
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1071893222
-  - 🏳️ ShatakVPN 643789
-  - 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 207ms
-  - vless-1028227123
+  - vless-1054459318
+  - vless-1108730484
+  - vmess-650629576
   type: select
 rules:
 - MATCH,PROXY

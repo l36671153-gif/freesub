@@ -2,50 +2,31 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1314767267",
-      "server": "20.79.103.216",
-      "server_port": 2045,
-      "uuid": "980820ca-1720-4c32-9dc1-bc3fda7cbd08"
+      "type": "shadowsocks",
+      "tag": "[openproxylist.com] DE 14693570",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "vless",
-      "tag": "vless-1236880268",
-      "server": "144.31.168.95",
-      "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "tag": "vless-1258042859",
+      "server": "31.76.7.154",
+      "server_port": 7443,
+      "uuid": "d7cad038-0c3f-4cce-8f8a-36464aaf66c0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "eu-central.cendora.ru",
+        "server_name": "ya.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-620750824",
-      "server": "93.152.217.41",
-      "server_port": 40443,
-      "uuid": "969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA",
-          "short_id": "5b97"
+          "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
+          "short_id": "d2061bb1"
         }
       }
     },

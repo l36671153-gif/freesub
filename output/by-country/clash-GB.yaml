@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-860815991
+  port: 443
+  reality-opts:
+    public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
+    short-id: e4a1b53b03eff60d
+  server: 95.154.196.61
+  servername: strapi.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: e5d917f5-fc78-455e-bbb5-81d08715f3d6
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-860815991
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
