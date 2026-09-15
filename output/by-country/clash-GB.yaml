@@ -3,9 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
+- cipher: rc4-md5
+  name: shadowsocks-27285
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+  udp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-860815991
+  name: vless-824220258
   port: 443
   reality-opts:
     public-key: 2ATxqiR22wlo3yXOHc43LFHM5NzWCdSGZLdBay_vJgM
@@ -19,7 +26,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-860815991
+  - shadowsocks-27285
+  - vless-824220258
   type: select
 rules:
 - MATCH,PROXY
