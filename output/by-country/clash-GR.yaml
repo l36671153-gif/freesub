@@ -5,17 +5,31 @@ port: 7890
 proxies:
 - grpc-opts:
     grpc-service-name: security.debian.org
-  name: 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 129ms
+  name: 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 133ms
   network: grpc
   port: 2083
   server: 185.126.238.87
   type: vless
   udp: true
   uuid: 7668f678-faee-40cc-9b56-9c39dc773388
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-957294291
+  port: 40443
+  reality-opts:
+    public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
+    short-id: beb4
+  server: edge.netraidly.ru
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8ac637bf-554e-4902-94d7-baf01780a83c
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 129ms
+  - 🆔surfboardv2ray 🔓 VL-GRPC-N/A ❔ XX 133ms
+  - vless-957294291
   type: select
 rules:
 - MATCH,PROXY

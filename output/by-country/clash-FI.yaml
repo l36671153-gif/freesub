@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇺🇸 US-151.101.56.6 443
+  network: ws
+  port: 443
+  server: 151.101.56.6
+  servername: global.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
+  ws-opts:
+    headers:
+      Host: kayko.global.ssl.fastly.net
+    path: /
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-WS-TLS 🇺🇸 US-151.101.56.6 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

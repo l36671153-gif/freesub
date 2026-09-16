@@ -2,17 +2,31 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "[openproxylist.com] DE 15433905",
-      "server": "68.183.209.180",
-      "server_port": 80,
-      "uuid": "d5121154-ced6-460d-a9fd-5892027ab4a0",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/graphql",
-        "headers": {}
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Frankfurt am Main  HE  Germany",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Düsseldorf  NW  Germany",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1328057127",
+      "server": "130.61.50.75",
+      "server_port": 6443,
+      "password": "zhangyang",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%25252525253a%25252525252f%25252525252fwww.calmloud.com",
+        "insecure": true
       }
     },
     {
