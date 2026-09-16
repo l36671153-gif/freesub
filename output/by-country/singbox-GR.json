@@ -3,21 +3,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1095633772",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tag": "vless-742622270",
+      "server": "94.241.174.157",
+      "server_port": 40443,
+      "uuid": "8ac637bf-554e-4902-94d7-baf01780a83c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+          "public_key": "mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ",
+          "short_id": "beb4"
         }
       }
     },

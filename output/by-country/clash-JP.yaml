@@ -3,53 +3,39 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-128-gcm
-  name: 🇯🇵 Tokyo  13  Japan
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.204
-  type: ss
-  udp: true
-- client-fingerprint: random
-  name: vless-1328057124
-  port: 20270
-  reality-opts:
-    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
-    short-id: 28500ae15838f905
-  server: jp-1.gsafevpnapi.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e016d072-ed97-40d4-a83f-04c00f8df2a5
-- client-fingerprint: chrome
-  name: vless-975999344
-  network: ws
-  port: 443
-  server: 172.67.156.147
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+- name: hysteria2-479013117
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: 45.88.43.116
+  type: hysteria2
 - cipher: aes-256-gcm
-  name: shadowsocks-951685696
+  name: 🇯🇵 Tokyo  13  Japan
   password: 3eOFeNssde7PYYMv
   port: 443
   server: 84.247.155.196
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656230592
+  port: 18007
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 proxy-groups:
 - name: PROXY
   proxies:
+  - hysteria2-479013117
   - 🇯🇵 Tokyo  13  Japan
-  - vless-1328057124
-  - vless-975999344
-  - shadowsocks-951685696
+  - vless-656230592
   type: select
 rules:
 - MATCH,PROXY

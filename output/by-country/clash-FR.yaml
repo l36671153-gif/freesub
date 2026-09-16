@@ -4,20 +4,8 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1298542551
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
+  name: 🏳️ ShatakVPN 795568
   port: 443
   server: 162.19.10.99
   servername: nasnet-162191099-direct.mbghalibaf.com
@@ -28,8 +16,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1298542551
-  - 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
+  - 🏳️ ShatakVPN 795568
   type: select
 rules:
 - MATCH,PROXY

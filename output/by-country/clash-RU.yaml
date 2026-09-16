@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-256-gcm
+  name: 🇷🇺 St Petersburg  SPE  Russia
+  password: 8ad9d72a5571df86
+  port: 9019
+  server: 195.58.48.137
+  type: ss
+  udp: true
+- name: 嘎嘎
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  port: 443
+  server: msk.frkn.org
+  skip-cert-verify: false
+  sni: msk.frkn.org
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇷🇺 St Petersburg  SPE  Russia
+  - 嘎嘎
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
