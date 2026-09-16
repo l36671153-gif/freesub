@@ -5,10 +5,10 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1340026306
+  name: vmess-1343251547
   network: ws
   port: 443
-  server: 82259754d625.oylfmxz.cn
+  server: 7dba81fc3a0b.oylfmxz.cn
   tls: true
   type: vmess
   udp: true
@@ -19,7 +19,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1340026306
+  - vmess-1343251547
   type: select
 rules:
 - MATCH,PROXY

@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 158ms
+  port: 4443
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  server: 31.77.199.147
+  servername: images.unsplash.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 158ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

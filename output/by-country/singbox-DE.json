@@ -2,35 +2,28 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1131643483",
-      "server": "163.8.195.241",
-      "server_port": 2087,
-      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
-      "transport": {
-        "type": "ws",
-        "path": "/29c8fed7ca22",
-        "headers": {}
-      }
+      "type": "shadowsocks",
+      "tag": "[openproxylist.com] DE 13729099",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
-      "type": "vless",
-      "tag": "🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087",
-      "server": "31.56.189.27",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Frankfurt am Main  HE  Germany",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 Germany",
+      "server": "e2.cover20.ir",
+      "server_port": 30874,
+      "method": "chacha20-ietf-poly1305",
+      "password": "O+qLsoqVWBdY2D3lxtd5ksBwkp3QclQ6d+IARlPtFow="
     },
     {
       "type": "direct",
