@@ -3,17 +3,40 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 326335
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 337684
+  password: U9YAoqBgg5VyGBc6vQv1sN
+  port: 7538
+  server: 194.61.121.93
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇵🇱 PL-94.183.157.174 8090
+  network: ws
+  port: 8090
+  server: 94.183.157.174
+  servername: askuhgfdsg.space.coupons
+  tls: true
+  type: vless
+  udp: true
+  uuid: 818eaf39-544f-4d1d-977e-87be7e33eecf
+  ws-opts:
+    headers:
+      Host: askuhgfdsg.space.coupons
+    path: /ws
+- name: 🏳️ ShatakVPN 689800
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
   server: 45.192.12.93
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: admin.wwwinternetvideo.click
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 326335
+  - 🏳️ ShatakVPN 337684
+  - 🔒 VL-WS-TLS 🇵🇱 PL-94.183.157.174 8090
+  - 🏳️ ShatakVPN 689800
   type: select
 rules:
 - MATCH,PROXY
