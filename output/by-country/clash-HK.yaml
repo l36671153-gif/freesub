@@ -3,20 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-655838404
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
-  type: hysteria2
-- name: hysteria2-483633864
+- name: hysteria2-1308897122
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2рҹүёрҹүі
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
   type: hysteria2
+- client-fingerprint: chrome
+  name: vless-656246869
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  server: 47.238.210.5
+  servername: tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 - name: hysteria2-591633775
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
@@ -24,7 +29,7 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.89
   type: hysteria2
-- name: 🏳️ ShatakVPN 349585
+- name: hysteria2-656706481
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
@@ -34,10 +39,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-655838404
-  - hysteria2-483633864
+  - hysteria2-1308897122
+  - vless-656246869
   - hysteria2-591633775
-  - 🏳️ ShatakVPN 349585
+  - hysteria2-656706481
   type: select
 rules:
 - MATCH,PROXY

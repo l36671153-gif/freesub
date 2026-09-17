@@ -3,45 +3,37 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: vless-1343024307
-  network: grpc
-  port: 2053
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 190ms
+  port: 39244
+  server: 192.248.182.183
+  type: vless
+  udp: true
+  uuid: 5fc7563b-552d-417f-9409-08ef92284599
+- cipher: aes-256-gcm
+  name: shadowsocks-11078
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1357051236
+  port: 443
   reality-opts:
-    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
-    short-id: 4881f8244d1b9021
-  server: new2.smart-cats.ru
-  servername: www.google.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  server: 144.31.168.59
+  servername: aotocon.ggisopi.su
   tls: true
   type: vless
   udp: true
-  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
-- name: vless-1179457216
-  network: ws
-  port: 2087
-  server: 163.8.195.241
-  type: vless
-  udp: true
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  ws-opts:
-    headers:
-      Host: 163.8.195.241
-    path: /29c8fed7ca22
-- cipher: aes-256-gcm
-  name: shadowsocks-696780676
-  password: kKEd0rBrd56Furjz
-  port: 443
-  server: 2.58.81.221
-  type: ss
-  udp: true
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1343024307
-  - vless-1179457216
-  - shadowsocks-696780676
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 190ms
+  - shadowsocks-11078
+  - vless-1357051236
   type: select
 rules:
 - MATCH,PROXY

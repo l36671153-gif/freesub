@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 嘎嘎
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  port: 443
+  server: msk.frkn.org
+  skip-cert-verify: false
+  sni: msk.frkn.org
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 嘎嘎
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
