@@ -3,9 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-650632896
+  name: vless-10287041
   port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -16,32 +16,132 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-479013117
-  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
-  port: 52454
-  server: 45.88.43.116
-  skip-cert-verify: true
-  sni: 45.88.43.116
-  type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1242548391
-  port: 50159
+  name: vless-1335471401
+  port: 20270
   reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  server: 154.31.114.248
-  servername: www.cloudflare.com
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  uuid: 2bf192f1-7d86-43a3-88b3-8f72b7eb5ad9
+- client-fingerprint: chrome
+  name: vless-1172583775
+  network: ws
+  port: 443
+  server: 104.21.33.59
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: firefox
+  name: vless-1343434900
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+- client-fingerprint: chrome
+  name: vless-1330710677
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+- cipher: aes-128-gcm
+  name: shadowsocks-213
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+  udp: true
+- client-fingerprint: safari
+  name: vless-1343434892
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+- client-fingerprint: safari
+  name: vless-1343154897
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+- client-fingerprint: safari
+  name: vless-1343154885
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7647b321-4bfe-43f3-b21f-926c5de8f9b6
+- client-fingerprint: edge
+  name: vless-1348121778
+  port: 20270
+  reality-opts:
+    public-key: l2Wjf_xR2rZYHYmST-zxaYDDj5QhiL9riXa1ozBSjEE
+    short-id: 28500ae15838f905
+  server: jp-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0eb9f67-ef76-40aa-a1e6-22a11d5a9379
+- cipher: aes-256-gcm
+  name: 🇯🇵 Tokyo  13  Japan
+  password: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
+  port: 31870
+  server: jp-2.gsafevpnapi.com
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-650632896
-  - hysteria2-479013117
-  - vless-1242548391
+  - vless-10287041
+  - vless-1335471401
+  - vless-1172583775
+  - vless-1343434900
+  - vless-1330710677
+  - shadowsocks-213
+  - vless-1343434892
+  - vless-1343154897
+  - vless-1343154885
+  - vless-1348121778
+  - 🇯🇵 Tokyo  13  Japan
   type: select
 rules:
 - MATCH,PROXY
