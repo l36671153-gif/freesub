@@ -4,30 +4,29 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 425296
-  port: 23576
+  name: vless-1298542551
+  port: 2053
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: aes-256-cfb
-  name: shadowsocks-1279542058
-  password: amazonskr05
-  port: 443
-  server: 15.237.252.23
-  type: ss
-  udp: true
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- name: hysteria2-550001735
+  password: Krab9Hyst2_Rk7pQ2xL
+  port: 36723
+  server: 151.247.197.253
+  skip-cert-verify: true
+  sni: 151.247.197.253
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 425296
-  - shadowsocks-1279542058
+  - vless-1298542551
+  - hysteria2-550001735
   type: select
 rules:
 - MATCH,PROXY

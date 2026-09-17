@@ -1,0 +1,23 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇮🇪 IE-50.7.5.166 443
+  port: 443
+  server: 50.7.5.166
+  servername: ir-new.failspace.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-TCP-TLS 🇮🇪 IE-50.7.5.166 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
