@@ -4,14 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-246
-  password: Xsy8Ox4yOV3xLlpxtjzs3X
-  port: 16233
-  server: 102.133.165.160
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 399229
+  name: 🏳️ ShatakVPN 272370
   password: tfAcRikawhNoZAhu
   port: 8388
   server: 139.84.247.164
@@ -20,8 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-246
-  - 🏳️ ShatakVPN 399229
+  - 🏳️ ShatakVPN 272370
   type: select
 rules:
 - MATCH,PROXY

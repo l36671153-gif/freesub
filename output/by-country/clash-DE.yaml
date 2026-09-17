@@ -3,22 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-731819985
-  port: 40443
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-1343024307
+  network: grpc
+  port: 2053
   reality-opts:
-    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
-    short-id: 5b97
-  server: 93.152.217.41
-  servername: deepl.com
+    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
+    short-id: 4881f8244d1b9021
+  server: new2.smart-cats.ru
+  servername: www.google.com
   tls: true
   type: vless
   udp: true
-  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
+- name: vless-1179457216
+  network: ws
+  port: 2087
+  server: 163.8.195.241
+  type: vless
+  udp: true
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  ws-opts:
+    headers:
+      Host: 163.8.195.241
+    path: /29c8fed7ca22
+- cipher: aes-256-gcm
+  name: shadowsocks-696780676
+  password: kKEd0rBrd56Furjz
+  port: 443
+  server: 2.58.81.221
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-731819985
+  - vless-1343024307
+  - vless-1179457216
+  - shadowsocks-696780676
   type: select
 rules:
 - MATCH,PROXY
