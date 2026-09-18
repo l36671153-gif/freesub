@@ -3,53 +3,65 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 147ms
-  port: 53224
-  server: 95.179.169.44
-  type: vless
+- cipher: aes-256-gcm
+  name: shadowsocks-696780676
+  password: kKEd0rBrd56Furjz
+  port: 443
+  server: 2.58.81.221
+  type: ss
   udp: true
-  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
-- name: vless-1343265195
-  port: 53224
-  server: 95.179.169.44
-  type: vless
-  udp: true
-  uuid: e4887910-bcfc-48f8-8cd4-abb592e181af
-- name: 🆔lrnbymaa 🔓 VL-TCP-N/A ❔ XX 157ms
-  port: 39244
-  server: 192.248.182.183
-  type: vless
-  udp: true
-  uuid: 5fc7563b-552d-417f-9409-08ef92284599
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 158ms
-  network: grpc
-  port: 2053
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 146ms
+  port: 443
   reality-opts:
-    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
-    short-id: 4881f8244d1b9021
-  server: 31.184.244.219
-  servername: www.google.com
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  server: 82.118.19.153
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
-- name: vless-1347218083
-  port: 53224
-  server: 95.179.169.44
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: freegrpc
+  name: vless-1113474488
+  network: grpc
+  port: 2087
+  server: srv-21bac9.vless.monster
+  servername: srv-21bac9.vless.monster
+  tls: true
   type: vless
   udp: true
-  uuid: 5f00ca4e-3f26-473e-ad1c-414112abb0a3
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- cipher: aes-256-gcm
+  name: shadowsocks-717969012
+  password: kKEd0rBrd56Furjz
+  port: 80
+  server: 2.58.81.221
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: freegrpc
+  name: vless-1115899893
+  network: grpc
+  port: 2087
+  server: srv-21bac9.vless.monster
+  servername: srv-21bac9.vless.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 147ms
-  - vless-1343265195
-  - 🆔lrnbymaa 🔓 VL-TCP-N/A ❔ XX 157ms
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 158ms
-  - vless-1347218083
+  - shadowsocks-696780676
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 146ms
+  - vless-1113474488
+  - shadowsocks-717969012
+  - vless-1115899893
   type: select
 rules:
 - MATCH,PROXY

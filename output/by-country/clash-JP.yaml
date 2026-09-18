@@ -3,24 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.156.147 443
+  network: ws
+  port: 443
+  server: 172.67.156.147
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - alterId: 0
   cipher: auto
-  name: vmess-1227921067
+  name: 🏳️ ShatakVPN 753982
   port: 4433
   server: 45.32.57.118
   type: vmess
   udp: true
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- cipher: aes-256-gcm
-  name: shadowsocks-951685696
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
-  type: ss
-  udp: true
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-700888653
+  name: vless-1149851409
   port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -31,14 +38,6 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- alterId: 0
-  cipher: auto
-  name: vmess-1122515635
-  port: 4433
-  server: 45.32.57.118
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: vless-1107791215
@@ -52,22 +51,13 @@ proxies:
   type: vless
   udp: true
   uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-- name: hysteria2-13527647
-  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
-  port: 52454
-  server: 45.88.43.116
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1227921067
-  - shadowsocks-951685696
-  - vless-700888653
-  - vmess-1122515635
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.156.147 443
+  - 🏳️ ShatakVPN 753982
+  - vless-1149851409
   - vless-1107791215
-  - hysteria2-13527647
   type: select
 rules:
 - MATCH,PROXY
