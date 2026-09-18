@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 嘎嘎
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+- name: 🏳️ ShatakVPN 439885
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
   port: 443
-  server: msk.frkn.org
-  skip-cert-verify: false
-  sni: msk.frkn.org
+  server: 91.196.32.163
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 嘎嘎
+  - 🏳️ ShatakVPN 439885
   type: select
 rules:
 - MATCH,PROXY

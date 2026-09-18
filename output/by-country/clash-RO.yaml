@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1051283241
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8443
-  server: 85.204.107.184
-  skip-cert-verify: false
-  sni: hopp-romania-new.roxa.org
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 181ms
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  port: 443
+  server: 154.46.31.106
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1051283241
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 181ms
   type: select
 rules:
 - MATCH,PROXY
