@@ -3,10 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- name: 🏳️ ShatakVPN 125731
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  port: 443
+  server: 217.60.182.79
+  skip-cert-verify: true
+  sni: cabinet.wwwinternetvideo.click
+  type: hysteria2
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: 9d30d49278
-  name: vless-1351430597
+  name: vless-1297639936
   network: grpc
   port: 8443
   reality-opts:
@@ -17,11 +24,23 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+- name: vless-852108509
+  network: ws
+  port: 443
+  server: 94.183.170.135
+  type: vless
+  udp: true
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  ws-opts:
+    headers: {}
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1351430597
+  - 🏳️ ShatakVPN 125731
+  - vless-1297639936
+  - vless-852108509
   type: select
 rules:
 - MATCH,PROXY

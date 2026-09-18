@@ -3,21 +3,83 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-721489373
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-722683698
   port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: t.me
-  type: hysteria2
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  server: 162.128.157.164
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-757466724
+  name: vless-765514215
   port: 443
   reality-opts:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   server: vj37-1936vtw.fincore.top
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.60.10 443
+  network: ws
+  port: 443
+  server: 104.16.60.10
+  servername: hk1.69lover.my
+  tls: true
+  type: vless
+  udp: true
+  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
+  ws-opts:
+    headers:
+      Host: hk1.69lover.my
+    path: /api/v2/e2fe4e52a165854d/stream
+- alterId: 0
+  cipher: auto
+  name: 🔒 VM-WS-TLS 🇭🇰 HK-47.83.19.148 443
+  network: ws
+  port: 443
+  server: 47.83.19.148
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- name: hysteria2-721489367
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- name: 🏳️ ShatakVPN 795233
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 150ms
+  port: 443
+  reality-opts:
+    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
+    short-id: 14156e3ac23212cc
+  server: 162.128.157.164
   servername: www.bing.com
   tls: true
   type: vless
@@ -33,8 +95,13 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-721489373
-  - vless-757466724
+  - vless-722683698
+  - vless-765514215
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.60.10 443
+  - 🔒 VM-WS-TLS 🇭🇰 HK-47.83.19.148 443
+  - hysteria2-721489367
+  - 🏳️ ShatakVPN 795233
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 150ms
   - hysteria2-705682202
   type: select
 rules:
