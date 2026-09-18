@@ -3,22 +3,29 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1345595579
-  port: 443
-  reality-opts:
-    public-key: iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg
-    short-id: f6c7c139b9c938db
-  server: 89.125.147.199
-  servername: maps.apple.com
-  tls: true
+- name: vless-1363486797
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
   type: vless
   udp: true
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+    path: /
+- name: 🏳️ ShatakVPN 597851
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8080
+  server: 85.204.107.181
+  skip-cert-verify: true
+  sni: hopp-romania-new.roxa.org
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1345595579
+  - vless-1363486797
+  - 🏳️ ShatakVPN 597851
   type: select
 rules:
 - MATCH,PROXY

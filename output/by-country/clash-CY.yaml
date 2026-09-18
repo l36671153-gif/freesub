@@ -3,61 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-1339616698
-  port: 40443
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  server: hydra.yokkastars.com
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-254931446
-  port: 40443
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  server: 5.253.30.99
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-821557253
-  port: 40443
-  reality-opts:
-    public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
-    short-id: 84fc
-  server: 5.253.42.163
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 15fd22d1-8931-4d41-af37-8ba6711e93fe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1351368214
-  port: 40443
-  reality-opts:
-    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
-    short-id: 68a8
-  server: 5.253.42.164
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e99ba96d-dec8-42eb-be53-19e71eef7cab
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1328048260
+  name: vless-694353446
   port: 40443
   reality-opts:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
@@ -71,11 +19,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1339616698
-  - vless-254931446
-  - vless-821557253
-  - vless-1351368214
-  - vless-1328048260
+  - vless-694353446
   type: select
 rules:
 - MATCH,PROXY
