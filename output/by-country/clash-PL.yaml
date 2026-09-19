@@ -3,40 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 巴西
+- name: 🏳️ ShatakVPN 226339
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
-  server: go.wwwinternetvideo.click
-  skip-cert-verify: true
+  server: 144.31.49.47
+  skip-cert-verify: false
   sni: admin.wwwinternetvideo.click
   type: hysteria2
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: TunService
-  name: vless-1105975118
-  network: grpc
-  port: 33743
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  server: 185.223.57.10
-  servername: www.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-- cipher: aes-256-cfb
-  name: shadowsocks-795694264
-  password: FAdUvMJUq5vDgKEq
-  port: 9006
-  server: 217.30.10.44
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 巴西
-  - vless-1105975118
-  - shadowsocks-795694264
+  - 🏳️ ShatakVPN 226339
   type: select
 rules:
 - MATCH,PROXY

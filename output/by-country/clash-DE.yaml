@@ -3,59 +3,36 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: pl199grpc
-  name: vless-1387904064
-  network: grpc
-  port: 2053
-  reality-opts:
-    public-key: sHEHsya9ZbC34uBUOzAfAO8u2b3Ik71hp4AKMGLvZxw
-    short-id: facfeeb537603598
-  server: 77.110.104.238
-  servername: www.tagesschau.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 937fbdad-d97b-4540-9136-de1886df866f
-- name: hysteria2-1290258452
+- name: 🏳️ ShatakVPN 140083
   password: zhangyang
   port: 6443
   server: 130.61.50.75
   skip-cert-verify: true
-  sni: https%2525253a%2525252f%2525252fwww.calmloud.com
+  sni: 130.61.50.75
   type: hysteria2
-- client-fingerprint: qq
-  name: vless-620750824
-  port: 40443
-  reality-opts:
-    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
-    short-id: 5b97
-  server: 93.152.217.41
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+- name: hysteria2-858183552
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  port: 4433
+  server: de1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: de1.xiaoliyu.cyou
+  type: hysteria2
 - client-fingerprint: chrome
-  name: vless-673696613
-  port: 40443
-  reality-opts:
-    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
-    short-id: 5b97
-  server: 93.152.217.41
-  servername: deepl.com
+  flow: xtls-rprx-vision
+  name: vless-1391139085
+  port: 443
+  server: 57.129.96.67
+  servername: nasnet-571299667-direct.mbghalibaf.com
   tls: true
   type: vless
   udp: true
-  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1387904064
-  - hysteria2-1290258452
-  - vless-620750824
-  - vless-673696613
+  - 🏳️ ShatakVPN 140083
+  - hysteria2-858183552
+  - vless-1391139085
   type: select
 rules:
 - MATCH,PROXY
