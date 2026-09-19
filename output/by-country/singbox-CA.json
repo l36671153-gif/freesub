@@ -3,7 +3,16 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "vmess-2386845",
+      "tag": "vmess-101274522",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "vmess",
+      "tag": "🏳️ ShatakVPN 523349",
       "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -12,66 +21,33 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1257526766",
-      "server": "66.70.179.124",
+      "tag": "vless-685581271",
+      "server": "216.152.147.28",
       "server_port": 443,
-      "uuid": "c8f9e08d-7d07-4059-9f71-0b014b9e0ec7",
+      "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY",
-          "short_id": "af7e79b5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-470978189",
-      "server": "216.152.147.28",
-      "server_port": 443,
-      "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
           "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
           "short_id": "b9f8d3f8"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-742664269",
-      "server": "216.152.147.28",
-      "server_port": 443,
-      "uuid": "d9e4721d-cdac-44c7-bc91-117367eac194",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss",
-          "short_id": "b9f8d3f8"
-        }
-      }
+      "type": "vmess",
+      "tag": "vmess-143584",
+      "server": "134.195.196.211",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

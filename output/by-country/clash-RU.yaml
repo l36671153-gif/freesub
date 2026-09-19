@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 226339
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+- name: 🇷🇺_RU_俄罗斯
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
   port: 443
-  server: 144.31.49.47
+  server: msk.frkn.org
   skip-cert-verify: false
-  sni: admin.wwwinternetvideo.click
+  sni: msk.frkn.org
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 226339
+  - 🇷🇺_RU_俄罗斯
   type: select
 rules:
 - MATCH,PROXY

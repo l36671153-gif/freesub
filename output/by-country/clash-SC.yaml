@@ -5,21 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: vless-1223752269
-  port: 390
+  name: vless-1211278475
+  port: 35193
   reality-opts:
-    public-key: 5RCgAVjaT7hwdVIKAEULswXGqR127ZOZV6X17nEhYk8
-    short-id: b545fe8c5e22f92d
-  server: 151.242.168.125
-  servername: bowandbead.com
+    public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
+    short-id: e8daed2d
+  server: 156.226.168.221
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: b02ff150-ee30-46e0-9ea1-adbfd7762a06
+  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1223752269
+  - vless-1211278475
   type: select
 rules:
 - MATCH,PROXY
