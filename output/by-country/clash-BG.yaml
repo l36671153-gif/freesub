@@ -1,0 +1,23 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1380057628
+  port: 443
+  server: 87.120.196.212
+  servername: holo-stream.videocactus.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1380057628
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
