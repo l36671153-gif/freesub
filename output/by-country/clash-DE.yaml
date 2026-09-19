@@ -3,60 +3,59 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-827975777
-  port: 443
-  reality-opts:
-    public-key: rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A
-    short-id: ab88d256
-  server: 170.101.109.37
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf645ffe-a3cc-4480-8e4c-9bcd1af41052
-- client-fingerprint: chrome
+- client-fingerprint: random
   grpc-opts:
-    grpc-service-name: grpc
-  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 158ms
+    grpc-service-name: pl199grpc
+  name: vless-1387904064
   network: grpc
   port: 2053
   reality-opts:
-    public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
-    short-id: 4881f8244d1b9021
-  server: 31.184.244.219
-  servername: www.google.com
+    public-key: sHEHsya9ZbC34uBUOzAfAO8u2b3Ik71hp4AKMGLvZxw
+    short-id: facfeeb537603598
+  server: 77.110.104.238
+  servername: www.tagesschau.de
   tls: true
   type: vless
   udp: true
-  uuid: 60a361f9-3c45-4954-9e4c-92a85bda243d
-- name: 🐊59@oneclickvpnkeys
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  port: 25443
-  server: de-node.rumedia-cdn.com
+  uuid: 937fbdad-d97b-4540-9136-de1886df866f
+- name: hysteria2-1290258452
+  password: zhangyang
+  port: 6443
+  server: 130.61.50.75
   skip-cert-verify: true
-  sni: cf6.rumedia-cdn.com
+  sni: https%2525253a%2525252f%2525252fwww.calmloud.com
   type: hysteria2
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: freegrpc
-  name: vless-1155246847
-  network: grpc
-  port: 2087
-  server: 31.56.189.27
-  servername: srv-21bac9.vless.monster
+- client-fingerprint: qq
+  name: vless-620750824
+  port: 40443
+  reality-opts:
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
+  server: 93.152.217.41
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
+- client-fingerprint: chrome
+  name: vless-673696613
+  port: 40443
+  reality-opts:
+    public-key: VG-FwQBMFzPcemJ_JqtkbO-2WKLmQp2h0CmAj-DfLkA
+    short-id: 5b97
+  server: 93.152.217.41
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 969bcce0-de8a-4b02-8cf8-d00d2d2ca7a5
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-827975777
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 158ms
-  - 🐊59@oneclickvpnkeys
-  - vless-1155246847
+  - vless-1387904064
+  - hysteria2-1290258452
+  - vless-620750824
+  - vless-673696613
   type: select
 rules:
 - MATCH,PROXY

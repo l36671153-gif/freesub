@@ -3,20 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1380057628
+  name: vless-713157148
   port: 443
-  server: 87.120.196.212
-  servername: holo-stream.videocactus.xyz
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  server: 193.148.59.178
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1380057628
+  - vless-713157148
   type: select
 rules:
 - MATCH,PROXY

@@ -1,0 +1,57 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 473463
+  password: BqnqToih0PbU
+  port: 8388
+  server: 51.255.13.232
+  type: ss
+  udp: true
+- name: hysteria2-24391
+  password: dongtaiwang.com
+  port: 22000
+  server: 62.210.124.146
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- client-fingerprint: unsafe
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.206.254 443
+  network: ws
+  port: 443
+  server: 172.67.206.254
+  servername: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 50414e45-4c5f-5a45-5553-5a26a30b00dc
+  ws-opts:
+    headers:
+      Host: 4qzsz6e8u00s.tlzw8le6ubhs.workers.dev
+    path: /stream/PANEL_ZEUS/5a26a30b00dc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 528277
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 473463
+  - hysteria2-24391
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.206.254 443
+  - 🏳️ ShatakVPN 528277
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
