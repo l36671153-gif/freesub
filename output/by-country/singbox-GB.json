@@ -2,70 +2,23 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-838598258",
-      "server": "5.152.223.97",
-      "server_port": 443,
-      "uuid": "be5b6ad6-8184-4b63-82ac-3bc00c09c98c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "strapi.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs",
-          "short_id": "1aa9f3c9021280c0"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-717969008",
+      "server": "149.102.132.184",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "g5h5jleTRSyO3Rk4"
     },
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 467997",
-      "server": "3.9.135.156",
-      "server_port": 51847,
-      "uuid": "391a01e9-b664-407b-9158-610fab3f5920",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tesla.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc",
-          "short_id": "0eec442e7b34d2f2"
-        }
+      "tag": "vless-1230573705",
+      "server": "66.90.104.42",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1405224011",
-      "server": "144.24.225.39",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1402419057",
-      "server": "144.24.226.127",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 397647",
-      "server": "141.98.101.181",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
     },
     {
       "type": "direct",

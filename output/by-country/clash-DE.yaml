@@ -3,44 +3,68 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 125ms
-  port: 443
-  server: nasnet-571299667-direct.mbghalibaf.com
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: de05-grpc-8e47a
-  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-185.255.179.11 9443
+    grpc-service-name: freegrpc
+  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
   network: grpc
-  port: 9443
-  server: 185.255.179.11
-  servername: hub-de-05.hanvpn.cc
+  port: 2087
+  server: 31.56.189.27
+  servername: srv-21bac9.vless.monster
   tls: true
   type: vless
   udp: true
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
-- client-fingerprint: chrome
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- name: 🏳️ ShatakVPN 449746
+  network: ws
+  port: 2087
+  server: 163.8.195.241
+  type: vless
+  udp: true
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  ws-opts:
+    headers: {}
+    path: /29c8fed7ca22
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: freegrpc
+  name: vless-1155246847
+  network: grpc
+  port: 2087
+  server: 31.56.189.27
+  servername: srv-21bac9.vless.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 92ms
+  name: vless-1364589281
   port: 443
-  server: 57.129.96.67
-  servername: nasnet-571299667-direct.mbghalibaf.com
+  reality-opts:
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  server: api-4pda-k9x4m.xubi.org
+  servername: 4pda.to
   tls: true
   type: vless
   udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+- cipher: aes-256-cfb
+  name: shadowsocks-1397805631
+  password: amazonskr05
+  port: 443
+  server: 63.181.79.8
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 125ms
-  - 🔒 VL-GRPC-TLS 🇩🇪 DE-185.255.179.11 9443
-  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 92ms
+  - 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
+  - 🏳️ ShatakVPN 449746
+  - vless-1155246847
+  - vless-1364589281
+  - shadowsocks-1397805631
   type: select
 rules:
 - MATCH,PROXY
