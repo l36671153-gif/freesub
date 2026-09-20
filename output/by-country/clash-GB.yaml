@@ -3,50 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- grpc-opts:
-    grpc-service-name: vless
-  name: vless-1307982448
-  network: grpc
-  port: 2083
-  server: 66.90.104.42
-  type: vless
-  udp: true
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-816748621
-  port: 443
-  reality-opts:
-    public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
-    short-id: 1aa9f3c9021280c0
-  server: 5.152.223.97
-  servername: strapi.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
-- cipher: rc4-md5
-  name: shadowsocks-27285
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  name: vless-1293658711
-  port: 2053
-  reality-opts:
-    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
-    short-id: 9922313fffed1c63
-  server: 46.250.250.149
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-856684694
+  name: vless-838598258
   port: 443
   reality-opts:
     public-key: IFEZmwpGK7VCuDj3kmVdyMn7vUIG8Sntc6TG4eIS3xs
@@ -57,14 +16,48 @@ proxies:
   type: vless
   udp: true
   uuid: be5b6ad6-8184-4b63-82ac-3bc00c09c98c
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 467997
+  port: 51847
+  reality-opts:
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  server: 3.9.135.156
+  servername: www.tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1405224011
+  password: JXVCv3N78Ulr/V2Rsk0UN8DJEzD+yC0cbtWo9zjGTkg=
+  port: 61312
+  server: 144.24.225.39
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1402419057
+  password: J7cXNcIXneBAD5a5hk6nXD68z5BcJtIMepdH646KjtI=
+  port: 61312
+  server: 144.24.226.127
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🏳️ ShatakVPN 397647
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1307982448
-  - vless-816748621
-  - shadowsocks-27285
-  - vless-1293658711
-  - vless-856684694
+  - vless-838598258
+  - 🏳️ ShatakVPN 467997
+  - shadowsocks-1405224011
+  - shadowsocks-1402419057
+  - 🏳️ ShatakVPN 397647
   type: select
 rules:
 - MATCH,PROXY

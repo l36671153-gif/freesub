@@ -3,17 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇷🇺_RU_俄罗斯
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  port: 443
-  server: msk.frkn.org
-  skip-cert-verify: false
-  sni: msk.frkn.org
-  type: hysteria2
+- client-fingerprint: chrome
+  name: 🏳️ ShatakVPN 413458
+  port: 26424
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  server: 45.12.75.242
+  servername: ya.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇷🇺_RU_俄罗斯
+  - 🏳️ ShatakVPN 413458
   type: select
 rules:
 - MATCH,PROXY

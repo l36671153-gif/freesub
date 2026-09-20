@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 115386",
+      "server": "103.139.51.21",
+      "server_port": 443,
+      "uuid": "71b91642-93ed-4923-8cab-877e19bfc2d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "auth.figmafound.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24",
+          "short_id": "711ad7f475c35e5e"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

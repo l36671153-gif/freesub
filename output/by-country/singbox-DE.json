@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 125ms",
+      "server": "nasnet-571299667-direct.mbghalibaf.com",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-GRPC-TLS 🇩🇪 DE-185.255.179.11 9443",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-de-05.hanvpn.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "de05-grpc-8e47a"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 92ms",
+      "server": "57.129.96.67",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

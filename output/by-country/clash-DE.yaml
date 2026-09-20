@@ -1,0 +1,47 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 125ms
+  port: 443
+  server: nasnet-571299667-direct.mbghalibaf.com
+  servername: nasnet-571299667-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: de05-grpc-8e47a
+  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-185.255.179.11 9443
+  network: grpc
+  port: 9443
+  server: 185.255.179.11
+  servername: hub-de-05.hanvpn.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 92ms
+  port: 443
+  server: 57.129.96.67
+  servername: nasnet-571299667-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 125ms
+  - 🔒 VL-GRPC-TLS 🇩🇪 DE-185.255.179.11 9443
+  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 92ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
