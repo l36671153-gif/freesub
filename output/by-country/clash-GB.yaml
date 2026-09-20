@@ -5,25 +5,30 @@ port: 7890
 proxies:
 - grpc-opts:
     grpc-service-name: vless
-  name: vless-1245422997
+  name: vless-1254790076
   network: grpc
   port: 2083
   server: 66.90.104.42
   type: vless
   udp: true
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- name: hysteria2-1005580180
-  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1399190695
   port: 443
-  server: labs.frkn.org
-  skip-cert-verify: true
-  sni: labs.frkn.org
-  type: hysteria2
+  reality-opts:
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  server: 14ang88.snusoed.baby
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1245422997
-  - hysteria2-1005580180
+  - vless-1254790076
+  - vless-1399190695
   type: select
 rules:
 - MATCH,PROXY

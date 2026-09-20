@@ -3,16 +3,58 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1150072930",
-      "server": "163.8.195.241",
-      "server_port": 2087,
-      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
-      "transport": {
-        "type": "ws",
-        "path": "/29c8fed7ca22",
-        "headers": {
-          "Host": "zoom.us"
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms",
+      "server": "108.165.32.16",
+      "server_port": 443,
+      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.logitech.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU",
+          "short_id": "ca3d"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443",
+      "server": "57.129.96.67",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1113474488",
+      "server": "srv-21bac9.vless.monster",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
       }
     },
     {

@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-561641544",
+      "tag": "vless-703656411",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -13,7 +13,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -23,10 +23,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "hysteria2-722298531",
+      "server": "3.36.93.74",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "vless-468901438",
+      "tag": "vless-622951487",
       "server": "3.39.4.109",
-      "server_port": 18967,
+      "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -34,7 +46,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
