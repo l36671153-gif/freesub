@@ -3,7 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 291701
+- name: 🏳️ ShatakVPN 810190
   network: ws
   port: 2087
   server: 189.74.97.47
@@ -16,7 +16,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 291701
+  - 🏳️ ShatakVPN 810190
   type: select
 rules:
 - MATCH,PROXY

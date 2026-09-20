@@ -3,6 +3,30 @@
   "outbounds": [
     {
       "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 247138",
+      "server": "144.31.49.47",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 599919",
+      "server": "144.31.93.126",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "hysteria2-620179978",
       "server": "admin.wwwinternetvideo.click",
       "server_port": 443,
@@ -14,16 +38,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-855833185",
-      "server": "go.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-768399401",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "direct",

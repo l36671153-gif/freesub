@@ -4,29 +4,31 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: firefox
-  name: vless-1260285702
-  port: 2053
+  flow: xtls-rprx-vision
+  name: vless-1009372186
+  port: 12512
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
+  servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: firefox
-  name: vless-1327864776
-  port: 2053
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-260719822
+  port: 10574
   reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   name: vless-522223674
@@ -40,26 +42,61 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
+- name: 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 316ms
+  password: skynet
+  port: 119
+  server: cloud.lakshan.us
+  sni: cloud.lakshan.us
+  type: trojan
+  udp: true
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1411012676
+  name: vless-1385866360
   port: 443
   reality-opts:
-    public-key: jpn2pLj_p5lxGwycLht80v2qNeP7jHwh1Gv-nTU8zXY
-    short-id: ddcd71ec09e5893a
-  server: sg3.miyazono-kaori.com
-  servername: www.changiairport.com
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 355337bc-90f9-4469-8d9a-1e2be6a7a055
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+- client-fingerprint: firefox
+  name: vless-1328619431
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1383481115
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1260285702
-  - vless-1327864776
+  - vless-1009372186
+  - vless-260719822
   - vless-522223674
-  - vless-1411012676
+  - 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 316ms
+  - vless-1385866360
+  - vless-1328619431
+  - vless-1383481115
   type: select
 rules:
 - MATCH,PROXY

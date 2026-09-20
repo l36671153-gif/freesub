@@ -3,37 +3,44 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: unsafe
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.31.37 443
+- alterId: 0
+  cipher: auto
+  name: 🆔soskeynet 🔓 VM-WS-N/A 🇺🇸 US 5ms
   network: ws
-  port: 443
-  server: 104.18.31.37
-  servername: qzz0a4eou1ms.mlm-792d0942.workers.dev
-  tls: true
-  type: vless
+  port: 80
+  server: 188.114.96.19
+  type: vmess
   udp: true
-  uuid: 50414e45-4c5f-5a45-5553-5bc7860646e4
+  uuid: af4be52a-aab3-4db1-a6bb-c23700dcb9c2
   ws-opts:
     headers:
-      Host: qzz0a4eou1ms.mlm-792d0942.workers.dev
-    path: /stream/PANEL_ZEUS/5bc7860646e4
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-700283246
-  port: 23576
+      Host: https.http.www.net.com.ramseyv2.ir.
+    path: /d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 878680
+  password: BqnqToih0PbU
+  port: 8388
+  server: 51.255.13.232
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: vless-1260285720
+  port: 2053
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-  server: 62.210.91.10
-  servername: fuck.rkn
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.18.31.37 443
-  - vless-700283246
+  - 🆔soskeynet 🔓 VM-WS-N/A 🇺🇸 US 5ms
+  - 🏳️ ShatakVPN 878680
+  - vless-1260285720
   type: select
 rules:
 - MATCH,PROXY
