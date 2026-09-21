@@ -3,23 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 908544
-  port: 443
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: d659da01fb94
-  server: 107.181.151.39
-  servername: www.foxsports.com
-  tls: true
-  type: vless
+- cipher: rc4-md5
+  name: shadowsocks-468218595
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.23.32
+  type: ss
   udp: true
-  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 908544
+  - shadowsocks-468218595
   type: select
 rules:
 - MATCH,PROXY

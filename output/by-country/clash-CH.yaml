@@ -4,21 +4,21 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1395251500
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 725072
   port: 443
   reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  server: 34.15.162.1
-  servername: www.cloudflare.com
+    public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
+  server: 138.124.60.146
+  servername: usa.oblaco.bet
   tls: true
   type: vless
   udp: true
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: bbfd1f68-ec64-452f-8404-9e2bcf1df951
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1395251500
+  - 🏳️ ShatakVPN 725072
   type: select
 rules:
 - MATCH,PROXY

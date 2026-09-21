@@ -3,38 +3,19 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1420437698",
-      "server": "de-1.ff-id.xyz",
-      "server_port": 6215,
-      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443",
+      "server": "57.129.96.67",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.astranet.ignorelist.com",
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.ApiService"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1422721042",
-      "server": "130.61.226.114",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "wJJYYALkxTj4TAIgQiiuM0WLYLKjCe9UMc9BIN3peYg="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 417202",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "direct",

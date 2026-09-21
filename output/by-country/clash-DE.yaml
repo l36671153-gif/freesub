@@ -4,37 +4,19 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-  name: vless-1420437698
-  network: grpc
-  port: 6215
-  server: de-1.ff-id.xyz
-  servername: cdn.astranet.ignorelist.com
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443
+  port: 443
+  server: 57.129.96.67
+  servername: nasnet-571299667-direct.mbghalibaf.com
   tls: true
   type: vless
   udp: true
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
-- cipher: 2022-blake3-chacha20-poly1305
-  name: shadowsocks-1422721042
-  password: wJJYYALkxTj4TAIgQiiuM0WLYLKjCe9UMc9BIN3peYg=
-  port: 59924
-  server: 130.61.226.114
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 417202
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1420437698
-  - shadowsocks-1422721042
-  - 🏳️ ShatakVPN 417202
+  - 🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443
   type: select
 rules:
 - MATCH,PROXY
