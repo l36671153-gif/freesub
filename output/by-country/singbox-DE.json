@@ -21,54 +21,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1122091246",
-      "server": "31.56.189.27",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1422721042",
+      "server": "130.61.226.114",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "wJJYYALkxTj4TAIgQiiuM0WLYLKjCe9UMc9BIN3peYg="
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1230196607",
-      "server": "de-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf6.rumedia-cdn.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1107712078",
-      "server": "srv-21bac9.vless.monster",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 417202",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "direct",
