@@ -10,24 +10,10 @@ proxies:
   skip-cert-verify: true
   sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-701346464
-  port: 443
-  reality-opts:
-    public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
-    short-id: 14156e3ac23212cc
-  server: vj37-1936vtw.fincore.top
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e8e81ac-a1c4-4543-b81e-651bf9872b54
 proxy-groups:
 - name: PROXY
   proxies:
   - hysteria2-483633865
-  - vless-701346464
   type: select
 rules:
 - MATCH,PROXY

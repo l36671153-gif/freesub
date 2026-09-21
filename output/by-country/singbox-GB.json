@@ -2,35 +2,44 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1254790076",
-      "server": "66.90.104.42",
-      "server_port": 2083,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "type": "vmess",
+      "tag": "🏳️ ShatakVPN 963217",
+      "server": "66.163.117.58",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "vless",
-      "tag": "vless-1399190695",
-      "server": "14ang88.snusoed.baby",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 148ms",
+      "server": "138.124.125.236",
       "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "14ang88.snusoed.baby",
+        "server_name": "www.cisco.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk",
-          "short_id": "2e124af254a65e7c"
+          "public_key": "nMPuuTmls3qzDHMaTShhGHili6756Jy5NMOvZ4wufho",
+          "short_id": "75adf1"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1230573705",
+      "server": "66.90.104.42",
+      "server_port": 2083,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {

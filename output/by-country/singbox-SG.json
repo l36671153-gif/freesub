@@ -2,12 +2,75 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🏳️ ShatakVPN 505700",
+      "server": "64.120.95.203",
+      "server_port": 119,
+      "password": "skynet",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloud.lakshan.us"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🇺🇸 US-141.193.213.20 8443",
+      "server": "141.193.213.20",
+      "server_port": 8443,
+      "uuid": "29c3dd6b-b164-40ca-a0d5-f06aca52a8b2",
+      "tls": {
+        "enabled": true,
+        "server_name": "u.srilankangrill.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "u.srilankangrill.online"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-212135095",
+      "server": "3.0.111.82",
+      "server_port": 12972,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1249139858",
+      "server": "ww11.levikogjgfdd.ir",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
       "type": "shadowsocks",
-      "tag": "shadowsocks-1340850602",
-      "server": "194.233.74.160",
-      "server_port": 2342,
-      "method": "chacha20-ietf-poly1305",
-      "password": "XV4bvaJIWoxl3IYEC1e6W7"
+      "tag": "shadowsocks-1385010732",
+      "server": "167.150.100.93",
+      "server_port": 29824,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94="
     },
     {
       "type": "direct",

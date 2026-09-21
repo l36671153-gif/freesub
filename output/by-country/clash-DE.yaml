@@ -4,32 +4,40 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
-  port: 443
-  reality-opts:
-    public-key: IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU
-    short-id: ca3d
-  server: 108.165.32.16
-  servername: www.logitech.com
+  grpc-opts:
+    grpc-service-name: api.v1.ApiService
+  name: vless-1420437698
+  network: grpc
+  port: 6215
+  server: de-1.ff-id.xyz
+  servername: cdn.astranet.ignorelist.com
   tls: true
   type: vless
   udp: true
-  uuid: 6dff8e33-b201-4cbb-8f89-b9418702bff2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443
-  port: 443
-  server: 57.129.96.67
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- client-fingerprint: chrome
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: freegrpc
-  name: vless-1113474488
+  name: vless-1122091246
+  network: grpc
+  port: 2087
+  server: 31.56.189.27
+  servername: srv-21bac9.vless.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- name: hysteria2-1230196607
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  port: 25443
+  server: de-node.rumedia-cdn.com
+  skip-cert-verify: true
+  sni: cf6.rumedia-cdn.com
+  type: hysteria2
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: freegrpc
+  name: vless-1107712078
   network: grpc
   port: 2087
   server: srv-21bac9.vless.monster
@@ -41,9 +49,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
-  - 🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443
-  - vless-1113474488
+  - vless-1420437698
+  - vless-1122091246
+  - hysteria2-1230196607
+  - vless-1107712078
   type: select
 rules:
 - MATCH,PROXY

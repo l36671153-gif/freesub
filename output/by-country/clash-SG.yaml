@@ -3,17 +3,63 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1340850602
-  password: XV4bvaJIWoxl3IYEC1e6W7
-  port: 2342
-  server: 194.233.74.160
+- name: 🏳️ ShatakVPN 505700
+  password: skynet
+  port: 119
+  server: 64.120.95.203
+  sni: cloud.lakshan.us
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇺🇸 US-141.193.213.20 8443
+  network: ws
+  port: 8443
+  server: 141.193.213.20
+  servername: u.srilankangrill.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29c3dd6b-b164-40ca-a0d5-f06aca52a8b2
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-212135095
+  port: 12972
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- alterId: 0
+  cipher: auto
+  name: vmess-1249139858
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- cipher: 2022-blake3-aes-256-gcm
+  name: shadowsocks-1385010732
+  password: 2PIuTAxZjzJxni4kxy/GQ36VWTbRrYzl1fjm0ufTR94=
+  port: 29824
+  server: 167.150.100.93
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1340850602
+  - 🏳️ ShatakVPN 505700
+  - 🔒 VL-WS-TLS 🇺🇸 US-141.193.213.20 8443
+  - vless-212135095
+  - vmess-1249139858
+  - shadowsocks-1385010732
   type: select
 rules:
 - MATCH,PROXY

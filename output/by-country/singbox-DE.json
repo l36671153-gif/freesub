@@ -3,44 +3,57 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms",
-      "server": "108.165.32.16",
-      "server_port": 443,
-      "uuid": "6dff8e33-b201-4cbb-8f89-b9418702bff2",
-      "flow": "xtls-rprx-vision",
+      "tag": "vless-1420437698",
+      "server": "de-1.ff-id.xyz",
+      "server_port": 6215,
+      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
       "tls": {
         "enabled": true,
-        "server_name": "www.logitech.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IGIgHNW_hZRsP2DZqItH5wvFSr6H4rqpI9x-0IUCskU",
-          "short_id": "ca3d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443",
-      "server": "57.129.96.67",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "server_name": "cdn.astranet.ignorelist.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "api.v1.ApiService"
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1113474488",
+      "tag": "vless-1122091246",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1230196607",
+      "server": "de-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf6.rumedia-cdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1107712078",
       "server": "srv-21bac9.vless.monster",
       "server_port": 2087,
       "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
@@ -49,7 +62,7 @@
         "server_name": "srv-21bac9.vless.monster",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
