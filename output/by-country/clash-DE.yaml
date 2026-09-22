@@ -1,0 +1,78 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1258042859
+  port: 7443
+  reality-opts:
+    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
+    short-id: d2061bb1
+  server: 31.76.7.154
+  servername: ya.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.ApiService
+  name: vless-1430295967
+  network: grpc
+  port: 6215
+  server: de-1.ff-id.xyz
+  servername: cdn.astranet.ignorelist.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: freegrpc
+  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
+  network: grpc
+  port: 2087
+  server: 31.56.189.27
+  servername: srv-21bac9.vless.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.ApiService
+  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-212.80.7.129 6215
+  network: grpc
+  port: 6215
+  server: 212.80.7.129
+  servername: cdn.astranet.ignorelist.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: api.v1.ApiService
+  name: vless-1439771215
+  network: grpc
+  port: 6215
+  server: 212.80.7.129
+  servername: cdn.astranet.ignorelist.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1258042859
+  - vless-1430295967
+  - 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
+  - 🔒 VL-GRPC-TLS 🇩🇪 DE-212.80.7.129 6215
+  - vless-1439771215
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

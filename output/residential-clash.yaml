@@ -2,26 +2,10 @@ allow-lan: false
 log-level: info
 mode: rule
 port: 7890
-proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1449425512
-  network: ws
-  port: 443
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-    path: /
+proxies: []
 proxy-groups:
 - name: PROXY
-  proxies:
-  - vmess-1449425512
+  proxies: []
   type: select
 rules:
 - MATCH,PROXY

@@ -3,49 +3,18 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 791059
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: 202.146.222.29
-  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: vmess-1449425512
-  network: ws
-  port: 443
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  tls: true
+  name: vmess-1442578447
+  port: 22324
+  server: 89.223.95.77
   type: vmess
   udp: true
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  ws-opts:
-    headers:
-      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-    path: /
-- name: hysteria2-1450810319
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-  type: hysteria2
-- name: hysteria2-892566713
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  type: hysteria2
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 791059
-  - vmess-1449425512
-  - hysteria2-1450810319
-  - hysteria2-892566713
+  - vmess-1442578447
   type: select
 rules:
 - MATCH,PROXY
