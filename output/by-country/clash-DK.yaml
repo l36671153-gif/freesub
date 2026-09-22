@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1334814474
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.207.151.141
+- name: 🛖93@oneclickvpnkeys
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: se.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: vpn-in-001.fastervpn.world
+  sni: se.xiaoliyu.cyou
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1334814474
+  - 🛖93@oneclickvpnkeys
   type: select
 rules:
 - MATCH,PROXY

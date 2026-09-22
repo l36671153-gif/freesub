@@ -3,8 +3,37 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- alterId: 0
+  cipher: auto
+  name: vmess-1440771916
+  port: 22324
+  server: 158.51.123.42
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
-  name: vless-1307937041
+  flow: xtls-rprx-vision
+  name: vless-2314770
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- alterId: 0
+  cipher: auto
+  name: vmess-1444864743
+  port: 22324
+  server: 134.195.198.214
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: chrome
+  name: vless-1307824741
   port: 2053
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
@@ -15,13 +44,6 @@ proxies:
   type: vless
   udp: true
   uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 881691
-  password: FD3rCuOsxOay
-  port: 8388
-  server: 15.235.75.71
-  type: ss
-  udp: true
 - client-fingerprint: qq
   flow: xtls-rprx-vision
   name: vless-827281118
@@ -38,8 +60,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1307937041
-  - 🏳️ ShatakVPN 881691
+  - vmess-1440771916
+  - vless-2314770
+  - vmess-1444864743
+  - vless-1307824741
   - vless-827281118
   type: select
 rules:
