@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇺🇸 US-146.75.84.3 443
+  network: ws
+  port: 443
+  server: 146.75.84.3
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
+  ws-opts:
+    headers:
+      Host: BechBad.global.ssl.fastly.net
+    path: /
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-WS-TLS 🇺🇸 US-146.75.84.3 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
