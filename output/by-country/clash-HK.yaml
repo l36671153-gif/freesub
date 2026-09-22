@@ -3,18 +3,62 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1442578447
-  port: 22324
-  server: 89.223.95.77
-  type: vmess
+- name: hysteria2-1276640913
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2рҹүрҹү
+  type: hysteria2
+- client-fingerprint: chrome
+  name: vless-1442572455
+  network: ws
+  port: 2096
+  server: 172.67.130.159
+  servername: cdn-hk.skyvora.app
+  tls: true
+  type: vless
   udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
+  ws-opts:
+    headers:
+      Host: cdn-hk.skyvora.app
+    path: /f7i3lo6xbs
+- name: hysteria2-468898830
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: 202.146.222.174
+  type: hysteria2
+- name: hysteria2-591633775
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 202.146.222.89
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1440857079
+  port: 20270
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  server: hk-1.gsafevpnapi.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1442578447
+  - hysteria2-1276640913
+  - vless-1442572455
+  - hysteria2-468898830
+  - hysteria2-591633775
+  - vless-1440857079
   type: select
 rules:
 - MATCH,PROXY

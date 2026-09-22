@@ -3,99 +3,122 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-738935847
-  password: wrSuBorIlf
-  port: 443
-  server: hys9.wba-pn.ru
-  skip-cert-verify: true
-  sni: hys9.wba-pn.ru
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 640183
-  password: CJmTCCx7Ltud
-  port: 8388
-  server: 108.181.126.122
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: shiforgrpc
-  name: 🆔spotify_porteghali 🔒 VL-GRPC- ❔ XX 98ms
-  network: grpc
-  port: 8443
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656232591
+  port: 23576
   reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  server: 31.56.184.132
-  servername: cloudflare.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.25
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
-- name: 🏳️ ShatakVPN 492980
-  password: BWAFlp8g53
-  port: 443
-  server: 72.56.102.31
-  skip-cert-verify: true
-  sni: 72.56.102.31
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-482887638
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.149
-  type: ss
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 350969
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.25
+  servername: fuck.rkn
+  tls: true
+  type: vless
   udp: true
-- name: hysteria2-809849018
-  password: 8fb328f0-d8e0-4b11-a6db-3dadfc4f02a3
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🏳️ ShatakVPN 590731
+  password: CnVfXXvMzh
   port: 443
-  server: nl01ntrhy01.tcp-reset-club.net
+  server: 72.56.92.120
   skip-cert-verify: true
-  sni: nl01ntrhy01.tcp-reset-club.net
+  sni: hys13.wba-pn.ru
   type: hysteria2
 - client-fingerprint: chrome
-  name: 🇺🇸 美国 | USA
-  network: ws
-  port: 2096
-  server: 172.67.130.159
-  servername: cdn.skyvora.app
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 581191
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.34
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: bdc5e450-3e2d-4001-928e-e3bc6cecb249
-  ws-opts:
-    headers:
-      Host: cdn.skyvora.app
-    path: /hux9duzm54
-- name: vless-1065158313
-  network: ws
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: 🏳️ ShatakVPN 471388
+  password: CnVfXXvMzh
   port: 443
-  server: 31.76.76.28
+  server: 72.56.92.120
+  skip-cert-verify: true
+  sni: hys13.wba-pn.ru
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656232008
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.12
+  servername: fuck.rkn
+  tls: true
   type: vless
   udp: true
-  uuid: de5906f3-df38-4463-aa9d-2b01320cc6ea
-  ws-opts:
-    headers: {}
-    path: /
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-169
+  name: 🏳️ ShatakVPN 975154
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.202
+  server: 82.38.31.218
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-168
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 402222
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.80
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- name: vless-1386945523
+  network: ws
+  port: 8081
+  server: 132.243.166.247
+  type: vless
+  udp: true
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  ws-opts:
+    headers: {}
+    path: /vless-test
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-738935847
-  - 🏳️ ShatakVPN 640183
-  - 🆔spotify_porteghali 🔒 VL-GRPC- ❔ XX 98ms
-  - 🏳️ ShatakVPN 492980
-  - shadowsocks-482887638
-  - hysteria2-809849018
-  - 🇺🇸 美国 | USA
-  - vless-1065158313
-  - shadowsocks-169
+  - vless-656232591
+  - 🏳️ ShatakVPN 350969
+  - 🏳️ ShatakVPN 590731
+  - 🏳️ ShatakVPN 581191
+  - 🏳️ ShatakVPN 471388
+  - vless-656232008
+  - 🏳️ ShatakVPN 975154
+  - shadowsocks-168
+  - 🏳️ ShatakVPN 402222
+  - vless-1386945523
   type: select
 rules:
 - MATCH,PROXY

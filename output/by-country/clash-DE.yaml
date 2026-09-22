@@ -5,45 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1258042859
-  port: 7443
+  name: vless-1236880268
+  port: 443
   reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  server: 31.76.7.154
-  servername: ya.ru
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  server: 144.31.168.95
+  servername: eu-central.cendora.ru
   tls: true
   type: vless
   udp: true
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-  name: vless-1430295967
-  network: grpc
-  port: 6215
-  server: de-1.ff-id.xyz
-  servername: cdn.astranet.ignorelist.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: freegrpc
-  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
-  network: grpc
-  port: 2087
-  server: 31.56.189.27
-  servername: srv-21bac9.vless.monster
-  tls: true
-  type: vless
-  udp: true
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
-- client-fingerprint: chrome
-  grpc-opts:
     grpc-service-name: api.v1.ApiService
-  name: 🔒 VL-GRPC-TLS 🇩🇪 DE-212.80.7.129 6215
+  name: vless-1425952539
   network: grpc
   port: 6215
   server: 212.80.7.129
@@ -52,26 +28,33 @@ proxies:
   type: vless
   udp: true
   uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 562807
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-  name: vless-1439771215
-  network: grpc
-  port: 6215
-  server: 212.80.7.129
-  servername: cdn.astranet.ignorelist.com
+  flow: xtls-rprx-vision
+  name: vless-1283111929
+  port: 443
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  server: 82.118.19.153
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1258042859
-  - vless-1430295967
-  - 🔒 VL-GRPC-TLS 🇩🇪 DE-31.56.189.27 2087
-  - 🔒 VL-GRPC-TLS 🇩🇪 DE-212.80.7.129 6215
-  - vless-1439771215
+  - vless-1236880268
+  - vless-1425952539
+  - 🏳️ ShatakVPN 562807
+  - vless-1283111929
   type: select
 rules:
 - MATCH,PROXY

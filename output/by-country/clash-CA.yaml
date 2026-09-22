@@ -1,0 +1,56 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: hysteria2-1016364146
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 15.223.122.197
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1003491287
+  port: 443
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1446283773
+  port: 443
+  reality-opts:
+    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
+    short-id: a7c31f92
+  server: 23.132.28.51
+  servername: candy.atlasparser.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
+- name: hysteria2-1122515613
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 15.223.122.197
+  skip-cert-verify: true
+  sni: 15.223.122.197
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - hysteria2-1016364146
+  - vless-1003491287
+  - vless-1446283773
+  - hysteria2-1122515613
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
