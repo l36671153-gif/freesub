@@ -2,27 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🆔configx2ray 🔒 VL-TCP- ❔ XX 92ms",
-      "server": "45.95.96.236",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gesmankos.sadiepinki.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs",
-          "short_id": "4fa44664f6a566d3"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
       "tag": "hysteria2-589844073",
       "server": "151.247.197.253",
@@ -31,18 +10,6 @@
       "tls": {
         "enabled": true,
         "server_name": "151.247.197.253",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-984679229",
-      "server": "35.181.166.40",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-fr-002.fastervpn.world",
         "insecure": true
       }
     },

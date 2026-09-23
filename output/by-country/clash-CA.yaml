@@ -3,25 +3,73 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: shadowsocks-842256759
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.222.155.113
+- alterId: 0
+  cipher: auto
+  name: vmess-1444974392
+  port: 22324
+  server: 158.51.123.42
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1394190232
+  password: mrs2e9a
+  port: 443
+  server: 142.4.216.225
   type: ss
   udp: true
-- name: hysteria2-1120266223
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: 15.223.122.197
-  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: vmess-1440771916
+  port: 22324
+  server: 158.51.123.42
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: chrome
+  name: 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms_1
+  network: ws
+  port: 2096
+  server: 172.67.130.159
+  servername: cdn-ca.skyvora.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1d54a125-8f1e-46bb-9a23-0ecf4ac92db8
+  ws-opts:
+    headers:
+      Host: cdn-ca.skyvora.app
+    path: /fqg7aacd8s?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-18572420
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- alterId: 0
+  cipher: auto
+  name: vmess-1453597057
+  port: 22324
+  server: 158.51.123.42
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-842256759
-  - hysteria2-1120266223
+  - vmess-1444974392
+  - shadowsocks-1394190232
+  - vmess-1440771916
+  - 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms_1
+  - vless-18572420
+  - vmess-1453597057
   type: select
 rules:
 - MATCH,PROXY

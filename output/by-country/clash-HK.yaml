@@ -3,72 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1450810319
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-  type: hysteria2
-- name: hysteria2-951497680
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fclashv8
-  type: hysteria2
-- name: 🇭🇰 香港 | HKG
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: hk2.xiaoliyu.cyou
-  type: hysteria2
-- name: hysteria2-1276640916
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-1453597021
-  port: 22324
-  server: 89.223.95.77
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: vmess-1451344589
-  port: 22324
-  server: 89.223.95.77
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
-  name: 🇭🇰 香港 | HKG_1
-  port: 443
+  flow: xtls-rprx-vision
+  name: vless-1440857079
+  port: 20270
   reality-opts:
-    public-key: tSBJnEt6E1dy6UgX9gX5wUfvZ2KAXjGWVKsEq886OWM
-    short-id: 56d4e7ae4f86fa39
-  server: 34.96.146.210
-  servername: www.cloudflare.com
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  server: hk-1.gsafevpnapi.com
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 90153538-ef08-4942-b8e1-41e7c523e659
+  uuid: 8f2774ba-73fe-404d-a01b-7c01812ff75b
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1450810319
-  - hysteria2-951497680
-  - 🇭🇰 香港 | HKG
-  - hysteria2-1276640916
-  - vmess-1453597021
-  - vmess-1451344589
-  - 🇭🇰 香港 | HKG_1
+  - vless-1440857079
   type: select
 rules:
 - MATCH,PROXY
