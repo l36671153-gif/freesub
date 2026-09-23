@@ -3,6 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-209
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1457379033
+  port: 5432
+  server: 178.215.236.95
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1236880268
@@ -16,45 +32,40 @@ proxies:
   type: vless
   udp: true
   uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-64.226.95.244 2096
+  network: ws
+  port: 2096
+  server: 64.226.95.244
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: api.v1.ApiService
-  name: vless-1425952539
+    grpc-service-name: freegrpc
+  name: vless-1155246847
   network: grpc
-  port: 6215
-  server: 212.80.7.129
-  servername: cdn.astranet.ignorelist.com
+  port: 2087
+  server: 31.56.189.27
+  servername: srv-21bac9.vless.monster
   tls: true
   type: vless
   udp: true
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 562807
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1283111929
-  port: 443
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  server: 82.118.19.153
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  uuid: df9f5aca-eda0-428f-a752-e53866153d12
 proxy-groups:
 - name: PROXY
   proxies:
+  - shadowsocks-209
+  - vless-1457379033
   - vless-1236880268
-  - vless-1425952539
-  - 🏳️ ShatakVPN 562807
-  - vless-1283111929
+  - 🔒 VL-WS-TLS 🇩🇪 DE-64.226.95.244 2096
+  - vless-1155246847
   type: select
 rules:
 - MATCH,PROXY
