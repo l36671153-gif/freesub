@@ -3,31 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1444974392
-  port: 22324
-  server: 158.51.123.42
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1394190232
-  password: mrs2e9a
-  port: 443
-  server: 142.4.216.225
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1440771916
-  port: 22324
-  server: 158.51.123.42
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - client-fingerprint: chrome
-  name: 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms_1
+  name: 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms
   network: ws
   port: 2096
   server: 172.67.130.159
@@ -40,9 +17,21 @@ proxies:
     headers:
       Host: cdn-ca.skyvora.app
     path: /fqg7aacd8s?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
+- client-fingerprint: firefox
+  name: vless-1293658703
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-18572420
+  name: vless-1011511851
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -53,23 +42,25 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- alterId: 0
-  cipher: auto
-  name: vmess-1453597057
-  port: 22324
-  server: 158.51.123.42
-  type: vmess
+- client-fingerprint: random
+  name: vless-1275300277
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
   udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1444974392
-  - shadowsocks-1394190232
-  - vmess-1440771916
-  - 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms_1
-  - vless-18572420
-  - vmess-1453597057
+  - 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms
+  - vless-1293658703
+  - vless-1011511851
+  - vless-1275300277
   type: select
 rules:
 - MATCH,PROXY

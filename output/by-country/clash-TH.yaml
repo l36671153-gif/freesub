@@ -4,6 +4,30 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
+  name: vless-1466680096
+  port: 443
+  reality-opts:
+    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
+    short-id: 856c0a3cd1426a5c
+  server: 34.15.176.240
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
+- client-fingerprint: safari
+  name: vless-1383435324
+  port: 443
+  reality-opts:
+    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
+    short-id: ca672c53fbbac555
+  server: 34.15.162.1
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+- client-fingerprint: chrome
   name: vless-1461786624
   port: 443
   reality-opts:
@@ -15,23 +39,24 @@ proxies:
   type: vless
   udp: true
   uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-- client-fingerprint: chrome
-  name: vless-1395251500
-  port: 443
-  reality-opts:
-    public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-    short-id: ca672c53fbbac555
-  server: 34.15.162.1
-  servername: www.cloudflare.com
-  tls: true
+- name: 🆔surfboardv2ray 🔓 VL-WS-N/A ❔ XX down
+  network: ws
+  port: 80
+  server: 103.86.49.57
   type: vless
   udp: true
-  uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  ws-opts:
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+    path: /ws
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1466680096
+  - vless-1383435324
   - vless-1461786624
-  - vless-1395251500
+  - 🆔surfboardv2ray 🔓 VL-WS-N/A ❔ XX down
   type: select
 rules:
 - MATCH,PROXY

@@ -15,18 +15,10 @@ proxies:
   type: vless
   udp: true
   uuid: 3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc
-- name: hysteria2-1111846096
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-in-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vk.com
-  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - vless-1422276493
-  - hysteria2-1111846096
   type: select
 rules:
 - MATCH,PROXY
