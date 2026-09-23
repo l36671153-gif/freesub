@@ -4,37 +4,43 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 207ms
+  port: 443
+  server: pl4.moritech.net
+  servername: pl4.moritech.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: TunService
-  name: vless-1126122351
+  name: 🏳️ ShatakVPN 619574
   network: grpc
   port: 33743
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  server: 185.223.57.16
+  server: 185.223.57.10
   servername: www.google.com
   tls: true
   type: vless
   udp: true
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-- name: hysteria2-620179978
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔spotify_porteghali 🔒 VL-TCP-N/A ❔ XX down
   port: 443
-  server: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
-- name: 🏳️ ShatakVPN 328156
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  port: 443
-  server: 144.31.49.47
-  skip-cert-verify: true
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
-- client-fingerprint: firefox
+  server: 144.31.5.64
+  servername: pl6.moritech.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: TunService
-  name: vless-1105975118
+  name: vless-1141367415
   network: grpc
   port: 33743
   reality-opts:
@@ -48,10 +54,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1126122351
-  - hysteria2-620179978
-  - 🏳️ ShatakVPN 328156
-  - vless-1105975118
+  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 207ms
+  - 🏳️ ShatakVPN 619574
+  - 🆔spotify_porteghali 🔒 VL-TCP-N/A ❔ XX down
+  - vless-1141367415
   type: select
 rules:
 - MATCH,PROXY

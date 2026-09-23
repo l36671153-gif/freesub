@@ -3,25 +3,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-GRPC- ❔ XX 129ms",
-      "server": "92.255.79.246",
+      "tag": "🔒 VL-WS-TLS 🇺🇸 US-151.101.56.7 443",
+      "server": "151.101.56.7",
       "server_port": 443,
-      "uuid": "8057eabc-921d-0001-9acb-80ccc6b48379",
+      "uuid": "8abb648a-b004-42a4-aa05-49cdc2f94d4e",
       "tls": {
         "enabled": true,
-        "server_name": "supbober.mafioznik.xyz",
+        "server_name": "global.fastly.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "Lizat"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "kayko.global.ssl.fastly.net"
+        }
       }
     },
     {

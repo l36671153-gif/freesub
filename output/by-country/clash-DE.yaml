@@ -3,69 +3,24 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-209
-  password: 1hhrqrokj3ag
-  port: 8388
-  server: 209.46.102.22
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1457379033
-  port: 5432
-  server: 178.215.236.95
-  tls: true
-  type: vless
-  udp: true
-  uuid: cc01f435-d561-4525-bf1f-7a9876d33207
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1236880268
-  port: 443
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  server: 144.31.168.95
-  servername: eu-central.cendora.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-64.226.95.244 2096
-  network: ws
-  port: 2096
-  server: 64.226.95.244
-  servername: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /
 - client-fingerprint: firefox
   grpc-opts:
-    grpc-service-name: freegrpc
-  name: vless-1155246847
+    grpc-service-name: Lizat
+  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 129ms
   network: grpc
-  port: 2087
-  server: 31.56.189.27
-  servername: srv-21bac9.vless.monster
+  port: 443
+  reality-opts:
+    public-key: 8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700
+  server: 92.255.79.246
+  servername: supbober.mafioznik.xyz
   tls: true
   type: vless
   udp: true
-  uuid: df9f5aca-eda0-428f-a752-e53866153d12
+  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-209
-  - vless-1457379033
-  - vless-1236880268
-  - 🔒 VL-WS-TLS 🇩🇪 DE-64.226.95.244 2096
-  - vless-1155246847
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 129ms
   type: select
 rules:
 - MATCH,PROXY
