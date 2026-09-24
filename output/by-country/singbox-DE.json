@@ -3,27 +3,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 698678",
-      "server": "57.129.41.216",
-      "server_port": 80,
-      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "OV-Germany1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.130.159 2096",
-      "server": "172.67.130.159",
-      "server_port": 2096,
-      "uuid": "735b8344-0b95-464c-b687-1c5616138908",
+      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 152ms",
+      "server": "rubifen.adaspoloandco.com",
+      "server_port": 443,
+      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-de.skyvora.app",
+        "server_name": "rubifen.adaspoloandco.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -31,60 +17,40 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/3cagtz3",
-        "headers": {
-          "Host": "cdn-de.skyvora.app"
-        }
+        "path": "/GOrbEh",
+        "headers": {}
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1115899893",
-      "server": "srv-21bac9.vless.monster",
+      "tag": "🏳️ ShatakVPN 757601",
+      "server": "163.8.195.241",
       "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "uuid": "56ba5d34-ef22-4ba6-8090-4188b807df54",
+      "transport": {
+        "type": "ws",
+        "path": "/29c8fed7ca22",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1430295967",
+      "server": "de-1.ff-id.xyz",
+      "server_port": 6215,
+      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
       "tls": {
         "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
+        "server_name": "cdn.astranet.ignorelist.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "freegrpc"
+        "service_name": "api.v1.ApiService"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1236880268",
-      "server": "144.31.168.95",
-      "server_port": 443,
-      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "eu-central.cendora.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
-          "short_id": "00bca5982f82d083"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1451344574",
-      "server": "216.106.187.60",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
     },
     {
       "type": "direct",

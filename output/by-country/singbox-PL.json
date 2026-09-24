@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1105975116",
+      "tag": "vless-1464518690",
       "server": "185.223.57.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -22,22 +22,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443",
-      "server": "144.31.2.33",
-      "server_port": 443,
-      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.moritech.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
       }
     },
     {
