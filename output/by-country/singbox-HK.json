@@ -2,68 +2,51 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1442577451",
-      "server": "2.27.109.179",
-      "server_port": 45464,
-      "password": "XuMweB2PWs",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.27.109.179.sslip.io"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "hysteria2-1276640916",
+      "tag": "hysteria2-920243840",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2ðð",
+        "server_name": "https://t.me/wangcai2üá",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1458921390",
-      "server": "hk-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "8f2774ba-73fe-404d-a01b-7c01812ff75b",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "hysteria2-1489771569",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8",
-          "short_id": "d5b538acf8a93540"
-        }
+        "server_name": "hk01.kfc-520.com",
+        "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1486197107",
-      "server": "hk-1.gsafevpnapi.com",
-      "server_port": 20270,
-      "uuid": "8f2774ba-73fe-404d-a01b-7c01812ff75b",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "hysteria2-985469468",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8",
-          "short_id": "d5b538acf8a93540"
-        }
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-650663575",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.174",
+        "insecure": true
       }
     },
     {

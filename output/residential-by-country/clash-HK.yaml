@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 728271
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: 91.196.32.163
+- name: hysteria2-1489771569
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  port: 60001
+  server: hk01.kfc-520.com
   skip-cert-verify: true
-  sni: germany3.h2corp.local
+  sni: hk01.kfc-520.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 728271
+  - hysteria2-1489771569
   type: select
 rules:
 - MATCH,PROXY

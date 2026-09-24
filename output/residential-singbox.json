@@ -2,6 +2,18 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "hysteria2-1489771569",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk01.kfc-520.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },

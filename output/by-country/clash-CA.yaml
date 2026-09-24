@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-18572420
+  name: vless-1109241417
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -16,46 +16,38 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- name: 🏳️ ShatakVPN 526281
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-874745011
   port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: t.me
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-126255519
-  port: 41373
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: chrome
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-692622873
-  port: 41373
+  name: vless-1454572225
+  port: 443
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
+    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
+    short-id: a7c31f92
+  server: 23.132.28.51
+  servername: candy.atlasparser.site
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: dcf8e133-09a2-4884-abf9-80356bb334ac
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-18572420
-  - 🏳️ ShatakVPN 526281
-  - vless-126255519
-  - vless-692622873
+  - vless-1109241417
+  - vless-874745011
+  - vless-1454572225
   type: select
 rules:
 - MATCH,PROXY

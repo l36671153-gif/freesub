@@ -2,10 +2,18 @@ allow-lan: false
 log-level: info
 mode: rule
 port: 7890
-proxies: []
+proxies:
+- name: hysteria2-1489771569
+  password: 8cb0c4fb-03ee-35b8-a47b-cd1d7e76dfd3
+  port: 60001
+  server: hk01.kfc-520.com
+  skip-cert-verify: true
+  sni: hk01.kfc-520.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
-  proxies: []
+  proxies:
+  - hysteria2-1489771569
   type: select
 rules:
 - MATCH,PROXY

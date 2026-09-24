@@ -3,26 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1469368169
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1014144002
+  port: 28364
+  reality-opts:
+    public-key: NPhCET0GkjSZuKg4vWsPHLvjYGHW9w99Ucxvavu0-1I
+    short-id: 7241c359c2dfab
+  server: 104.199.134.231
+  servername: www.sony.com
+  tls: true
+  type: vless
   udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- name: hysteria2-848874255
+  uuid: 3a62a0c2-ba80-43a9-b757-9aca88b0552e
+- name: hysteria2-468892442
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
+  sni: css.rbxcdn.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1469368169
-  - hysteria2-848874255
+  - vless-1014144002
+  - hysteria2-468892442
   type: select
 rules:
 - MATCH,PROXY
