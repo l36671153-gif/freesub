@@ -3,21 +3,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1425952539",
-      "server": "212.80.7.129",
-      "server_port": 6215,
-      "uuid": "2f2ae482-5a3e-455e-aad6-4ac28a82f64f",
+      "tag": "vless-1482807166",
+      "server": "defrnode.jumpernode.online",
+      "server_port": 443,
+      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.astranet.ignorelist.com",
+        "server_name": "buckeye-retail-website.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
+          "short_id": "5c6481cdd4"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "api.v1.ApiService"
       }
     },
     {

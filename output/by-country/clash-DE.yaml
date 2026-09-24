@@ -3,22 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-  name: vless-1425952539
-  network: grpc
-  port: 6215
-  server: 212.80.7.129
-  servername: cdn.astranet.ignorelist.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1482807166
+  port: 443
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  server: defrnode.jumpernode.online
+  servername: buckeye-retail-website.amazon.com
   tls: true
   type: vless
   udp: true
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1425952539
+  - vless-1482807166
   type: select
 rules:
 - MATCH,PROXY

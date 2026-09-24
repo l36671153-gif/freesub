@@ -3,9 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- name: hysteria2-1230577883
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  port: 25443
+  server: se-node.rumedia-cdn.com
+  skip-cert-verify: false
+  sni: cf2.rumedia-cdn.com
+  type: hysteria2
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🇸🇪 瑞典 | SWE
+  name: vless-1475443219
   port: 443
   reality-opts:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
@@ -19,7 +26,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇸🇪 瑞典 | SWE
+  - hysteria2-1230577883
+  - vless-1475443219
   type: select
 rules:
 - MATCH,PROXY

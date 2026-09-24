@@ -3,37 +3,56 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 116ms
-  port: 9443
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: ad20d2ba
-  server: 194.150.166.108
-  servername: storage.yandexcloud.net
-  tls: true
+- grpc-opts:
+    grpc-service-name: vless
+  name: vless-1483330744
+  network: grpc
+  port: 2083
+  server: 66.90.105.211
   type: vless
   udp: true
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1485587877
-  port: 443
+  name: 🏳️ ShatakVPN 813365
+  port: 51847
   reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
-  servername: speed.cloudflare.com
+    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
+    short-id: 0eec442e7b34d2f2
+  server: 3.9.135.156
+  servername: www.tesla.com
   tls: true
   type: vless
   udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  uuid: 391a01e9-b664-407b-9158-610fab3f5920
+- grpc-opts:
+    grpc-service-name: vless
+  name: 🆔ar14n24b 🔓 VL-GRPC-N/A ❔ XX 125ms
+  network: grpc
+  port: 2083
+  server: 66.90.105.211
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- client-fingerprint: random
+  name: vless-1471632625
+  port: 443
+  reality-opts:
+    public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
+    short-id: 1b580f160d965b01
+  server: 35.234.143.34
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9743b4f9-24c3-4e53-8b03-c3b5cd9b71b2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 116ms
-  - vless-1485587877
+  - vless-1483330744
+  - 🏳️ ShatakVPN 813365
+  - 🆔ar14n24b 🔓 VL-GRPC-N/A ❔ XX 125ms
+  - vless-1471632625
   type: select
 rules:
 - MATCH,PROXY
