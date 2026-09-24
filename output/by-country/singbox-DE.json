@@ -3,15 +3,88 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 95ms",
-      "server": "82.24.203.20",
-      "server_port": 2087,
-      "uuid": "5fcdc9b7-e70f-4a5c-85c3-e018ad818326",
+      "tag": "🏳️ ShatakVPN 698678",
+      "server": "57.129.41.216",
+      "server_port": 80,
+      "uuid": "7d74eae4-8a06-4306-a923-ad686f30bf26",
       "transport": {
         "type": "ws",
-        "path": "/fd5ba98a3970",
-        "headers": {}
+        "path": "/vless/",
+        "headers": {
+          "Host": "OV-Germany1.09vpn.com"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.130.159 2096",
+      "server": "172.67.130.159",
+      "server_port": 2096,
+      "uuid": "735b8344-0b95-464c-b687-1c5616138908",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn-de.skyvora.app",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/3cagtz3",
+        "headers": {
+          "Host": "cdn-de.skyvora.app"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1115899893",
+      "server": "srv-21bac9.vless.monster",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1236880268",
+      "server": "144.31.168.95",
+      "server_port": 443,
+      "uuid": "423b1d79-08c4-403f-9d5e-c541f791b55f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "eu-central.cendora.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI",
+          "short_id": "00bca5982f82d083"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1451344574",
+      "server": "216.106.187.60",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

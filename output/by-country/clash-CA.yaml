@@ -3,35 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms
-  network: ws
-  port: 2096
-  server: 172.67.130.159
-  servername: cdn-ca.skyvora.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d54a125-8f1e-46bb-9a23-0ecf4ac92db8
-  ws-opts:
-    headers:
-      Host: cdn-ca.skyvora.app
-    path: /fqg7aacd8s?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
-- client-fingerprint: firefox
-  name: vless-1293658703
-  port: 2053
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  server: 66.70.179.198
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1011511851
+  name: vless-703656407
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-24252274
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -42,25 +29,11 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: random
-  name: vless-1275300277
-  port: 2053
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  server: 66.70.179.198
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms
-  - vless-1293658703
-  - vless-1011511851
-  - vless-1275300277
+  - vless-703656407
+  - vless-24252274
   type: select
 rules:
 - MATCH,PROXY

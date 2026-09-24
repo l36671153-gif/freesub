@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1152643409",
+      "tag": "vless-1105975116",
       "server": "185.223.57.10",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -12,7 +12,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -25,12 +25,20 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 99ms",
-      "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
+      "type": "vless",
+      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443",
+      "server": "144.31.2.33",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl3.moritech.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "direct",

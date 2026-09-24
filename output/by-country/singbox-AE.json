@@ -3,15 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-864923376",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
+      "tag": "vless-1317297744",
+      "server": "89.125.147.199",
+      "server_port": 443,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "iQJ8UdFw-lUWa9mXugescYHkmwNH96nuj_z-LAZvfxg",
+          "short_id": "f6c7c139b9c938db"
         }
       }
     },

@@ -3,8 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-702041231
+- client-fingerprint: edge
+  name: vless-648965652
   port: 8443
   server: 94.183.170.135
   servername: estproxy4.lockdwn.com
@@ -12,7 +12,7 @@ proxies:
   type: vless
   udp: true
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-- name: 🏳️ ShatakVPN 649867
+- name: 🏳️ ShatakVPN 382229
   password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   port: 443
   server: 217.60.182.79
@@ -22,8 +22,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-702041231
-  - 🏳️ ShatakVPN 649867
+  - vless-648965652
+  - 🏳️ ShatakVPN 382229
   type: select
 rules:
 - MATCH,PROXY

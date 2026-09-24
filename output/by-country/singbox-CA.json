@@ -3,49 +3,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔capoit 🔒 VL-WS-N/A ❔ XX 2ms",
-      "server": "172.67.130.159",
-      "server_port": 2096,
-      "uuid": "1d54a125-8f1e-46bb-9a23-0ecf4ac92db8",
+      "tag": "vless-703656407",
+      "server": "158.69.112.254",
+      "server_port": 443,
+      "uuid": "661f395d-b153-4199-a04b-693f5fe7f261",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-ca.skyvora.app",
+        "server_name": "www.speedtest.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/fqg7aacd8s?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512",
-        "headers": {
-          "Host": "cdn-ca.skyvora.app"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1293658703",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
+          "public_key": "wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y",
+          "short_id": "3d3c1e645f763ee3"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1011511851",
+      "tag": "vless-24252274",
       "server": "130.107.73.148",
       "server_port": 41373,
       "uuid": "a71c8954-66a8-4321-bedb-2336230d81ce",
@@ -55,32 +34,12 @@
         "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU",
           "short_id": "0e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1275300277",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
         }
       }
     },
