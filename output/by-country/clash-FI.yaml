@@ -3,17 +3,35 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1486293138
-  password: dissolved-vpn-pass
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1381769945
   port: 443
-  server: dissolvedvpn.eu.cc
-  skip-cert-verify: true
-  sni: dissolvedvpn.eu.cc
-  type: hysteria2
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  server: est1313.ggisopi.su
+  servername: est1313.ggisopi.su
+  tls: true
+  type: vless
+  udp: true
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: vless-1443832160
+  network: grpc
+  port: 443
+  server: 2.27.175.71
+  servername: assets-fi.pleiades.codes
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1486293138
+  - vless-1381769945
+  - vless-1443832160
   type: select
 rules:
 - MATCH,PROXY
