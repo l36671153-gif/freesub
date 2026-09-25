@@ -2,23 +2,26 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇩🇪DE_6|3.9MB/s",
+      "server": "130.61.234.166",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "ro2l0yH/AWb1O6na+0S1I6VmbTNVvIH1ZW+lE9JEQXU="
+    },
+    {
       "type": "vless",
-      "tag": "vless-1482807166",
-      "server": "defrnode.jumpernode.online",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443",
+      "server": "144.31.159.86",
       "server_port": 443,
-      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "uuid": "b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "buckeye-retail-website.amazon.com",
+        "server_name": "de3.duck-proxy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
-          "short_id": "5c6481cdd4"
+          "fingerprint": "safari"
         }
       }
     },
