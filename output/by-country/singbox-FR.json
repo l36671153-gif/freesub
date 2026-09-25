@@ -2,45 +2,43 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1493600931",
-      "server": "51.68.215.88",
+      "type": "hysteria2",
+      "tag": "hysteria2-1507423268",
+      "server": "35.181.166.40",
       "server_port": 443,
-      "uuid": "0774160b-be44-4781-aad7-1a1745a36659",
-      "flow": "xtls-rprx-vision",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg",
-          "short_id": "6337fd42719a0912"
-        }
+        "server_name": "vpn-fr-002.fastervpn.world#🪐33@oneclickvpnkeysvless://f495298f-2bdb-4fd8-9ac9-5dd33d1b482a@185.171.202.106:443?encryption=none",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1498342261",
-      "server": "51.68.215.88",
+      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443",
+      "server": "162.19.10.99",
       "server_port": 443,
-      "uuid": "0774160b-be44-4781-aad7-1a1745a36659",
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.icloud.com",
+        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "x-oA2H8zwILFq4PCZvvJPzUlawE2ADkVUXG3h9m2-hg",
-          "short_id": "6337fd42719a0912"
+          "fingerprint": "chrome"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1004725118",
+      "server": "35.181.166.40",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "35.181.166.40",
+        "insecure": true
       }
     },
     {

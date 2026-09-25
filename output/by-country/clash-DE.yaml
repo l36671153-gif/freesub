@@ -3,20 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443
-  port: 443
-  server: 144.31.159.86
-  servername: de3.duck-proxy.com
+  name: vless-1509185254
+  port: 64358
+  reality-opts:
+    public-key: SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw
+    short-id: b5f4173070b1e044
+  server: lxv2xt3x.danqela.ir
+  servername: play.google.com
   tls: true
   type: vless
   udp: true
-  uuid: b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5
+  uuid: a5f3e491-23aa-4293-a37a-93b20796adc2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443
+  - vless-1509185254
   type: select
 rules:
 - MATCH,PROXY

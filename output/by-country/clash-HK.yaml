@@ -10,18 +10,26 @@ proxies:
   skip-cert-verify: true
   sni: 202.146.222.174
   type: hysteria2
-- name: hysteria2-483633862
+- name: hysteria2-985469468
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.29
+  server: 202.146.222.89
   skip-cert-verify: true
-  sni: speedtest.tinkoff.ru
+  sni: vk.com
+  type: hysteria2
+- name: hysteria2-721489373
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: t.me
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - hysteria2-468898830
-  - hysteria2-483633862
+  - hysteria2-985469468
+  - hysteria2-721489373
   type: select
 rules:
 - MATCH,PROXY

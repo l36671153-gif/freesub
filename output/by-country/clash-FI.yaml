@@ -4,34 +4,21 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1381769945
-  port: 443
+  name: vless-308285377
+  port: 448
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  server: est1313.ggisopi.su
-  servername: est1313.ggisopi.su
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  server: 185.79.138.71
+  servername: www.samsung.com
   tls: true
   type: vless
   udp: true
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-  name: vless-1443832160
-  network: grpc
-  port: 443
-  server: 2.27.175.71
-  servername: assets-fi.pleiades.codes
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1381769945
-  - vless-1443832160
+  - vless-308285377
   type: select
 rules:
 - MATCH,PROXY
