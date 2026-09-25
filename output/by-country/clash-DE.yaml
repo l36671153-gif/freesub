@@ -3,28 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪DE_6|3.9MB/s
-  password: ro2l0yH/AWb1O6na+0S1I6VmbTNVvIH1ZW+lE9JEQXU=
-  port: 59924
-  server: 130.61.234.166
-  type: ss
-  udp: true
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443
-  port: 443
-  server: 144.31.159.86
-  servername: de3.duck-proxy.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5
+- name: socks_168.222.43.35_8443
+  password: V2RayyNGvpn-V2RayyNGvpn
+  port: 8443
+  server: 168.222.43.35
+  type: socks5
+  username: KH6JSw8o
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇩🇪DE_6|3.9MB/s
-  - 🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443
+  - socks_168.222.43.35_8443
   type: select
 rules:
 - MATCH,PROXY

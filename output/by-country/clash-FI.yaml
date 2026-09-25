@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1393931802
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  port: 22443
-  server: 91.240.86.70
+- name: hysteria2-1486293138
+  password: dissolved-vpn-pass
+  port: 443
+  server: dissolvedvpn.eu.cc
   skip-cert-verify: true
-  sni: itsallproxy.quattro-tech.ru
+  sni: dissolvedvpn.eu.cc
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1393931802
+  - hysteria2-1486293138
   type: select
 rules:
 - MATCH,PROXY

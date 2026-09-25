@@ -3,27 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: shadowsocks-717969059
-  password: LXchLsIwtCeUAUgu
-  port: 443
-  server: 149.102.149.207
+- cipher: 2022-blake3-aes-256-gcm
+  name: shadowsocks-1203537773
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  port: 2083
+  server: 51.38.71.51
   type: ss
   udp: true
-- grpc-opts:
-    grpc-service-name: vless
-  name: vless-1245369769
-  network: grpc
-  port: 2083
-  server: 66.90.104.42
-  type: vless
-  udp: true
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-717969059
-  - vless-1245369769
+  - shadowsocks-1203537773
   type: select
 rules:
 - MATCH,PROXY

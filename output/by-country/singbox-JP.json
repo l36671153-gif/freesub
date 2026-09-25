@@ -2,16 +2,71 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-211",
-      "server": "149.22.87.241",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "type": "vless",
+      "tag": "vless-1048993114",
+      "server": "13.231.19.51",
+      "server_port": 11690,
+      "uuid": "e2b8b217-cffb-4d66-9b8b-eca6e4334032",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg",
+          "short_id": "034885e346fd30"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1481350490",
+      "server": "45.32.57.118",
+      "server_port": 4433,
+      "uuid": "35b89832-0a7c-48dd-8d1c-a2891b522195",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1501696968",
+      "server": "msjp.mangshe.xyz",
+      "server_port": 20561,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "msjp.mangshe.xyz",
+        "insecure": false
+      }
     },
     {
       "type": "vless",
-      "tag": "vless-1149851385",
+      "tag": "vless-1503916027",
+      "server": "38.207.130.15",
+      "server_port": 443,
+      "uuid": "e4cd263b-c5c7-4410-bf61-8893179ec429",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE",
+          "short_id": "6d962e8d8a0dce"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-222487013",
       "server": "3.114.220.22",
       "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -21,7 +76,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -32,9 +87,9 @@
     },
     {
       "type": "vless",
-      "tag": "vless-212135096",
+      "tag": "vless-10287041",
       "server": "3.114.220.22",
-      "server_port": 10583,
+      "server_port": 18007,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -53,9 +108,9 @@
     },
     {
       "type": "vless",
-      "tag": "vless-479071124",
+      "tag": "vless-742657273",
       "server": "3.114.220.22",
-      "server_port": 10583,
+      "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -63,55 +118,12 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
           "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
           "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-700888653",
-      "server": "3.114.220.22",
-      "server_port": 10583,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1162311161",
-      "server": "162.159.254.3",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
         }
       }
     },

@@ -3,24 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🇸🇬SG_6|1.3MB/s
-  network: ws
-  port: 8443
-  server: 45.80.108.7
-  servername: speed.dulacloud.store
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7967bf59-57e3-4cde-9898-527b0fe60022
-  ws-opts:
-    headers:
-      Host: speed.dulacloud.store
-    path: /dula?Telegram-WangCai2fp=chrome
-- client-fingerprint: firefox
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: vless-470977999
-  port: 10574
+  name: vless-522223672
+  port: 17623
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -30,28 +16,52 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-951928342
-  password: f87376e17da040ed04c9665ce8972930
-  port: 50160
-  server: 138.2.73.238
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-685048480
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-480356407
+  port: 17623
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1384584623
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1385866360
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇸🇬SG_6|1.3MB/s
-  - vless-470977999
-  - hysteria2-951928342
-  - vmess-685048480
+  - vless-522223672
+  - vless-480356407
+  - vless-1384584623
+  - vless-1385866360
   type: select
 rules:
 - MATCH,PROXY

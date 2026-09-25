@@ -2,13 +2,40 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "vmess-1459593697",
-      "server": "89.223.95.77",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
+      "type": "hysteria2",
+      "tag": "hysteria2-655838404",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-721489367",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "t.me",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 609741",
+      "server": "202.146.222.29",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.29",
+        "insecure": true
+      }
     },
     {
       "type": "direct",

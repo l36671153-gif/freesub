@@ -2,28 +2,12 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪DE_6|3.9MB/s",
-      "server": "130.61.234.166",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "ro2l0yH/AWb1O6na+0S1I6VmbTNVvIH1ZW+lE9JEQXU="
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443",
-      "server": "144.31.159.86",
-      "server_port": 443,
-      "uuid": "b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de3.duck-proxy.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      }
+      "type": "socks",
+      "tag": "socks_168.222.43.35_8443",
+      "server": "168.222.43.35",
+      "server_port": 8443,
+      "username": "KH6JSw8o",
+      "password": "V2RayyNGvpn-V2RayyNGvpn"
     },
     {
       "type": "direct",
