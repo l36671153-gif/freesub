@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-cfb
-  name: shadowsocks-1503620380
+  name: 🇸🇪 瑞典 | SWE
   password: amazonskr05
   port: 443
-  server: 51.20.86.152
+  server: 13.49.64.122
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1503620380
+  - 🇸🇪 瑞典 | SWE
   type: select
 rules:
 - MATCH,PROXY

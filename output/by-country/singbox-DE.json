@@ -3,24 +3,27 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1509185254",
-      "server": "lxv2xt3x.danqela.ir",
-      "server_port": 64358,
-      "uuid": "a5f3e491-23aa-4293-a37a-93b20796adc2",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-144.31.159.86 443",
+      "server": "144.31.159.86",
+      "server_port": 443,
+      "uuid": "b5d6221d-e3ad-4453-b5c6-8bf7ccaa7aa5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "de3.duck-proxy.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SAEWzHGGBsp8haTh34RoN5NwoxiCgZzzJo7jWi-DJXw",
-          "short_id": "b5f4173070b1e044"
+          "fingerprint": "safari"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 322719",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
     },
     {
       "type": "direct",

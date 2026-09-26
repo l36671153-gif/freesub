@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 839995
+- name: hysteria2-855833185
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
-  server: 45.192.12.93
-  skip-cert-verify: false
+  server: go.wwwinternetvideo.click
+  skip-cert-verify: true
   sni: admin.wwwinternetvideo.click
   type: hysteria2
-- client-fingerprint: qq
+- client-fingerprint: ios
   grpc-opts:
     grpc-service-name: TunService
-  name: vless-1105975127
+  name: vless-1105975124
   network: grpc
   port: 33743
   reality-opts:
@@ -24,25 +24,26 @@ proxies:
   type: vless
   udp: true
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1394615931
-  port: 443
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: TunService
+  name: vless-1126122373
+  network: grpc
+  port: 33743
   reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  server: 144.31.131.38
-  servername: prod.pl-node-01.security-sbrf.ru
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  server: 185.223.57.16
+  servername: www.google.com
   tls: true
   type: vless
   udp: true
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 839995
-  - vless-1105975127
-  - vless-1394615931
+  - hysteria2-855833185
+  - vless-1105975124
+  - vless-1126122373
   type: select
 rules:
 - MATCH,PROXY

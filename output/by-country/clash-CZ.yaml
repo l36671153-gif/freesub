@@ -1,0 +1,25 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇨🇿 捷克 | CZE
+  port: 443
+  reality-opts:
+    public-key: QfdR5yEjdbaqSet3-XrkDdVjPO9VTRGlUI-MV-b4p38
+  server: 13.143.181.220
+  servername: msk1.maxtelemost.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7a8d2c3f-d6dd-0004-81d8-cff23d8364ee
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇨🇿 捷克 | CZE
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
