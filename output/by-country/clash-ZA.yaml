@@ -1,0 +1,43 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1520764573
+  network: ws
+  port: 80
+  server: platform103.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers:
+      Host: platform103.halalkhor.info
+    path: /platform103
+- name: vless-1504779523
+  network: ws
+  port: 80
+  server: platform109.golnamakcert.top
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: /platform109
+- cipher: chacha20-ietf-poly1305
+  name: 🆔vpnserverrr 🔒 SS-TCP-TLS ❔ XX 216ms
+  password: Qy7KyMo4epSCiluJ
+  port: 443
+  server: 20.164.220.82
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1520764573
+  - vless-1504779523
+  - 🆔vpnserverrr 🔒 SS-TCP-TLS ❔ XX 216ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

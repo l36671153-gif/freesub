@@ -3,17 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  name: shadowsocks-743178503
-  password: HAVAdE3nXhqA5nHp
-  port: 9017
-  server: 185.135.86.175
-  type: ss
+- name: vless-1519858678
+  port: 10226
+  server: 45.164.20.85
+  type: vless
   udp: true
+  uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-743178503
+  - vless-1519858678
   type: select
 rules:
 - MATCH,PROXY

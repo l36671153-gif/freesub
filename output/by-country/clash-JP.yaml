@@ -3,10 +3,30 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 959634
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  type: ss
+  udp: true
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-665034487
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-246499915
-  port: 18007
+  name: vless-1205876725
+  port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -16,47 +36,70 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1016882879
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1475048771
+- name: hysteria2-1475971538
   password: my_super_password_123
-  port: 443
+  port: 5443
   server: open.w2m.ink
   skip-cert-verify: false
   sni: open.w2m.ink
   type: hysteria2
-- cipher: aes-128-gcm
-  name: shadowsocks-211
-  password: shadowsocks
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1503398052
   port: 443
-  server: 149.22.87.241
-  type: ss
-  udp: true
-- name: vless-702719097
-  port: 443
-  server: 137.220.221.179
+  reality-opts:
+    public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
+    short-id: 2223411c2ad9c55f
+  server: 103.137.215.122
+  servername: www.apple.com
+  tls: true
   type: vless
   udp: true
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  uuid: ea1c1e20-7263-4b08-a01b-690b29af66b3
+- name: hysteria2-1509420484
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.bid
+  skip-cert-verify: true
+  sni: open.2ml.bid
+  type: hysteria2
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1503562392
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1518612550
+  port: 443
+  reality-opts:
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  server: 43.133.11.187
+  servername: cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-246499915
-  - vless-1016882879
-  - hysteria2-1475048771
-  - shadowsocks-211
-  - vless-702719097
+  - 🏳️ ShatakVPN 959634
+  - vless-665034487
+  - vless-1205876725
+  - hysteria2-1475971538
+  - vless-1503398052
+  - hysteria2-1509420484
+  - vless-1503562392
+  - vless-1518612550
   type: select
 rules:
 - MATCH,PROXY
