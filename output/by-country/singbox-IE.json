@@ -3,22 +3,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1439249265",
-      "server": "185.95.231.233",
+      "tag": "🔒 VL-TCP-TLS 🇮🇪 IE-50.7.5.187 443",
+      "server": "50.7.5.187",
       "server_port": 443,
-      "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "store.steampowered.com",
+        "server_name": "ireland-new-ded1.failspace.top",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho",
-          "short_id": "a1b2c3d4"
         }
       }
     },

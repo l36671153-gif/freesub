@@ -5,21 +5,18 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1439249265
+  name: 🔒 VL-TCP-TLS 🇮🇪 IE-50.7.5.187 443
   port: 443
-  reality-opts:
-    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
-    short-id: a1b2c3d4
-  server: 185.95.231.233
-  servername: store.steampowered.com
+  server: 50.7.5.187
+  servername: ireland-new-ded1.failspace.top
   tls: true
   type: vless
   udp: true
-  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1439249265
+  - 🔒 VL-TCP-TLS 🇮🇪 IE-50.7.5.187 443
   type: select
 rules:
 - MATCH,PROXY

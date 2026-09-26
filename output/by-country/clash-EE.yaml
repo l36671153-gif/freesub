@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-892566711
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: 🏳️ ShatakVPN 457885
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
   port: 443
-  server: 202.146.222.174
+  server: 217.60.182.79
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: cabinet.wwwinternetvideo.click
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-892566711
+  - 🏳️ ShatakVPN 457885
   type: select
 rules:
 - MATCH,PROXY
