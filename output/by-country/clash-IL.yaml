@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1518223471
+  port: 40443
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  server: arcturus.yokkastars.com
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1518223471
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

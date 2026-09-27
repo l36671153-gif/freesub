@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1113490852
+  name: vless-1201186311
   port: 2053
   reality-opts:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
@@ -18,7 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1113490852
+  - vless-1201186311
   type: select
 rules:
 - MATCH,PROXY

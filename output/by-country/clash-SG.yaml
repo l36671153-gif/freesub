@@ -3,8 +3,42 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  name: vless-1310955303
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-868642649
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: sg2-8sb.6121999.dpdns.org
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 238ms
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- alterId: 0
+  cipher: auto
+  name: vmess-1071045860
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: firefox
+  name: vless-1363486848
   port: 2053
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
@@ -15,47 +49,27 @@ proxies:
   type: vless
   udp: true
   uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- alterId: 0
-  cipher: auto
-  name: vmess-485686544
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1385958165
-  port: 443
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  server: 206.206.76.75
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1519981775
-  port: 443
+  name: vless-868570844
+  port: 19825
   reality-opts:
-    public-key: -LuhwN_cSgNr7nYIfCcu_XAjviKVSGwVGHxmB-s1AD0
-    short-id: e3a4bdfe3d6fd8ec
-  server: 163.128.99.14
-  servername: www.apple.com
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: sg2-8sb.6121999.dpdns.org
+  servername: sg2-8sb.6121999.dpdns.org
   tls: true
   type: vless
   udp: true
-  uuid: bda35755-c838-49c3-a19e-3712f2d54275
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1310955303
-  - vmess-485686544
-  - vless-1385958165
-  - vless-1519981775
+  - vless-868642649
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 238ms
+  - vmess-1071045860
+  - vless-1363486848
+  - vless-868570844
   type: select
 rules:
 - MATCH,PROXY

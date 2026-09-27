@@ -3,22 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  name: vless-1354534668
-  port: 2053
+- client-fingerprint: firefox
+  name: vless-315420975
+  port: 448
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  server: 95.216.27.15
-  servername: www.google.com
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  server: 185.79.138.71
+  servername: www.samsung.com
   tls: true
   type: vless
   udp: true
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1354534668
+  - vless-315420975
   type: select
 rules:
 - MATCH,PROXY
