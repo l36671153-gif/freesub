@@ -4,21 +4,23 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-548666342
-  port: 2053
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  server: 57.131.38.163
-  servername: www.apple.com
+  name: 🔒 VL-WS-TLS 🇺🇸 US-116.204.164.17 7443
+  network: ws
+  port: 7443
+  server: 116.204.164.17
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
   tls: true
   type: vless
   udp: true
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  uuid: ef8907eb-8bb5-4735-80f2-1d0068500d95
+  ws-opts:
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+    path: /@Marisa_kristi
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-548666342
+  - 🔒 VL-WS-TLS 🇺🇸 US-116.204.164.17 7443
   type: select
 rules:
 - MATCH,PROXY

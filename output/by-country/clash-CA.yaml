@@ -1,0 +1,48 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-913472676
+  port: 443
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 664492
+  password: mrs2e9a
+  port: 443
+  server: 142.4.216.225
+  type: ss
+  udp: true
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-734969288
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-913472676
+  - 🏳️ ShatakVPN 664492
+  - vless-734969288
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
