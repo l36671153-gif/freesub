@@ -4,6 +4,27 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1109835478
+  port: 41373
+  reality-opts:
+    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
+    short-id: 0e
+  server: 130.107.73.148
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- alterId: 0
+  cipher: auto
+  name: vmess-1444974391
+  port: 22324
+  server: 134.195.198.214
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: chrome
   name: vless-1443531684
   port: 2053
   reality-opts:
@@ -15,57 +36,9 @@ proxies:
   type: vless
   udp: true
   uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-720888904
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-661704684
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- name: hysteria2-1471631079
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 15.223.122.197
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-1527436010
-  network: ws
-  port: 443
-  server: 158.51.121.123
-  servername: mygptagent.org
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: mygptagent.org
-    path: /linkvws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1522339464
+  name: vless-1015603943
   port: 41373
   reality-opts:
     public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
@@ -76,15 +49,27 @@ proxies:
   type: vless
   udp: true
   uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-293233475
+  port: 443
+  reality-opts:
+    public-key: wo417FrFdjy7ZhccQ-VWGZEKcoCHSEfyWcJT1pIVc1Y
+    short-id: 3d3c1e645f763ee3
+  server: 158.69.112.254
+  servername: www.speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 661f395d-b153-4199-a04b-693f5fe7f261
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1109835478
+  - vmess-1444974391
   - vless-1443531684
-  - vless-720888904
-  - vless-661704684
-  - hysteria2-1471631079
-  - vmess-1527436010
-  - vless-1522339464
+  - vless-1015603943
+  - vless-293233475
   type: select
 rules:
 - MATCH,PROXY

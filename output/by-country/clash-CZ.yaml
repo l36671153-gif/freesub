@@ -1,0 +1,22 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- grpc-opts:
+    grpc-service-name: vless
+  name: vless-1545552821
+  network: grpc
+  port: 3090
+  server: 153.76.185.152
+  type: vless
+  udp: true
+  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1545552821
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
