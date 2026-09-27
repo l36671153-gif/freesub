@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 170ms",
+      "server": "94.183.170.65",
+      "server_port": 8081,
+      "uuid": "e60bc99b-6630-4799-af84-f90ebdc643b6",
+      "transport": {
+        "type": "ws",
+        "path": "/ws/generate",
+        "headers": {
+          "Host": "hys2.arkonsoft.top"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1531862733",
+      "server": "94.183.170.65",
+      "server_port": 443,
+      "password": "e60bc99b-6630-4799-af84-f90ebdc643b6",
+      "tls": {
+        "enabled": true,
+        "server_name": "hys2.arkonsoft.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 | EST",
+      "server": "77.239.126.219",
+      "server_port": 9443,
+      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
+      "tls": {
+        "enabled": true,
+        "server_name": "onecloudstream.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

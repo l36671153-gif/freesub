@@ -3,51 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1106129272
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.142
-  servername: yahoo.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-229
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
+  type: ss
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1258042859
-  port: 7443
-  reality-opts:
-    public-key: 1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ
-    short-id: d2061bb1
-  server: 31.76.7.154
-  servername: ya.ru
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 370060
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
   udp: true
-  uuid: d7cad038-0c3f-4cce-8f8a-36464aaf66c0
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1221825250
-  port: 4443
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  server: 89.169.53.176
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1538774178
+  password: +Md6uvx0q4r8xi+D4f0ohkfMPiaCVx5nHy7ScOhNlLM=
+  port: 59924
+  server: 130.61.237.178
+  type: ss
   udp: true
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1106129272
-  - vless-1258042859
-  - vless-1221825250
+  - shadowsocks-229
+  - 🏳️ ShatakVPN 370060
+  - shadowsocks-1538774178
   type: select
 rules:
 - MATCH,PROXY

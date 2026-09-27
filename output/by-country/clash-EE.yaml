@@ -1,0 +1,40 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 170ms
+  network: ws
+  port: 8081
+  server: 94.183.170.65
+  type: vless
+  udp: true
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  ws-opts:
+    headers:
+      Host: hys2.arkonsoft.top
+    path: /ws/generate
+- name: hysteria2-1531862733
+  password: e60bc99b-6630-4799-af84-f90ebdc643b6
+  port: 443
+  server: 94.183.170.65
+  skip-cert-verify: false
+  sni: hys2.arkonsoft.top
+  type: hysteria2
+- name: 🇪🇪 爱沙尼亚 | EST
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  port: 9443
+  server: 77.239.126.219
+  skip-cert-verify: true
+  sni: onecloudstream.com
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 170ms
+  - hysteria2-1531862733
+  - 🇪🇪 爱沙尼亚 | EST
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

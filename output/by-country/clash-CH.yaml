@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1529329419
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+- name: '[ 🇨🇭 ] | @Cfox_SerVer'
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   port: 8443
-  server: 162.249.127.133
+  server: 82.38.64.237
   skip-cert-verify: false
-  sni: hop-germany-september.dynuddns.com
+  sni: hopp-swizland-new.mysynology.net
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1529329419
+  - '[ 🇨🇭 ] | @Cfox_SerVer'
   type: select
 rules:
 - MATCH,PROXY
