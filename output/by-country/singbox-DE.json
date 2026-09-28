@@ -2,16 +2,35 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-862364762",
-      "server": "de1.xiaoliyu.cyou",
-      "server_port": 4433,
-      "password": "6a3fe9d0-0d68-4f29-ae99-5771d4217a45",
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🇺🇸 US-80.93.202.147 443",
+      "server": "80.93.202.147",
+      "server_port": 443,
+      "uuid": "50414e45-4c5f-5a45-5553-b52a90ada6ab",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/TrexBridge/b52a90ada6ab",
+        "headers": {
+          "Host": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev"
+        }
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1547863893",
+      "server": "91.107.191.154",
+      "server_port": 8080,
+      "uuid": "a6fae451-7d8d-4452-991f-2245e0d4ff0e",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",
