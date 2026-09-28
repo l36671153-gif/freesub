@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-128-gcm
+  name: shadowsocks-1561544894
+  password: b667234b8d2e7eb34444857ea3a9b18a
+  port: 18415
+  server: 130.94.81.180
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-1561544894
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

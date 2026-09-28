@@ -4,150 +4,167 @@ mode: rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 637311
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.82
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 669617
+  name: 🏳️ ShatakVPN 597266
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
   server: 82.38.31.10
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-11048
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.3
-  type: ss
-  udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-703656402
-  port: 443
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 644335
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.25
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: aes-128-cfb
-  name: shadowsocks-205
-  password: shadowsocks
-  port: 443
-  server: 109.201.152.181
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 522420
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.103
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-11026
+  name: 🏳️ ShatakVPN 809117
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.200
+  server: 82.38.31.205
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-198822224
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.168
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-541375980
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 193.29.139.235
   type: ss
   udp: true
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-700368580
+  name: vless-1560066886
   port: 443
   reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  servername: www.apple.com
+    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
+    short-id: 64c1fe36c7846400
+  server: 89.105.197.202
+  servername: findmypackets.com
   tls: true
   type: vless
   udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-- name: 🏳️ ShatakVPN 313029
-  password: BWAFlp8g53
+  uuid: 22a375e0-f7c6-4d8f-a154-81189914bbf4
+- name: 🆔surfboardv2ray 🔓 VL-WS-N/A 🇳🇱 NL 138ms
+  network: ws
+  port: 12068
+  server: 85.17.145.65
+  type: vless
+  udp: true
+  uuid: 05caca6c-9e97-4c0f-8edf-7b88a6e572c5
+  ws-opts:
+    headers:
+      Host: mypanel.unixzone.us
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-186
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.204
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 676099
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  port: 17000
+  server: 146.190.236.129
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 449263
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-275
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.7
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 191602
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.34
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 764884
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.225
+  type: ss
+  udp: true
+- client-fingerprint: ios
+  name: 🆔soskeynet 🔒 VL-WS-N/A 🇺🇸 US 68ms
+  network: ws
   port: 443
-  server: 72.56.102.31
-  skip-cert-verify: true
-  sni: 72.56.102.31
-  type: hysteria2
+  server: victoryprovpn-production-e95a.up.railway.app
+  servername: victoryprovpn-production-e95a.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4a433b0-6661-c68d-ad79-1b0b439df694
+  ws-opts:
+    headers:
+      Host: victoryprovpn-production-e95a.up.railway.app
+    path: /ws/b4a433b0-6661-c68d-ad79-1b0b439df694
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 ShatakVPN 917363
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.174
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 927401
+  name: 🏳️ ShatakVPN 727421
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.86
+  server: 51.158.206.29
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 443919
+  name: shadowsocks-277388490
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 193.29.139.151
+  server: 193.29.139.225
   type: ss
   udp: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: shiforgrpc
-  name: vless-1412606840
-  network: grpc
-  port: 8443
-  reality-opts:
-    public-key: bzbe7QdD633ew_Er1_YWEhuCEHWurmDpxpz3fRzXr0A
-    short-id: b4e3b0b55b8dc75b
-  server: 31.56.184.132
-  servername: cloudflare.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 188752
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.225
+  type: ss
   udp: true
-  uuid: 11f21602-47aa-42e2-9149-69120f2e6df6
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 637311
-  - 🏳️ ShatakVPN 669617
-  - shadowsocks-11048
-  - vless-703656402
-  - 🏳️ ShatakVPN 644335
-  - shadowsocks-205
-  - 🏳️ ShatakVPN 522420
-  - shadowsocks-11026
-  - vless-700368580
-  - 🏳️ ShatakVPN 313029
-  - 🏳️ ShatakVPN 927401
-  - 🏳️ ShatakVPN 443919
-  - vless-1412606840
+  - 🏳️ ShatakVPN 597266
+  - 🏳️ ShatakVPN 809117
+  - shadowsocks-198822224
+  - shadowsocks-541375980
+  - vless-1560066886
+  - 🆔surfboardv2ray 🔓 VL-WS-N/A 🇳🇱 NL 138ms
+  - shadowsocks-186
+  - 🏳️ ShatakVPN 676099
+  - 🏳️ ShatakVPN 449263
+  - shadowsocks-275
+  - 🏳️ ShatakVPN 191602
+  - 🏳️ ShatakVPN 764884
+  - 🆔soskeynet 🔒 VL-WS-N/A 🇺🇸 US 68ms
+  - 🇳🇱 ShatakVPN 917363
+  - 🏳️ ShatakVPN 727421
+  - shadowsocks-277388490
+  - 🏳️ ShatakVPN 188752
   type: select
 rules:
 - MATCH,PROXY

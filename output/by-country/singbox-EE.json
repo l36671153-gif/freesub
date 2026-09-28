@@ -3,15 +3,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 170ms",
-      "server": "94.183.170.65",
-      "server_port": 8081,
-      "uuid": "e60bc99b-6630-4799-af84-f90ebdc643b6",
-      "transport": {
-        "type": "ws",
-        "path": "/ws/generate",
-        "headers": {
-          "Host": "hys2.arkonsoft.top"
+      "tag": "🔒 VL-TCP-TLS 🇪🇪 EE-94.183.170.135 8443",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
