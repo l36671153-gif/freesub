@@ -1,0 +1,34 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 171ms
+  port: 443
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: d659da01fb94
+  server: 107.181.151.39
+  servername: www.foxsports.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 174281
+  password: c58d16e593d44f42
+  port: 11001
+  server: 158.173.221.214
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 171ms
+  - 🏳️ ShatakVPN 174281
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

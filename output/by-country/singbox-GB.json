@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 171ms",
+      "server": "107.181.151.39",
+      "server_port": 443,
+      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "d659da01fb94"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 174281",
+      "server": "158.173.221.214",
+      "server_port": 11001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "c58d16e593d44f42"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

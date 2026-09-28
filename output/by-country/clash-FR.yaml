@@ -3,31 +3,36 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🆔ar14n24b 🔓 VM-WS-N/A ❔ XX 2ms
-  network: ws
-  port: 80
-  server: 188.114.96.19
-  type: vmess
-  udp: true
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
-- name: hysteria2-1503307888
-  password: 2561c6b1a3069d3170b4d7e1ecc08c65
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
   port: 443
-  server: paris.nerabotaet.com
-  skip-cert-verify: false
-  sni: paris.nerabotaet.com
-  type: hysteria2
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc_common3
+  name: vless-1432809197
+  network: grpc
+  port: 51671
+  reality-opts:
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
+  server: 152.228.139.33
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔓 VM-WS-N/A ❔ XX 2ms
-  - hysteria2-1503307888
+  - 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
+  - vless-1432809197
   type: select
 rules:
 - MATCH,PROXY

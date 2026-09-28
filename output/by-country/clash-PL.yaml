@@ -3,26 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- name: 🏳️ ShatakVPN 527719
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: 45.192.12.93
+  skip-cert-verify: false
+  sni: admin.wwwinternetvideo.click
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 163ms
+  port: 443
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  server: 144.31.131.38
+  servername: prod.pl-node-01.security-sbrf.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+- client-fingerprint: ios
   grpc-opts:
     grpc-service-name: TunService
-  name: vless-1141367415
+  name: vless-1126122358
   network: grpc
   port: 33743
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  server: 185.223.57.10
+  server: 185.223.57.16
   servername: www.google.com
   tls: true
   type: vless
   udp: true
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443
+  name: 🇵🇱 波兰 | POL
   port: 443
-  server: 144.31.2.33
-  servername: pl3.moritech.net
+  server: poland-ded-new-one.failspace.top
   tls: true
   type: vless
   udp: true
@@ -30,8 +49,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1141367415
-  - 🔒 VL-TCP-TLS 🇵🇱 PL-144.31.2.33 443
+  - 🏳️ ShatakVPN 527719
+  - 🆔lrnbymaa 🔒 VL-TCP- ❔ XX 163ms
+  - vless-1126122358
+  - 🇵🇱 波兰 | POL
   type: select
 rules:
 - MATCH,PROXY

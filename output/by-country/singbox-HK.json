@@ -2,26 +2,71 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-920243845",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "type": "vless",
+      "tag": "vless-1546708862",
+      "server": "45.207.157.8",
+      "server_port": 9443,
+      "uuid": "966990b5-5868-4af1-add6-011c72b4a443",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
+        "server_name": "www.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
+          "short_id": "b390142456517acc"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1446360527",
+      "server": "hk2.xiaoliyu.cyou",
+      "server_port": 4433,
+      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk2.xiaoliyu.cyou",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-692912199",
-      "server": "202.146.222.29",
+      "tag": "hysteria2-1550053639",
+      "server": "f902df58-tmeqo0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "f902df58-tmeqo0-u4zl7f-1jk6u.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-589844071",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "https://t.me/clashv8",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-467980788",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8🇨🇳",
         "insecure": true
       }
     },

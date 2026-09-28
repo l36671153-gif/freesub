@@ -2,35 +2,77 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇺🇸 US-80.93.202.147 443",
-      "server": "80.93.202.147",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-209",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1527436014",
+      "server": "193.108.117.54",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-b52a90ada6ab",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "aidrivercat.org"
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/TrexBridge/b52a90ada6ab",
+        "path": "/linkvws",
         "headers": {
-          "Host": "trex-panel-ew6n46.zeus-e0oqfp.workers.dev"
+          "Host": "aidrivercat.org"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "vmess-1547863893",
-      "server": "91.107.191.154",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-27307",
+      "server": "169.150.210.233",
       "server_port": 8080,
-      "uuid": "a6fae451-7d8d-4452-991f-2245e0d4ff0e",
-      "security": "auto",
-      "alter_id": 0
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 590203",
+      "server": "51.195.126.38",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "2YdE4lFOid5a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 820248",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1544320459",
+      "server": "185.255.114.91",
+      "server_port": 8443,
+      "uuid": "7faa65a6-b43b-413e-9480-a81fae3d0c49",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.reddotcorp.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U",
+          "short_id": "1be482b8e08aa0ef"
+        }
+      }
     },
     {
       "type": "direct",
