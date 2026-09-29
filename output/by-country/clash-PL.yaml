@@ -3,24 +3,27 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: TunService
-  name: vless-1105975120
-  network: grpc
-  port: 33743
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  server: 185.223.57.10
-  servername: www.google.com
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1555751075
+  port: 443
+  server: poland-ded-new-one.failspace.top
   tls: true
   type: vless
   udp: true
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+- cipher: aes-256-cfb
+  name: shadowsocks-768399401
+  password: 7heRqkPG3hg4UnRm
+  port: 9099
+  server: 217.30.10.44
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1105975120
+  - vless-1555751075
+  - shadowsocks-768399401
   type: select
 rules:
 - MATCH,PROXY
