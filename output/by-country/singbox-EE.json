@@ -3,7 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇪🇪 EE-94.183.170.135 8443",
+      "tag": "vless-957016089",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "94.183.170.135"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-650319315",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",

@@ -2,6 +2,26 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "hysteria2-1550053197",
+      "server": "b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "f93486ce-cc84-11ed-9e98-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "b9bccf5a-tmeqo0-0-1jcwu.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-287",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },

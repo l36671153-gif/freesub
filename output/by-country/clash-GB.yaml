@@ -4,39 +4,6 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1552278377
-  port: 54865
-  reality-opts:
-    public-key: frK9LTk4kF7lh4-ZVCuHCQm87Oy6uboRtoS-o6Fb6WE
-    short-id: '7436'
-  server: 178.79.129.203
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 602926
-  password: zRZNBszYyWo5
-  port: 8388
-  server: 51.77.225.200
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1477616520
-  port: 443
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  server: 23.81.34.204
-  servername: speed.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-- client-fingerprint: random
   name: vless-1300687308
   port: 2053
   reality-opts:
@@ -48,13 +15,58 @@ proxies:
   type: vless
   udp: true
   uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+- client-fingerprint: firefox
+  name: vless-1293658711
+  port: 2053
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- cipher: 2022-blake3-chacha20-poly1305
+  name: shadowsocks-1561476585
+  password: lzhjI3jtrWa2fM7GAWa3TNPZievCEkTqTlOzW+A0Ct8=
+  port: 61312
+  server: 134.65.63.84
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: vless-1279651618
+  port: 2053
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  server: 46.250.240.80
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1549147674
+  port: 443
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  server: 23.81.34.204
+  servername: speed.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1552278377
-  - 🏳️ ShatakVPN 602926
-  - vless-1477616520
   - vless-1300687308
+  - vless-1293658711
+  - shadowsocks-1561476585
+  - vless-1279651618
+  - vless-1549147674
   type: select
 rules:
 - MATCH,PROXY
