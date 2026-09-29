@@ -3,7 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-898033982",
+      "tag": "vless-957016053",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-868400818",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",

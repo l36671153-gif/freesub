@@ -2,96 +2,44 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1554574413",
-      "server": "178.79.131.26",
-      "server_port": 443,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UvN2oqI7DGQUEB8VrOZ9c5eXs2EuEQAgAa5IyTuRcCU",
-          "short_id": "3436aa2833db50fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1477616520",
-      "server": "23.81.34.204",
-      "server_port": 443,
-      "uuid": "99955907-9070-46f0-a200-9c7a0b9d74fe",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "speed.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s",
-          "short_id": "b19b017d6f453873"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1556679977",
-      "server": "178.79.129.203",
-      "server_port": 54865,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "frK9LTk4kF7lh4-ZVCuHCQm87Oy6uboRtoS-o6Fb6WE",
-          "short_id": "7436"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1558179746",
-      "server": "178.79.149.80",
-      "server_port": 22117,
-      "uuid": "d00d9d18-20cf-4191-be76-6f73d43a27ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Vqwhml0SG253PsBtx9xi3GJY-hhyA6sgGUJ_wVI7Q1g",
-          "short_id": "c7994be0"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "shadowsocks-1566787690",
-      "server": "134.65.57.26",
-      "server_port": 61312,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "Sm4F5fX+ZJpWpkXMNbw0yYrWolYIiwknVYDwx8eus78="
+      "tag": "shadowsocks-165",
+      "server": "146.70.61.37",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1005580180",
+      "server": "labs.frkn.org",
+      "server_port": 443,
+      "password": "3b8c82ed-fe66-472d-915e-034ccb57103f",
+      "tls": {
+        "enabled": true,
+        "server_name": "labs.frkn.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1258929861",
+      "server": "46.250.240.80",
+      "server_port": 2053,
+      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
+          "short_id": "4cc9dc65f7770115"
+        }
+      }
     },
     {
       "type": "direct",
