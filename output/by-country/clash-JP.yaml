@@ -3,31 +3,42 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1475971538
-  password: my_super_password_123
-  port: 5443
-  server: open.w2m.ink
-  skip-cert-verify: false
-  sni: open.w2m.ink
-  type: hysteria2
-- client-fingerprint: chrome
-  name: vless-1003515430
-  network: ws
-  port: 443
-  server: 162.159.254.3
-  servername: jp3.yohototo.top
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1355866272
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  servername: www.sony.com
   tls: true
   type: vless
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- cipher: aes-128-gcm
+  name: shadowsocks-213
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+  udp: true
 - client-fingerprint: firefox
+  name: vless-1578108053
+  port: 52226
+  reality-opts:
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  server: 45.76.215.91
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-470978003
-  port: 19645
+  name: vless-656230605
+  port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -37,6 +48,20 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  name: vless-1003515436
+  network: ws
+  port: 443
+  server: 172.67.156.147
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: vless-1016882879
@@ -50,13 +75,37 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-470978003
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- cipher: aes-128-gcm
+  name: shadowsocks-218
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1475971538
-  - vless-1003515430
-  - vless-470978003
+  - vless-1355866272
+  - shadowsocks-213
+  - vless-1578108053
+  - vless-656230605
+  - vless-1003515436
   - vless-1016882879
+  - vless-470978003
+  - shadowsocks-218
   type: select
 rules:
 - MATCH,PROXY
