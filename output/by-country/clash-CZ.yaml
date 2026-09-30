@@ -1,0 +1,42 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-1588608157
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
+  server: 195.133.66.229
+  servername: nlll.gaz-service.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-1585763551
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc
+  server: 195.133.66.229
+  servername: nlll.gaz-service.shop
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4abdfe42-aec7-4b66-974d-3f891e2e8184
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1588608157
+  - vless-1585763551
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

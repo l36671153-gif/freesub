@@ -3,45 +3,56 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-720888904
-  port: 41373
+- client-fingerprint: chrome
+  name: vless-1443531684
+  port: 2053
   reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-828117773
-  port: 41373
-  reality-opts:
-    public-key: m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU
-    short-id: 0e
-  server: 130.107.73.148
-  servername: google.com
-  tls: true
-  type: vless
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- alterId: 0
+  cipher: auto
+  name: vmess-1444864743
+  port: 22324
+  server: 134.195.198.214
+  type: vmess
   udp: true
-  uuid: a71c8954-66a8-4321-bedb-2336230d81ce
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - cipher: aes-256-gcm
-  name: shadowsocks-1415925706
-  password: eveaaTOb8ji8yntw2Z9yWUG0d6Ir8Ld8m3ymH8THdC5egiTH1mXCiBc0Skr7FibH
-  port: 9443
-  server: 185.156.47.97
+  name: 🏳️ ShatakVPN 391191
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 51.79.49.116
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-1453104494
+  port: 22324
+  server: 134.195.198.214
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- cipher: aes-256-gcm
+  name: shadowsocks-1118951746
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 51.222.200.165
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-720888904
-  - vless-828117773
-  - shadowsocks-1415925706
+  - vless-1443531684
+  - vmess-1444864743
+  - 🏳️ ShatakVPN 391191
+  - vmess-1453104494
+  - shadowsocks-1118951746
   type: select
 rules:
 - MATCH,PROXY

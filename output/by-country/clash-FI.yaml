@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇫🇮 FI-2.27.13.61 2096
+  network: ws
+  port: 2096
+  server: 2.27.13.61
+  servername: st6dbbc.rumedia-cdn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11d826ce-d6e5-4154-8658-6829bb17dca2
+  ws-opts:
+    headers:
+      Host: st6dbbc.rumedia-cdn.com
+    path: /cdn/v3/live
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-WS-TLS 🇫🇮 FI-2.27.13.61 2096
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
