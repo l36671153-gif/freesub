@@ -4,37 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: rc4-md5
-  name: shadowsocks-165
+  name: shadowsocks-468218595
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 146.70.61.37
+  server: 146.70.23.32
   type: ss
   udp: true
-- name: hysteria2-1005580180
-  password: 3b8c82ed-fe66-472d-915e-034ccb57103f
-  port: 443
-  server: labs.frkn.org
-  skip-cert-verify: true
-  sni: labs.frkn.org
-  type: hysteria2
-- client-fingerprint: firefox
-  name: vless-1258929861
-  port: 2053
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  server: 46.250.240.80
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-165
-  - hysteria2-1005580180
-  - vless-1258929861
+  - shadowsocks-468218595
   type: select
 rules:
 - MATCH,PROXY

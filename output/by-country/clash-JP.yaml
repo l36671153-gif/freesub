@@ -3,109 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1344232343
-  port: 50159
+- client-fingerprint: safari
+  name: vless-1579914254
+  port: 52226
   reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  server: 154.31.114.248
-  servername: www.cloudflare.com
+    public-key: Y0aqDtPHb_inkRBkx1hs5yxMZX9_dZr4t_sGGIU8mmM
+    short-id: d6
+  server: 45.76.215.91
+  servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-836349884
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1574323197
-  port: 443
-  reality-opts:
-    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
-  server: 139.162.109.56
-  servername: googleapis.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-656230605
-  port: 10583
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1011139750
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- alterId: 0
-  cipher: auto
-  name: vmess-1572245378
+  uuid: 88dde62f-b4aa-4e59-84c3-1024f838e1c9
+- client-fingerprint: android
+  name: vless-1162311187
   network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
+  port: 443
+  server: 172.67.217.240
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
   udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: none
-    path: /cctv13.m3u8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1046990413
-  port: 19645
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: vless-663902649
+  port: 443
+  server: 137.220.221.179
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1149851385
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: hysteria2-650665463
+  password: 6c077487-06af-4fb1-9e46-d485d98f0a31
+  port: 52454
+  server: 45.88.43.116
+  skip-cert-verify: true
+  sni: 45.88.43.116
+  type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: vless-1518612550
@@ -119,56 +55,59 @@ proxies:
   type: vless
   udp: true
   uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-- alterId: 0
-  cipher: auto
-  name: vmess-1469367462
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
-- alterId: 0
-  cipher: auto
-  name: vmess-1498959069
-  port: 4433
-  server: 45.32.57.118
-  type: vmess
-  udp: true
-  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
-- client-fingerprint: chrome
-  name: vless-1546742430
-  network: ws
+- name: hysteria2-1494806622
+  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
   port: 443
-  server: 104.16.10.48
-  servername: jp3.yohototo.top
+  server: 43.167.208.94
+  skip-cert-verify: true
+  sni: 43.167.208.94
+  type: hysteria2
+- name: hysteria2-1527031539
+  password: my_super_password_123
+  port: 443
+  server: open.2ml.bid
+  skip-cert-verify: false
+  sni: open.2ml.bid
+  type: hysteria2
+- name: hysteria2-1495885491
+  password: my_super_password_123
+  port: 5443
+  server: open.2ml.cc.cd
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1019463451
+  port: 11690
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  server: 13.231.19.51
+  servername: www.tesla.com
   tls: true
   type: vless
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+- name: vless-1038685483
+  port: 443
+  server: 137.220.221.179
+  type: vless
+  udp: true
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1344232343
-  - vless-836349884
-  - vless-1574323197
-  - vless-656230605
-  - vless-1011139750
-  - vmess-1572245378
-  - vless-1046990413
-  - vless-1149851385
+  - vless-1579914254
+  - vless-1162311187
+  - vless-663902649
+  - hysteria2-650665463
   - vless-1518612550
-  - vmess-1469367462
-  - vmess-1498959069
-  - vless-1546742430
+  - hysteria2-1494806622
+  - hysteria2-1527031539
+  - hysteria2-1495885491
+  - vless-1019463451
+  - vless-1038685483
   type: select
 rules:
 - MATCH,PROXY

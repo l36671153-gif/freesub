@@ -3,63 +3,20 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1473969939
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4433
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-209
-  password: 1hhrqrokj3ag
-  port: 8388
-  server: 209.46.102.22
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 121ms_1
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: true
+- name: 🏳️ ShatakVPN 562184
+  network: ws
+  port: 2087
+  server: 163.8.195.241
   type: vless
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 575650
-  password: kKEd0rBrd56Furjz
-  port: 443
-  server: 2.58.81.221
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 188548
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 409098
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
+  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  ws-opts:
+    headers: {}
+    path: /29c8fed7ca22
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1473969939
-  - shadowsocks-209
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 121ms_1
-  - 🏳️ ShatakVPN 575650
-  - 🏳️ ShatakVPN 188548
-  - 🏳️ ShatakVPN 409098
+  - 🏳️ ShatakVPN 562184
   type: select
 rules:
 - MATCH,PROXY
