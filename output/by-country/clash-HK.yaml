@@ -3,25 +3,39 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-540983040
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: 202.146.222.89
-  type: hysteria2
-- name: hysteria2-1276640916
+- name: hysteria2-1532454244
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
+  sni: https://t.me/wangcai2��
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1606586948
+  port: 443
+  reality-opts:
+    public-key: KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA
+    short-id: ea6b43
+  server: hk4.miyazono-kaori.com
+  servername: hk4e-launcher-static.hoyoverse.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f1d601f2-cc29-4fc2-bafc-7ac833af466a
+- name: 🏳️ ShatakVPN 296580
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-540983040
-  - hysteria2-1276640916
+  - hysteria2-1532454244
+  - vless-1606586948
+  - 🏳️ ShatakVPN 296580
   type: select
 rules:
 - MATCH,PROXY
