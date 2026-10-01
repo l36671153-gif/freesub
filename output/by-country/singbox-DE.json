@@ -2,54 +2,71 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 258ms",
-      "server": "germany.tofreedom.ru",
-      "server_port": 8444,
-      "uuid": "9cb2520c-148b-4bbc-a149-9d5a43ff0db3",
+      "type": "trojan",
+      "tag": "trojan-1589192370",
+      "server": "3.120.109.26",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "germany.tofreedom.ru",
+        "server_name": "actual-squid.rooster465.autos"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1570510805",
+      "server": "185.177.229.129",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1559171818",
+      "server": "91.132.160.209",
+      "server_port": 443,
+      "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdn.apache.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/c7f5317cd04691bc",
-        "headers": {
-          "Host": "germany.tofreedom.ru"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9XSdNkmBhBszLYoODqMrm7r_JRur2PRbzF9T1Uf2AV0",
+          "short_id": "f1004027e382c2fa"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "shadowsocks-1592384204",
-      "server": "130.61.130.123",
-      "server_port": 59924,
-      "method": "2022-blake3-chacha20-poly1305",
-      "password": "voBpHj13hYhxuYrdo90FlJgEfSz1bM3rhmZ0UQ9zqI4="
+      "tag": "shadowsocks-209",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
     },
     {
-      "type": "vmess",
-      "tag": "vmess-1527436014",
-      "server": "193.108.117.54",
+      "type": "trojan",
+      "tag": "🏳️ ShatakVPN 952426",
+      "server": "63.186.227.164",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "aidrivercat.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aidrivercat.org"
-        }
+        "server_name": "alive-flea.rooster465.autos"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1589195390",
+      "server": "188.245.25.223",
+      "server_port": 8402,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
     },
     {
       "type": "direct",

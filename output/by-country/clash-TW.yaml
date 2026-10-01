@@ -3,26 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-25247
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-- name: hysteria2-721489375
+- name: hysteria2-500716426
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 103.115.109.49
+  server: 160.187.100.109
   skip-cert-verify: true
-  sni: t.me
+  sni: 160.187.100.109
+  type: hysteria2
+- name: hysteria2-328918461
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-25247
-  - hysteria2-721489375
+  - hysteria2-500716426
+  - hysteria2-328918461
   type: select
 rules:
 - MATCH,PROXY

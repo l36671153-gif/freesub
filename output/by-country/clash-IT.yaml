@@ -1,0 +1,25 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  name: 🇮🇹 意大利 | ITA
+  port: 443
+  reality-opts:
+    public-key: jGfJxbIyf2aLRFQyT9NsJBu1CzJmrAa2sF19GNw46z8
+    short-id: 29615707650b941d
+  server: 34.154.251.151
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d4bfd21-88fc-4de7-87bd-c2ddaedc4078
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇮🇹 意大利 | ITA
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

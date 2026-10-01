@@ -5,34 +5,61 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-655845752
+  name: vmess-331222962
   port: 18000
-  server: 38.91.107.49
+  server: 134.195.196.211
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-96606
+  name: vmess-1469366897
   port: 18000
-  server: 149.88.23.202
+  server: 84.17.41.2
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-97160
+  name: 🏳️ ShatakVPN 892745
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-655845744
   port: 18000
   server: 169.197.142.22
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-16065
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-650451561
+  port: 18000
+  server: 67.220.85.46
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-655845752
-  - vmess-96606
-  - vmess-97160
+  - vmess-331222962
+  - vmess-1469366897
+  - 🏳️ ShatakVPN 892745
+  - vmess-655845744
+  - vmess-16065
+  - vmess-650451561
   type: select
 rules:
 - MATCH,PROXY
