@@ -2,22 +2,40 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1574440371",
-      "server": "31.76.11.83",
-      "server_port": 26070,
-      "uuid": "e676c6c8-44a8-4a1d-82cc-821a1f70f0c0"
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 484930",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
-      "type": "trojan",
-      "tag": "trojan-1583440647",
-      "server": "actual-squid.rooster465.autos",
+      "type": "vless",
+      "tag": "vless-1593439937",
+      "server": "31.70.111.146",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "actual-squid.rooster465.autos"
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A 🇩🇪 DE 120ms",
+      "server": "188.245.25.223",
+      "server_port": 1085,
+      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
     },
     {
       "type": "direct",

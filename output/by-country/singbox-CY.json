@@ -3,10 +3,10 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-254950445",
-      "server": "5.253.42.164",
+      "tag": "vless-1518752891",
+      "server": "5.253.28.224",
       "server_port": 40443,
-      "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
+      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -14,6 +14,27 @@
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw",
+          "short_id": "68a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1596395481",
+      "server": "5.253.28.224",
+      "server_port": 40443,
+      "uuid": "af5eac96-e478-488a-bc8c-45269d7e8847",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

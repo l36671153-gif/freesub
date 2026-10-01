@@ -3,19 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1600235138
-  network: ws
-  port: 80
-  server: 5.223.41.5
+- client-fingerprint: chrome
+  name: vless-1343205036
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
   type: vless
   udp: true
-  uuid: 180252b0-8c59-475c-a3b8-6c33c2ed2359
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: chrome
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: random
+  name: vless-1313262207
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-656245925
+  name: vless-522223669
   port: 17623
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -26,92 +40,33 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: vless-1588370078
+- name: vless-1602615380
   network: ws
   port: 80
-  server: 5.223.41.179
+  server: 5.223.41.125
   type: vless
   udp: true
-  uuid: ff642d7a-9a24-4078-a031-f8c656f4554e
+  uuid: 3b821031-d7d4-4368-918b-15f2312dba2b
   ws-opts:
     headers: {}
     path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-940261373
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
 - client-fingerprint: chrome
-  name: vless-1606568290
+  name: vless-1567186583
   network: ws
-  port: 443
-  server: 140.245.120.16
-  servername: trackydev.site
+  port: 2096
+  server: free-server.techsonic.dev
+  servername: free-server.techsonic.dev
   tls: true
   type: vless
   udp: true
-  uuid: 92d67828-4c56-4795-af5a-f387651380dc
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   ws-opts:
     headers:
-      Host: trackydev.site
-    path: /
-- name: vless-1586729677
-  network: ws
-  port: 80
-  server: 5.223.41.164
-  type: vless
-  udp: true
-  uuid: ef24e9b9-e7b2-4e01-b335-f289612d2d7a
-  ws-opts:
-    headers: {}
-    path: /
-- name: vless-1578827829
-  network: ws
-  port: 80
-  server: 5.223.41.93
-  type: vless
-  udp: true
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-1353776241
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1308942455
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 124829
+  name: vless-882226717
   port: 19825
   reality-opts:
     public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
@@ -122,10 +77,35 @@ proxies:
   type: vless
   udp: true
   uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- client-fingerprint: ios
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-522223663
-  port: 12972
+  name: 🏳️ ShatakVPN 108323
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-929334146
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: sg2-8sb.6121999.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-923366360
+  port: 17623
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -135,20 +115,26 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- cipher: rc4-md5
+  name: shadowsocks-27349
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.235.122
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1600235138
-  - vless-656245925
-  - vless-1588370078
-  - vless-940261373
-  - vless-1606568290
-  - vless-1586729677
-  - vless-1578827829
-  - vless-1353776241
-  - vless-1308942455
-  - 🏳️ ShatakVPN 124829
-  - vless-522223663
+  - vless-1343205036
+  - vless-1313262207
+  - vless-522223669
+  - vless-1602615380
+  - vless-1567186583
+  - vless-882226717
+  - 🏳️ ShatakVPN 108323
+  - vless-929334146
+  - vless-923366360
+  - shadowsocks-27349
   type: select
 rules:
 - MATCH,PROXY

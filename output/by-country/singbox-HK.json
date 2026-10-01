@@ -3,46 +3,45 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "hysteria2-1532454244",
+      "tag": "hysteria2-483633862",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2��",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1606586948",
-      "server": "hk4.miyazono-kaori.com",
+      "type": "hysteria2",
+      "tag": "hysteria2-540983040",
+      "server": "202.146.222.89",
       "server_port": 443,
-      "uuid": "f1d601f2-cc29-4fc2-bafc-7ac833af466a",
-      "flow": "xtls-rprx-vision",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "hk4e-launcher-static.hoyoverse.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KhRbgahSFqlPKB6QNp9QYb4oXMy2SIgi440tm6iFZHA",
-          "short_id": "ea6b43"
-        }
+        "server_name": "202.146.222.89",
+        "insecure": true
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1611723398",
+      "server": "telegramx.khp25.com",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "m5nsedvdczx6x06e"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🏳️ ShatakVPN 296580",
+      "tag": "hysteria2-1456970890",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.29",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af",
         "insecure": true
       }
     },
