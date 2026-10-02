@@ -4,37 +4,31 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
-  network: ws
-  port: 443
-  server: 172.67.175.23
-  servername: trex-panel-nubj0s.samifakor.workers.dev
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 369611
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
-  ws-opts:
-    headers:
-      Host: trex-panel-nubj0s.samifakor.workers.dev
-    path: /stream/TrexBridge/ef859652a80e
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - alterId: 0
   cipher: auto
-  name: 🆔v2ray1_ng 🔓 VM-WS-N/A 🇺🇸 US 36ms
-  network: ws
-  port: 80
-  server: 188.114.96.19
+  name: 🆔v2ray1_ng 🔓 VM-TCP-N/A 🇫🇷 FR 110ms
+  port: 22324
+  server: 45.80.215.8
   type: vmess
   udp: true
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
-  - 🆔v2ray1_ng 🔓 VM-WS-N/A 🇺🇸 US 36ms
+  - 🏳️ ShatakVPN 369611
+  - 🆔v2ray1_ng 🔓 VM-TCP-N/A 🇫🇷 FR 110ms
   type: select
 rules:
 - MATCH,PROXY

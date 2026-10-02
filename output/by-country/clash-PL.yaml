@@ -3,22 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 135ms
+- name: trojan-1615718040
+  password: UX82473651
   port: 443
-  reality-opts:
-    public-key: -bjPqNKxxGTKCmH6dwsdGRTUzuatAowBWxyOPW4BiVQ
-    short-id: 7e7623474d41f032
-  server: 34.118.43.106
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+  server: 202.78.163.237
+  sni: cheerful-swan.rooster465.autos
+  type: trojan
   udp: true
-  uuid: 16e310b7-659e-45ee-a4b0-10e0289b8621
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 135ms
+  - trojan-1615718040
   type: select
 rules:
 - MATCH,PROXY
