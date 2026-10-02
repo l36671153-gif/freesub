@@ -3,54 +3,38 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 434326
-  password: BqnqToih0PbU
-  port: 8388
-  server: 51.255.13.232
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 813820
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.185.98 2053
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
   network: ws
-  port: 2053
-  server: 172.67.185.98
-  servername: fr.api-music-fa.com
+  port: 443
+  server: 172.67.175.23
+  servername: trex-panel-nubj0s.samifakor.workers.dev
   tls: true
   type: vless
   udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
   ws-opts:
     headers:
-      Host: fr.api-music-fa.com
-    path: /api/voip/updates/static/fr2035
-- name: hysteria2-1531286498
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 35.181.166.40
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+    path: /stream/TrexBridge/ef859652a80e
+- alterId: 0
+  cipher: auto
+  name: 🆔v2ray1_ng 🔓 VM-WS-N/A 🇺🇸 US 36ms
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  type: vmess
+  udp: true
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 434326
-  - 🏳️ ShatakVPN 813820
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.185.98 2053
-  - hysteria2-1531286498
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
+  - 🆔v2ray1_ng 🔓 VM-WS-N/A 🇺🇸 US 36ms
   type: select
 rules:
 - MATCH,PROXY

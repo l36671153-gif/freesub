@@ -2,40 +2,35 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A 🇩🇪 DE 116ms",
+      "server": "31.76.11.83",
+      "server_port": 26070,
+      "uuid": "e676c6c8-44a8-4a1d-82cc-821a1f70f0c0"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 484930",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "tag": "🇩🇪 德国 | DEU #1",
+      "server": "130.61.42.148",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4="
     },
     {
-      "type": "vless",
-      "tag": "vless-1593439937",
-      "server": "31.70.111.146",
-      "server_port": 443,
-      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
-          "short_id": "d7de3a6ff4018957"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-229",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A 🇩🇪 DE 120ms",
-      "server": "188.245.25.223",
-      "server_port": 1085,
-      "uuid": "0c1b7949-fe09-43d9-863f-2c031f66bfc1"
+      "type": "shadowsocks",
+      "tag": "shadowsocks-209",
+      "server": "209.46.102.22",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "1hhrqrokj3ag"
     },
     {
       "type": "direct",
