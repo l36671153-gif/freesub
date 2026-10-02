@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: hysteria2-1623652288
+  password: 336501b6-51d2-11ee-a993-f23c9164ca5d
+  port: 443
+  server: a9519fbb-tmm5c0-uaf248-1c9em.hk3.hyhuawei.com
+  skip-cert-verify: true
+  sni: a9519fbb-tmm5c0-uaf248-1c9em.hk3.hyhuawei.com
+  type: hysteria2
+- name: hysteria2-1623483651
+  password: af7ddbb2-3567-11ec-bd7c-f23c913c8d2b
+  port: 443
+  server: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
+  skip-cert-verify: true
+  sni: 61b2ab79-tmm5c0-u1q5od-t6fv.hk3.hyhuawei.com
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - hysteria2-1623652288
+  - hysteria2-1623483651
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

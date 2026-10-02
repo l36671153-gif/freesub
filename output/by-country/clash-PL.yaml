@@ -3,7 +3,14 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1615718040
+- name: 🏳️ ShatakVPN 222135
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: 144.31.49.47
+  skip-cert-verify: true
+  sni: admin.wwwinternetvideo.click
+  type: hysteria2
+- name: 🇵🇱 ShatakVPN 385222
   password: UX82473651
   port: 443
   server: 202.78.163.237
@@ -13,7 +20,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1615718040
+  - 🏳️ ShatakVPN 222135
+  - 🇵🇱 ShatakVPN 385222
   type: select
 rules:
 - MATCH,PROXY

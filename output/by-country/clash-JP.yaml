@@ -5,60 +5,52 @@ port: 7890
 proxies:
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1617547227
-  port: 43000
+  name: vless-1149851385
+  port: 18007
   reality-opts:
-    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
-    short-id: 8d66106f
-  server: 142.91.106.31
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1011139750
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- cipher: aes-256-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
-  password: 3eOFeNssde7PYYMv
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: vless-1442724478
   port: 443
-  server: 84.247.155.196
-  type: ss
+  server: 137.220.221.179
+  type: vless
   udp: true
-- client-fingerprint: unsafe
-  name: 🇯🇵 日本 | JPN
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- alterId: 0
+  cipher: auto
+  name: vmess-144709
   network: ws
-  port: 443
-  server: 43.170.8.95
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
+  port: 80
+  server: 168.138.43.75
+  type: vmess
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
   ws-opts:
     headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- name: hysteria2-1553149732
-  password: 96ab5cd282733fd4c312a61f972f330a
-  port: 443
-  server: vp3.yysyy.online
-  skip-cert-verify: true
-  sni: vp3.yysyy.online
-  type: hysteria2
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-803630126
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-656230605
+  name: vless-1205876725
   port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -69,74 +61,21 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1470835089
-  password: my_super_password_123
-  port: 443
-  server: open.w2m.ink
-  skip-cert-verify: true
-  sni: open.w2m.ink
-  type: hysteria2
 - name: vless-702719097
   port: 443
   server: 137.220.221.179
   type: vless
   udp: true
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1503562416
-  port: 443
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  server: 43.133.11.187
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-- name: hysteria2-1480344713
-  password: my_super_password_123
-  port: 5443
-  server: open.2ml.cc.cd
-  skip-cert-verify: true
-  sni: open.2ml.cc.cd
-  type: hysteria2
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1302924890
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- name: hysteria2-1546237825
-  password: 96ab5cd282733fd4c312a61f972f330a
-  port: 443
-  server: vp3.yysyy.online
-  skip-cert-verify: false
-  sni: vp3.yysyy.online
-  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1617547227
-  - vless-1011139750
-  - 🇯🇵[www.v2nodes.com] ss-JP-1544...
-  - 🇯🇵 日本 | JPN
-  - hysteria2-1553149732
-  - vless-656230605
-  - hysteria2-1470835089
+  - vless-1149851385
+  - vless-1442724478
+  - vmess-144709
+  - vless-803630126
+  - vless-1205876725
   - vless-702719097
-  - vless-1503562416
-  - hysteria2-1480344713
-  - vless-1302924890
-  - hysteria2-1546237825
   type: select
 rules:
 - MATCH,PROXY
