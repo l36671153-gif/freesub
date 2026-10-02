@@ -3,13 +3,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇽 墨西哥 | MEX",
-      "server": "131.196.252.97",
+      "tag": "vless-1627614769",
+      "server": "trackydev.site",
       "server_port": 443,
-      "uuid": "b1c31d36-c6b5-414b-88d2-9e24e7bfcca3",
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
       "tls": {
         "enabled": true,
-        "server_name": "www.nihaoyun.top",
+        "server_name": "trackydev.site",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -18,9 +18,7 @@
       "transport": {
         "type": "ws",
         "path": "/",
-        "headers": {
-          "Host": "www.nihaoyun.top"
-        }
+        "headers": {}
       }
     },
     {

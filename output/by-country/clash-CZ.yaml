@@ -3,7 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇨🇿 捷克 | CZE #1'
+- name: 🇨🇿 捷克 | CZE
   password: 3a92b39a-5f02-415e-a908-783ec320e83f
   port: 8443
   server: 153.76.190.41
@@ -13,7 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇨🇿 捷克 | CZE #1'
+  - 🇨🇿 捷克 | CZE
   type: select
 rules:
 - MATCH,PROXY

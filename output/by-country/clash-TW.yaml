@@ -3,37 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 206ms
-  port: 24215
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  server: hinet1.2yly.com
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-- name: hysteria2-650314288
+- name: hysteria2-892566577
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 103.115.109.49
   skip-cert-verify: true
-  sni: 103.115.109.49
-  type: hysteria2
-- name: hysteria2-468892442
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-  sni: css.rbxcdn.com
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 206ms
-  - hysteria2-650314288
-  - hysteria2-468892442
+  - hysteria2-892566577
   type: select
 rules:
 - MATCH,PROXY

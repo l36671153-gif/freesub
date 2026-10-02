@@ -4,48 +4,57 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 216ms
-  port: 2053
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 724615
+  port: 23576
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- alterId: 0
-  cipher: auto
-  name: 🆔v2ray1_ng 🔓 VM-WS-N/A ❔ XX 3ms
-  network: ws
-  port: 80
-  server: 188.114.96.19
-  type: vmess
-  udp: true
-  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-    path: /
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-  name: 🔒 VL-GRPC-TLS 🇫🇷 FR-143.246.208.113 443
+    grpc-service-name: grpc-common3
+  name: vless-1413435162
   network: grpc
-  port: 443
-  server: 143.246.208.113
-  servername: assets-fr4.pleiades.codes
+  port: 35108
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  server: 152.228.139.33
+  servername: www.nvidia.com
   tls: true
   type: vless
   udp: true
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
+  port: 443
+  server: 162.19.10.99
+  servername: nasnet-162191099-direct.mbghalibaf.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+- cipher: aes-256-cfb
+  name: shadowsocks-1592835373
+  password: amazonskr05
+  port: 443
+  server: 15.237.255.137
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 216ms
-  - 🆔v2ray1_ng 🔓 VM-WS-N/A ❔ XX 3ms
-  - 🔒 VL-GRPC-TLS 🇫🇷 FR-143.246.208.113 443
+  - 🏳️ ShatakVPN 724615
+  - vless-1413435162
+  - 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
+  - shadowsocks-1592835373
   type: select
 rules:
 - MATCH,PROXY

@@ -3,29 +3,32 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 230773
-  password: 2YdE4lFOid5a
-  port: 8388
-  server: 51.195.126.38
-  type: ss
+- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 259ms
+  network: ws
+  port: 33483
+  server: apadana.gamingnet.ir
+  type: vless
   udp: true
-- client-fingerprint: chrome
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  ws-opts:
+    headers: {}
+    path: /
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1593439937
+  name: vless-86611004
   port: 443
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  servername: www.apple.com
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 683494
+  name: 🏳️ ShatakVPN 185606
   port: 443
   reality-opts:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
@@ -36,12 +39,54 @@ proxies:
   type: vless
   udp: true
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  port: 443
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  server: id-nl-01.mintrocket.org
+  servername: id-nl-01.mintrocket.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1604370887
+  port: 443
+  reality-opts:
+    public-key: Ez3w5uLzFlysA6Owr7SguTK5kzlIFZ09TgalzUHGAR4
+    short-id: 9f51e98fb874846b
+  server: 91.233.121.32
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5469c1d9-e949-4553-a146-ac3ad363a705
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-83842750
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 230773
-  - vless-1593439937
-  - 🏳️ ShatakVPN 683494
+  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 259ms
+  - vless-86611004
+  - 🏳️ ShatakVPN 185606
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  - vless-1604370887
+  - vless-83842750
   type: select
 rules:
 - MATCH,PROXY
