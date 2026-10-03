@@ -3,58 +3,66 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 724615
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc-common3
-  name: vless-1413435162
-  network: grpc
-  port: 35108
-  reality-opts:
-    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
-    short-id: 52add08b86a5ccea
-  server: 152.228.139.33
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
-  port: 443
-  server: 162.19.10.99
-  servername: nasnet-162191099-direct.mbghalibaf.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
-- cipher: aes-256-cfb
-  name: shadowsocks-1592835373
-  password: amazonskr05
-  port: 443
-  server: 15.237.255.137
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 414447
+  password: BqnqToih0PbU
+  port: 8388
+  server: 51.255.13.232
   type: ss
   udp: true
+- name: 🏳️ ShatakVPN 493670
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 35.181.166.40
+  skip-cert-verify: true
+  sni: vpn-fr-002.fastervpn.world
+  type: hysteria2
+- client-fingerprint: chrome
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 216ms
+  port: 2053
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+- client-fingerprint: chrome
+  name: vless-1622138331
+  port: 443
+  reality-opts:
+    public-key: i1OqphFMJNL_xwV5zES4icJTPBHtSgieOt3FYns9zB0
+    short-id: 2b
+  server: 162.19.230.250
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7017a1ca-7a31-463d-832e-5a7261a3dd62
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.185.98 2053
+  network: ws
+  port: 2053
+  server: 172.67.185.98
+  servername: fr.api-music-fa.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
+  ws-opts:
+    headers:
+      Host: fr.api-music-fa.com
+    path: /api/voip/updates/static/fr2035
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 724615
-  - vless-1413435162
-  - 🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443
-  - shadowsocks-1592835373
+  - 🏳️ ShatakVPN 414447
+  - 🏳️ ShatakVPN 493670
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 216ms
+  - vless-1622138331
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.185.98 2053
   type: select
 rules:
 - MATCH,PROXY

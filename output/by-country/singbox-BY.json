@@ -3,13 +3,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1627614769",
-      "server": "trackydev.site",
-      "server_port": 443,
-      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
+      "tag": "🏳️ ShatakVPN 235472",
+      "server": "89.125.96.75",
+      "server_port": 2053,
+      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
       "tls": {
         "enabled": true,
-        "server_name": "trackydev.site",
+        "server_name": "wss.zazazuza.ru",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -17,8 +17,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {}
+        "path": "/vpn-wss/fluxor/59011/",
+        "headers": {
+          "Host": "wss.zazazuza.ru"
+        }
       }
     },
     {
