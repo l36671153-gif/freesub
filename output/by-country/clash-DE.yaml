@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms
+  port: 443
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  server: id-nl-01.mintrocket.org
+  servername: id-nl-01.mintrocket.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

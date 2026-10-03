@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpce5bb9e71
+  name: vless-1576218800
+  network: grpc
+  port: 2053
+  reality-opts:
+    public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
+    short-id: d0ea1847066af5a6
+  server: 62.60.159.81
+  servername: www.samsung.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc00adfb-232a-46ce-8b93-0c70e516aa8a
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1576218800
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

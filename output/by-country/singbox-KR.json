@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 | KOR",
+      "server": "balanced-stag.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "balanced-stag.rooster465.autos"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 | KOR_1",
+      "server": "main-fawn.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

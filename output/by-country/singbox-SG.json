@@ -3,18 +3,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1600938733",
-      "server": "5.223.41.125",
-      "server_port": 80,
-      "uuid": "3b821031-d7d4-4368-918b-15f2312dba2b",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {}
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.199 443",
       "server": "104.16.10.199",
       "server_port": 443,
@@ -36,11 +24,23 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "hysteria2-1623483718",
+      "server": "fb51fed8-tmm5c0-tvk1qn-19les.sg7.hyhuawei.com",
+      "server_port": 443,
+      "password": "d095ecc6-7b69-11eb-b77b-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "fb51fed8-tmm5c0-tvk1qn-19les.sg7.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "vless-1618001077",
-      "server": "5.223.41.121",
+      "tag": "vless-1635994851",
+      "server": "5.223.41.164",
       "server_port": 80,
-      "uuid": "0f7996b1-3ef7-4274-b612-0310270d2a41",
+      "uuid": "ef24e9b9-e7b2-4e01-b335-f289612d2d7a",
       "transport": {
         "type": "ws",
         "path": "/",
@@ -48,72 +48,38 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1623484233",
-      "server": "691f640a-tmm5c0-tug19l-1go3q.sg7.hyhuawei.com",
-      "server_port": 443,
-      "password": "19dd9c70-e4a5-11ed-8347-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "691f640a-tmm5c0-tug19l-1go3q.sg7.hyhuawei.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-1623484032",
-      "server": "c1f25bdb-tmm5c0-tmj4pk-1kcpe.sg7.hyhuawei.com",
-      "server_port": 443,
-      "password": "3f514ea2-4662-11ed-a8bf-f23c91cfbbc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "c1f25bdb-tmm5c0-tmj4pk-1kcpe.sg7.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "vmess",
+      "tag": "vmess-1038932737",
+      "server": "149.88.23.207",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "vless",
-      "tag": "vless-1325454448",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
+      "tag": "🆔soskeynet 🔒 VL-TCP- 🇸🇬 SG 175ms",
+      "server": "18.143.183.26",
+      "server_port": 443,
+      "uuid": "7e68e32f-8015-4f37-9082-70e8b0b58043",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "admin.aphrodite.show",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
+          "public_key": "PhOIlEfiYVUhkWKIfX_IOwJ6zz_Zk0QEj4sfcZyuShY",
+          "short_id": "abcddb0c38896b8b"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1493685274",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1014378462",
+      "tag": "vless-1027296847",
       "server": "54.169.200.246",
       "server_port": 41688,
       "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
@@ -133,15 +99,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1623483716",
-      "server": "7b50a7aa-tmm5c0-tw2fdz-1s824.sg7.hyhuawei.com",
-      "server_port": 443,
-      "password": "6d4abac0-86e6-11ef-83cc-f23c913c8d2b",
+      "type": "vless",
+      "tag": "vless-1023674397",
+      "server": "54.169.200.246",
+      "server_port": 41688,
+      "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "7b50a7aa-tmm5c0-tw2fdz-1s824.sg7.hyhuawei.com",
-        "insecure": true
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk",
+          "short_id": "7f342137c20387"
+        }
       }
     },
     {
