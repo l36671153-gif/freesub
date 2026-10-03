@@ -3,33 +3,34 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1482139052
+- alterId: 0
+  cipher: auto
+  name: vmess-682259480
+  port: 35034
+  server: 165.154.195.38
+  type: vmess
+  udp: true
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+- name: hysteria2-1601947373
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   skip-cert-verify: true
   sni: 'off'
   type: hysteria2
-- name: hysteria2-656706489
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https://t.me/oneclickvpnkeys
-  type: hysteria2
-- name: hysteria2-137781265
+- name: hysteria2-1163840992
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
+  sni: www.bing.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1482139052
-  - hysteria2-656706489
-  - hysteria2-137781265
+  - vmess-682259480
+  - hysteria2-1601947373
+  - hysteria2-1163840992
   type: select
 rules:
 - MATCH,PROXY

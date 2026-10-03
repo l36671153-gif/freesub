@@ -3,129 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.5.75 443
-  network: ws
-  port: 443
-  server: 104.21.5.75
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: vmess-656230590
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: chrome
-  name: vless-1535048610
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: chrome
-  name: vless-1633970465
-  port: 443
-  reality-opts:
-    public-key: aUdvs6o4PHN6jmdkIKBA2rHsN_7l8W2SaDfNgzn-BwU
-  server: 103.106.229.236
-  servername: sg.monkora.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 454431fc-71e2-42b1-b375-5b55dd06666a
-- client-fingerprint: chrome
-  name: vless-1336684744
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1353776240
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: firefox
-  name: vless-1363486848
-  port: 2053
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  server: 217.217.254.126
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1046914396
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: 146.235.16.130
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- alterId: 0
-  cipher: auto
-  name: 🏳️ ShatakVPN 464694
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: hysteria2-1623483495
-  password: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  port: 443
-  server: 147fecb4-tmm5c0-tnt75r-1k8ga.sg7.hyhuawei.com
-  skip-cert-verify: true
-  sni: 147fecb4-tmm5c0-tnt75r-1k8ga.sg7.hyhuawei.com
-  type: hysteria2
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-838598334
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - name: vless-1600938733
   network: ws
   port: 80
@@ -136,11 +13,11 @@ proxies:
   ws-opts:
     headers: {}
     path: /
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.156.227 443
+- client-fingerprint: unsafe
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.199 443
   network: ws
   port: 443
-  server: 104.16.156.227
+  server: 104.16.10.199
   servername: u.srilankangrill.online
   tls: true
   type: vless
@@ -150,29 +27,57 @@ proxies:
     headers:
       Host: u.srilankangrill.online
     path: /
-- name: hysteria2-1623483677
-  password: 8d0ec7cc-eefa-11ee-9b59-f23c91cfbbc9
+- name: vless-1618001077
+  network: ws
+  port: 80
+  server: 5.223.41.121
+  type: vless
+  udp: true
+  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
+  ws-opts:
+    headers: {}
+    path: /
+- name: hysteria2-1623484233
+  password: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
   port: 443
-  server: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
+  server: 691f640a-tmm5c0-tug19l-1go3q.sg7.hyhuawei.com
   skip-cert-verify: true
-  sni: 0259fa63-tmm5c0-tvb36r-1qwom.sg7.hyhuawei.com
+  sni: 691f640a-tmm5c0-tug19l-1go3q.sg7.hyhuawei.com
+  type: hysteria2
+- name: hysteria2-1623484032
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  port: 443
+  server: c1f25bdb-tmm5c0-tmj4pk-1kcpe.sg7.hyhuawei.com
+  skip-cert-verify: true
+  sni: c1f25bdb-tmm5c0-tmj4pk-1kcpe.sg7.hyhuawei.com
   type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-522223666
-  port: 17623
+  name: vless-1325454448
+  port: 2053
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: firefox
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: chrome
+  name: vless-1493685274
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1010615625
+  name: vless-1014378462
   port: 41688
   reality-opts:
     public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
@@ -183,25 +88,25 @@ proxies:
   type: vless
   udp: true
   uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+- name: hysteria2-1623483716
+  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  port: 443
+  server: 7b50a7aa-tmm5c0-tw2fdz-1s824.sg7.hyhuawei.com
+  skip-cert-verify: true
+  sni: 7b50a7aa-tmm5c0-tw2fdz-1s824.sg7.hyhuawei.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.5.75 443
-  - vmess-656230590
-  - vless-1535048610
-  - vless-1633970465
-  - vless-1336684744
-  - vless-1353776240
-  - vless-1363486848
-  - vless-1046914396
-  - 🏳️ ShatakVPN 464694
-  - hysteria2-1623483495
-  - vless-838598334
   - vless-1600938733
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.156.227 443
-  - hysteria2-1623483677
-  - vless-522223666
-  - vless-1010615625
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.199 443
+  - vless-1618001077
+  - hysteria2-1623484233
+  - hysteria2-1623484032
+  - vless-1325454448
+  - vless-1493685274
+  - vless-1014378462
+  - hysteria2-1623483716
   type: select
 rules:
 - MATCH,PROXY

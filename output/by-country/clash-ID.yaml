@@ -5,21 +5,20 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1607023081
-  port: 40443
+  name: vless-1568568958
+  port: 29172
   reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  server: hydra.yokkastars.com
-  servername: deepl.com
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  server: 103.172.197.2
+  servername: aws.amazon.com
   tls: true
   type: vless
   udp: true
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1607023081
+  - vless-1568568958
   type: select
 rules:
 - MATCH,PROXY

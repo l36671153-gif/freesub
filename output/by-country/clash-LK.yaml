@@ -3,20 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1632528221
+- name: vless-1640706490
   network: ws
-  port: 1280
-  server: 77.42.28.120
+  port: 80
+  server: cloud.ghostdev.lk
   type: vless
   udp: true
-  uuid: c0e8fb58-a60f-4c15-9444-4e7c109797a8
+  uuid: 1eaed465-d720-400b-9f9f-439600a2d093
   ws-opts:
-    headers: {}
+    headers:
+      Host: m.zoom.us
     path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1632528221
+  - vless-1640706490
   type: select
 rules:
 - MATCH,PROXY

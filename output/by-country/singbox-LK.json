@@ -3,14 +3,16 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1632528221",
-      "server": "77.42.28.120",
-      "server_port": 1280,
-      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
+      "tag": "vless-1640706490",
+      "server": "cloud.ghostdev.lk",
+      "server_port": 80,
+      "uuid": "1eaed465-d720-400b-9f9f-439600a2d093",
       "transport": {
         "type": "ws",
         "path": "/",
-        "headers": {}
+        "headers": {
+          "Host": "m.zoom.us"
+        }
       }
     },
     {
