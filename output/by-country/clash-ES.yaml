@@ -3,13 +3,13 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇪🇸[www.v2nodes.com] vless-ES-1... #1'
+  name: 🔒 VL-GRPC-TLS 🇪🇸 ES-193.238.154.5 443
   network: grpc
   port: 443
-  server: assets-es.pleiades.codes
+  server: 193.238.154.5
   servername: assets-es.pleiades.codes
   tls: true
   type: vless
@@ -18,7 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇪🇸[www.v2nodes.com] vless-ES-1... #1'
+  - 🔒 VL-GRPC-TLS 🇪🇸 ES-193.238.154.5 443
   type: select
 rules:
 - MATCH,PROXY

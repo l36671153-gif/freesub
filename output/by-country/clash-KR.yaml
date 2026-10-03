@@ -3,25 +3,58 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇰🇷 韩国 | KOR
-  password: UX82473651
-  port: 443
-  server: balanced-stag.rooster465.autos
-  sni: balanced-stag.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇰🇷 韩国 | KOR_1
+- name: 🆔ar14n24b 🔓 TR--N/A ❔ XX 157ms
   password: UX82473651
   port: 443
   server: main-fawn.rooster465.autos
   sni: main-fawn.rooster465.autos
   type: trojan
   udp: true
+- name: trojan-1644338022
+  password: UX82473651
+  port: 443
+  server: balanced-stag.rooster465.autos
+  sni: balanced-stag.rooster465.autos
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-650631549
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- name: trojan-1648312992
+  password: UX82473651
+  port: 443
+  server: noted-cougar.rooster465.autos
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+- name: hysteria2-1093669534
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: trojan-1648313014
+  password: UX82473651
+  port: 443
+  server: engaging-toucan.rooster465.autos
+  sni: engaging-toucan.rooster465.autos
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇰🇷 韩国 | KOR
-  - 🇰🇷 韩国 | KOR_1
+  - 🆔ar14n24b 🔓 TR--N/A ❔ XX 157ms
+  - trojan-1644338022
+  - vmess-650631549
+  - trojan-1648312992
+  - hysteria2-1093669534
+  - trojan-1648313014
   type: select
 rules:
 - MATCH,PROXY

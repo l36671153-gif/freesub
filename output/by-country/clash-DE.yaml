@@ -16,10 +16,18 @@ proxies:
   type: vless
   udp: true
   uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+- name: '@ICV2RAY #1'
+  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
+  port: 28015
+  server: 64.188.119.177
+  skip-cert-verify: false
+  sni: api-test-udp-trf.kaneki.cfd
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms
+  - '@ICV2RAY #1'
   type: select
 rules:
 - MATCH,PROXY

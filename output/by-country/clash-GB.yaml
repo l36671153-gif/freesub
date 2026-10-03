@@ -3,6 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1629768920
+  port: 52006
+  server: 87.192.47.10
+  servername: grok.setlisting.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+- grpc-opts:
+    grpc-service-name: vless
+  name: vless-1593872470
+  network: grpc
+  port: 2083
+  server: 66.90.104.43
+  type: vless
+  udp: true
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - cipher: aes-256-gcm
   name: shadowsocks-717969008
   password: g5h5jleTRSyO3Rk4
@@ -22,22 +41,22 @@ proxies:
   type: vless
   udp: true
   uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 171ms
-  port: 52006
-  server: 87.192.47.10
-  servername: grok.setlisting.ru
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: vmess-1620472976
+  port: 22324
+  server: 186.190.211.147
+  type: vmess
   udp: true
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1629768920
+  - vless-1593872470
   - shadowsocks-717969008
   - vless-1279636589
-  - 🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 171ms
+  - vmess-1620472976
   type: select
 rules:
 - MATCH,PROXY

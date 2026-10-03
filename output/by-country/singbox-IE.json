@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🆔ar14n24b 🔓 TR--N/A ❔ XX 397ms",
+      "server": "loved-shark.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "loved-shark.rooster465.autos"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🆔vpnserverrr 🔒 SS-TCP-TLS ❔ XX 128ms",
+      "server": "20.238.125.195",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Qr3RLHJLngbplPWd"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🆔vpnserverrr 🔒 SS-TCP-TLS ❔ XX 130ms",
+      "server": "20.238.125.195",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "jUg9wluj5iOiY9sI"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

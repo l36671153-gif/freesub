@@ -5,8 +5,33 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-26652141
-  port: 18007
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 105ms
+  port: 43000
+  reality-opts:
+    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
+    short-id: 8d66106f
+  server: 142.91.106.31
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 🇯🇵 日本 | JPN
+  port: 35544
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  server: funagfr.alixxplay.com
+  servername: iosapps.itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-212135096
+  port: 10583
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -16,54 +41,143 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1644712787
+- name: trojan-1643587529
+  password: UX82473651
+  port: 443
+  server: evolving-platypus.rooster465.autos
+  sni: evolving-platypus.rooster465.autos
+  type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-951685696
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
+  type: ss
+  udp: true
+- name: trojan-1645398600
+  password: UX82473651
+  port: 443
+  server: obliging-louse.rooster465.autos
+  sni: obliging-louse.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1645351178
+  password: UX82473651
+  port: 443
+  server: intense-sole.rooster465.autos
+  sni: intense-sole.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1648313012
+  password: UX82473651
+  port: 443
+  server: organic-caribou.rooster465.autos
+  sni: organic-caribou.rooster465.autos
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-1263029854
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
+  udp: true
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+- alterId: 0
+  cipher: auto
+  name: vmess-681183126
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: none
+    path: /cctv13.m3u8
+- name: trojan-1643587526
   password: UX82473651
   port: 443
   server: promoted-rattler.rooster465.autos
   sni: promoted-rattler.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-987610015
-  port: 50159
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  server: 154.31.114.248
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: vmess-1121839535
+  port: 4433
+  server: 45.32.57.118
+  type: vmess
   udp: true
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1525938361
-  port: 443
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  server: 43.133.11.187
-  servername: cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-- name: trojan-1644712788
+  uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
+- name: 🇯🇵 日本 | JPN_1
   password: UX82473651
   port: 443
-  server: fancy-javelin.rooster465.autos
-  sni: fancy-javelin.rooster465.autos
+  server: assuring-skink.rooster465.autos
+  sni: assuring-skink.rooster465.autos
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-144709
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 106ms
+  port: 43000
+  reality-opts:
+    public-key: onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4
+    short-id: 8d66106f
+  server: 142.91.106.31
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8681dba-d368-4bab-a3c2-a8dc712ba368
+- name: 🆔ar14n24b 🔓 TR--N/A ❔ XX 250ms
+  password: UX82473651
+  port: 443
+  server: comic-poodle.rooster465.autos
+  sni: comic-poodle.rooster465.autos
   type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-26652141
-  - trojan-1644712787
-  - vless-987610015
-  - vless-1525938361
-  - trojan-1644712788
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 105ms
+  - 🇯🇵 日本 | JPN
+  - vless-212135096
+  - trojan-1643587529
+  - 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  - shadowsocks-951685696
+  - trojan-1645398600
+  - trojan-1645351178
+  - trojan-1648313012
+  - vmess-1263029854
+  - vmess-681183126
+  - trojan-1643587526
+  - vmess-1121839535
+  - 🇯🇵 日本 | JPN_1
+  - vmess-144709
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 106ms
+  - 🆔ar14n24b 🔓 TR--N/A ❔ XX 250ms
   type: select
 rules:
 - MATCH,PROXY

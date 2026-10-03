@@ -3,35 +3,6 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "vmess-1527436010",
-      "server": "158.51.121.123",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "mygptagent.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "mygptagent.org"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1442009676",
-      "server": "158.51.123.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vmess",
       "tag": "vmess-1457014102",
       "server": "134.195.198.214",
       "server_port": 22324,
@@ -41,8 +12,8 @@
     },
     {
       "type": "vmess",
-      "tag": "vmess-1620472971",
-      "server": "158.51.121.63",
+      "tag": "vmess-1446350653",
+      "server": "158.51.123.42",
       "server_port": 22324,
       "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
       "security": "auto",
