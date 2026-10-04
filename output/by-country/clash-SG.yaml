@@ -3,42 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1647930942
-  password: 5b140fc6a0a74e7f
-  port: 20008
-  server: gsg192i.zxom.eu.org
-  sni: gsg192i.zxom.eu.org
-  type: trojan
-  udp: true
-- name: vless-1592516075
-  network: ws
-  port: 80
-  server: 5.223.41.121
-  type: vless
-  udp: true
-  uuid: 0f7996b1-3ef7-4274-b612-0310270d2a41
-  ws-opts:
-    headers: {}
-    path: /
-- name: vless-1583983412
-  network: ws
-  port: 80
-  server: 5.223.41.93
-  type: vless
-  udp: true
-  uuid: f2eada1b-fdec-48c6-8638-18ade32993d4
-  ws-opts:
-    headers: {}
-    path: /
-- name: hysteria2-1623484281
-  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  port: 443
-  server: 3677ca2a-tmm5c0-u0aht1-1rz5s.sg7.hyhuawei.com
-  skip-cert-verify: true
-  sni: 3677ca2a-tmm5c0-u0aht1-1rz5s.sg7.hyhuawei.com
-  type: hysteria2
 - client-fingerprint: chrome
-  name: vless-1343742641
+  name: vless-1654310399
+  port: 443
+  reality-opts:
+    public-key: hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4
+    short-id: eb97ce837da2f6ad
+  server: 35.185.179.62
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5567cac6-2a32-4318-83cd-7df3a9eebbd7
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-801842684
+  port: 10574
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: firefox
+  name: vless-1327864776
   port: 2053
   reality-opts:
     public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
@@ -49,10 +40,37 @@ proxies:
   type: vless
   udp: true
   uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: vmess-1216197041
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: random
+  name: vless-1310955303
+  port: 2053
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  server: 217.217.254.126
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
+- name: trojan-1646374139
+  password: UX82473651
+  port: 443
+  server: glowing-marmoset.rooster465.autos
+  sni: glowing-marmoset.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: vless-212135095
-  port: 12972
+  name: vless-522223670
+  port: 17623
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -62,29 +80,25 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-12945895
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: vmess-1224865296
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1647930942
-  - vless-1592516075
-  - vless-1583983412
-  - hysteria2-1623484281
-  - vless-1343742641
-  - vless-212135095
-  - vless-12945895
+  - vless-1654310399
+  - vless-801842684
+  - vless-1327864776
+  - vmess-1216197041
+  - vless-1310955303
+  - trojan-1646374139
+  - vless-522223670
+  - vmess-1224865296
   type: select
 rules:
 - MATCH,PROXY

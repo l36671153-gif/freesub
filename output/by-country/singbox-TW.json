@@ -2,23 +2,15 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1645363435",
-      "server": "34.80.248.240",
+      "type": "hysteria2",
+      "tag": "hysteria2-722298630",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
-      "uuid": "31a40f42-4ad6-4a32-a760-71102b459584",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qvekI7tKB1NDnZA6JcS_24aV4n8mlCbI3SFvkRr22wg",
-          "short_id": "d74a6321deec9f31"
-        }
+        "server_name": "whatsapp.com",
+        "insecure": true
       }
     },
     {
@@ -31,14 +23,23 @@
       "alter_id": 0
     },
     {
+      "type": "vmess",
+      "tag": "vmess-682259480",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
       "type": "hysteria2",
-      "tag": "hysteria2-722298530",
-      "server": "vpn-tw-002.fastervpn.world",
+      "tag": "hysteria2-737135161",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "https:",
         "insecure": true
       }
     },

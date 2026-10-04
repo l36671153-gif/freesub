@@ -3,31 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: TunService
+  name: vless-1645923050
+  network: grpc
+  port: 8443
+  reality-opts:
+    public-key: sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU
+  server: 104.245.240.2
+  servername: cdn.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c0acd42e-bf36-4747-90a0-a4a3a8774fdc
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 653815
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
+  udp: true
 - client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms
+  name: vless-1598224794
   port: 443
   reality-opts:
     public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
     short-id: fee1f986a72444db
   server: id-nl-01.mintrocket.org
-  servername: id-nl-01.mintrocket.org
   tls: true
   type: vless
   udp: true
   uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
-- name: '@ICV2RAY #1'
-  password: e19b5aa3-16c9-435a-8bc9-76f2f6ddff43
-  port: 28015
-  server: 64.188.119.177
-  skip-cert-verify: false
-  sni: api-test-udp-trf.kaneki.cfd
-  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms
-  - '@ICV2RAY #1'
+  - vless-1645923050
+  - 🏳️ ShatakVPN 653815
+  - vless-1598224794
   type: select
 rules:
 - MATCH,PROXY

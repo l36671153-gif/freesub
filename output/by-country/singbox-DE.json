@@ -3,7 +3,38 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms",
+      "tag": "vless-1645923050",
+      "server": "104.245.240.2",
+      "server_port": 8443,
+      "uuid": "c0acd42e-bf36-4747-90a0-a4a3a8774fdc",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.steamstatic.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sRTNjrosfFSiuQX7Yt7Ub5DJvFznfHSC3nlzFQ3H2WU"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 653815",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1598224794",
       "server": "id-nl-01.mintrocket.org",
       "server_port": 443,
       "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
@@ -20,18 +51,6 @@
           "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
           "short_id": "fee1f986a72444db"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "@ICV2RAY #1",
-      "server": "64.188.119.177",
-      "server_port": 28015,
-      "password": "e19b5aa3-16c9-435a-8bc9-76f2f6ddff43",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-test-udp-trf.kaneki.cfd",
-        "insecure": false
       }
     },
     {

@@ -1,0 +1,83 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 948363
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 144ms
+  port: 443
+  reality-opts:
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  server: 137.74.16.237
+  servername: www.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇫🇷 FR-149.202.58.99 443
+  network: ws
+  port: 443
+  server: 149.202.58.99
+  servername: bab-6.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
+  ws-opts:
+    headers: {}
+    path: /vws/
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 950883
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
+  network: ws
+  port: 443
+  server: 172.67.175.23
+  servername: trex-panel-nubj0s.samifakor.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 50414e45-4c5f-5a45-5553-ef859652a80e
+  ws-opts:
+    headers:
+      Host: trex-panel-nubj0s.samifakor.workers.dev
+    path: /stream/TrexBridge/ef859652a80e
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 948363
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 144ms
+  - 🔒 VL-WS-TLS 🇫🇷 FR-149.202.58.99 443
+  - 🏳️ ShatakVPN 950883
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.175.23 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
