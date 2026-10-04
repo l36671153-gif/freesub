@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '🇩🇪 德国 | DEU #5'
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  port: 443
+  server: 144.31.212.253
+  skip-cert-verify: true
+  sni: vps155-edge.kermemehori.ru
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🇩🇪 德国 | DEU #5'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

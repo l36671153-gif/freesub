@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1537155765
-  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  port: 8443
-  server: 162.249.127.133
+- name: 🏳️ ShatakVPN 296991
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: 144.31.49.47
   skip-cert-verify: true
-  sni: hop-germany-september.dynuddns.com
+  sni: admin.wwwinternetvideo.click
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1537155765
+  - 🏳️ ShatakVPN 296991
   type: select
 rules:
 - MATCH,PROXY

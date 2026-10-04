@@ -3,17 +3,35 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 147296
-  password: BqnqToih0PbU
-  port: 8388
-  server: 51.255.13.232
-  type: ss
+- client-fingerprint: firefox
+  name: vless-1260285720
+  port: 2053
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
+  network: grpc
+  port: 443
+  server: 143.246.208.113
+  servername: assets-fr4.pleiades.codes
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 147296
+  - vless-1260285720
+  - 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
   type: select
 rules:
 - MATCH,PROXY

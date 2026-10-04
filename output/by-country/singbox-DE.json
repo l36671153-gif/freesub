@@ -2,48 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.204.153 2053",
-      "server": "172.67.204.153",
-      "server_port": 2053,
-      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
-      "tls": {
-        "enabled": true,
-        "server_name": "uwu.blueknightnet.qzz.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 264ms",
-      "server": "rubifen.adaspoloandco.com",
-      "server_port": 443,
-      "uuid": "cf39fab0-bb85-42cb-9945-2ad69d78e575",
-      "tls": {
-        "enabled": true,
-        "server_name": "rubifen.adaspoloandco.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/GOrbEh",
-        "headers": {}
-      }
-    },
-    {
       "type": "trojan",
       "tag": "trojan-1651721645",
       "server": "63.178.198.94",
@@ -56,22 +14,22 @@
     },
     {
       "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 305ms",
-      "server": "id-nl-01.mintrocket.org",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 88ms",
+      "server": "177.1.186.44",
       "server_port": 443,
-      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "id-nl-01.mintrocket.org",
+        "server_name": "mcde.67resserv67.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
-          "short_id": "fee1f986a72444db"
+          "public_key": "4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE",
+          "short_id": "29455a3a790acbd0"
         }
       }
     },
