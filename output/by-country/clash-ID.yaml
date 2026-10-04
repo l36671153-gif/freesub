@@ -3,9 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1624005907
+  name: vless-1581609736
   port: 29172
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
@@ -15,10 +15,23 @@ proxies:
   type: vless
   udp: true
   uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1571083443
+  port: 16006
+  reality-opts:
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  server: 103.172.197.3
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1624005907
+  - vless-1581609736
+  - vless-1571083443
   type: select
 rules:
 - MATCH,PROXY

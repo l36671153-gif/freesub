@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇩🇪 德国 | DEU #5'
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  port: 443
-  server: 144.31.212.253
+- name: 🇳🇱 荷兰 | NLD
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 18333
+  server: us3.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: vps155-edge.kermemehori.ru
+  sni: us3.xiaoliyu.cyou
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇩🇪 德国 | DEU #5'
+  - 🇳🇱 荷兰 | NLD
   type: select
 rules:
 - MATCH,PROXY

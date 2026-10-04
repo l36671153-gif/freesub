@@ -3,7 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 296991
+- name: vless-1647915018
+  network: ws
+  port: 80
+  server: 70.34.252.154
+  type: vless
+  udp: true
+  uuid: d9c7ec1f-5aa3-469a-b860-760c686806b0
+  ws-opts:
+    headers: {}
+    path: /
+- name: 🏳️ ShatakVPN 520979
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   port: 443
   server: 144.31.49.47
@@ -13,7 +23,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 296991
+  - vless-1647915018
+  - 🏳️ ShatakVPN 520979
   type: select
 rules:
 - MATCH,PROXY

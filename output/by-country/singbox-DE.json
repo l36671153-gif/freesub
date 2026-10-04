@@ -3,33 +3,93 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1651721645",
-      "server": "63.178.198.94",
+      "tag": "trojan-1579283209",
+      "server": "actual-squid.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "pleased-albacore.rooster465.autos"
+        "server_name": "actual-squid.rooster465.autos"
       }
     },
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 88ms",
-      "server": "177.1.186.44",
-      "server_port": 443,
-      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.35.244 2083",
+      "server": "104.21.35.244",
+      "server_port": 2083,
+      "uuid": "ca608afb-55ff-4f36-9d00-606fedbb30e1",
       "tls": {
         "enabled": true,
-        "server_name": "mcde.67resserv67.info",
+        "server_name": "Site.check-looks.space",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Site.check-looks.space"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.181.125 2083",
+      "server": "172.67.181.125",
+      "server_port": 2083,
+      "uuid": "ca608afb-55ff-4f36-9d00-606fedbb30e1",
+      "tls": {
+        "enabled": true,
+        "server_name": "Site.check-looks.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Site.check-looks.space"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 279ms",
+      "server": "id-nl-01.mintrocket.org",
+      "server_port": 443,
+      "uuid": "f0a52dd3-4377-4402-a450-210bc81bcf25",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "id-nl-01.mintrocket.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "4hvjCaGIMlFeWxMYoAWTNHQOaZkGvGQREOjB3Unn7iE",
-          "short_id": "29455a3a790acbd0"
+          "public_key": "XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q",
+          "short_id": "fee1f986a72444db"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-57.129.96.67 443",
+      "server": "57.129.96.67",
+      "server_port": 443,
+      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nasnet-571299667-direct.mbghalibaf.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },

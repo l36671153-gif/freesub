@@ -2,6 +2,38 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "vless-1645364942",
+      "server": "34.96.188.243",
+      "server_port": 443,
+      "uuid": "75d38591-267e-4d89-98bc-164f25b50880",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4",
+          "short_id": "64b3f192fc0669e1"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1655174799",
+      "server": "2dd0472e-tmm5c0-twj07b-fm2v.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "3fed19ea-1671-11f0-bd2e-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "2dd0472e-tmm5c0-twj07b-fm2v.hk3.hyhuawei.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "hysteria2-1276640913",
       "server": "202.146.222.29",
@@ -14,45 +46,14 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🏳️ ShatakVPN 599613",
-      "server": "194.99.79.26",
-      "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "aksai.org"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/linkvws",
-        "headers": {
-          "Host": "aksai.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1648344545",
-      "server": "strong-haddock.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "strong-haddock.rooster465.autos"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "hysteria2-722298610",
+      "tag": "hysteria2-1532454246",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "https://t.me/wangcai2����",
         "insecure": true
       }
     },

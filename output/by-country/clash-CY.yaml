@@ -4,7 +4,20 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: qq
-  name: vless-189859219
+  flow: xtls-rprx-vision
+  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 404ms
+  port: 40443
+  reality-opts:
+    public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
+    short-id: 68a8
+  server: dorado.yokkastars.com
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: af5eac96-e478-488a-bc8c-45269d7e8847
+- client-fingerprint: qq
+  name: vless-650631528
   port: 40443
   reality-opts:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
@@ -18,7 +31,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-189859219
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 404ms
+  - vless-650631528
   type: select
 rules:
 - MATCH,PROXY

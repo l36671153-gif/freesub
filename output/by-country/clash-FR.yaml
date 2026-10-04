@@ -3,35 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1260285720
-  port: 2053
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-700283246
+  port: 23576
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-  name: 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
-  network: grpc
-  port: 443
-  server: 143.246.208.113
-  servername: assets-fr4.pleiades.codes
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1260285720
-  - 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
+  - vless-700283246
   type: select
 rules:
 - MATCH,PROXY
