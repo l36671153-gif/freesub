@@ -3,21 +3,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇸[www.v2nodes.com] vless-ES-1... #1",
-      "server": "193.238.154.5",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.66.152.4 443",
+      "server": "172.66.152.4",
       "server_port": 443,
-      "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
         "enabled": true,
-        "server_name": "assets-es.pleiades.codes",
+        "server_name": "argo6.5671234.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
+        "type": "ws",
+        "path": "/e8e2cecb6188f7fb",
+        "headers": {
+          "Host": "argo6.5671234.xyz"
+        }
       }
     },
     {

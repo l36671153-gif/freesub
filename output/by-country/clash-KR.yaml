@@ -3,105 +3,57 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-700407711
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-803630116
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1647915020
+- name: trojan-1651470520
   password: UX82473651
   port: 443
-  server: kind-stork.rooster465.autos
-  sni: kind-stork.rooster465.autos
+  server: 13.125.69.162
+  sni: engaging-toucan.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1643520496
+- name: trojan-1660423629
+  password: UX82473651
+  port: 443
+  server: 43.201.252.164
+  sni: balanced-stag.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1654528263
+  password: UX82473651
+  port: 443
+  server: 3.35.207.188
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+- name: '🇰🇷 韩国 | KOR #5'
+  password: UX82473651
+  port: 443
+  server: noted-cougar.rooster465.autos
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+- name: hysteria2-951929323
+  password: 7302ad33229de166d393cd56143a1e4c
+  port: 50160
+  server: 131.186.19.174
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 🆔ar14n24b 🔓 TR--N/A ❔ XX 138ms
   password: UX82473651
   port: 443
   server: balanced-stag.rooster465.autos
   sni: balanced-stag.rooster465.autos
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷 韩国 | KOR
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 43.201.103.218
-  type: ss
-  udp: true
-- name: '🇰🇷[www.v2nodes.com] trojan-KR-... #5'
-  password: UX82473651
-  port: 443
-  server: engaging-toucan.rooster465.autos
-  sni: engaging-toucan.rooster465.autos
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-657042667
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- name: 🇰🇷_KR_韩国
-  password: UX82473651
-  port: 443
-  server: liked-eft.rooster465.autos
-  sni: liked-eft.rooster465.autos
-  type: trojan
-  udp: true
-- name: '🇰🇷 韩国 | KOR #9'
-  password: UX82473651
-  port: 443
-  server: evolving-ewe.rooster465.autos
-  sni: evolving-ewe.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1644389533
-  password: 178c178666bb4ae5
-  port: 20007
-  server: ikr100b.zxom.eu.org
-  sni: ikr100b.zxom.eu.org
-  type: trojan
-  udp: true
-- name: trojan-1645312297
-  password: UX82473651
-  port: 443
-  server: pretty-rat.rooster465.autos
-  sni: pretty-rat.rooster465.autos
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-700407711
-  - vless-803630116
-  - trojan-1647915020
-  - trojan-1643520496
-  - 🇰🇷 韩国 | KOR
-  - '🇰🇷[www.v2nodes.com] trojan-KR-... #5'
-  - vmess-657042667
-  - 🇰🇷_KR_韩国
-  - '🇰🇷 韩国 | KOR #9'
-  - trojan-1644389533
-  - trojan-1645312297
+  - trojan-1651470520
+  - trojan-1660423629
+  - trojan-1654528263
+  - '🇰🇷 韩国 | KOR #5'
+  - hysteria2-951929323
+  - 🆔ar14n24b 🔓 TR--N/A ❔ XX 138ms
   type: select
 rules:
 - MATCH,PROXY
