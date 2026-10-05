@@ -3,33 +3,38 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-467980788
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: https://t.me/clashv8🇨🇳
-  type: hysteria2
-- name: hysteria2-705682240
+- name: hysteria2-1532454241
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: https://t.me/wangcai2�
   type: hysteria2
-- name: hysteria2-864234258
+- name: hysteria2-1451198729
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.89
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
+  sni: https://t.me/wangcai2рҹүҹү
   type: hysteria2
+- client-fingerprint: qq
+  name: vless-669722615
+  port: 13779
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  server: 47.238.210.5
+  servername: tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-467980788
-  - hysteria2-705682240
-  - hysteria2-864234258
+  - hysteria2-1532454241
+  - hysteria2-1451198729
+  - vless-669722615
   type: select
 rules:
 - MATCH,PROXY

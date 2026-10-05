@@ -3,27 +3,70 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-GRPC-TLS 🇫🇷 FR-143.246.208.113 443",
-      "server": "143.246.208.113",
+      "tag": "🏳️ ShatakVPN 559150",
+      "server": "149.202.58.99",
       "server_port": 443,
-      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
       "tls": {
         "enabled": true,
-        "server_name": "assets-fr4.pleiades.codes",
+        "server_name": "bab-6.site",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
+        "type": "ws",
+        "path": "/vws/",
+        "headers": {}
       }
     },
     {
       "type": "vless",
-      "tag": "vless-656232751",
-      "server": "62.210.91.2",
+      "tag": "🇺🇸 美国 | USA",
+      "server": "www.large-files.info",
+      "server_port": 8443,
+      "uuid": "7c99dc89-bf49-45c9-acc5-e43f36657518",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.large-files.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/var/www/html/video/preview/download/i8o0la",
+        "headers": {
+          "Host": "www.large-files.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-700283246",
+      "server": "62.210.91.10",
+      "server_port": 23576,
+      "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fuck.rkn",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 827010",
+      "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -39,25 +82,6 @@
           "public_key": "1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s",
           "short_id": "01"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms",
-      "server": "143.246.208.113",
-      "server_port": 443,
-      "uuid": "0dca2cfe-98eb-4f9d-9a47-cf87510c558b",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-fr4.pleiades.codes",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "cdn.v1.AssetService"
       }
     },
     {

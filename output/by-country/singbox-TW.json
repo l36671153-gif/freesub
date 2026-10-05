@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1658243119",
-      "server": "argo6.5671234.xyz",
+      "tag": "vless-1668906533",
+      "server": "104.20.36.205",
       "server_port": 443,
       "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
       "tls": {
@@ -24,23 +24,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1656249490",
-      "server": "argo6.5671234.xyz",
+      "type": "hysteria2",
+      "tag": "hysteria2-468892432",
+      "server": "160.187.100.109",
       "server_port": 443,
-      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "argo6.5671234.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {}
+        "server_name": "160.187.100.109",
+        "insecure": true
       }
     },
     {

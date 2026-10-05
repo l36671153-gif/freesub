@@ -3,24 +3,60 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
-  network: ws
-  port: 8443
-  server: 104.21.10.34
-  servername: iiproxy88.iiproxy.com
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1614644807
+  port: 443
+  reality-opts:
+    public-key: XU7da9vkBex4TUPo1d-ctFY_N6zouBiCRnbnUK82i3Q
+    short-id: fee1f986a72444db
+  server: 109.176.202.7
+  servername: id-nl-01.mintrocket.org
   tls: true
   type: vless
   udp: true
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  ws-opts:
-    headers:
-      Host: iiproxy88.iiproxy.com
-    path: /
+  uuid: f0a52dd3-4377-4402-a450-210bc81bcf25
+- alterId: 0
+  cipher: auto
+  name: vmess-1577691187
+  port: 22324
+  server: 185.177.229.129
+  type: vmess
+  udp: true
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇩🇪 德国 | DEU
+  port: 443
+  reality-opts:
+    public-key: zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks
+    short-id: 34e797af
+  server: 2.27.69.157
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1667143465
+  port: 443
+  reality-opts:
+    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
+    short-id: c56d4f1c
+  server: 111.88.74.239
+  servername: google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88a4915f-d68d-44aa-b4a4-36b99a2ab1ed
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
+  - vless-1614644807
+  - vmess-1577691187
+  - 🇩🇪 德国 | DEU
+  - vless-1667143465
   type: select
 rules:
 - MATCH,PROXY
