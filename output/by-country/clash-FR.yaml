@@ -4,19 +4,48 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔soskeynet 🔒 VL-TCP-N/A 🇫🇷 FR 112ms
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: 🔒 VL-GRPC-TLS 🇫🇷 FR-143.246.208.113 443
+  network: grpc
   port: 443
-  server: nasnet-162191099-direct.mbghalibaf.com
-  servername: nasnet-162191099-direct.mbghalibaf.com
+  server: 143.246.208.113
+  servername: assets-fr4.pleiades.codes
   tls: true
   type: vless
   udp: true
-  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656232751
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
+  network: grpc
+  port: 443
+  server: 143.246.208.113
+  servername: assets-fr4.pleiades.codes
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔soskeynet 🔒 VL-TCP-N/A 🇫🇷 FR 112ms
+  - 🔒 VL-GRPC-TLS 🇫🇷 FR-143.246.208.113 443
+  - vless-656232751
+  - 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 81ms
   type: select
 rules:
 - MATCH,PROXY

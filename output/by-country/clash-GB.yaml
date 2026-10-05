@@ -3,17 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: aes-256-gcm
+  name: shadowsocks-717969059
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
+  type: ss
+  udp: true
 - cipher: rc4-md5
-  name: shadowsocks-468218595
+  name: shadowsocks-165
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 146.70.23.32
+  server: 146.70.61.37
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-468218595
+  - shadowsocks-717969059
+  - shadowsocks-165
   type: select
 rules:
 - MATCH,PROXY

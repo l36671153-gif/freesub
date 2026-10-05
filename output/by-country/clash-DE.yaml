@@ -4,37 +4,23 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.181.125 2083_1
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
   network: ws
-  port: 2083
-  server: 172.67.181.125
-  servername: Site.check-looks.space
+  port: 8443
+  server: 104.21.10.34
+  servername: iiproxy88.iiproxy.com
   tls: true
   type: vless
   udp: true
-  uuid: ca608afb-55ff-4f36-9d00-606fedbb30e1
+  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
   ws-opts:
     headers:
-      Host: Site.check-looks.space
+      Host: iiproxy88.iiproxy.com
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1644682380
-  port: 443
-  reality-opts:
-    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
-    short-id: bc458609
-  server: defrnode.jumpernode.site
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8af93649-403b-46d8-9966-923d4c58402c
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.181.125 2083_1
-  - vless-1644682380
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
   type: select
 rules:
 - MATCH,PROXY

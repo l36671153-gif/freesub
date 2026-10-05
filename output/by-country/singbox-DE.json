@@ -3,13 +3,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.181.125 2083_1",
-      "server": "172.67.181.125",
-      "server_port": 2083,
-      "uuid": "ca608afb-55ff-4f36-9d00-606fedbb30e1",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443",
+      "server": "104.21.10.34",
+      "server_port": 8443,
+      "uuid": "806fa224-44f7-4c1b-b7a3-05bfdfdfbf87",
       "tls": {
         "enabled": true,
-        "server_name": "Site.check-looks.space",
+        "server_name": "iiproxy88.iiproxy.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -19,28 +19,7 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "Site.check-looks.space"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1644682380",
-      "server": "defrnode.jumpernode.site",
-      "server_port": 443,
-      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "p-nt-www-amazon-com-kalias.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
-          "short_id": "bc458609"
+          "Host": "iiproxy88.iiproxy.com"
         }
       }
     },
