@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇳🇱 荷兰 | NLD
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 18333
-  server: us3.xiaoliyu.cyou
+- name: hysteria2-1615728906
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.145
   skip-cert-verify: true
-  sni: us3.xiaoliyu.cyou
+  sni: hop-germany-september.dynuddns.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇳🇱 荷兰 | NLD
+  - hysteria2-1615728906
   type: select
 rules:
 - MATCH,PROXY
