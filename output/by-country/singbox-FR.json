@@ -2,56 +2,38 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 123ms",
-      "server": "nasnet-162191099-direct.mbghalibaf.com",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 | FRA",
+      "server": "13.38.79.223",
       "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🇵🇱 PL-149.50.105.60 443",
+      "server": "149.50.105.60",
+      "server_port": 443,
+      "uuid": "b585dc5e-55bf-4a8b-913a-27c9ccac05c3",
       "tls": {
         "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
+        "server_name": "bab-6.site",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vws/",
+        "headers": {
+          "Host": "bab-6.site"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-162.19.10.99 443",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 87ms",
-      "server": "162.19.10.99",
-      "server_port": 443,
-      "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nasnet-162191099-direct.mbghalibaf.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 214ms",
+      "tag": "🆔vpnserverrr 🔒 VL-TCP- ❔ XX 164ms",
       "server": "54.37.136.194",
       "server_port": 2053,
       "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
@@ -70,8 +52,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.185.98 2053",
+      "server": "172.67.185.98",
+      "server_port": 2053,
+      "uuid": "9d672694-c146-422e-b3b5-3717a38a0fcc",
+      "tls": {
+        "enabled": true,
+        "server_name": "fr.api-music-fa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/voip/updates/static/fr2035",
+        "headers": {
+          "Host": "fr.api-music-fa.com"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇫🇷 法国 | FRA",
+      "tag": "🇫🇷 法国 | FRA #1",
       "server": "13.38.79.223",
       "server_port": 443,
       "method": "aes-256-cfb",

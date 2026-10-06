@@ -5,73 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 92ms
+  name: 🏳️ ShatakVPN 128823
   port: 443
   reality-opts:
-    public-key: 9Pg_ecqFPMfzOvJrmxE05FmLUDXbY9Mo1r2MgxFzYEQ
-    short-id: cd57a927f6b72d81
-  server: 2.27.211.38
-  servername: po.skfv-mirror.ru
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  server: 2.27.69.117
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: 86037609-3790-4901-bd2f-c698092fb1fc
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1688377125
-  port: 443
-  reality-opts:
-    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
-    short-id: 85c86a9863
-  server: 144.31.125.60
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
-- alterId: 0
-  cipher: auto
-  name: vmess-1624303751
-  port: 22324
-  server: 185.177.229.129
-  type: vmess
-  udp: true
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
-  network: ws
-  port: 8443
-  server: 104.21.10.34
-  servername: iiproxy88.iiproxy.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 806fa224-44f7-4c1b-b7a3-05bfdfdfbf87
-  ws-opts:
-    headers:
-      Host: iiproxy88.iiproxy.com
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1186765704
-  port: 4443
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  server: 89.169.53.176
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 92ms
-  - vless-1688377125
-  - vmess-1624303751
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.21.10.34 8443
-  - vless-1186765704
+  - 🏳️ ShatakVPN 128823
   type: select
 rules:
 - MATCH,PROXY
