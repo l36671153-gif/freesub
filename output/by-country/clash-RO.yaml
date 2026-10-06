@@ -3,17 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1502094720
+- name: '8'
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   port: 8443
-  server: 77.74.123.99
+  server: 77.74.123.102
+  skip-cert-verify: false
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: hysteria2-1666096000
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.105
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: hysteria2
+- name: hysteria2-1670786124
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.106
   skip-cert-verify: true
   sni: grape-test-italy.dynuddns.net
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1502094720
+  - '8'
+  - hysteria2-1666096000
+  - hysteria2-1670786124
   type: select
 rules:
 - MATCH,PROXY
