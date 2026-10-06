@@ -3,46 +3,65 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1663837627
+- name: trojan-1645310736
   password: UX82473651
   port: 443
-  server: 185.244.208.69
+  server: strong-haddock.rooster465.autos
   sni: strong-haddock.rooster465.autos
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-222543296
-  network: ws
-  port: 23026
-  server: 47.244.120.197
-  type: vmess
-  udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    headers: {}
-    path: /arki
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 496685
-  password: pno0e2keji2gsfea
-  port: 1080
-  server: 181.215.18.196
-  type: ss
-  udp: true
-- name: hysteria2-655838404
+- name: hysteria2-1589277558
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2≡ƒç
+  type: hysteria2
+- name: hysteria2-483633863
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: hysteria2-663905691
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 202.146.222.89
+  type: hysteria2
+- name: hysteria2-467420662
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.174
   skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https://t.me/oneclickvpnkeys
+  type: hysteria2
+- name: trojan-1643520505
+  password: UX82473651
+  port: 443
+  server: strong-haddock.rooster465.autos
+  sni: strong-haddock.rooster465.autos
+  type: trojan
+  udp: true
+- name: 🏳️ ShatakVPN 897581
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1663837627
-  - vmess-222543296
-  - 🏳️ ShatakVPN 496685
-  - hysteria2-655838404
+  - trojan-1645310736
+  - hysteria2-1589277558
+  - hysteria2-483633863
+  - hysteria2-663905691
+  - hysteria2-467420662
+  - trojan-1643520505
+  - 🏳️ ShatakVPN 897581
   type: select
 rules:
 - MATCH,PROXY

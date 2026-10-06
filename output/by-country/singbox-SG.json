@@ -2,28 +2,8 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1363486848",
-      "server": "217.217.254.126",
-      "server_port": 2053,
-      "uuid": "cb15cce9-73ed-4928-b38c-462f0732cbe9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw",
-          "short_id": "87829de0e2bb82cb"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "trojan-1643837608",
+      "tag": "trojan-1643520513",
       "server": "glowing-marmoset.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
@@ -33,8 +13,37 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1684034667",
+      "server": "gw.lydwan.com",
+      "server_port": 35601,
+      "method": "chacha20-ietf-poly1305",
+      "password": "4c8fced0-8987-4504-b8cf-15aca9cbb82e"
+    },
+    {
       "type": "vless",
-      "tag": "vless-1358896617",
+      "tag": "vless-522223674",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1307824716",
       "server": "54.169.200.246",
       "server_port": 41688,
       "uuid": "49c0aac1-5e05-4f04-b624-248fc59e03c4",
@@ -44,13 +53,24 @@
         "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk",
           "short_id": "7f342137c20387"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1659399072",
+      "server": "pet-antelope.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pet-antelope.rooster465.autos"
       }
     },
     {

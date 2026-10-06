@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1163840992
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: hysteria2-1552278389
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
   port: 443
-  server: vpn-tw-002.fastervpn.world
+  server: 144.31.212.253
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: vps155-edge.kermemehori.ru
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1163840992
+  - hysteria2-1552278389
   type: select
 rules:
 - MATCH,PROXY
