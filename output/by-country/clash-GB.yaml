@@ -3,23 +3,35 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 551402
-  port: 443
+- client-fingerprint: firefox
+  name: vless-1279636589
+  port: 2053
   reality-opts:
-    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
-    short-id: ae64c9b46bff174a
-  server: 91.208.92.210
-  servername: uk1.sky-vault.top
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- client-fingerprint: firefox
+  name: vless-1345603902
+  port: 2053
+  reality-opts:
+    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
+    short-id: 4cc9dc65f7770115
+  server: 46.250.240.80
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 551402
+  - vless-1279636589
+  - vless-1345603902
   type: select
 rules:
 - MATCH,PROXY

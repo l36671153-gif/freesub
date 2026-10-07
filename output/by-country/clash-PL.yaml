@@ -3,7 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1590151523
+- name: vless-1622330540
   network: ws
   port: 80
   server: 70.34.255.101
@@ -16,7 +16,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1590151523
+  - vless-1622330540
   type: select
 rules:
 - MATCH,PROXY

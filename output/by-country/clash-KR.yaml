@@ -3,58 +3,65 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1662763585
+- name: trojan-1657350218
   password: UX82473651
   port: 443
-  server: 3.35.168.225
-  sni: noted-cougar.rooster465.autos
+  server: 43.201.252.164
+  sni: balanced-stag.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1696475212
-  password: UX82473651
-  port: 443
-  server: noted-cougar.rooster465.autos
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1651470504
+- name: hysteria2-553326952
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152-67-200-82.liao.kdns.fr
+  type: hysteria2
+- name: trojan-1699960673
   password: UX82473651
   port: 443
   server: 3.34.131.153
   sni: pretty-rat.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1678131691
+- name: trojan-1651470520
   password: UX82473651
   port: 443
-  server: 3.35.207.188
-  sni: main-fawn.rooster465.autos
+  server: 13.125.69.162
+  sni: engaging-toucan.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1663627156
+- name: trojan-1699960686
   password: UX82473651
   port: 443
-  server: optimum-snapper.rooster465.autos
-  sni: optimum-snapper.rooster465.autos
+  server: 3.39.225.215
+  sni: kind-stork.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1647915017
+- name: '🇰🇷[www.v2nodes.com] trojan-KR-... #5'
   password: UX82473651
   port: 443
-  server: optimum-snapper.rooster465.autos
-  sni: optimum-snapper.rooster465.autos
+  server: noted-cougar.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   type: trojan
   udp: true
-- name: 🏳️ ShatakVPN 668367
+- name: hysteria2-655819436
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  port: 443
+  server: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-kr-002.fastervpn.world
+  type: hysteria2
+- name: trojan-1698503401
   password: UX82473651
   port: 443
-  server: 43.201.100.203
-  sni: optimum-snapper.rooster465.autos
+  server: 43.201.252.164
+  sni: balanced-stag.rooster465.autos
   type: trojan
   udp: true
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-48555241
+  name: vless-561641544
   port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -65,25 +72,18 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1646372267
-  password: UX82473651
-  port: 443
-  server: balanced-stag.rooster465.autos
-  sni: balanced-stag.rooster465.autos
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1662763585
-  - trojan-1696475212
-  - trojan-1651470504
-  - trojan-1678131691
-  - trojan-1663627156
-  - trojan-1647915017
-  - 🏳️ ShatakVPN 668367
-  - vless-48555241
-  - trojan-1646372267
+  - trojan-1657350218
+  - hysteria2-553326952
+  - trojan-1699960673
+  - trojan-1651470520
+  - trojan-1699960686
+  - '🇰🇷[www.v2nodes.com] trojan-KR-... #5'
+  - hysteria2-655819436
+  - trojan-1698503401
+  - vless-561641544
   type: select
 rules:
 - MATCH,PROXY

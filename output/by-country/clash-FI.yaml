@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 511011
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-  port: 443
-  server: 45.207.207.25
+- cipher: aes-128-gcm
+  name: shadowsocks-1689700222
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  port: 18280
+  server: 185.103.110.66
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 511011
+  - shadowsocks-1689700222
   type: select
 rules:
 - MATCH,PROXY
