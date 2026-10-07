@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-256-cfb
+  name: shadowsocks-696792830
+  password: 7eadc6dbe2ae
+  port: 65443
+  server: 194.38.11.86
+  type: ss
+  udp: true
+- name: 🏳️ ShatakVPN 524896
+  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
+  port: 443
+  server: 91.196.32.163
+  skip-cert-verify: true
+  sni: germany3.h2corp.local
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-696792830
+  - 🏳️ ShatakVPN 524896
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

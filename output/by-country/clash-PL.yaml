@@ -3,20 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1622330540
-  network: ws
-  port: 80
-  server: 70.34.255.101
-  type: vless
-  udp: true
-  uuid: a889262f-5fe3-4c93-9aaa-3721318dd389
-  ws-opts:
-    headers: {}
-    path: /
+- name: 🏳️ ShatakVPN 400685
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  port: 443
+  server: 45.192.12.93
+  skip-cert-verify: false
+  sni: admin.wwwinternetvideo.click
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1622330540
+  - 🏳️ ShatakVPN 400685
   type: select
 rules:
 - MATCH,PROXY

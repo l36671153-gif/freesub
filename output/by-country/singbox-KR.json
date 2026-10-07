@@ -2,31 +2,41 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1657350218",
-      "server": "43.201.252.164",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "balanced-stag.rooster465.autos"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "hysteria2-553326952",
-      "server": "152.67.200.82",
+      "tag": "hysteria2-1060573944",
+      "server": "131.186.19.174",
       "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "password": "7302ad33229de166d393cd56143a1e4c",
       "tls": {
         "enabled": true,
-        "server_name": "152-67-200-82.liao.kdns.fr",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
     {
+      "type": "vless",
+      "tag": "vless-721523038",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "trojan-1699960673",
+      "tag": "trojan-1651718646",
       "server": "3.34.131.153",
       "server_port": 443,
       "password": "UX82473651",
@@ -37,79 +47,46 @@
     },
     {
       "type": "trojan",
-      "tag": "trojan-1651470520",
-      "server": "13.125.69.162",
+      "tag": "trojan-1703768238",
+      "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "engaging-toucan.rooster465.autos"
+        "server_name": "optimum-snapper.rooster465.autos"
       }
     },
     {
       "type": "trojan",
-      "tag": "trojan-1699960686",
-      "server": "3.39.225.215",
+      "tag": "trojan-1648312994",
+      "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "kind-stork.rooster465.autos"
+        "server_name": "optimum-snapper.rooster465.autos"
       }
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷[www.v2nodes.com] trojan-KR-... #5",
-      "server": "noted-cougar.rooster465.autos",
+      "tag": "trojan-1696475200",
+      "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-655819436",
-      "server": "vpn-kr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-002.fastervpn.world",
-        "insecure": true
+        "server_name": "pretty-rat.rooster465.autos"
       }
     },
     {
       "type": "trojan",
-      "tag": "trojan-1698503401",
-      "server": "43.201.252.164",
+      "tag": "trojan-1698581208",
+      "server": "43.203.172.96",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "balanced-stag.rooster465.autos"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-561641544",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "neutral-quail.rooster465.autos"
       }
     },
     {

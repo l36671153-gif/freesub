@@ -3,17 +3,103 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇸🇪[www.v2nodes.com] trojan-SE-...
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  port: 4443
-  server: 77.74.123.106
-  sni: grape-test-italy.dynuddns.net
-  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1670155830
+  port: 443
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.69.128
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 402ms
+  port: 2434
+  reality-opts:
+    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
+    short-id: 9de041877612a718
+  server: de5.bexait.ir
+  servername: icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2496047d-ba1e-49b4-9c04-4dc1a7f63313
+- cipher: aes-256-gcm
+  name: shadowsocks-1688379115
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 213.202.208.199
+  type: ss
+  udp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1684524148
+  port: 443
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  port: 443
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 144.31.62.170
+  servername: de2.srv.vbuste.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- name: 🐞96@oneclickvpnkeys
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  port: 4433
+  server: de1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 230415
+  password: 2YdE4lFOid5a
+  port: 8388
+  server: 51.195.126.38
+  type: ss
+  udp: true
+- name: vless-1701439545
+  port: 22849
+  server: 31.76.11.83
+  type: vless
+  udp: true
+  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
+- cipher: aes-256-cfb
+  name: shadowsocks-1710130682
+  password: amazonskr05
+  port: 443
+  server: 3.75.231.76
+  type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇸🇪[www.v2nodes.com] trojan-SE-...
+  - vless-1670155830
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 402ms
+  - shadowsocks-1688379115
+  - vless-1684524148
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  - 🐞96@oneclickvpnkeys
+  - 🏳️ ShatakVPN 230415
+  - vless-1701439545
+  - shadowsocks-1710130682
   type: select
 rules:
 - MATCH,PROXY
