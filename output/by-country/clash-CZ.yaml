@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🏳️ ShatakVPN 430803
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  port: 443
+  server: 46.8.100.93
+  sni: nl.zhabulik.ru
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 430803
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🏳️ ShatakVPN 430803",
+      "server": "46.8.100.93",
+      "server_port": 443,
+      "password": "WFer-5gN21nfHbVB2N8s71Z74EPUfzVj",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.zhabulik.ru"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

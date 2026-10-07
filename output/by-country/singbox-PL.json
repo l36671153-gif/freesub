@@ -3,26 +3,6 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 137ms",
-      "server": "31.77.13.19",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rusbid.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "vless-1590151523",
       "server": "70.34.255.101",
       "server_port": 80,
@@ -31,18 +11,6 @@
         "type": "ws",
         "path": "/",
         "headers": {}
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 ShatakVPN 250309",
-      "server": "45.192.12.93",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": false
       }
     },
     {
