@@ -5,101 +5,45 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1670155830
+  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 152ms
   port: 443
   reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.69.128
-  servername: addons.mozilla.org
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 82.39.171.12
+  servername: yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 402ms
-  port: 2434
-  reality-opts:
-    public-key: yzCvRpbQ-cRePaJAuQkw42_xEf-R860gFsQwoPki2E0
-    short-id: 9de041877612a718
-  server: de5.bexait.ir
-  servername: icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2496047d-ba1e-49b4-9c04-4dc1a7f63313
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 - cipher: aes-256-gcm
-  name: shadowsocks-1688379115
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 213.202.208.199
+  name: 🏳️ ShatakVPN 449676
+  password: kKEd0rBrd56Furjz
+  port: 80
+  server: 2.58.81.221
   type: ss
   udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1684524148
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  port: 443
-  reality-opts:
-    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
-    short-id: 4be4110078ebed4a
-  server: 144.31.62.170
-  servername: de2.srv.vbuste.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-- name: 🐞96@oneclickvpnkeys
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+- name: hysteria2-1209678597
+  password: 19f72087-4591-4d72-930b-2697078ec2be
   port: 4433
   server: de1.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: 127.0.0.1
+  sni: de1.xiaoliyu.cyou
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 230415
-  password: 2YdE4lFOid5a
-  port: 8388
-  server: 51.195.126.38
-  type: ss
-  udp: true
-- name: vless-1701439545
-  port: 22849
-  server: 31.76.11.83
-  type: vless
-  udp: true
-  uuid: 2e511783-125c-466b-925d-a9cd1c98e30e
 - cipher: aes-256-cfb
-  name: shadowsocks-1710130682
+  name: 🇩🇪DE_5|3.6MB/s
   password: amazonskr05
   port: 443
-  server: 3.75.231.76
+  server: 3.67.197.81
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1670155830
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 402ms
-  - shadowsocks-1688379115
-  - vless-1684524148
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  - 🐞96@oneclickvpnkeys
-  - 🏳️ ShatakVPN 230415
-  - vless-1701439545
-  - shadowsocks-1710130682
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 152ms
+  - 🏳️ ShatakVPN 449676
+  - hysteria2-1209678597
+  - 🇩🇪DE_5|3.6MB/s
   type: select
 rules:
 - MATCH,PROXY
