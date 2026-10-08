@@ -3,49 +3,57 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-692912199
+- name: hysteria2-1532454241
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: css.rbxcdn.com
+  sni: https://t.me/wangcai2�
   type: hysteria2
-- name: trojan-1653446775
-  password: UX82473651
-  port: 443
-  server: strong-haddock.rooster465.autos
-  sni: strong-haddock.rooster465.autos
-  type: trojan
-  udp: true
-- name: hysteria2-920243840
+- name: hysteria2-892566711
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.29
+  server: 202.146.222.174
   skip-cert-verify: true
-  sni: https://t.me/wangcai2üá
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   type: hysteria2
-- name: trojan-1660559628
-  password: UX82473651
+- name: hysteria2-1066924718
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 185.244.208.69
-  sni: strong-haddock.rooster465.autos
-  type: trojan
-  udp: true
-- name: hysteria2-856461941
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 'off'
+  type: hysteria2
+- name: hysteria2-1456970892
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2üá®üá≥
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
+  type: hysteria2
+- name: 🏳️ ShatakVPN 730020
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+- name: hysteria2-705682240
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: www.bing.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-692912199
-  - trojan-1653446775
-  - hysteria2-920243840
-  - trojan-1660559628
-  - hysteria2-856461941
+  - hysteria2-1532454241
+  - hysteria2-892566711
+  - hysteria2-1066924718
+  - hysteria2-1456970892
+  - 🏳️ ShatakVPN 730020
+  - hysteria2-705682240
   type: select
 rules:
 - MATCH,PROXY
