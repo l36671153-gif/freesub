@@ -4,126 +4,83 @@ mode: rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 851492
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.159
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  name: vless-1715315397
-  port: 2087
-  server: 13.143.172.203
-  servername: 13.143.172.203
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88aefb0c-cdbf-489f-9e6b-9be5b5fd5a11
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-186
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 193.29.139.204
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1659750585
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.170
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-130088
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.9
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-171
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.17
-  type: ss
-  udp: true
-- name: hysteria2-1671852511
-  password: dd50a499-7e43-4589-8490-f3b9c2451473
-  port: 443
-  server: nl-hy-test.tcp-reset-club.net
-  skip-cert-verify: true
-  sni: tcp-reset-club.net
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-170
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.16
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 371353
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.212
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-130087
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.62
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 131136
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.18
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 673190
+  name: 🏳️ ShatakVPN 438458
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.149
   type: ss
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1715315388
-  port: 443
-  reality-opts:
-    public-key: xcTXD3of3Yt5hHdIwYGZ1LjMBgiL6sqj5J33J4U4ozM
-    short-id: a7c31f92
-  server: 217.60.24.36
-  servername: cipher961.filebeam.website
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1659750675
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.171
+  type: ss
   udp: true
-  uuid: 40781fd4-c7df-4aeb-bd5a-ecfa3ba7b841
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 821364
+  name: vless-655776491
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.80
+  server: 51.158.206.19
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 879563
+  name: 🏳️ ShatakVPN 719345
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: api.v2.nl2e63a0c5
+  name: vless-1713661966
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc
+    short-id: fbe9c012125d90d2
+  server: nl2.bbobr.win
+  servername: nl2.bbobr.win
+  tls: true
+  type: vless
+  udp: true
+  uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-258605573
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.3
+  server: 82.38.31.42
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 184371
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.103
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 343833
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.26
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 153ms
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 158ms
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 443
   server: 82.38.31.159
@@ -131,37 +88,62 @@ proxies:
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 804680
+  name: 🏳️ ShatakVPN 797333
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.87
+  server: 51.158.206.20
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 928396
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.69
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-53939390
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.28
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-98971312
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.49
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 919350
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.201
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 851492
-  - vless-1715315397
-  - shadowsocks-186
-  - shadowsocks-1659750585
-  - shadowsocks-130088
-  - shadowsocks-171
-  - hysteria2-1671852511
-  - shadowsocks-170
-  - 🏳️ ShatakVPN 371353
-  - shadowsocks-130087
-  - 🏳️ ShatakVPN 131136
-  - 🏳️ ShatakVPN 673190
-  - vless-1715315388
-  - 🏳️ ShatakVPN 821364
-  - 🏳️ ShatakVPN 879563
-  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 153ms
-  - 🏳️ ShatakVPN 804680
+  - 🏳️ ShatakVPN 438458
+  - shadowsocks-1659750675
+  - vless-655776491
+  - 🏳️ ShatakVPN 719345
+  - vless-1713661966
+  - shadowsocks-258605573
+  - 🏳️ ShatakVPN 184371
+  - 🏳️ ShatakVPN 343833
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 158ms
+  - 🏳️ ShatakVPN 797333
+  - 🏳️ ShatakVPN 928396
+  - shadowsocks-53939390
+  - shadowsocks-98971312
+  - 🏳️ ShatakVPN 919350
   type: select
 rules:
 - MATCH,PROXY

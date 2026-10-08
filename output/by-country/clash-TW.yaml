@@ -3,34 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1482139052
+- name: 🏳️ ShatakVPN 428566
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world
+  type: hysteria2
+- name: hysteria2-655713431
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: 'off'
+  sni: vpn-tw-002.fastervpn.world\u0026insecure=1\u0026allowinsecure=1
   type: hysteria2
-- name: hysteria2-468892442
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-  sni: css.rbxcdn.com
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 153ms
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1482139052
-  - hysteria2-468892442
-  - 🆔surfboardv2ray 🔓 VM-TCP-N/A ❔ XX 153ms
+  - 🏳️ ShatakVPN 428566
+  - hysteria2-655713431
   type: select
 rules:
 - MATCH,PROXY

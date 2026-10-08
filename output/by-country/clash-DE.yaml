@@ -3,47 +3,71 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- name: 🇺🇸_US_美国->🇩🇪_DE_德国
+  network: ws
+  port: 2052
+  server: eu02.123450908.xyz
+  type: vless
+  udp: true
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
+  ws-opts:
+    headers:
+      Host: eu02.123450908.xyz
+    path: /rain1226
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 152ms
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 161ms
   port: 443
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
+    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
+    short-id: c885e8f8
+  server: 144.31.215.227
+  servername: cdn-de.bulkavpn.top
   tls: true
   type: vless
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 449676
-  password: kKEd0rBrd56Furjz
-  port: 80
-  server: 2.58.81.221
-  type: ss
-  udp: true
-- name: hysteria2-1209678597
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  port: 4433
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
-  type: hysteria2
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_5|3.6MB/s
-  password: amazonskr05
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1684524148
   port: 443
-  server: 3.67.197.81
-  type: ss
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
   udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- name: hysteria2-1711051470
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  type: hysteria2
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1690637342
+  port: 443
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  server: 2.27.69.117
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 152ms
-  - 🏳️ ShatakVPN 449676
-  - hysteria2-1209678597
-  - 🇩🇪DE_5|3.6MB/s
+  - 🇺🇸_US_美国->🇩🇪_DE_德国
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 161ms
+  - vless-1684524148
+  - hysteria2-1711051470
+  - vless-1690637342
   type: select
 rules:
 - MATCH,PROXY
