@@ -3,130 +3,94 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-656230724
-  port: 13672
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
+- name: trojan-1737442108
+  password: UX82473651
+  port: 443
+  server: glorious-lark.rooster465.autos
+  sni: glorious-lark.rooster465.autos
+  type: trojan
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1657560630
+- name: trojan-1653307129
   password: UX82473651
   port: 443
   server: delicate-buck.rooster465.autos
   sni: delicate-buck.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-210050461
-  port: 13672
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1735763323
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  port: 443
-  server: 3.34.95.215
-  skip-cert-verify: true
-  sni: 3.34.95.215
-  type: hysteria2
-- name: trojan-1681033285
+- name: trojan-1670007021
   password: UX82473651
   port: 443
-  server: 52.78.203.191
-  sni: delicate-buck.rooster465.autos
+  server: noted-cougar.rooster465.autos
+  sni: noted-cougar.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1648313004
+- name: trojan-1744442928
+  password: UX82473651
+  port: 443
+  server: fancy-skink.rooster465.autos
+  sni: fancy-skink.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1648313008
+  password: UX82473651
+  port: 443
+  server: pretty-rat.rooster465.autos
+  sni: pretty-rat.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1647915020
   password: UX82473651
   port: 443
   server: kind-stork.rooster465.autos
   sni: kind-stork.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1666221800
-  password: UX82473651
+- client-fingerprint: chrome
+  name: vless-1739138499
   port: 443
-  server: 43.201.100.203
-  sni: optimum-snapper.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1663139042
-  password: UX82473651
-  port: 443
-  server: 3.35.168.225
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1660423642
-  password: UX82473651
-  port: 443
-  server: 13.125.69.162
-  sni: engaging-toucan.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1670007016
-  password: UX82473651
-  port: 443
-  server: delicate-buck.rooster465.autos
-  sni: delicate-buck.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1738407208
-  password: UX82473651
-  port: 443
-  server: working-tomcat.rooster465.autos
-  sni: working-tomcat.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  name: vless-1293637742
-  port: 2053
   reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  server: 151.245.106.49
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
+  server: 34.22.111.30
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-- name: hysteria2-1471631078
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
+- name: 🇰🇷_KR_韩国
+  password: UX82473651
+  port: 443
+  server: pure-kodiak.rooster465.autos
+  sni: pure-kodiak.rooster465.autos
+  type: trojan
+  udp: true
+- name: hysteria2-1745293703
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  port: 443
+  server: 52.78.119.244
   skip-cert-verify: true
-  sni: 'off'
+  sni: 52.78.119.244
+  type: hysteria2
+- name: hysteria2-1739751450
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  port: 443
+  server: 52.78.119.244
+  skip-cert-verify: true
+  sni: vpn-kr-002.fastervpn.world
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-656230724
-  - trojan-1657560630
-  - vless-210050461
-  - hysteria2-1735763323
-  - trojan-1681033285
-  - trojan-1648313004
-  - trojan-1666221800
-  - trojan-1663139042
-  - trojan-1660423642
-  - trojan-1670007016
-  - trojan-1738407208
-  - vless-1293637742
-  - hysteria2-1471631078
+  - trojan-1737442108
+  - trojan-1653307129
+  - trojan-1670007021
+  - trojan-1744442928
+  - trojan-1648313008
+  - trojan-1647915020
+  - vless-1739138499
+  - 🇰🇷_KR_韩国
+  - hysteria2-1745293703
+  - hysteria2-1739751450
   type: select
 rules:
 - MATCH,PROXY
