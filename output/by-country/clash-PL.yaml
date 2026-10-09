@@ -3,17 +3,19 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 171415
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  port: 443
-  server: 144.31.49.47
-  skip-cert-verify: true
-  sni: admin.wwwinternetvideo.click
-  type: hysteria2
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-TCP-N/A 🇵🇱 PL 110ms
+  port: 2083
+  server: 95.85.253.241
+  servername: 95.85.253.241
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 171415
+  - 🆔ar14n24b 🔒 VL-TCP-N/A 🇵🇱 PL 110ms
   type: select
 rules:
 - MATCH,PROXY
