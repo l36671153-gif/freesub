@@ -5,164 +5,39 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 672423
+  name: 🏳️ ShatakVPN 255745
   port: 443
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 150.241.79.232
+  servername: de2.srv.vbuste.ru
   tls: true
   type: vless
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1598400048
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 95ms
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 95ms
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1716366320
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-84394360
-  port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1690637327
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1724947556
-  port: 443
-  reality-opts:
-    public-key: zAmNLsLPizp96b55zNe2kJ3zXBdpuNY0olnRaOpluks
-    short-id: 34e797af
-  server: 2.27.35.74
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1690637342
-  port: 443
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  server: 2.27.69.117
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-141.98.7.193 8443
-  network: ws
-  port: 8443
+  name: 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  port: 2087
   server: 141.98.7.193
   servername: 141.98.7.193
   tls: true
   type: vless
   udp: true
   uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
-  ws-opts:
-    headers:
-      Host: de.fastmirror-labs.xyz
-    path: /ws-cdn1-vless
-- cipher: aes-256-gcm
-  name: shadowsocks-717969012
-  password: kKEd0rBrd56Furjz
-  port: 80
-  server: 2.58.81.221
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: shadowsocks-1725776653
-  password: amazonskr05
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 德国 | DEU
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   port: 443
-  server: 3.77.34.196
+  server: 47.85.168.157
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 672423
-  - vless-1598400048
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 95ms
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 95ms
-  - vless-1716366320
-  - vless-84394360
-  - vless-1690637327
-  - vless-1724947556
-  - vless-1690637342
-  - 🔒 VL-WS-TLS 🇩🇪 DE-141.98.7.193 8443
-  - shadowsocks-717969012
-  - shadowsocks-1725776653
+  - 🏳️ ShatakVPN 255745
+  - 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  - 🇩🇪 德国 | DEU
   type: select
 rules:
 - MATCH,PROXY

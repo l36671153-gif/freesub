@@ -3,57 +3,30 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1532454241
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2�
-  type: hysteria2
-- name: hysteria2-892566711
+- name: hysteria2-721489368
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.174
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: t.me
   type: hysteria2
-- name: hysteria2-1066924718
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: 'off'
-  type: hysteria2
-- name: hysteria2-1456970892
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
-  type: hysteria2
-- name: 🏳️ ShatakVPN 730020
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: 202.146.222.29
-  type: hysteria2
-- name: hysteria2-705682240
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港 | HKG
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  type: vmess
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    headers: {}
+    path: /arki
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1532454241
-  - hysteria2-892566711
-  - hysteria2-1066924718
-  - hysteria2-1456970892
-  - 🏳️ ShatakVPN 730020
-  - hysteria2-705682240
+  - hysteria2-721489368
+  - 🇭🇰 香港 | HKG
   type: select
 rules:
 - MATCH,PROXY
