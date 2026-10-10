@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 959886
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.48.45
+- cipher: aes-256-cfb
+  name: shadowsocks-743178418
+  password: Sn5B7jTqr76aCJT8
+  port: 9097
+  server: 91.201.65.122
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 959886
+  - shadowsocks-743178418
   type: select
 rules:
 - MATCH,PROXY

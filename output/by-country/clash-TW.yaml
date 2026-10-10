@@ -3,26 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 509192
+- name: hysteria2-468892444
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 160.187.100.109
+  server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
+  sni: t.me
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-25247
-  port: 35034
-  server: 165.154.195.38
-  type: vmess
-  udp: true
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 509192
-  - vmess-25247
+  - hysteria2-468892444
   type: select
 rules:
 - MATCH,PROXY

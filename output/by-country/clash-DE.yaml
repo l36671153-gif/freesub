@@ -3,45 +3,47 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 240945
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  port: 2087
+  server: 141.98.7.193
+  servername: 141.98.7.193
+  tls: true
+  type: vless
   udp: true
-- client-fingerprint: randomized
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1691291864
+  name: vless-1706735894
   port: 443
   reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  server: 2.27.69.117
   servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 153ms
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
   port: 443
   reality-opts:
-    public-key: LEoyslGYLVf2XWq9Bkq8Hod-EsB3ZoTlvR5AKK3rciQ
-    short-id: c885e8f8
-  server: 144.31.215.227
-  servername: cdn-de.bulkavpn.top
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 144.31.62.242
+  servername: de2.srv.vbuste.ru
   tls: true
   type: vless
   udp: true
-  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 240945
-  - vless-1691291864
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 153ms
+  - 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  - vless-1706735894
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
   type: select
 rules:
 - MATCH,PROXY

@@ -1,0 +1,57 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇷🇺 RU-45.139.24.28 443
+  network: ws
+  port: 443
+  server: 45.139.24.28
+  servername: ap2.directly.chat
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  ws-opts:
+    headers:
+      Host: ap2.directly.chat
+    path: /md/1
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇷🇺 RU-87.228.71.198 443
+  network: ws
+  port: 443
+  server: 87.228.71.198
+  servername: ap2.directly.chat
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  ws-opts:
+    headers:
+      Host: ap2.directly.chat
+    path: /md/1
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇷🇺 RU-185.147.27.196 443
+  network: ws
+  port: 443
+  server: 185.147.27.196
+  servername: ap2.directly.chat
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  ws-opts:
+    headers:
+      Host: ap2.directly.chat
+    path: /md/1
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-WS-TLS 🇷🇺 RU-45.139.24.28 443
+  - 🔒 VL-WS-TLS 🇷🇺 RU-87.228.71.198 443
+  - 🔒 VL-WS-TLS 🇷🇺 RU-185.147.27.196 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
