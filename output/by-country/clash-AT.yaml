@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: hysteria2-1731106343
+  password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
+  port: 9443
+  server: 5.254.51.109
+  skip-cert-verify: false
+  sni: keyhop-voxility-at.dynuddns.com
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - hysteria2-1731106343
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1586455838
+  name: vmess-16065
   port: 18000
   server: 134.195.196.211
   type: vmess
@@ -14,7 +14,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1586455838
+  - vmess-16065
   type: select
 rules:
 - MATCH,PROXY
