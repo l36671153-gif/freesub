@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1492748761
+  name: vless-1477043376
   port: 443
   reality-opts:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
@@ -19,7 +19,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1492748761
+  - vless-1477043376
   type: select
 rules:
 - MATCH,PROXY
