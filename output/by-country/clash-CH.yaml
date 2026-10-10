@@ -3,8 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1560961116
+- client-fingerprint: chrome
+  name: vless-1699940832
   port: 2053
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
@@ -18,7 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1560961116
+  - vless-1699940832
   type: select
 rules:
 - MATCH,PROXY

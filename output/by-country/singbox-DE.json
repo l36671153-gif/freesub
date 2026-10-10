@@ -2,14 +2,81 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1755559621",
-      "server": "cuddly-sheepdog.rooster465.autos",
+      "type": "vless",
+      "tag": "🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down",
+      "server": "144.31.62.242",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cuddly-sheepdog.rooster465.autos"
+        "server_name": "de2.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087",
+      "server": "141.98.7.193",
+      "server_port": 2087,
+      "uuid": "e9e60f73-1618-491c-a85b-477bdc959ae6",
+      "tls": {
+        "enabled": true,
+        "server_name": "141.98.7.193",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔soskeynet 🔒 VL-TCP- 🇩🇪 DE 122ms",
+      "server": "212.100.171.154",
+      "server_port": 443,
+      "uuid": "a5ce10af-5e95-4eb3-ab87-bf4f95cb059b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg",
+          "short_id": "aa6582cf25e243ce"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1666452560",
+      "server": "130.17.25.67",
+      "server_port": 443,
+      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
+          "short_id": "9e4eced6e98ed4d4"
+        }
       }
     },
     {

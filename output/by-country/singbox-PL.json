@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1757906660",
+      "server": "polandsixsebenrkn010.qcloud.surf",
+      "server_port": 21384,
+      "password": "8bd04756-3beb-4348-82c9-d35453df50ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "polandsixsebenrkn010.qcloud.surf",
+        "insecure": true
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

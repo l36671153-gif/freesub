@@ -3,23 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇷🇺 RU-185.147.27.217 443",
-      "server": "185.147.27.217",
+      "tag": "vless-1697119993",
+      "server": "34.35.186.228",
       "server_port": 443,
-      "uuid": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
+      "uuid": "8d65c8a7-4876-4556-bb6a-feccfb46ee81",
       "tls": {
         "enabled": true,
-        "server_name": "ap2.directly.chat",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/md/1",
-        "headers": {
-          "Host": "ap2.directly.chat"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE",
+          "short_id": "89b3a20484eb43ec"
         }
       }
     },

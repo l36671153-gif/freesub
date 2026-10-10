@@ -3,16 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-704660102
-  port: 18000
-  server: 134.195.196.211
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: firefox
-  name: vless-1260285703
+- client-fingerprint: chrome
+  name: vless-1307937041
   port: 2053
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
@@ -23,9 +15,28 @@ proxies:
   type: vless
   udp: true
   uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- client-fingerprint: random
+  name: vless-1275300277
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- cipher: aes-256-gcm
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 33ms
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 51.222.136.236
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: vmess-655843809
+  name: vmess-1570694867
   port: 18000
   server: 134.195.196.211
   type: vmess
@@ -34,9 +45,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-704660102
-  - vless-1260285703
-  - vmess-655843809
+  - vless-1307937041
+  - vless-1275300277
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 33ms
+  - vmess-1570694867
   type: select
 rules:
 - MATCH,PROXY

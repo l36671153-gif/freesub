@@ -3,17 +3,61 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1755559621
-  password: UX82473651
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
   port: 443
-  server: cuddly-sheepdog.rooster465.autos
-  sni: cuddly-sheepdog.rooster465.autos
-  type: trojan
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 144.31.62.242
+  servername: de2.srv.vbuste.ru
+  tls: true
+  type: vless
   udp: true
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  port: 2087
+  server: 141.98.7.193
+  servername: 141.98.7.193
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9e60f73-1618-491c-a85b-477bdc959ae6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔soskeynet 🔒 VL-TCP- 🇩🇪 DE 122ms
+  port: 443
+  reality-opts:
+    public-key: 8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg
+    short-id: aa6582cf25e243ce
+  server: 212.100.171.154
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5ce10af-5e95-4eb3-ab87-bf4f95cb059b
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1666452560
+  port: 443
+  reality-opts:
+    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
+    short-id: 9e4eced6e98ed4d4
+  server: 130.17.25.67
+  servername: github.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1755559621
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
+  - 🔒 VL-TCP-TLS 🇩🇪 DE-141.98.7.193 2087
+  - 🆔soskeynet 🔒 VL-TCP- 🇩🇪 DE 122ms
+  - vless-1666452560
   type: select
 rules:
 - MATCH,PROXY
