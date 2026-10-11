@@ -3,15 +3,15 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🆔ar14n24b 🔓 TR--N/A ❔ XX 125ms
-  password: UX82473651
+- cipher: chacha20-ietf-poly1305
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 96ms
+  password: GayYa2V7pUbJBfKu
   port: 443
-  server: master-possum.rooster465.autos
-  sni: master-possum.rooster465.autos
-  type: trojan
+  server: 20.234.97.18
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 111ms
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 106ms
   password: YF329KNGVTUZ1qrH
   port: 443
   server: 20.123.1.55
@@ -20,8 +20,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔓 TR--N/A ❔ XX 125ms
-  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 111ms
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 96ms
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 106ms
   type: select
 rules:
 - MATCH,PROXY
