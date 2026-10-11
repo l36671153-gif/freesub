@@ -3,36 +3,50 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1456970892
+- name: hysteria2-1589277557
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
+  sni: https://t.me/wangcai2ⁿß
+  type: hysteria2
+- name: hysteria2-1532454246
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2����
+  type: hysteria2
+- name: hysteria2-1451198729
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2рҹүҹү
+  type: hysteria2
+- name: hysteria2-1308897122
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1734785059
+  name: vless-1737442063
   port: 443
   reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  server: 82.29.36.250
-  servername: aws.amazon.com
+    public-key: KkSH2hoA6PuNJL5ZNUDGuWoAYe5kIwcGbrbCYuxHTx8
+    short-id: f39ad9d9eb26df47
+  server: 154.37.216.186
+  servername: www.bing.com
   tls: true
   type: vless
   udp: true
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-- name: hysteria2-721489367
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: t.me
-  type: hysteria2
-- client-fingerprint: edge
+  uuid: ebdec762-050b-4d54-b7bf-0406ce22f734
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1759472420
+  name: vless-1756171733
   port: 9443
   reality-opts:
     public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
@@ -43,21 +57,37 @@ proxies:
   type: vless
   udp: true
   uuid: fe0721ac-c577-4938-b7ca-8ab5f43bb8da
-- name: hysteria2-892566713
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1743394832
+  port: 443
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  server: 82.29.36.250
+  servername: aws.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+- name: hysteria2-1582652685
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.174
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1456970892
-  - vless-1734785059
-  - hysteria2-721489367
-  - vless-1759472420
-  - hysteria2-892566713
+  - hysteria2-1589277557
+  - hysteria2-1532454246
+  - hysteria2-1451198729
+  - hysteria2-1308897122
+  - vless-1737442063
+  - vless-1756171733
+  - vless-1743394832
+  - hysteria2-1582652685
   type: select
 rules:
 - MATCH,PROXY

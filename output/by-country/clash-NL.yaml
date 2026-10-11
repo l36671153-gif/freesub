@@ -3,35 +3,42 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- 🇳🇱 NL 121ms
+  name: vless-1759336389
   port: 443
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: 78f97d82e16aaad6
-  server: 31.56.186.115
-  servername: fi-s-1.pythonmakemigreat.wiki
+    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
+    short-id: 9ea74b83f4993ca9
+  server: 185.114.48.103
+  servername: nd-3.ardesnode.ru
   tls: true
   type: vless
   udp: true
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 245066
+  name: 🏳️ ShatakVPN 242480
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.96
+  server: 51.158.206.8
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 395180
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.175
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 525866
+  name: 🏳️ ShatakVPN 573619
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -45,101 +52,26 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: api.v2.nl6d19f4b7
-  name: vless-1712736886
+  name: vless-1713661963
   network: grpc
   port: 443
   reality-opts:
     public-key: eZXyfQzQgQSreAbhKSorx38cgnKmGuSOiQbthBfG5k0
     short-id: 0e903b415d812c59
-  server: 185.170.211.197
+  server: nl6.bbobr.win
   servername: nl6.bbobr.win
   tls: true
   type: vless
   udp: true
   uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1659750585
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.170
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: api.v2.nl2e63a0c5
-  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 104ms
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: eztZ1H-OkkHao6d4FhX8Q728qN1UIeFcYH2jObRq1gc
-    short-id: fbe9c012125d90d2
-  server: 185.170.211.187
-  servername: nl2.bbobr.win
-  tls: true
-  type: vless
-  udp: true
-  uuid: 267b3a79-81f2-42ac-a409-c23b05b6329d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-656232073
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.8
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 110238
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 443
-  server: 82.38.31.162
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-275
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.7
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 654485
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.97
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 410980
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.212
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- 🇳🇱 NL 121ms
-  - 🏳️ ShatakVPN 245066
-  - 🏳️ ShatakVPN 525866
-  - vless-1712736886
-  - shadowsocks-1659750585
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 104ms
-  - vless-656232073
-  - 🏳️ ShatakVPN 110238
-  - shadowsocks-275
-  - 🏳️ ShatakVPN 654485
-  - 🏳️ ShatakVPN 410980
+  - vless-1759336389
+  - 🏳️ ShatakVPN 242480
+  - 🏳️ ShatakVPN 395180
+  - 🏳️ ShatakVPN 573619
+  - vless-1713661963
   type: select
 rules:
 - MATCH,PROXY

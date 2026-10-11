@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-128-gcm
+  name: 🏳️ ShatakVPN 740501
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+  port: 18283
+  server: 185.103.110.68
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 740501
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

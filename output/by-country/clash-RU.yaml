@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: ru-api
+  name: 🏳️ ShatakVPN 683721
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  server: 93.188.184.150
+  servername: ru-1-2.unturned-rust-dead.lol
+  tls: true
+  type: vless
+  udp: true
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 683721
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

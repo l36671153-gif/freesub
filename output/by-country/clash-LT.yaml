@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-256-cfb
+  name: shadowsocks-768399438
+  password: UkXRsXvR6buDMG2Y
+  port: 9001
+  server: 195.238.126.20
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-768399438
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
