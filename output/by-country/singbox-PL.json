@@ -2,18 +2,15 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-95.85.253.241 2087",
-      "server": "95.85.253.241",
-      "server_port": 2087,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 778990",
+      "server": "144.31.49.47",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
-        "server_name": "95.85.253.241",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {

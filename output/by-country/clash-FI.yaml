@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-128-gcm
-  name: 🏳️ ShatakVPN 740501
+  name: 🏳️ ShatakVPN 801803
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
   port: 18283
   server: 185.103.110.68
@@ -13,7 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 740501
+  - 🏳️ ShatakVPN 801803
   type: select
 rules:
 - MATCH,PROXY
