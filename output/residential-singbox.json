@@ -2,46 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇹🇼 🇨🇳 台湾 | TWN #1",
-      "server": "654168416355441.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "654168416355441.d6f54hd1j.cc"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "654168416355441.d6f54hd1j.cc"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1776760981",
-      "server": "24864168545164.d6f54hd1j.cc",
-      "server_port": 443,
-      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "24864168545164.d6f54hd1j.cc"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.d6f54hd1j.cc"
-        }
-      }
-    },
-    {
       "type": "direct",
       "tag": "direct"
     },
