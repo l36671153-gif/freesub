@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🏳️ ShatakVPN 280194",
+      "tag": "🏳️ ShatakVPN 728201",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -11,6 +11,70 @@
         "enabled": true,
         "server_name": "127.0.0.1",
         "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 🇨🇳 台湾 | TWN #1",
+      "server": "654168416355441.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "654168416355441.d6f54hd1j.cc"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "654168416355441.d6f54hd1j.cc"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-722298630",
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-700290962",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1776760981",
+      "server": "24864168545164.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "ecdc303d-bcbf-4129-bc02-dd67703f7081",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "24864168545164.d6f54hd1j.cc"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "24864168545164.d6f54hd1j.cc"
+        }
       }
     },
     {

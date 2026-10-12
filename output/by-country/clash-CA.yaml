@@ -3,23 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-913472676
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1762352562
+  password: e5c65ph
   port: 443
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  server: 209.200.246.148
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+  server: ca225.vpnbook.com
+  type: ss
   udp: true
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-913472676
+  - shadowsocks-1762352562
   type: select
 rules:
 - MATCH,PROXY
