@@ -4,23 +4,18 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-  name: vless-1753896430
-  network: grpc
-  port: 8444
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  server: 62.60.233.157
-  servername: github.com
+  name: 🔒 VL-TCP-TLS 🇹🇷 TR-206.1.102.81 17915
+  port: 17915
+  server: 206.1.102.81
+  servername: googol.wookshop.ir
   tls: true
   type: vless
   udp: true
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1753896430
+  - 🔒 VL-TCP-TLS 🇹🇷 TR-206.1.102.81 17915
   type: select
 rules:
 - MATCH,PROXY

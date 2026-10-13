@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX down
+  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 128ms
   port: 443
   reality-opts:
     public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
@@ -16,10 +16,24 @@ proxies:
   type: vless
   udp: true
   uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 189ms
+  port: 443
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  server: 177.1.192.74
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX down
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 128ms
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 189ms
   type: select
 rules:
 - MATCH,PROXY

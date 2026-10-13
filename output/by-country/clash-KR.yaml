@@ -3,8 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-12945899
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: qq
-  name: vless-1757243699
+  name: vless-1765171505
   port: 443
   reality-opts:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
@@ -15,13 +28,6 @@ proxies:
   type: vless
   udp: true
   uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
-- name: trojan-1651470504
-  password: UX82473651
-  port: 443
-  server: 3.34.131.153
-  sni: pretty-rat.rooster465.autos
-  type: trojan
-  udp: true
 - name: 🔒 TR-TCP-TLS 🇰🇷 KR-3.36.50.213 443
   password: UX82473651
   port: 443
@@ -29,10 +35,49 @@ proxies:
   sni: pure-kodiak.rooster465.autos
   type: trojan
   udp: true
+- name: trojan-1757243696
+  password: UX82473651
+  port: 443
+  server: 3.34.192.47
+  sni: central-jawfish.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  name: vless-1757243566
+  port: 443
+  reality-opts:
+    public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
+    short-id: 8685f8b4d9f4f51e
+  server: 34.22.111.30
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cb2abff3-5fe6-4b5a-aa19-5739deb285b6
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1765153423
-  port: 18967
+  name: vless-1749769748
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+- name: trojan-1660423653
+  password: UX82473651
+  port: 443
+  server: 3.35.168.225
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1104491030
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -42,37 +87,39 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1696475236
-  password: UX82473651
-  port: 443
-  server: engaging-toucan.rooster465.autos
-  sni: engaging-toucan.rooster465.autos
-  type: trojan
+- name: hysteria2-1111846187
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-656230724
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
-- name: trojan-1663139042
-  password: UX82473651
-  port: 443
-  server: 3.35.168.225
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1651710646
-  password: UX82473651
-  port: 443
-  server: 13.125.69.162
-  sni: engaging-toucan.rooster465.autos
-  type: trojan
-  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1757243699
-  - trojan-1651470504
+  - vless-12945899
+  - vless-1765171505
   - 🔒 TR-TCP-TLS 🇰🇷 KR-3.36.50.213 443
-  - vless-1765153423
-  - trojan-1696475236
-  - trojan-1663139042
-  - trojan-1651710646
+  - trojan-1757243696
+  - vless-1757243566
+  - vless-1749769748
+  - trojan-1660423653
+  - vless-1104491030
+  - hysteria2-1111846187
+  - vless-656230724
   type: select
 rules:
 - MATCH,PROXY
