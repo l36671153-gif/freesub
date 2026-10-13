@@ -3,23 +3,38 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-909039620
-  port: 443
+- cipher: aes-256-gcm
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS 🇨🇦 CA 15ms
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.79.85.185
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '🇨🇦[www.v2nodes.com] ss-CA-1545... #1'
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 51.79.49.116
+  type: ss
+  udp: true
+- client-fingerprint: random
+  name: vless-1274186383
+  port: 2053
   reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  server: 209.200.246.148
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
   servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-909039620
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS 🇨🇦 CA 15ms
+  - '🇨🇦[www.v2nodes.com] ss-CA-1545... #1'
+  - vless-1274186383
   type: select
 rules:
 - MATCH,PROXY

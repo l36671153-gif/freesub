@@ -3,14 +3,22 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇮🇪 IE-34.242.77.118 443",
-      "server": "34.242.77.118",
+      "tag": "🇮🇪[www.v2nodes.com] trojan-IE-... #2",
+      "server": "loved-shark.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "sacred-anemone.rooster465.autos"
+        "server_name": "loved-shark.rooster465.autos"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 71ms",
+      "server": "20.234.97.18",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "K5sEvZiKmens104B"
     },
     {
       "type": "direct",

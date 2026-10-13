@@ -3,59 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: vless-1691291864
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
+- name: 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 202ms
+  password: 3ixF51QWmFNmKOO_utPxVL-7gYYUb6HC
+  port: 8443
+  server: b1.3danimation3.com
+  sni: b1.3danimation3.com
+  type: trojan
   udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
-  port: 45021
-  server: 31.77.148.89
-  type: vless
+- cipher: aes-256-gcm
+  name: shadowsocks-11078
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
   udp: true
-  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1690637327
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: gdd-grpc
-  name: vless-1790829695
-  network: grpc
-  port: 443
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  server: 31.58.95.10
-  servername: de-gdd-1.unturned-rust-dead.lol
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1691291864
-  - '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
-  - vless-1690637327
-  - vless-1790829695
+  - 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 202ms
+  - shadowsocks-11078
   type: select
 rules:
 - MATCH,PROXY

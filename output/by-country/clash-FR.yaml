@@ -4,60 +4,29 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 692138
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: '🇫🇷 法国 | FRA #1'
-  port: 8443
-  server: mapzapravki.space
-  servername: lada.locallynet.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b859f9e-0e6a-475f-b5e3-5d671b043164
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 321504
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  name: vless-1298542551
+  name: vless-1612086354
   port: 2053
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1762352560
+  password: e5c65ph
+  port: 443
+  server: pl140.vpnbook.com
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 692138
-  - '🇫🇷 法国 | FRA #1'
-  - 🏳️ ShatakVPN 321504
-  - vless-1298542551
+  - vless-1612086354
+  - shadowsocks-1762352560
   type: select
 rules:
 - MATCH,PROXY
