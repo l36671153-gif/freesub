@@ -3,25 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇮🇪[www.v2nodes.com] trojan-IE-... #2'
+- name: trojan-1765605038
   password: UX82473651
   port: 443
-  server: loved-shark.rooster465.autos
-  sni: loved-shark.rooster465.autos
+  server: 54.72.130.222
+  sni: adapting-basilisk.rooster465.autos
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 71ms
-  password: K5sEvZiKmens104B
-  port: 443
-  server: 20.234.97.18
-  type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇮🇪[www.v2nodes.com] trojan-IE-... #2'
-  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 71ms
+  - trojan-1765605038
   type: select
 rules:
 - MATCH,PROXY

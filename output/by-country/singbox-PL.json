@@ -3,20 +3,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 99ms",
-      "server": "80.47.12.94",
+      "tag": "🆔surfboardv2ray 🔒 VL-TCP- ❔ XX down",
+      "server": "177.1.192.72",
       "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
+      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl-1-1.unturned-rust-dead.lol",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg"
+          "public_key": "y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM",
+          "short_id": "46455ff0"
         }
       }
     },

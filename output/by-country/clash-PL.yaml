@@ -3,21 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 99ms
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX down
   port: 443
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  server: 80.47.12.94
-  servername: pl-1-1.unturned-rust-dead.lol
+    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
+    short-id: 46455ff0
+  server: 177.1.192.72
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 99ms
+  - 🆔surfboardv2ray 🔒 VL-TCP- ❔ XX down
   type: select
 rules:
 - MATCH,PROXY

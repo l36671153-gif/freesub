@@ -3,31 +3,47 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1612086354",
-      "server": "54.37.136.194",
-      "server_port": 2053,
-      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-51.255.166.202 443",
+      "server": "51.255.166.202",
+      "server_port": 443,
+      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
-          "short_id": "50ba05992b05c1c3"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1762352560",
-      "server": "pl140.vpnbook.com",
+      "type": "hysteria2",
+      "tag": "hysteria2-1705809157",
+      "server": "51.44.167.227",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-fr-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1797951312",
+      "server": "karta8.api3-max.ru",
+      "server_port": 443,
+      "uuid": "b8254d35-1cb0-4b74-8f7f-d2bc985196a0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "karta8.api3-max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "direct",
