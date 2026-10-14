@@ -4,7 +4,35 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 815572
+  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 280ms
+  network: ws
+  port: 2087
+  server: fert6.localip.ir
+  servername: fert6.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  ws-opts:
+    headers:
+      Host: fert6.localip.ir
+    path: /hokm
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.48 2087
+  network: ws
+  port: 2087
+  server: 94.103.168.48
+  servername: ops4asfseretuiyk.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  ws-opts:
+    headers:
+      Host: ops4asfseretuiyk.localip.ir
+    path: /hokm
+- client-fingerprint: chrome
+  name: 🏳️ ShatakVPN 695641
   network: ws
   port: 2087
   server: 46.225.46.136
@@ -17,39 +45,12 @@ proxies:
     headers:
       Host: hoert1rert.localip.ir
     path: /hokm
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1815919377
-  port: 443
-  reality-opts:
-    public-key: 7vGRh29DmlE13UV_fLUfl2bUpqkmJprSenLZXS8XJEc
-    short-id: 3560f3d77a767c3a
-  server: 147.45.39.4
-  servername: de5.nztvpn.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.219 2087
-  network: ws
-  port: 2087
-  server: 94.103.168.219
-  servername: ops5788tugfuy.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: ops5788tugfuy.localip.ir
-    path: /hokm
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 815572
-  - vless-1815919377
-  - 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.219 2087
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 280ms
+  - 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.48 2087
+  - 🏳️ ShatakVPN 695641
   type: select
 rules:
 - MATCH,PROXY

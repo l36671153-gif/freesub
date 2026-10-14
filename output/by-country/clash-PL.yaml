@@ -4,19 +4,31 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1795254269
-  port: 443
-  server: pl9.aiage.work
-  servername: pl9.aiage.work
+  name: vless-1812409561
+  port: 25080
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+    short-id: 103d1dc5ed8eaf4c
+  server: pl4.h1cloud.net
+  servername: www.ceneo.pl
   tls: true
   type: vless
   udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 0c3ad9d5-cffd-4748-b8df-ab145288144b
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇵🇱 PL-2.26.225.89 8443
+  port: 8443
+  server: 2.26.225.89
+  servername: pl.flen-vpn.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1795254269
+  - vless-1812409561
+  - 🔒 VL-TCP-TLS 🇵🇱 PL-2.26.225.89 8443
   type: select
 rules:
 - MATCH,PROXY

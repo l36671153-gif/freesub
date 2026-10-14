@@ -3,14 +3,33 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1795254269",
-      "server": "pl9.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
+      "tag": "vless-1812409561",
+      "server": "pl4.h1cloud.net",
+      "server_port": 25080,
+      "uuid": "0c3ad9d5-cffd-4748-b8df-ab145288144b",
       "tls": {
         "enabled": true,
-        "server_name": "pl9.aiage.work",
+        "server_name": "www.ceneo.pl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI",
+          "short_id": "103d1dc5ed8eaf4c"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-2.26.225.89 8443",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
