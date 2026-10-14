@@ -3,54 +3,106 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 95ms
+  password: 1hhrqrokj3ag
+  port: 8388
+  server: 209.46.102.22
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.52 2087
+  grpc-opts:
+    grpc-service-name: GunService
+  name: vless-1741441896
+  network: grpc
+  port: 8444
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  server: 178.17.57.33
+  servername: github.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 609ms
   network: ws
   port: 2087
-  server: 94.103.168.52
-  servername: fert1qswdfegrthy.localip.ir
+  server: fert6.localip.ir
+  servername: fert6.localip.ir
   tls: true
   type: vless
   udp: true
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   ws-opts:
     headers:
-      Host: fert1qswdfegrthy.localip.ir
+      Host: fert6.localip.ir
     path: /hokm
-- client-fingerprint: randomized
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1666218414
+  name: 🆔surfboardv2ray 🔒 VL-TCP- 🇩🇪 DE 100ms
   port: 443
   reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.69.128
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  server: 2.27.69.117
   servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- name: trojan-1652072048
-  password: UX82473651
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-89464982
   port: 443
-  server: 63.178.198.94
-  sni: pleased-albacore.rooster465.autos
-  type: trojan
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
   udp: true
-- cipher: rc4-md5
-  name: shadowsocks-27307
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
-  type: ss
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: gdd-grpc
+  name: vless-1793430115
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  server: de-gdd-1.unturned-rust-dead.lol
+  servername: de-gdd-1.unturned-rust-dead.lol
+  tls: true
+  type: vless
   udp: true
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+- client-fingerprint: safari
+  grpc-opts:
+    grpc-service-name: de-grpc
+  name: vless-1807262408
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
+  server: de-1-1.unturned-rust-dead.lol
+  servername: de-1-1.unturned-rust-dead.lol
+  tls: true
+  type: vless
+  udp: true
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.52 2087
-  - vless-1666218414
-  - trojan-1652072048
-  - shadowsocks-27307
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 95ms
+  - vless-1741441896
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 609ms
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇩🇪 DE 100ms
+  - vless-89464982
+  - vless-1793430115
+  - vless-1807262408
   type: select
 rules:
 - MATCH,PROXY
