@@ -2,46 +2,14 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 95ms",
-      "server": "209.46.102.22",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "1hhrqrokj3ag"
-    },
-    {
       "type": "vless",
-      "tag": "vless-1741441896",
-      "server": "178.17.57.33",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 609ms",
-      "server": "fert6.localip.ir",
+      "tag": "🏳️ ShatakVPN 815572",
+      "server": "46.225.46.136",
       "server_port": 2087,
       "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
       "tls": {
         "enabled": true,
-        "server_name": "fert6.localip.ir",
+        "server_name": "hoert1rert.localip.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -51,96 +19,51 @@
         "type": "ws",
         "path": "/hokm",
         "headers": {
-          "Host": "fert6.localip.ir"
+          "Host": "hoert1rert.localip.ir"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🆔surfboardv2ray 🔒 VL-TCP- 🇩🇪 DE 100ms",
-      "server": "2.27.69.117",
+      "tag": "vless-1815919377",
+      "server": "147.45.39.4",
       "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "de5.nztvpn.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "-bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y",
-          "short_id": "123c2bff"
+          "public_key": "7vGRh29DmlE13UV_fLUfl2bUpqkmJprSenLZXS8XJEc",
+          "short_id": "3560f3d77a767c3a"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-89464982",
-      "server": "130.12.242.106",
-      "server_port": 443,
-      "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.219 2087",
+      "server": "94.103.168.219",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "ops5788tugfuy.localip.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-          "short_id": "15affa0af66dfc79"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1793430115",
-      "server": "de-gdd-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "de-gdd-1.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "gdd-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1807262408",
-      "server": "de-1-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "de-1-1.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk"
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "ops5788tugfuy.localip.ir"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "de-grpc"
       }
     },
     {

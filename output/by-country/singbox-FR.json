@@ -2,24 +2,16 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1692203552",
-      "server": "51.255.166.202",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1762352560",
+      "server": "pl140.vpnbook.com",
       "server_port": 443,
-      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
     },
     {
       "type": "vless",
-      "tag": "vless-656232751",
+      "tag": "🏳️ ShatakVPN 352913",
       "server": "62.210.91.2",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",

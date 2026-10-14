@@ -1,0 +1,23 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1795254269
+  port: 443
+  server: pl9.aiage.work
+  servername: pl9.aiage.work
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1795254269
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

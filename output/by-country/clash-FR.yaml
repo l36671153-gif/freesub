@@ -3,19 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1692203552
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1762352560
+  password: e5c65ph
   port: 443
-  server: 51.255.166.202
-  servername: e3k67dwms3-51255166202-direct.tavafog.com
-  tls: true
-  type: vless
+  server: pl140.vpnbook.com
+  type: ss
   udp: true
-  uuid: 593bf46b-8316-5050-9357-d8a41e4db78b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-656232751
+  name: 🏳️ ShatakVPN 352913
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -29,8 +26,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1692203552
-  - vless-656232751
+  - shadowsocks-1762352560
+  - 🏳️ ShatakVPN 352913
   type: select
 rules:
 - MATCH,PROXY
