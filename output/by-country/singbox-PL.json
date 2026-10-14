@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🆔surfboardv2ray 🔒 VL-TCP- ❔ XX 128ms",
+      "tag": "🆔surfboardv2ray 🔒 VL-TCP- 🇵🇱 PL 135ms",
       "server": "177.1.192.72",
       "server_port": 443,
       "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
@@ -24,22 +24,16 @@
     },
     {
       "type": "vless",
-      "tag": "🆔vpnbaz 🔒 VL-TCP- ❔ XX 189ms",
-      "server": "177.1.192.74",
-      "server_port": 443,
-      "uuid": "4d852af3-a121-41aa-9aed-4ca40a6f7b4d",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-2.26.225.89 8443",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "pl.flen-vpn.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8",
-          "short_id": "770618b6"
+          "fingerprint": "chrome"
         }
       }
     },
