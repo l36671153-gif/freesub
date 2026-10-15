@@ -2,9 +2,29 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "vmess-1827741482",
+      "server": "jp5.998998.best",
+      "server_port": 443,
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "security": "auto",
+      "alter_id": 0,
+      "tls": {
+        "enabled": true,
+        "server_name": "server11.9966338.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ieusrdgfhteuirgfiuws",
+        "headers": {
+          "Host": "server11.9966338.xyz"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.111.195 443",
-      "server": "104.16.111.195",
+      "tag": "vless-1828374447",
+      "server": "188.114.97.6",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -25,29 +45,8 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1827147008",
-      "server": "154.31.114.248",
-      "server_port": 50159,
-      "uuid": "d56624b2-35bb-468c-9b2a-e0b0df7230c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA",
-          "short_id": "091e1c5db8451757"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.254.3 443",
-      "server": "162.159.254.3",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.33.237 443",
+      "server": "104.19.33.237",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827967999",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

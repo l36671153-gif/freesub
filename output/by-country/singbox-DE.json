@@ -3,7 +3,50 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1828003139",
+      "tag": "vless-1827150713",
+      "server": "179.61.145.245",
+      "server_port": 443,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 633ms",
+      "server": "hoert1rert.localip.ir",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d",
+      "tls": {
+        "enabled": true,
+        "server_name": "hoert1rert.localip.ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "hoert1rert.localip.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 141971",
       "server": "2.27.69.117",
       "server_port": 443,
       "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
@@ -24,43 +67,46 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1828003140",
-      "server": "212.100.171.154",
+      "tag": "vless-1827155190",
+      "server": "2.27.69.128",
       "server_port": 443,
-      "uuid": "a5ce10af-5e95-4eb3-ab87-bf4f95cb059b",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8u8r2iWMt8Isz2ZNRbn3g4cfldhcePRB-1hxGYLTnSg",
-          "short_id": "aa6582cf25e243ce"
+          "public_key": "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc",
+          "short_id": "e696e744"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827146288",
+      "server": "57.129.113.16",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "NcAXc0UZI6yQJE1p8QmOv8"
+    },
+    {
       "type": "vless",
-      "tag": "vless-1827153947",
-      "server": "defrnode.xyy123.bid",
+      "tag": "🇩🇪 德国 | DEU",
+      "server": "152.53.185.244",
       "server_port": 443,
-      "uuid": "8af93649-403b-46d8-9966-923d4c58402c",
+      "uuid": "5538eaaa-ac3d-4414-a1f5-280212949ed9",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "p-y3-www-amazon-com-kalias.amazon.com",
+        "server_name": "demethod.chaosnetwork.app",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE",
-          "short_id": "0fa4a0e2493392"
+          "fingerprint": "firefox"
         }
       }
     },

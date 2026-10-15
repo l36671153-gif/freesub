@@ -2,14 +2,36 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1827147969",
-      "server": "musical-mouse.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
+      "type": "vless",
+      "tag": "vless-1827145865",
+      "server": "46.137.202.178",
+      "server_port": 12512,
+      "uuid": "2a6c617d-98e4-49c3-95ab-76f02fcf0150",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "musical-mouse.rooster465.autos"
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA",
+          "short_id": "e692a8250d2e2fd0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1828150748",
+      "server": "138.2.73.238",
+      "server_port": 50160,
+      "password": "f87376e17da040ed04c9665ce8972930",
+      "tls": {
+        "enabled": true,
+        "server_name": "138.2.73.238",
+        "insecure": true
       }
     },
     {

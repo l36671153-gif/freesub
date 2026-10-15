@@ -2,31 +2,21 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇰🇷 KR-43.201.100.203 443",
-      "server": "43.201.100.203",
-      "server_port": 443,
-      "password": "UX82473651",
+      "type": "hysteria2",
+      "tag": "hysteria2-1828373224",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "optimum-snapper.rooster465.autos"
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {
       "type": "trojan",
-      "tag": "trojan-1827148322",
-      "server": "optimum-snapper.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "optimum-snapper.rooster465.autos"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇰🇷 KR-3.34.131.153 443",
-      "server": "3.34.131.153",
+      "tag": "trojan-1827149365",
+      "server": "pretty-rat.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {

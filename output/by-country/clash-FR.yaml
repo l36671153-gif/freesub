@@ -1,0 +1,41 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: random
+  name: vless-1828149341
+  port: 2053
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+- name: 🏳️ ShatakVPN 771372
+  password: dongtaiwang.com
+  port: 22000
+  server: 62.210.124.146
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- name: hysteria2-1827145109
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 51.44.167.227
+  skip-cert-verify: true
+  sni: vpn-fr-001.fastervpn.world
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1828149341
+  - 🏳️ ShatakVPN 771372
+  - hysteria2-1827145109
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

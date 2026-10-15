@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🇨🇳_CN_中国",
+      "server": "112.132.215.108",
+      "server_port": 50002,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "alter_id": 0
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
