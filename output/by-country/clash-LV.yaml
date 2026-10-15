@@ -5,21 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827149889
+  name: vless-1827152073
   port: 443
   reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  server: 195.123.208.32
-  servername: gateway.icloud.com
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  server: 138.124.180.137
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827149889
+  - vless-1827152073
   type: select
 rules:
 - MATCH,PROXY

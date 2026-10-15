@@ -5,35 +5,35 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827188610
+  name: vless-1828153112
   port: 443
   reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  server: 177.1.192.74
+    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
+    short-id: 85766a81
+  server: 177.1.192.81
   servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-- client-fingerprint: randomized
+  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827145025
-  port: 443
+  name: vless-1828295141
+  port: 33891
   reality-opts:
-    public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
-    short-id: 46455ff0
-  server: 177.1.192.72
-  servername: addons.mozilla.org
+    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
+    short-id: 5bd7b68ca4c04443
+  server: 144.31.101.196
+  servername: browser.yandex.com
   tls: true
   type: vless
   udp: true
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827188610
-  - vless-1827145025
+  - vless-1828153112
+  - vless-1828295141
   type: select
 rules:
 - MATCH,PROXY
