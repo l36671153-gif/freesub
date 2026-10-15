@@ -3,66 +3,33 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1827148186",
-      "server": "glorious-glider.rooster465.autos",
+      "tag": "trojan-1827147969",
+      "server": "musical-mouse.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "glorious-glider.rooster465.autos"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1827148029",
-      "server": "brave-tomcat.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "brave-tomcat.rooster465.autos"
+        "server_name": "musical-mouse.rooster465.autos"
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1827733359",
-      "server": "178.94.25.73",
-      "server_port": 14430,
-      "uuid": "2dacc738-5720-4824-b8bc-e3db57596ba7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {}
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇸🇬 SG-47.131.250.125 443",
-      "server": "47.131.250.125",
-      "server_port": 443,
-      "password": "UX82473651",
+      "tag": "vless-1827153139",
+      "server": "3.0.111.82",
+      "server_port": 17623,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "simple-molly.rooster465.autos"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1827188720",
-      "server": "34.87.113.18",
-      "server_port": 443,
-      "uuid": "5567cac6-2a32-4318-83cd-7df3a9eebbd7",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hJCcmOf_ECJ3GUfHUjsgfcFKcgGb22H7cz_m_FvcVm4",
-          "short_id": "eb97ce837da2f6ad"
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },

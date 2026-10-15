@@ -3,24 +3,35 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1827149526",
-      "server": "pretty-rat.rooster465.autos",
+      "tag": "🔒 TR-TCP-TLS 🇰🇷 KR-43.201.100.203 443",
+      "server": "43.201.100.203",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "optimum-snapper.rooster465.autos"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1827148322",
+      "server": "optimum-snapper.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "optimum-snapper.rooster465.autos"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇰🇷 KR-3.34.131.153 443",
+      "server": "3.34.131.153",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "pretty-rat.rooster465.autos"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1827148694",
-      "server": "noted-cougar.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos"
       }
     },
     {
