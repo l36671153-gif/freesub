@@ -4,53 +4,130 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 280ms
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.52 2087
   network: ws
   port: 2087
-  server: fert6.localip.ir
-  servername: fert6.localip.ir
+  server: 94.103.168.52
+  servername: fert1qswdfegrthy.localip.ir
   tls: true
   type: vless
   udp: true
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
   ws-opts:
     headers:
-      Host: fert6.localip.ir
+      Host: fert1qswdfegrthy.localip.ir
+    path: /hokm
+- name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  port: 2125
+  server: 2.28.232.213
+  type: vless
+  udp: true
+  uuid: 3430793e-837c-47f2-8c8c-a3520d4217c2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827155865
+  port: 443
+  reality-opts:
+    public-key: 7vGRh29DmlE13UV_fLUfl2bUpqkmJprSenLZXS8XJEc
+    short-id: 3560f3d77a767c3a
+  server: 147.45.39.4
+  servername: de5.nztvpn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+- cipher: chacha20-ietf-poly1305
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS 🇩🇪 DE 117ms
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  port: 8388
+  server: 57.129.113.16
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827530528
+  port: 443
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
+  server: 77.110.105.122
+  servername: co-de.speedtec.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+- name: 🏳️ ShatakVPN 147783
+  network: ws
+  port: 80
+  server: 57.129.41.216
+  type: vless
+  udp: true
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  ws-opts:
+    headers:
+      Host: OV-Germany1.09vpn.com
+    path: /vless/
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 204ms
+  network: ws
+  port: 443
+  server: server7.smvx.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: 70008803-ed47-4181-bf10-dc8f5362f42d
+  ws-opts:
+    headers:
+      Host: a.benyamin-benshop.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 🆔v2ray1_ng 🔓 VM-TCP-N/A ❔ XX 121ms
+  port: 2110
+  server: 178.105.168.171
+  type: vmess
+  udp: true
+  uuid: 06d4d001-4168-4876-9416-7caecf578f40
+- client-fingerprint: chrome
+  name: vless-1827147034
+  network: ws
+  port: 2087
+  server: ops5788tugfuy.localip.ir
+  servername: ops5788tugfuy.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  ws-opts:
+    headers:
+      Host: ops5788tugfuy.localip.ir
     path: /hokm
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.48 2087
-  network: ws
-  port: 2087
-  server: 94.103.168.48
-  servername: ops4asfseretuiyk.localip.ir
+  flow: xtls-rprx-vision
+  name: 🆔surfboardv2ray 🔒 VL-TCP- 🇩🇪 DE 111ms
+  port: 443
+  reality-opts:
+    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
+    short-id: 123c2bff
+  server: 2.27.69.117
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: ops4asfseretuiyk.localip.ir
-    path: /hokm
-- client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 695641
-  network: ws
-  port: 2087
-  server: 46.225.46.136
-  servername: hoert1rert.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: hoert1rert.localip.ir
-    path: /hokm
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 280ms
-  - 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.48 2087
-  - 🏳️ ShatakVPN 695641
+  - 🔒 VL-WS-TLS 🇩🇪 DE-94.103.168.52 2087
+  - 🇩🇪[www.v2nodes.com] vless-DE-1...
+  - vless-1827155865
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS 🇩🇪 DE 117ms
+  - vless-1827530528
+  - 🏳️ ShatakVPN 147783
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 204ms
+  - 🆔v2ray1_ng 🔓 VM-TCP-N/A ❔ XX 121ms
+  - vless-1827147034
+  - 🆔surfboardv2ray 🔒 VL-TCP- 🇩🇪 DE 111ms
   type: select
 rules:
 - MATCH,PROXY

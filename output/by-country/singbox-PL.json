@@ -3,36 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1812409561",
-      "server": "pl4.h1cloud.net",
-      "server_port": 25080,
-      "uuid": "0c3ad9d5-cffd-4748-b8df-ab145288144b",
+      "tag": "vless-1827154542",
+      "server": "pl-waw.dontblockmepls.com",
+      "server_port": 2063,
+      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.ceneo.pl",
+        "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI",
-          "short_id": "103d1dc5ed8eaf4c"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇵🇱 PL-2.26.225.89 8443",
-      "server": "2.26.225.89",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM"
         }
       }
     },

@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-656232044",
+      "tag": "🇫🇷 ShatakVPN 830829",
       "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
@@ -24,17 +24,33 @@
     },
     {
       "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-51.255.166.202 443",
-      "server": "51.255.166.202",
+      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-51.255.165.170 443",
+      "server": "51.255.165.170",
       "server_port": 443,
-      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
+      "uuid": "40fbeade-2b35-55e2-8e72-39893b5917ea",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com",
+        "server_name": "tyxyrytyro-51255165170-direct.araghchy.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🆔v2ray1_ng 🔓 VM-WS-N/A ❔ XX 214ms",
+      "server": "145.239.55.210",
+      "server_port": 80,
+      "uuid": "067fcd63-b215-4abd-8529-ae929a9971a9",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
         }
       }
     },
