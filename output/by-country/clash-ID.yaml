@@ -5,21 +5,20 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827152073
-  port: 443
+  name: vless-1828982852
+  port: 16006
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  server: 138.124.180.137
-  servername: www.apple.com
+    public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
+  server: 103.172.197.3
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: f8c9d2a1-da40-4f90-b671-11772a0b13d6
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827152073
+  - vless-1828982852
   type: select
 rules:
 - MATCH,PROXY

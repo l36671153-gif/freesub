@@ -4,44 +4,33 @@ mode: rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146453
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  name: 🏳️ ShatakVPN 773761
+  password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.175
+  server: 82.38.31.201
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 274111
+  name: 🇳🇱 ShatakVPN 628497
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.7
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146852
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.168
+  server: 82.38.31.16
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 151204
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.12
-  servername: fuck.rkn
+  name: vless-1827150701
+  port: 443
+  server: s170.gogocs.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 402022
+  name: 🏳️ ShatakVPN 585893
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.69
+  server: 82.38.31.82
   type: ss
   udp: true
 - cipher: aes-128-gcm
@@ -52,22 +41,142 @@ proxies:
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146711
+  name: shadowsocks-1827146769
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827150860
+  port: 443
+  server: s170.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146118
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.211
+  server: 193.29.139.132
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827150959
+  port: 443
+  server: 62.105.220.106
+  servername: u695098u7dae9c0cs220.gogocs.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1828139039
+  port: 443
+  reality-opts:
+    public-key: vSa3rWZfq5OftXO2RSgggbTOxbHlWGTLpP8bNDki3wk
+    short-id: adcbde41b1cf27ba
+  server: nl1.aiage.work
+  servername: nl1.aiage.work
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 146971
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.205
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 126906
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.9
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 荷兰 | NLD
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 178.83.185.156
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146475
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.62
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 154512
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 193.29.139.198
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146828
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.174
+  type: ss
+  udp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1828532174
+  port: 443
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  server: 194.93.61.118
+  servername: nl2.balancer.vbuste-bot.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 850247
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.186
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 856979
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827146453
-  - 🏳️ ShatakVPN 274111
-  - shadowsocks-1827146852
-  - 🏳️ ShatakVPN 151204
-  - 🏳️ ShatakVPN 402022
+  - 🏳️ ShatakVPN 773761
+  - 🇳🇱 ShatakVPN 628497
+  - vless-1827150701
+  - 🏳️ ShatakVPN 585893
   - shadowsocks-1827146478
-  - shadowsocks-1827146711
+  - shadowsocks-1827146769
+  - vless-1827150860
+  - shadowsocks-1827146118
+  - vless-1827150959
+  - vless-1828139039
+  - 🏳️ ShatakVPN 146971
+  - 🏳️ ShatakVPN 126906
+  - 🇳🇱 荷兰 | NLD
+  - shadowsocks-1827146475
+  - 🏳️ ShatakVPN 154512
+  - shadowsocks-1827146828
+  - vless-1828532174
+  - 🏳️ ShatakVPN 850247
+  - 🏳️ ShatakVPN 856979
   type: select
 rules:
 - MATCH,PROXY

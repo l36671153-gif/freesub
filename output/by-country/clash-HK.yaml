@@ -3,31 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1828647681
-  password: 6qmp91myp2jj13dt
-  port: 1081
-  server: sth.free-outline.giize.com
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827152260
-  port: 32134
-  reality-opts:
-    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
-    short-id: 6c6c7c97
-  server: 3696b38bsg.murphyweb.sbs
-  servername: buylite.music.apple.com
+- alterId: 0
+  cipher: auto
+  name: vmess-1827741483
+  network: ws
+  port: 443
+  server: hk2.998998.best
+  servername: server15.9966338.xyz
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  ws-opts:
+    headers:
+      Host: server15.9966338.xyz
+    path: /asivewritten
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1828647681
-  - vless-1827152260
+  - vmess-1827741483
   type: select
 rules:
 - MATCH,PROXY

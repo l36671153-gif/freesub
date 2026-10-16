@@ -2,31 +2,22 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1828647681",
-      "server": "sth.free-outline.giize.com",
-      "server_port": 1081,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6qmp91myp2jj13dt"
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1827152260",
-      "server": "3696b38bsg.murphyweb.sbs",
-      "server_port": 32134,
-      "uuid": "5b01dc2d-6892-49b8-8289-3f73a32e00e4",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "vmess-1827741483",
+      "server": "hk2.998998.best",
+      "server_port": 443,
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "buylite.music.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4",
-          "short_id": "6c6c7c97"
+        "server_name": "server15.9966338.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/asivewritten",
+        "headers": {
+          "Host": "server15.9966338.xyz"
         }
       }
     },

@@ -3,8 +3,15 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146396
+  password: Xsy8Ox4yOV3xLlpxtjzs3X
+  port: 16233
+  server: 102.133.165.160
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: vless-1827151150
+  name: vless-1828294278
   port: 443
   reality-opts:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
@@ -18,7 +25,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827151150
+  - shadowsocks-1827146396
+  - vless-1828294278
   type: select
 rules:
 - MATCH,PROXY

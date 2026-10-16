@@ -3,37 +3,50 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1828153112
+  name: vless-1827154821
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: pl-waw.dontblockmepls.com
+  servername: rusbid.de
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 144ms
   port: 443
   reality-opts:
-    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
-    short-id: 85766a81
-  server: 177.1.192.81
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  server: 177.1.192.74
   servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1828295141
-  port: 33891
+  name: vless-1828374800
+  port: 443
   reality-opts:
-    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
-    short-id: 5bd7b68ca4c04443
-  server: 144.31.101.196
-  servername: browser.yandex.com
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  server: 150.251.113.34
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828153112
-  - vless-1828295141
+  - vless-1827154821
+  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 144ms
+  - vless-1828374800
   type: select
 rules:
 - MATCH,PROXY
