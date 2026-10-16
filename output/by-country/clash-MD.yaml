@@ -3,15 +3,15 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1832192457
+  name: vless-1829089521
   port: 443
   reality-opts:
-    public-key: mPzNFHO4pZMzFviRkIhRd7xDUz4dMHyI-flZLOrgDVg
-    short-id: f8379ce795f2e5ed
-  server: 85.155.242.38
-  servername: hu1.aiage.work
+    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
+    short-id: 1d2fecf1d2475168
+  server: ro2.aiage.work
+  servername: ro2.aiage.work
   tls: true
   type: vless
   udp: true
@@ -19,7 +19,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832192457
+  - vless-1829089521
   type: select
 rules:
 - MATCH,PROXY

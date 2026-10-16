@@ -3,11 +3,11 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1827148260
+- name: trojan-1827945457
   password: UX82473651
   port: 443
-  server: 47.131.250.125
-  sni: simple-molly.rooster465.autos
+  server: 3.1.252.137
+  sni: brave-tomcat.rooster465.autos
   type: trojan
   udp: true
 - name: trojan-1827148342
@@ -17,49 +17,49 @@ proxies:
   sni: brave-tomcat.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1827954607
-  password: UX82473651
+- client-fingerprint: chrome
+  name: vless-1827149865
+  network: ws
   port: 443
-  server: 54.151.181.75
-  sni: moral-basilisk.rooster465.autos
-  type: trojan
+  server: free.nadun.store
+  servername: free.nadun.store
+  tls: true
+  type: vless
   udp: true
-- name: trojan-1827148399
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+    path: /
+- client-fingerprint: chrome
+  name: vless-1827531818
+  network: ws
+  port: 2096
+  server: 139.162.27.96
+  servername: free-server.techsonic.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- name: trojan-1827148395
   password: UX82473651
   port: 443
   server: glorious-glider.rooster465.autos
   sni: glorious-glider.rooster465.autos
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827613951
-  port: 12972
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: trojan-1827147965
-  password: UX82473651
-  port: 443
-  server: 3.1.252.137
-  sni: brave-tomcat.rooster465.autos
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1827148260
+  - trojan-1827945457
   - trojan-1827148342
-  - trojan-1827954607
-  - trojan-1827148399
-  - vless-1827613951
-  - trojan-1827147965
+  - vless-1827149865
+  - vless-1827531818
+  - trojan-1827148395
   type: select
 rules:
 - MATCH,PROXY

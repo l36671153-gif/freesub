@@ -3,21 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827154821
+  name: vless-1827975291
   port: 2063
   reality-opts:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  server: pl-waw.dontblockmepls.com
+  server: 31.77.13.19
   servername: rusbid.de
   tls: true
   type: vless
   udp: true
   uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-- client-fingerprint: randomized
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 144ms
+  name: vless-1827162809
   port: 443
   reality-opts:
     public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
@@ -30,7 +30,19 @@ proxies:
   uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1828374800
+  name: vless-1827975302
+  port: 2063
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  server: 31.77.13.19
+  servername: rusbid.de
+  tls: true
+  type: vless
+  udp: true
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1828294487
   port: 443
   reality-opts:
     public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
@@ -44,9 +56,10 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827154821
-  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX 144ms
-  - vless-1828374800
+  - vless-1827975291
+  - vless-1827162809
+  - vless-1827975302
+  - vless-1828294487
   type: select
 rules:
 - MATCH,PROXY

@@ -4,131 +4,36 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1831097614
-  network: ws
-  port: 443
-  server: 164.90.224.132
-  servername: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇩🇪 ShatakVPN 367297
+  name: vless-1827154808
   port: 443
   reality-opts:
-    public-key: P-r-oVr8MTTCILgRxk8YuB9OKVojYw3MkH_ERUXzX3s
-    short-id: b76a6309
-  server: 31.76.35.27
-  servername: addons.mozilla.org
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 - client-fingerprint: chrome
-  name: vless-1827153498
+  name: 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 157ms
   network: ws
-  port: 2087
-  server: hoert1rert.localip.ir
-  servername: hoert1rert.localip.ir
+  port: 2083
+  server: sino.bestsellers1.site
+  servername: sino.bestsellers1.site
   tls: true
   type: vless
   udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   ws-opts:
-    headers:
-      Host: hoert1rert.localip.ir
-    path: /hokm
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1827835712
-  port: 4443
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  server: 89.169.53.176
-  servername: de.wvpn.one
-  tls: true
-  type: vless
-  udp: true
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-- client-fingerprint: chrome
-  name: vless-1827153493
-  network: ws
-  port: 2087
-  server: 94.103.168.133
-  servername: fert6.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: fert6.localip.ir
-    path: /hokm
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827150911
-  port: 443
-  server: s249.freessr.bid
-  servername: u695098u47d2e9bes71.gogocs.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827266851
-  port: 443
-  server: 179.61.138.177
-  servername: u695098u47d2e9bes71.gogocs.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828295207
-  port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- client-fingerprint: chrome
-  name: vless-1827153560
-  network: ws
-  port: 2087
-  server: fert6.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
-  ws-opts:
-    headers:
-      Host: fert6.localip.ir
-    path: /hokm
+    headers: {}
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1831097614
-  - 🇩🇪 ShatakVPN 367297
-  - vless-1827153498
-  - vless-1827835712
-  - vless-1827153493
-  - vless-1827150911
-  - vless-1827266851
-  - vless-1828295207
-  - vless-1827153560
+  - vless-1827154808
+  - 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 157ms
   type: select
 rules:
 - MATCH,PROXY

@@ -3,13 +3,13 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1827148260",
-      "server": "47.131.250.125",
+      "tag": "trojan-1827945457",
+      "server": "3.1.252.137",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "simple-molly.rooster465.autos"
+        "server_name": "brave-tomcat.rooster465.autos"
       }
     },
     {
@@ -24,57 +24,58 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "trojan-1827954607",
-      "server": "54.151.181.75",
+      "type": "vless",
+      "tag": "vless-1827149865",
+      "server": "free.nadun.store",
       "server_port": 443,
-      "password": "UX82473651",
+      "uuid": "20ff936a-8eb5-4d27-9cce-93f2016d467b",
       "tls": {
         "enabled": true,
-        "server_name": "moral-basilisk.rooster465.autos"
+        "server_name": "free.nadun.store",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.nadun.store"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1827531818",
+      "server": "139.162.27.96",
+      "server_port": 2096,
+      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
+      "tls": {
+        "enabled": true,
+        "server_name": "free-server.techsonic.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/free-server.techsonic.dev",
+        "headers": {
+          "Host": "free-server.techsonic.dev"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "trojan-1827148399",
+      "tag": "trojan-1827148395",
       "server": "glorious-glider.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
         "server_name": "glorious-glider.rooster465.autos"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1827613951",
-      "server": "3.0.111.82",
-      "server_port": 12972,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1827147965",
-      "server": "3.1.252.137",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "brave-tomcat.rooster465.autos"
       }
     },
     {

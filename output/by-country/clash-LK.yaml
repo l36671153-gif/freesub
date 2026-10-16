@@ -4,10 +4,10 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1828035357
+  name: 🇱🇰 LK_52
   network: ws
   port: 8443
-  server: free.sahanwickramasinghe.me
+  server: centurylink.es
   servername: free.sahanwickramasinghe.me
   tls: true
   type: vless
@@ -17,21 +17,22 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
     path: /
-- name: vless-1829089506
+- name: vless-1827156591
   network: ws
   port: 80
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   type: vless
   udp: true
   uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   ws-opts:
-    headers: {}
+    headers:
+      Host: free.sahanwickramasinghe.me
     path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828035357
-  - vless-1829089506
+  - 🇱🇰 LK_52
+  - vless-1827156591
   type: select
 rules:
 - MATCH,PROXY

@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1828035357",
-      "server": "free.sahanwickramasinghe.me",
+      "tag": "🇱🇰 LK_52",
+      "server": "centurylink.es",
       "server_port": 8443,
       "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
       "tls": {
@@ -25,14 +25,16 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1829089506",
-      "server": "free.sahanwickramasinghe.me",
+      "tag": "vless-1827156591",
+      "server": "support.zoom.us",
       "server_port": 80,
       "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
         "path": "/",
-        "headers": {}
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
       }
     },
     {
