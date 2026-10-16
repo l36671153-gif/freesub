@@ -1,0 +1,24 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '🏳[www.v2nodes.com] vless- #35'
+  network: ws
+  port: 14430
+  server: 5.178.109.174
+  type: vless
+  udp: true
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  ws-opts:
+    headers:
+      Host: 5.178.109.174
+    path: /vless
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🏳[www.v2nodes.com] vless- #35'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

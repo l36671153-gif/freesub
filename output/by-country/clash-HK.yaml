@@ -10,10 +10,26 @@ proxies:
   server: sth.free-outline.giize.com
   type: ss
   udp: true
+- name: hysteria2-1828371571
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: hysteria2-1828371368
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2🇨🇳
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - shadowsocks-1828647681
+  - hysteria2-1828371571
+  - hysteria2-1828371368
   type: select
 rules:
 - MATCH,PROXY

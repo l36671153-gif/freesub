@@ -3,73 +3,7 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1827945457",
-      "server": "3.1.252.137",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "brave-tomcat.rooster465.autos"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1827148342",
-      "server": "brave-tomcat.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "brave-tomcat.rooster465.autos"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1827149865",
-      "server": "free.nadun.store",
-      "server_port": 443,
-      "uuid": "20ff936a-8eb5-4d27-9cce-93f2016d467b",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.nadun.store",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.nadun.store"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1827531818",
-      "server": "139.162.27.96",
-      "server_port": 2096,
-      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "free-server.techsonic.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/free-server.techsonic.dev",
-        "headers": {
-          "Host": "free-server.techsonic.dev"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1827148395",
+      "tag": "trojan-1827148399",
       "server": "glorious-glider.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",

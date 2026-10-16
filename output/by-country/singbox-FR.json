@@ -2,6 +2,14 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 ShatakVPN 388536",
+      "server": "54.36.174.140",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
+    },
+    {
       "type": "vless",
       "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-51.255.166.202 443",
       "server": "51.255.166.202",

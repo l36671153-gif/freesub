@@ -2,29 +2,42 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1827154808",
-      "server": "130.12.242.106",
+      "type": "hysteria2",
+      "tag": "hysteria2-1827145002",
+      "server": "vpn-de-002.fastervpn.world",
       "server_port": 443,
-      "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
-      "flow": "xtls-rprx-vision",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1832201597",
+      "server": "cdn.topingr.ir",
+      "server_port": 443,
+      "uuid": "497f5381-3533-4c6a-939c-66eb3a7de108",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.topingr.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8",
-          "short_id": "15affa0af66dfc79"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/gropcdn",
+        "headers": {
+          "Host": "cdn.topingr.ir"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 157ms",
+      "tag": "vless-1828149310",
       "server": "sino.bestsellers1.site",
       "server_port": 2083,
       "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
@@ -41,6 +54,34 @@
         "path": "/",
         "headers": {}
       }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1828123851",
+      "server": "3.77.57.250",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-de-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 676004",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827145974",
+      "server": "8.209.74.72",
+      "server_port": 20001,
+      "method": "chacha20-ietf-poly1305",
+      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
       "type": "direct",

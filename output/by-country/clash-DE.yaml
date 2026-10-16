@@ -3,21 +3,29 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827154808
+- name: hysteria2-1827145002
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
+  server: vpn-de-002.fastervpn.world
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- client-fingerprint: chrome
+  name: vless-1832201597
+  network: ws
+  port: 443
+  server: cdn.topingr.ir
+  servername: cdn.topingr.ir
   tls: true
   type: vless
   udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  ws-opts:
+    headers:
+      Host: cdn.topingr.ir
+    path: /gropcdn
 - client-fingerprint: chrome
-  name: 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 157ms
+  name: vless-1828149310
   network: ws
   port: 2083
   server: sino.bestsellers1.site
@@ -29,11 +37,36 @@ proxies:
   ws-opts:
     headers: {}
     path: /
+- name: hysteria2-1828123851
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.77.57.250
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 676004
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145974
+  password: PWpjPo3tqhPN4yRZ
+  port: 20001
+  server: 8.209.74.72
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827154808
-  - 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 157ms
+  - hysteria2-1827145002
+  - vless-1832201597
+  - vless-1828149310
+  - hysteria2-1828123851
+  - 🏳️ ShatakVPN 676004
+  - shadowsocks-1827145974
   type: select
 rules:
 - MATCH,PROXY
