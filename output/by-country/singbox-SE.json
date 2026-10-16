@@ -2,18 +2,12 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🏳[www.v2nodes.com] vless- #35",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1834006254",
+      "server": "mui.firzav.ir",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ZJdYmMiJBWkbTZ5nExBRpQ_f7uIG7wL4"
     },
     {
       "type": "direct",

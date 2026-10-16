@@ -3,17 +3,62 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1827148399
-  password: UX82473651
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇸🇬 SG-45.118.133.249 443
+  network: ws
   port: 443
-  server: glorious-glider.rooster465.autos
-  sni: glorious-glider.rooster465.autos
-  type: trojan
+  server: 45.118.133.249
+  servername: free.nadun.store
+  tls: true
+  type: vless
   udp: true
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+    path: /
+- client-fingerprint: unsafe
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.199 443
+  network: ws
+  port: 443
+  server: 104.16.10.199
+  servername: u.srilankangrill.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  ws-opts:
+    headers:
+      Host: u.srilankangrill.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: vmess-1828150771
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1831099100
+  port: 443
+  reality-opts:
+    public-key: wSLW8DGUOMkRuCFWnBs31PYwBtvcHbBUGHu_dDTBYgc
+    short-id: 829330332af8c863
+  server: 172.104.49.9
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d9677f03-95c1-4357-9b31-b35b732bd188
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1827148399
+  - 🔒 VL-WS-TLS 🇸🇬 SG-45.118.133.249 443
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.199 443
+  - vmess-1828150771
+  - vless-1831099100
   type: select
 rules:
 - MATCH,PROXY

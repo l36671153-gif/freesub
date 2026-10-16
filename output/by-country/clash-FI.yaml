@@ -1,0 +1,33 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1829089517
+  port: 443
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  server: 152.233.71.81
+  servername: brointelengence.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🇫🇮[www.v2nodes.com] vless-FI-1... #2'
+  - vless-1829089517
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

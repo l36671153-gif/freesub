@@ -3,26 +3,38 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 ShatakVPN 388536",
-      "server": "54.36.174.140",
+      "tag": "shadowsocks-1827146217",
+      "server": "pl134.vpnbook.com",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "e5c65ph"
     },
     {
-      "type": "vless",
-      "tag": "🔒 VL-TCP-TLS 🇫🇷 FR-51.255.166.202 443",
-      "server": "51.255.166.202",
-      "server_port": 443,
-      "uuid": "593bf46b-8316-5050-9357-d8a41e4db78b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "e3k67dwms3-51255166202-direct.tavafog.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+      "type": "vmess",
+      "tag": "🆔surfboardv2ray 🔓 VM-WS-N/A 🇫🇷 FR 160ms",
+      "server": "145.239.55.210",
+      "server_port": 80,
+      "uuid": "067fcd63-b215-4abd-8529-ae929a9971a9",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1827736897",
+      "server": "46.226.166.208",
+      "server_port": 14430,
+      "uuid": "af827fd0-6381-426f-bc5e-dcd9a7baeaac",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {}
       }
     },
     {
