@@ -3,22 +3,49 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🔒 TR-TCP-TLS 🇸🇬 SG-47.131.250.125 443
-  password: UX82473651
-  port: 443
-  server: 47.131.250.125
-  sni: simple-molly.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🇸🇬[www.v2nodes.com] trojan-SG-...
-  password: UX82473651
-  port: 443
-  server: simple-molly.rooster465.autos
-  sni: simple-molly.rooster465.autos
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: vless-1829713967
+  name: vless-1828129519
+  network: ws
+  port: 443
+  server: 45.118.133.249
+  servername: free.nadun.store
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1832977034
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 147.93.173.45
+  servername: video.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+- client-fingerprint: chrome
+  name: vless-1827149865
+  network: ws
+  port: 443
+  server: free.nadun.store
+  servername: free.nadun.store
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+    path: /
+- client-fingerprint: chrome
+  name: vless-1843512963
   network: ws
   port: 443
   server: 188.114.98.0
@@ -31,73 +58,13 @@ proxies:
     headers:
       Host: free.nadun.store
     path: /
-- client-fingerprint: chrome
-  name: 🇺🇸 美国 | USA
-  network: ws
-  port: 443
-  server: 104.16.10.100
-  servername: u.srilankangrill.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
-  ws-opts:
-    headers:
-      Host: u.srilankangrill.online
-    path: /
-- name: trojan-1827148301
-  password: UX82473651
-  port: 443
-  server: moral-basilisk.rooster465.autos
-  sni: moral-basilisk.rooster465.autos
-  type: trojan
-  udp: true
-- cipher: rc4-md5
-  name: shadowsocks-1828226862
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.235.122
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1831129819
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- name: trojan-1827148186
-  password: UX82473651
-  port: 443
-  server: glorious-glider.rooster465.autos
-  sni: glorious-glider.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1827147969
-  password: UX82473651
-  port: 443
-  server: musical-mouse.rooster465.autos
-  sni: musical-mouse.rooster465.autos
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 TR-TCP-TLS 🇸🇬 SG-47.131.250.125 443
-  - 🇸🇬[www.v2nodes.com] trojan-SG-...
-  - vless-1829713967
-  - 🇺🇸 美国 | USA
-  - trojan-1827148301
-  - shadowsocks-1828226862
-  - vless-1831129819
-  - trojan-1827148186
-  - trojan-1827147969
+  - vless-1828129519
+  - vless-1832977034
+  - vless-1827149865
+  - vless-1843512963
   type: select
 rules:
 - MATCH,PROXY

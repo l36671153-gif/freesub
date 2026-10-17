@@ -3,16 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1827153739
+- client-fingerprint: random
+  name: vless-1828532179
   port: 2053
-  server: test.keoplentuio.xyz
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  server: 151.241.226.201
+  servername: www.apple.com
+  tls: true
   type: vless
   udp: true
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827153739
+  - vless-1828532179
   type: select
 rules:
 - MATCH,PROXY

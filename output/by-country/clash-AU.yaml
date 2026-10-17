@@ -1,0 +1,53 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  name: vmess-1827158788
+  port: 18000
+  server: 38.91.107.49
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 990039
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1827158946
+  port: 18000
+  server: 38.110.1.246
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1846612844
+  port: 54528
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  server: funagfrdfs.alixxplay.com
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vmess-1827158788
+  - 🏳️ ShatakVPN 990039
+  - vmess-1827158946
+  - vless-1846612844
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

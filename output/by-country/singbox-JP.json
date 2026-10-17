@@ -3,21 +3,77 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1832690709",
-      "server": "43.167.232.174",
-      "server_port": 443,
-      "uuid": "0fd46529-707f-4d33-899b-598f5f4acffa",
+      "tag": "vless-1832754659",
+      "server": "18.183.215.124",
+      "server_port": 28573,
+      "uuid": "871bfce7-8440-4394-8d82-56b51f20fdad",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.sony.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI",
-          "short_id": "b51e057820d3e14c"
+          "public_key": "1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg",
+          "short_id": "03653bc03be10c97"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1828654076",
+      "server": "104.21.70.228",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1844549435",
+      "server": "rb.zhujue.us",
+      "server_port": 20501,
+      "password": "0e46345c-f33b-4f9b-b8ec-90e7c986af7e",
+      "tls": {
+        "enabled": true,
+        "server_name": "rb.zhujue.us",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1831043828",
+      "server": "142.91.108.25",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM",
+          "short_id": "ea36c03d86f91287"
         }
       }
     },

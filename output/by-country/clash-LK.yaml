@@ -4,10 +4,10 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.73.206 8443
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.70.206 8443
   network: ws
   port: 8443
-  server: 104.17.73.206
+  server: 104.17.70.206
   servername: free.sahanwickramasinghe.me
   tls: true
   type: vless
@@ -20,7 +20,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.73.206 8443
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.70.206 8443
   type: select
 rules:
 - MATCH,PROXY

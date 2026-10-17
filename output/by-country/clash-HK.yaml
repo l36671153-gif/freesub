@@ -1,0 +1,44 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🏳️ ShatakVPN 688997
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+- name: hysteria2-1828371661
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2
+  type: hysteria2
+- name: hysteria2-1827145886
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+- name: 🏳️ ShatakVPN 856265
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 688997
+  - hysteria2-1828371661
+  - hysteria2-1827145886
+  - 🏳️ ShatakVPN 856265
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

@@ -3,20 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1832690679
-  network: ws
-  port: 14430
-  server: 45.144.234.157
-  type: vless
-  udp: true
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  ws-opts:
-    headers:
-      Host: 45.144.234.157
-    path: /vless
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832464834
+  name: vless-1827152350
   port: 443
   reality-opts:
     public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
@@ -28,24 +17,49 @@ proxies:
   udp: true
   uuid: 741809be-e44e-000b-b411-bf66f0ae3860
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1832650337
-  port: 443
+  name: vless-1832650181
+  port: 2053
   reality-opts:
-    public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
-    short-id: 3a697adb4c58d495
-  server: 95.111.212.241
-  servername: www.samsung.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  server: 95.216.27.15
+  servername: www.google.com
   tls: true
   type: vless
   udp: true
-  uuid: 924fe46b-b6e0-479e-ae7f-a3661680e706
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827531911
+  port: 443
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  server: 152.233.71.81
+  servername: brointelengence.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
+- client-fingerprint: chrome
+  name: vless-1827188007
+  port: 2053
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  server: 95.216.27.15
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832690679
-  - vless-1832464834
-  - vless-1832650337
+  - vless-1827152350
+  - vless-1832650181
+  - vless-1827531911
+  - vless-1827188007
   type: select
 rules:
 - MATCH,PROXY
