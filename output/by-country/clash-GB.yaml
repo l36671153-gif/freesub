@@ -3,33 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1829730528
-  network: ws
-  port: 443
-  server: 172.67.137.209
-  servername: ukl.lovehk.xyz
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1837386333
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 138.124.125.193
+  servername: ads.x5.ru
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  ws-opts:
-    headers:
-      Host: ukl.lovehk.xyz
-    path: /London31
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146143
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-  udp: true
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1829730528
-  - shadowsocks-1827146143
+  - vless-1837386333
   type: select
 rules:
 - MATCH,PROXY

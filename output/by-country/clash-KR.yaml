@@ -3,65 +3,55 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1827149490
+- name: trojan-1827148192
   password: UX82473651
   port: 443
-  server: pure-kodiak.rooster465.autos
-  sni: pure-kodiak.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1827148119
-  password: UX82473651
-  port: 443
-  server: 3.35.168.225
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🔒 TR-TCP-TLS 🇰🇷 KR-3.36.50.213 443
-  password: UX82473651
-  port: 443
-  server: 3.36.50.213
-  sni: pure-kodiak.rooster465.autos
-  type: trojan
-  udp: true
-- name: trojan-1827148454
-  password: UX82473651
-  port: 443
-  server: main-fawn.rooster465.autos
-  sni: main-fawn.rooster465.autos
-  type: trojan
-  udp: true
-- name: hysteria2-1832881372
-  password: maintell
-  port: 2053
-  server: 152.70.237.123
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-- name: trojan-1827147942
-  password: UX82473651
-  port: 443
-  server: central-jawfish.rooster465.autos
+  server: 3.34.192.47
   sni: central-jawfish.rooster465.autos
   type: trojan
   udp: true
-- name: hysteria2-1828528935
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+- name: 🔒 TR-TCP-TLS 🇰🇷 KR-3.35.207.188 443
+  password: UX82473651
+  port: 443
+  server: 3.35.207.188
+  sni: main-fawn.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1827148694
+  password: UX82473651
+  port: 443
+  server: noted-cougar.rooster465.autos
+  sni: noted-cougar.rooster465.autos
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1831130848
+  port: 443
+  reality-opts:
+    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
+    short-id: ca193e889d958f81
+  server: 64.176.231.183
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+- name: hysteria2-1828529280
+  password: 1671a252e2a97dc2bda4e515475931da
   port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: false
-  sni: 152-67-200-82.liao.kdns.fr
+  server: 132.226.226.189
+  skip-cert-verify: true
+  sni: 132.226.226.189
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1827149490
-  - trojan-1827148119
-  - 🔒 TR-TCP-TLS 🇰🇷 KR-3.36.50.213 443
-  - trojan-1827148454
-  - hysteria2-1832881372
-  - trojan-1827147942
-  - hysteria2-1828528935
+  - trojan-1827148192
+  - 🔒 TR-TCP-TLS 🇰🇷 KR-3.35.207.188 443
+  - trojan-1827148694
+  - vless-1831130848
+  - hysteria2-1828529280
   type: select
 rules:
 - MATCH,PROXY

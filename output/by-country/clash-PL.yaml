@@ -3,23 +3,58 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828295141
-  port: 33891
+- client-fingerprint: firefox
+  name: vless-1843363511
+  port: 8445
   reality-opts:
-    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
-    short-id: 5bd7b68ca4c04443
-  server: 144.31.101.196
-  servername: browser.yandex.com
+    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
+    short-id: f04c762307c0ba04
+  server: 38.244.186.167
+  servername: www.samsung.com
   tls: true
   type: vless
   udp: true
-  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
+  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1840613344
+  port: 443
+  reality-opts:
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  server: api.mediapolyana.cc
+  servername: api.mediapolyana.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
+- name: 🔒 TR-WS-TLS 🇵🇱 PL-78.17.171.62 443
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  port: 443
+  server: 78.17.171.62
+  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827151516
+  port: 443
+  reality-opts:
+    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
+    short-id: 85766a81
+  server: 177.1.192.81
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828295141
+  - vless-1843363511
+  - vless-1840613344
+  - 🔒 TR-WS-TLS 🇵🇱 PL-78.17.171.62 443
+  - vless-1827151516
   type: select
 rules:
 - MATCH,PROXY

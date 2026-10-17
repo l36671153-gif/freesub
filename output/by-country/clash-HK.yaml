@@ -3,21 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1837299400
-  network: ws
-  port: 14430
-  server: 213.176.92.168
-  type: vless
-  udp: true
-  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
-  ws-opts:
-    headers:
-      Host: 213.176.92.168
-    path: /vless
+- name: hysteria2-1832880261
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1837299400
+  - hysteria2-1832880261
   type: select
 rules:
 - MATCH,PROXY

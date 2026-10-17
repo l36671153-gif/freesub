@@ -17,37 +17,10 @@ proxies:
     headers:
       Host: skycitybox-bidarbash.sbs
     path: /zoodi
-- client-fingerprint: chrome
-  name: vless-1832941349
-  port: 2053
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828535134
-  port: 443
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  server: 137.74.16.237
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
 proxy-groups:
 - name: PROXY
   proxies:
   - vless-1832973651
-  - vless-1832941349
-  - vless-1828535134
   type: select
 rules:
 - MATCH,PROXY
