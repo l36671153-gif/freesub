@@ -3,51 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827661714
-  port: 50159
+- client-fingerprint: ios
+  name: vless-1832690709
+  port: 443
   reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  server: 154.31.114.248
-  servername: www.cloudflare.com
+    public-key: hJIfTUp7nQckx08yoBSkaaEsPdZmM054HmbYNKK4sBI
+    short-id: b51e057820d3e14c
+  server: 43.167.232.174
+  servername: www.microsoft.com
   tls: true
   type: vless
   udp: true
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-- alterId: 0
-  cipher: auto
-  name: 🏳️ ShatakVPN 232733
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: jp01.a0a.xyz
-    path: /cctv13.m3u8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1828373327
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+  uuid: 0fd46529-707f-4d33-899b-598f5f4acffa
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827661714
-  - 🏳️ ShatakVPN 232733
-  - vless-1828373327
+  - vless-1832690709
   type: select
 rules:
 - MATCH,PROXY

@@ -5,20 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832863527
-  port: 29172
+  name: vless-1827149751
+  port: 443
   reality-opts:
-    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
-  server: 103.172.197.2
-  servername: aws.amazon.com
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  server: 185.95.231.156
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832863527
+  - vless-1827149751
   type: select
 rules:
 - MATCH,PROXY

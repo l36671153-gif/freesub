@@ -3,30 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1827148192
+- name: trojan-1827148150
   password: UX82473651
   port: 443
-  server: 3.34.192.47
-  sni: central-jawfish.rooster465.autos
-  type: trojan
-  udp: true
-- name: 🔒 TR-TCP-TLS 🇰🇷 KR-3.35.207.188 443
-  password: UX82473651
-  port: 443
-  server: 3.35.207.188
+  server: main-fawn.rooster465.autos
   sni: main-fawn.rooster465.autos
   type: trojan
   udp: true
-- name: trojan-1827148694
-  password: UX82473651
-  port: 443
-  server: noted-cougar.rooster465.autos
-  sni: noted-cougar.rooster465.autos
-  type: trojan
-  udp: true
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1831130848
+  name: vless-1828530158
   port: 443
   reality-opts:
     public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
@@ -37,21 +23,19 @@ proxies:
   type: vless
   udp: true
   uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-- name: hysteria2-1828529280
+- name: hysteria2-1828373224
   password: 1671a252e2a97dc2bda4e515475931da
   port: 50160
   server: 132.226.226.189
   skip-cert-verify: true
-  sni: 132.226.226.189
+  sni: www.bing.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1827148192
-  - 🔒 TR-TCP-TLS 🇰🇷 KR-3.35.207.188 443
-  - trojan-1827148694
-  - vless-1831130848
-  - hysteria2-1828529280
+  - trojan-1827148150
+  - vless-1828530158
+  - hysteria2-1828373224
   type: select
 rules:
 - MATCH,PROXY

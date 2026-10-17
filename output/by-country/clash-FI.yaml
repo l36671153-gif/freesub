@@ -3,9 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- name: vless-1832690679
+  network: ws
+  port: 14430
+  server: 45.144.234.157
+  type: vless
+  udp: true
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  ws-opts:
+    headers:
+      Host: 45.144.234.157
+    path: /vless
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1832464834
+  port: 443
+  reality-opts:
+    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
+    short-id: 1c3e8241a8743df9
+  server: 152.233.71.81
+  servername: brointelengence.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 741809be-e44e-000b-b411-bf66f0ae3860
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827188054
+  name: vless-1832650337
   port: 443
   reality-opts:
     public-key: BSTnEthBXhb_UyuWpLBDxg82-C-wcpU2_kOD5ohS12g
@@ -19,7 +43,9 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827188054
+  - vless-1832690679
+  - vless-1832464834
+  - vless-1832650337
   type: select
 rules:
 - MATCH,PROXY

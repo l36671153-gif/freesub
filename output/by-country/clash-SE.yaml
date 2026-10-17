@@ -1,0 +1,25 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: swedenfeed
+  name: vless-1840613401
+  network: grpc
+  port: 443
+  server: edge-lab-b.10media.top
+  servername: edge-lab-b.10media.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1840613401
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

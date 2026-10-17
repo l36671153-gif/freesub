@@ -3,58 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1843363511
-  port: 8445
-  reality-opts:
-    public-key: -s2SHiKfXMJRYizNuu8URrx6MgyoQtBJ0QAj33qMog0
-    short-id: f04c762307c0ba04
-  server: 38.244.186.167
-  servername: www.samsung.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f3b8d5f8-cbe9-4aca-ab34-005c51262d5e
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1840613344
-  port: 443
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: a8
-  server: api.mediapolyana.cc
-  servername: api.mediapolyana.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
-- name: 🔒 TR-WS-TLS 🇵🇱 PL-78.17.171.62 443
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  port: 443
-  server: 78.17.171.62
-  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827151516
+  name: vless-1828374800
   port: 443
   reality-opts:
-    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
-    short-id: 85766a81
-  server: 177.1.192.81
-  servername: addons.mozilla.org
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  server: 150.251.113.34
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1843363511
-  - vless-1840613344
-  - 🔒 TR-WS-TLS 🇵🇱 PL-78.17.171.62 443
-  - vless-1827151516
+  - vless-1828374800
   type: select
 rules:
 - MATCH,PROXY
