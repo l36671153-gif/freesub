@@ -2,39 +2,66 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827146217",
-      "server": "pl134.vpnbook.com",
+      "type": "vless",
+      "tag": "vless-1832973651",
+      "server": "skycitybox-bidarbash.sbs",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
-    },
-    {
-      "type": "vmess",
-      "tag": "🆔surfboardv2ray 🔓 VM-WS-N/A 🇫🇷 FR 160ms",
-      "server": "145.239.55.210",
-      "server_port": 80,
-      "uuid": "067fcd63-b215-4abd-8529-ae929a9971a9",
-      "security": "auto",
-      "alter_id": 0,
+      "uuid": "2bdcf0ac-f84e-471f-98dc-a1807acab1cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "skycitybox-bidarbash.sbs",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/zoodi",
         "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.fortresshost.ir."
+          "Host": "skycitybox-bidarbash.sbs"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1827736897",
-      "server": "46.226.166.208",
-      "server_port": 14430,
-      "uuid": "af827fd0-6381-426f-bc5e-dcd9a7baeaac",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {}
+      "tag": "vless-1832941349",
+      "server": "54.37.136.194",
+      "server_port": 2053,
+      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
+          "short_id": "50ba05992b05c1c3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1828535134",
+      "server": "137.74.16.237",
+      "server_port": 443,
+      "uuid": "aaec4e42-a095-44b6-a239-f16d234a0798",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I",
+          "short_id": "b390e0a721d242b0"
+        }
       }
     },
     {

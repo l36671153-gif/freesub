@@ -3,28 +3,68 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1827149693",
-      "server": "130.17.25.67",
+      "tag": "vless-1827152964",
+      "server": "31.70.111.146",
       "server_port": 443,
-      "uuid": "1c5ed2e1-56da-41ab-9a78-159d9892ec17",
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "github.com",
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1828139008",
+      "server": "37.46.199.138",
+      "server_port": 443,
+      "uuid": "741809be-e44e-0004-b411-bf66f0ae3860",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "key-master-saver.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1827151450",
+      "server": "162.55.242.208",
+      "server_port": 2053,
+      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q",
-          "short_id": "9e4eced6e98ed4d4"
+          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
+          "short_id": "4d14da19b19cfc8c"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083",
+      "tag": "vless-1832764139",
       "server": "91.107.247.173",
       "server_port": 2083,
       "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
@@ -33,7 +73,7 @@
         "server_name": "sino.bestsellers1.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -43,14 +83,6 @@
           "Host": "sino.bestsellers1.site"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827145974",
-      "server": "8.209.74.72",
-      "server_port": 20001,
-      "method": "chacha20-ietf-poly1305",
-      "password": "PWpjPo3tqhPN4yRZ"
     },
     {
       "type": "direct",

@@ -2,24 +2,32 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1828532074",
-      "server": "46.250.240.80",
-      "server_port": 2053,
-      "uuid": "948df76f-505d-4608-9c76-a933ee3ccc76",
+      "type": "vmess",
+      "tag": "vmess-1829730528",
+      "server": "172.67.137.209",
+      "server_port": 443,
+      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
+      "security": "auto",
+      "alter_id": 0,
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E",
-          "short_id": "4cc9dc65f7770115"
+        "server_name": "ukl.lovehk.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/London31",
+        "headers": {
+          "Host": "ukl.lovehk.xyz"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827146143",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "direct",
