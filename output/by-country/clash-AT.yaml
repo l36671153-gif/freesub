@@ -5,21 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1844557844
+  name: vless-1840613417
   port: 443
   reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
-  server: 195.178.106.23
-  servername: md1.aiage.work
+    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
+    short-id: a8
+  server: api.mediakaskad.cc
+  servername: api.mediakaskad.cc
   tls: true
   type: vless
   udp: true
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 082f5694-9019-4110-b67b-8125dbb9bab8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1844557844
+  - vless-1840613417
   type: select
 rules:
 - MATCH,PROXY

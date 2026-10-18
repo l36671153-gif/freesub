@@ -3,35 +3,101 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-1828129519
-  network: ws
+- name: trojan-1827945457
+  password: UX82473651
   port: 443
-  server: 45.118.133.249
-  servername: free.nadun.store
+  server: 3.1.252.137
+  sni: brave-tomcat.rooster465.autos
+  type: trojan
+  udp: true
+- name: trojan-1827147936
+  password: UX82473651
+  port: 443
+  server: moral-basilisk.rooster465.autos
+  sni: moral-basilisk.rooster465.autos
+  type: trojan
+  udp: true
+- name: hysteria2-1828373659
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1853651738
+  port: 17623
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
-  ws-opts:
-    headers:
-      Host: free.nadun.store
-    path: /
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832977034
-  port: 10444
+  name: vless-1853439638
+  port: 443
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 147.93.173.45
-  servername: video.yandex.ru
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  server: 67.159.52.81
+  servername: sg.fasti.win
   tls: true
   type: vless
   udp: true
-  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1855701601
+  port: 12972
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: 🔒 TR-TCP-TLS 🇸🇬 SG-47.131.250.125 443
+  password: UX82473651
+  port: 443
+  server: 47.131.250.125
+  sni: simple-molly.rooster465.autos
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: vless-1827149865
+  flow: xtls-rprx-vision
+  name: vless-1831129819
+  port: 41688
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  server: 54.169.200.246
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1855701572
+  port: 17623
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  name: vless-1835148658
   network: ws
   port: 443
   server: free.nadun.store
@@ -41,30 +107,45 @@ proxies:
   udp: true
   uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
   ws-opts:
-    headers:
-      Host: free.nadun.store
+    headers: {}
     path: /
 - client-fingerprint: chrome
-  name: vless-1843512963
+  name: vless-1855696981
   network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: free.nadun.store
+  port: 8441
+  server: 45.77.241.190
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
   tls: true
   type: vless
   udp: true
-  uuid: 20ff936a-8eb5-4d27-9cce-93f2016d467b
+  uuid: 35325935-2cd2-4c62-aee1-4797dde0fae3
   ws-opts:
     headers:
-      Host: free.nadun.store
-    path: /
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+    path: /@Marisa_kristi
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 639351
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828129519
-  - vless-1832977034
-  - vless-1827149865
-  - vless-1843512963
+  - trojan-1827945457
+  - trojan-1827147936
+  - hysteria2-1828373659
+  - vless-1853651738
+  - vless-1853439638
+  - vless-1855701601
+  - 🔒 TR-TCP-TLS 🇸🇬 SG-47.131.250.125 443
+  - vless-1831129819
+  - vless-1855701572
+  - vless-1835148658
+  - vless-1855696981
+  - 🏳️ ShatakVPN 639351
   type: select
 rules:
 - MATCH,PROXY

@@ -2,17 +2,17 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇳[www.v2nodes.com] vless-IN-1... #1",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "type": "vmess",
+      "tag": "vmess-1853344714",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "alter_id": 0,
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "path": "/",
+        "headers": {}
       }
     },
     {
