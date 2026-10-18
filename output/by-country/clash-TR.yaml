@@ -1,0 +1,19 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1860731123
+  port: 2053
+  server: vpn.networkforexir.site
+  type: vless
+  udp: true
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1860731123
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

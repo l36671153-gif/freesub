@@ -3,10 +3,18 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1827156591",
-      "server": "support.zoom.us",
-      "server_port": 80,
-      "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.17.73.206 8443",
+      "server": "104.17.73.206",
+      "server_port": 8443,
+      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/",

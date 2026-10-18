@@ -5,36 +5,43 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827150257
+  name: vless-1853356966
   port: 443
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- client-fingerprint: ios
-  name: vless-1851981577
-  network: ws
-  port: 2087
-  server: sdcdethyerft.localip.ir
-  servername: sdcdethyerft.localip.ir
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1853347468
+  port: 443
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  ws-opts:
-    headers:
-      Host: sdcdethyerft.localip.ir
-    path: /hokm
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- name: 🏳️ ShatakVPN 312253
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.122
+  sni: de2.dedushka.top
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827150257
-  - vless-1851981577
+  - vless-1853356966
+  - vless-1853347468
+  - 🏳️ ShatakVPN 312253
   type: select
 rules:
 - MATCH,PROXY
