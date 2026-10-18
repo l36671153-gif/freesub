@@ -3,41 +3,42 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1853340170",
-      "server": "51.89.194.151",
-      "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "tag": "vless-1853341721",
+      "server": "209.200.246.148",
+      "server_port": 443,
+      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
+          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
+          "short_id": "f98843107912e782"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1853340339",
-      "server": "46.250.250.149",
+      "tag": "vless-1858136331",
+      "server": "66.70.179.198",
       "server_port": 2053,
-      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
-          "short_id": "9922313fffed1c63"
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
         }
       }
     },

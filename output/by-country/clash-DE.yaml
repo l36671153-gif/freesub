@@ -5,28 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827155190
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.69.128
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- alterId: 0
-  cipher: auto
-  name: vmess-1854340798
-  port: 22366
-  server: 31.76.11.83
-  type: vmess
-  udp: true
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1853340164
+  name: vless-1827150257
   port: 443
   reality-opts:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
@@ -37,12 +16,25 @@ proxies:
   type: vless
   udp: true
   uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- client-fingerprint: ios
+  name: vless-1851981577
+  network: ws
+  port: 2087
+  server: sdcdethyerft.localip.ir
+  servername: sdcdethyerft.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    headers:
+      Host: sdcdethyerft.localip.ir
+    path: /hokm
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827155190
-  - vmess-1854340798
-  - vless-1853340164
+  - vless-1827150257
+  - vless-1851981577
   type: select
 rules:
 - MATCH,PROXY
