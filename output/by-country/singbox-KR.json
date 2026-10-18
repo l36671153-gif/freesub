@@ -2,18 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1854002013",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
-      "tls": {
-        "enabled": true,
-        "server_name": "150-230-252-217.liao.kdns.fr",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
       "tag": "vless-1832754726",
       "server": "3.39.4.109",
@@ -35,26 +23,10 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "vmess-1855790034",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "null"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "vless-1853651703",
+      "tag": "vless-1832754484",
       "server": "3.39.4.109",
-      "server_port": 18967,
+      "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -62,7 +34,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,13 +45,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-1853488242",
+      "tag": "hysteria2-1828529012",
       "server": "132.226.226.189",
       "server_port": 50160,
       "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "132.226.226.189",
+        "server_name": "off",
         "insecure": true
       }
     },

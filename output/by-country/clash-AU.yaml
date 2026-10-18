@@ -3,46 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1853340311
-  port: 443
-  reality-opts:
-    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
-    short-id: d15c17cef9b2e456
-  server: 51.161.204.242
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
 - alterId: 0
   cipher: auto
-  name: vmess-1837386484
+  name: vmess-1853354188
   port: 18000
-  server: 134.195.196.211
+  server: 67.220.85.46
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1835539921
+  name: vmess-1853463198
   port: 18000
-  server: 169.197.142.22
+  server: 67.220.95.3
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1832465406
+  name: vmess-1863068254
   port: 18000
-  server: 134.195.196.211
+  server: 149.88.23.207
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: 🆔ar14n24b 🔓 VM-RAW-N/A ❔ XX 33ms
+  name: vmess-1827161907
   port: 18000
   server: 38.110.1.246
   type: vmess
@@ -50,21 +37,60 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1853332267
+  name: vmess-1855790008
   port: 18000
-  server: 84.17.41.2
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: chrome
+  name: vless-1853962012
+  port: 51106
+  reality-opts:
+    public-key: 2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38
+    short-id: abcd1234
+  server: 212.81.47.99
+  servername: apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
+- alterId: 0
+  cipher: auto
+  name: vmess-1853342777
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1854324307
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1863447744
+  port: 18000
+  server: 67.220.95.3
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853340311
-  - vmess-1837386484
-  - vmess-1835539921
-  - vmess-1832465406
-  - 🆔ar14n24b 🔓 VM-RAW-N/A ❔ XX 33ms
-  - vmess-1853332267
+  - vmess-1853354188
+  - vmess-1853463198
+  - vmess-1863068254
+  - vmess-1827161907
+  - vmess-1855790008
+  - vless-1853962012
+  - vmess-1853342777
+  - vmess-1854324307
+  - vmess-1863447744
   type: select
 rules:
 - MATCH,PROXY

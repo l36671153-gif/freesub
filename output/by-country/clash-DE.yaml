@@ -5,43 +5,51 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853356966
+  name: vless-1853476037
   port: 443
   reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: random
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853347468
+  name: vless-1827530457
   port: 443
   reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
   tls: true
   type: vless
   udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- name: 🏳️ ShatakVPN 312253
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: 188.241.241.122
-  sni: de2.dedushka.top
-  type: trojan
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: GunService
+  name: vless-1827188712
+  network: grpc
+  port: 8444
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  server: 178.17.57.33
+  servername: github.com
+  tls: true
+  type: vless
   udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853356966
-  - vless-1853347468
-  - 🏳️ ShatakVPN 312253
+  - vless-1853476037
+  - vless-1827530457
+  - vless-1827188712
   type: select
 rules:
 - MATCH,PROXY
