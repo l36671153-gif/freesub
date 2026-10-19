@@ -3,110 +3,87 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇵🇭[www.v2nodes.com] vless-PH-1... #1'
+- name: vless-1853442957
   network: ws
   port: 80
-  server: platform102.golnamakcert.top
+  server: platform103.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
     headers:
-      Host: platform102.halalkhor.info
-    path: /platform102
-- name: vless-1853331447
+      Host: platform103.halalkhor.info
+    path: /platform103
+- client-fingerprint: chrome
+  name: vless-1863468525
+  network: ws
+  port: 443
+  server: 104.19.33.25
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1832754508
+  port: 28573
+  reality-opts:
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  server: 18.183.215.124
+  servername: www.sony.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1853488309
+  port: 10583
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: vless-1854088308
   network: ws
   port: 80
-  server: platform118.golnamakcert.top
+  server: platform113.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
     headers: {}
-    path: /platform118
-- name: vless-1853352864
+    path: /platform113
+- name: vless-1853476038
   network: ws
   port: 80
-  server: platform102.golnamakcert.top
+  server: platform103.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
     headers:
-      Host: platform102.halalkhor.info
-    path: /platform102
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1843290509
-  port: 35544
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: 25c79e5856c7
-  server: funagfrdfs.alixxplay.com
-  servername: iosapps.itunes.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- name: vless-1854025186
-  network: ws
-  port: 80
-  server: platform115.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: '['
-    path: /platform115
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1855701530
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: vless-1853360550
-  network: ws
-  port: 80
-  server: platform118.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers:
-      Host: platform118.halalkhor.info
-    path: /platform118
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1851981544
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+      Host: platform103.halalkhor.info
+    path: /platform103
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇵🇭[www.v2nodes.com] vless-PH-1... #1'
-  - vless-1853331447
-  - vless-1853352864
-  - vless-1843290509
-  - vless-1854025186
-  - vless-1855701530
-  - vless-1853360550
-  - vless-1851981544
+  - vless-1853442957
+  - vless-1863468525
+  - vless-1832754508
+  - vless-1853488309
+  - vless-1854088308
+  - vless-1853476038
   type: select
 rules:
 - MATCH,PROXY

@@ -5,21 +5,33 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 473234
-  port: 23576
+  name: vless-1832690719
+  port: 443
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  server: 137.74.16.237
+  servername: www.icloud.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
+- name: vless-1851982455
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  type: vless
+  udp: true
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 473234
+  - vless-1832690719
+  - vless-1851982455
   type: select
 rules:
 - MATCH,PROXY
