@@ -6,7 +6,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: swedenfeed
-  name: 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 164ms
+  name: 🔒 VL-GRPC-TLS 🇸🇨 SC-45.12.63.219 443
   network: grpc
   port: 443
   server: 45.12.63.219
@@ -18,7 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-GRPC-N/A ❔ XX 164ms
+  - 🔒 VL-GRPC-TLS 🇸🇨 SC-45.12.63.219 443
   type: select
 rules:
 - MATCH,PROXY

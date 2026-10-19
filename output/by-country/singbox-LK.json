@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1853992736",
-      "server": "104.17.74.206",
+      "tag": "vless-1863223115",
+      "server": "104.17.70.206",
       "server_port": 8443,
       "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
       "tls": {
@@ -13,28 +13,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1853051677",
-      "server": "51.75.67.209",
-      "server_port": 8443,
-      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
         }
       },
       "transport": {

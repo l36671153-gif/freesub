@@ -5,29 +5,21 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 494ms
-  port: 443
+  name: vless-1843685281
+  port: 10444
   reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  server: server.slavkiti.monster
-  servername: www.tradingview.com
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 138.124.125.193
+  servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-- cipher: aes-256-gcm
-  name: shadowsocks-1827146621
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 94.156.250.148
-  type: ss
-  udp: true
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 494ms
-  - shadowsocks-1827146621
+  - vless-1843685281
   type: select
 rules:
 - MATCH,PROXY

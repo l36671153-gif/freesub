@@ -2,91 +2,133 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1828124796",
-      "server": "154.36.158.197",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BeaUf9c0AEWH40Pu"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-1828374754",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.3.208.26",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵[www.v2nodes.com] vless-JP-1... #6",
-      "server": "platform113.golnamakcert.top",
+      "tag": "🇵🇭[www.v2nodes.com] vless-PH-1... #1",
+      "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform113",
+        "path": "/platform102",
         "headers": {
-          "Host": "platform113.halalkhor.info"
+          "Host": "platform102.halalkhor.info"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1868110673",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "1",
-        "insecure": true
+      "type": "vless",
+      "tag": "vless-1853331447",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {}
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1832754541",
-      "server": "18.183.215.124",
-      "server_port": 28573,
-      "uuid": "871bfce7-8440-4394-8d82-56b51f20fdad",
+      "tag": "vless-1853352864",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1843290509",
+      "server": "funagfrdfs.alixxplay.com",
+      "server_port": 35544,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.sony.com",
+        "server_name": "iosapps.itunes.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg",
-          "short_id": "03653bc03be10c97"
+          "public_key": "HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc",
+          "short_id": "25c79e5856c7"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1863476159",
-      "server": "104.21.6.186",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tag": "vless-1854025186",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115",
+        "headers": {
+          "Host": "["
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1855701530",
+      "server": "3.114.220.22",
+      "server_port": 18007,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "jp3.yohototo.top",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
-      },
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1853360550",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/tyxyws",
+        "path": "/platform118",
         "headers": {
-          "Host": "jp3.yohototo.top"
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1851981544",
+      "server": "3.114.220.22",
+      "server_port": 18007,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
         }
       }
     },

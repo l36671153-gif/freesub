@@ -2,28 +2,21 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦[www.v2nodes.com] ss-CA-1559... #1",
-      "server": "51.79.85.185",
-      "server_port": 8118,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1853452265",
-      "server": "milo.rubinaz.xyz",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
       "type": "vmess",
-      "tag": "vmess-1853465189",
-      "server": "23.162.200.198",
+      "tag": "vmess-1855790008",
+      "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",
       "alter_id": 0
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827147187",
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "direct",
