@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "trojan-1835498987",
+      "server": "78.17.171.62",
+      "server_port": 443,
+      "password": "u93yPGuY2zgIsisJZKS2QzJzg",
+      "tls": {
+        "enabled": true,
+        "server_name": "freetoplay-2.tetris-game.world"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

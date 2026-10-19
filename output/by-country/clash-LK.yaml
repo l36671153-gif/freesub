@@ -1,0 +1,42 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  name: vless-1853992736
+  network: ws
+  port: 8443
+  server: 104.17.74.206
+  servername: free.sahanwickramasinghe.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+    path: /
+- client-fingerprint: firefox
+  name: vless-1853051677
+  network: ws
+  port: 8443
+  server: 51.75.67.209
+  servername: free.sahanwickramasinghe.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  ws-opts:
+    headers:
+      Host: free.sahanwickramasinghe.me
+    path: /
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1853992736
+  - vless-1853051677
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

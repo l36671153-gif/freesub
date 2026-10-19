@@ -3,57 +3,39 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1828371507
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/oneclickvpnkeys
-  type: hysteria2
-- name: hysteria2-1828371606
+- name: hysteria2-1853331608
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  sni: google.com
   type: hysteria2
-- name: 🏳️ ShatakVPN 664376
+- name: hysteria2-1828371571
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: 202.146.222.29
+  sni: www.bing.com
   type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 | HKG
-  network: ws
-  port: 443
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1837386947
+  port: 10444
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  server: 213.176.92.168
+  servername: video.yandex.ru
   tls: true
-  type: vmess
+  type: vless
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-    path: /ws-vmess
-- name: hysteria2-1828371368
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
-  type: hysteria2
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1828371507
-  - hysteria2-1828371606
-  - 🏳️ ShatakVPN 664376
-  - 🇭🇰 香港 | HKG
-  - hysteria2-1828371368
+  - hysteria2-1853331608
+  - hysteria2-1828371571
+  - vless-1837386947
   type: select
 rules:
 - MATCH,PROXY

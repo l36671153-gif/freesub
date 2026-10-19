@@ -3,26 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1853651738
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- cipher: aes-256-gcm
-  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
-  type: ss
-  udp: true
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: vless-1858141847
@@ -36,12 +16,38 @@ proxies:
   type: vless
   udp: true
   uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1869128716
+  port: 443
+  reality-opts:
+    public-key: kpRTl-gL9QkqB3Se20bq6aW6pBFYDltM1qIdTrw6S3Y
+    short-id: 92464af018027189
+  server: sg.api.nurcloud.org
+  servername: sg.api.nurcloud.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30af8f14-1a5e-4ac5-8c48-e92a5f0a99a7
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1832941174
+  port: 12512
+  reality-opts:
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853651738
-  - 🇸🇬[www.v2nodes.com] ss-SG-1559...
   - vless-1858141847
+  - vless-1869128716
+  - vless-1832941174
   type: select
 rules:
 - MATCH,PROXY

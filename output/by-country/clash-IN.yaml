@@ -3,19 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-1827150264
-  port: 2053
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  server: 194.61.31.126
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-- name: vless-1832867644
+- name: '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
   network: ws
   port: 14430
   server: 13.140.56.100
@@ -23,13 +11,27 @@ proxies:
   udp: true
   uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   ws-opts:
-    headers: {}
+    headers:
+      Host: 13.140.56.100
     path: /vless
+- alterId: 0
+  cipher: auto
+  name: vmess-1867100781
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers:
+      Host: in-152.67.8.205-0250
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827150264
-  - vless-1832867644
+  - '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
+  - vmess-1867100781
   type: select
 rules:
 - MATCH,PROXY

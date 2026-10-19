@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: trojan-1835498987
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  port: 443
+  server: 78.17.171.62
+  sni: freetoplay-2.tetris-game.world
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - trojan-1835498987
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
