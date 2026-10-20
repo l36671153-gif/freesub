@@ -1,0 +1,34 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: hysteria2-1853341837
+  password: b3a11068-1a7e-4643-85de-7c82cce46943
+  port: 443
+  server: 191.215.46.37
+  skip-cert-verify: true
+  sni: uk.shamanapp.online
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 302ms
+  port: 443
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: baf023e1026a
+  server: webdisk.jaggyslawa.org
+  servername: www.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 75113671-63e3-452d-87d3-261a37e8b472
+proxy-groups:
+- name: PROXY
+  proxies:
+  - hysteria2-1853341837
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 302ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

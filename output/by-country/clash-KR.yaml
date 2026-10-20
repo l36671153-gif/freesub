@@ -3,22 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1856199582
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - alterId: 0
   cipher: auto
-  name: vmess-1853342883
+  name: vmess-1854106578
   port: 443
   server: 140.238.2.250
   type: vmess
@@ -27,8 +14,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1856199582
-  - vmess-1853342883
+  - vmess-1854106578
   type: select
 rules:
 - MATCH,PROXY
