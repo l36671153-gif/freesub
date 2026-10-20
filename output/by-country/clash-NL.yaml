@@ -3,107 +3,42 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 430432
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.34
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 516520
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.20
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146264
+  name: 🏳️ ShatakVPN 186864
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.28
+  server: 193.29.139.225
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827145981
+  name: 🆔vpnserverrr 🔒 SS-TCP-TLS 🇳🇱 NL 103ms
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.201
+  server: 82.38.31.211
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1828372615
-  port: 443
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: 86.54.28.75
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 130690
+  name: vless-1853475417
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.19
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1853331535
-  port: 443
-  reality-opts:
-    public-key: dIv6pPS-x6IzbiPyHX8nNdRrwI2yZl4y3YCeRWy9UgE
-  server: 195.123.221.36
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9c60369d-e5f9-4cec-9e63-1560e88e119a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 753413
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.97
+  server: 51.158.206.80
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 156908
+  name: shadowsocks-1827146459
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.176
+  server: 82.38.31.183
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 231652
+  name: 🏳️ ShatakVPN 986077
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -114,55 +49,86 @@ proxies:
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: hysteria2-1827187994
-  password: 529f1911-04d5-4427-94b9-c851fd459a27
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: GunService
+  name: vless-1854344730
+  network: grpc
+  port: 8444
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  server: 185.200.199.199
+  servername: github.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 447710
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.168
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145954
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.202
+  type: ss
+  udp: true
+- name: hysteria2-1868279276
+  password: dd50a499-7e43-4589-8490-f3b9c2451473
   port: 443
   server: 109.235.49.234
   skip-cert-verify: true
-  sni: tcp-reset-club.net
+  sni: 109.235.49.234
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 434958
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.98
-  servername: fuck.rkn
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 301116
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.9
+  type: ss
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 913824
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.26
-  servername: fuck.rkn
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 717205
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.225
+  type: ss
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🆔anty_filter 🔒 SS-TCP-TLS ❔ XX 104ms
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.211
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 325404
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.198
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 430432
-  - 🏳️ ShatakVPN 516520
-  - shadowsocks-1827146264
-  - shadowsocks-1827145981
-  - vless-1828372615
-  - 🏳️ ShatakVPN 130690
-  - vless-1853331535
-  - 🏳️ ShatakVPN 753413
-  - 🏳️ ShatakVPN 156908
-  - 🏳️ ShatakVPN 231652
-  - hysteria2-1827187994
-  - 🏳️ ShatakVPN 434958
-  - 🏳️ ShatakVPN 913824
+  - 🏳️ ShatakVPN 186864
+  - 🆔vpnserverrr 🔒 SS-TCP-TLS 🇳🇱 NL 103ms
+  - vless-1853475417
+  - shadowsocks-1827146459
+  - 🏳️ ShatakVPN 986077
+  - vless-1854344730
+  - 🏳️ ShatakVPN 447710
+  - shadowsocks-1827145954
+  - hysteria2-1868279276
+  - 🏳️ ShatakVPN 301116
+  - 🏳️ ShatakVPN 717205
+  - 🆔anty_filter 🔒 SS-TCP-TLS ❔ XX 104ms
+  - 🏳️ ShatakVPN 325404
   type: select
 rules:
 - MATCH,PROXY

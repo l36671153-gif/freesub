@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇵🇱 PL-31.133.0.186 443",
+      "server": "31.133.0.186",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.dedushka.top"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🆔ar14n24b 🔒 TR-TCP-N/A 🇵🇱 PL 128ms",
+      "server": "pl1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.dedushka.top"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1865632621",
+      "server": "pl2.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.dedushka.top"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
