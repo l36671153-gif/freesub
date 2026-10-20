@@ -3,22 +3,71 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1853442957
+- client-fingerprint: chrome
+  name: vless-1853331605
+  network: ws
+  port: 443
+  server: 104.18.37.127
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: vless-1853500649
   network: ws
   port: 80
-  server: platform103.golnamakcert.top
+  server: platform117.golnamakcert.top
   type: vless
   udp: true
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   ws-opts:
-    headers:
-      Host: platform103.halalkhor.info
-    path: /platform103
+    headers: {}
+    path: /platform117
 - client-fingerprint: chrome
-  name: vless-1863468525
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  port: 35544
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  server: funagfrdfs.alixxplay.com
+  servername: iosapps.itunes.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+- name: vless-1868168643
+  network: ws
+  port: 80
+  server: 130.94.67.50
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: /platform113
+- alterId: 0
+  cipher: auto
+  name: vmess-1827161027
+  network: ws
+  port: 80
+  server: 168.138.43.75
+  type: vmess
+  udp: true
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  ws-opts:
+    headers:
+      Host: jp01.a0a.xyz
+    path: /cctv13.m3u8
+- client-fingerprint: unsafe
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.104 443
   network: ws
   port: 443
-  server: 104.19.33.25
+  server: 104.16.10.104
   servername: jp3.yohototo.top
   tls: true
   type: vless
@@ -30,21 +79,44 @@ proxies:
     path: /tyxyws
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1832754508
-  port: 28573
+  name: vless-1855735790
+  port: 443
   reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
+    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
+    short-id: ea36c03d86f91287
+  server: 142.91.108.25
+  servername: jp3.nztvpn.com
   tls: true
   type: vless
   udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- client-fingerprint: firefox
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+- name: vless-1863235432
+  network: ws
+  port: 80
+  server: 130.94.65.201
+  type: vless
+  udp: true
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  ws-opts:
+    headers: {}
+    path: /platform115
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853488309
-  port: 10583
+  name: vless-1871776012
+  port: 11452
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 103.75.118.228
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-1854299385
+  port: 18007
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -54,36 +126,56 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: vless-1854088308
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.254.3 443
   network: ws
-  port: 80
-  server: platform113.golnamakcert.top
+  port: 443
+  server: 162.159.254.3
+  servername: jp3.yohototo.top
+  tls: true
   type: vless
   udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  ws-opts:
-    headers: {}
-    path: /platform113
-- name: vless-1853476038
-  network: ws
-  port: 80
-  server: platform103.golnamakcert.top
-  type: vless
-  udp: true
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: platform103.halalkhor.info
-    path: /platform103
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: hysteria2-1827145136
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  port: 8443
+  server: 8.211.175.236
+  skip-cert-verify: true
+  sni: 8.211.175.236
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827152863
+  port: 19645
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.114.220.22
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853442957
-  - vless-1863468525
-  - vless-1832754508
-  - vless-1853488309
-  - vless-1854088308
-  - vless-1853476038
+  - vless-1853331605
+  - vless-1853500649
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
+  - vless-1868168643
+  - vmess-1827161027
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.104 443
+  - vless-1855735790
+  - vless-1863235432
+  - vless-1871776012
+  - vless-1854299385
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.254.3 443
+  - hysteria2-1827145136
+  - vless-1827152863
   type: select
 rules:
 - MATCH,PROXY

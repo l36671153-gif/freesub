@@ -3,95 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1838801429
-  port: 443
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  server: 130.17.25.67
-  servername: github.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-- name: 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.117 443
+- name: 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.122 443
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  server: 188.241.241.117
-  sni: de8.dedushka.top
+  server: 188.241.241.122
+  sni: de2.dedushka.top
   type: trojan
   udp: true
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 501676
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1849373293
-  port: 443
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  server: 130.17.25.67
-  servername: github.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1828003139
-  port: 443
-  reality-opts:
-    public-key: -bn-69fLm8-ZIN4AWcFJTvliohVXnevdOK6E0HJF90Y
-    short-id: 123c2bff
-  server: 2.27.69.117
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: vless-1854039474
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.69.128
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 178254
-  password: 1hhrqrokj3ag
-  port: 8388
-  server: 209.46.102.22
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827154808
-  port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- client-fingerprint: randomized
-  flow: xtls-rprx-vision
-  name: vless-1843512985
+  name: vless-1827188715
   port: 443
   reality-opts:
     public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
@@ -102,6 +23,94 @@ proxies:
   type: vless
   udp: true
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers: {}
+    path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1828371278
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 178198
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
+  udp: true
+- client-fingerprint: randomized
+  flow: xtls-rprx-vision
+  name: vless-1853982932
+  port: 443
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+- cipher: chacha20-ietf-poly1305
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS 🇩🇪 DE down
+  password: NcAXc0UZI6yQJE1p8QmOv8
+  port: 8388
+  server: 57.129.113.16
+  type: ss
+  udp: true
+- name: trojan-1858143193
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de4.dedushka.top
+  sni: de4.dedushka.top
+  type: trojan
+  udp: true
+- name: trojan-1864586456
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de10.dedushka.top
+  sni: de10.dedushka.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 🏳️ ShatakVPN 447489
+  network: ws
+  port: 2087
+  server: 46.225.46.136
+  servername: hoert1rert.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    headers:
+      Host: hoert1rert.localip.ir
+    path: /hokm
+- name: trojan-1864894751
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.235
+  sni: de9.dedushka.top
+  type: trojan
+  udp: true
 - name: trojan-1864906910
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
@@ -109,19 +118,49 @@ proxies:
   sni: de8.dedushka.top
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 165ms
+  port: 443
+  reality-opts:
+    public-key: EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI
+    short-id: 226509f017e4c36d
+  server: 77.110.105.122
+  servername: co-de.speedtec.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827533090
+  port: 443
+  reality-opts:
+    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
+    short-id: e696e744
+  server: 2.27.35.55
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1838801429
-  - 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.117 443
-  - 🏳️ ShatakVPN 501676
-  - vless-1849373293
-  - vless-1828003139
-  - vless-1854039474
-  - 🏳️ ShatakVPN 178254
-  - vless-1827154808
-  - vless-1843512985
+  - 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.122 443
+  - vless-1827188715
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - vless-1828371278
+  - 🏳️ ShatakVPN 178198
+  - vless-1853982932
+  - 🆔ar14n24b 🔒 SS-TCP-TLS 🇩🇪 DE down
+  - trojan-1858143193
+  - trojan-1864586456
+  - 🏳️ ShatakVPN 447489
+  - trojan-1864894751
   - trojan-1864906910
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 165ms
+  - vless-1827533090
   type: select
 rules:
 - MATCH,PROXY

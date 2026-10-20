@@ -5,39 +5,71 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1853463199
+  name: 🇭🇰 香港 | HKG
   network: ws
   port: 443
-  server: yg1.ygkkk.dpdns.org
-  servername: jmp1.907737.xyz
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
   tls: true
   type: vmess
   udp: true
-  uuid: b2ba4a73-3123-479e-aa96-5973a9ecd0c0
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: jmp1.907737.xyz
-    path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
-- name: hysteria2-1853331439
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+    path: /ws-vmess
+- name: trojan-1828128619
+  password: XuMweB2PWs
+  port: 45464
+  server: 2.27.109.179
+  sni: 2.27.109.179.sslip.io
+  type: trojan
+  udp: true
+- name: trojan-1853989743
+  password: XuMweB2PWs
+  port: 45464
+  server: 2.27.109.179
+  sni: 2.27.109.179.sslip.io
+  type: trojan
+  udp: true
+- name: hysteria2-1828371507
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.29
+  server: 202.146.222.174
   skip-cert-verify: true
-  sni: https://t.me/wangcai2ⁿß
+  sni: https://t.me/oneclickvpnkeys
   type: hysteria2
-- name: hysteria2-1853331618
+- alterId: 0
+  cipher: auto
+  name: 🆔soskeynet 🔒 VM-WS-TLS 🇭🇰 HK 179ms
+  network: ws
+  port: 443
+  server: 47.243.153.153
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+    path: /ws-vmess
+- name: hysteria2-1828371651
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  sni: vk.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1853463199
-  - hysteria2-1853331439
-  - hysteria2-1853331618
+  - 🇭🇰 香港 | HKG
+  - trojan-1828128619
+  - trojan-1853989743
+  - hysteria2-1828371507
+  - 🆔soskeynet 🔒 VM-WS-TLS 🇭🇰 HK 179ms
+  - hysteria2-1828371651
   type: select
 rules:
 - MATCH,PROXY

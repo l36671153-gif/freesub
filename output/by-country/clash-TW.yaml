@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1854131186
+- name: hysteria2-1854030061
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: vpn-tw-002.fastervpn.world
+  server: 160.187.100.109
   skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
+  sni: 'off'
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1854131186
+  - hysteria2-1854030061
   type: select
 rules:
 - MATCH,PROXY
