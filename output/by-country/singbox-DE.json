@@ -3,116 +3,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1837324384",
-      "server": "connect.wecantos.site",
-      "server_port": 10000,
-      "uuid": "a05ecf37-c661-4247-ab09-4432cf0f3cc1"
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1855916778",
-      "server": "de2.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083",
+      "server": "91.107.247.173",
+      "server_port": 2083,
+      "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
       "tls": {
         "enabled": true,
-        "server_name": "de2.dedushka.top"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🏳️ ShatakVPN 917787",
-      "server": "188.241.241.122",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.dedushka.top"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1854108408",
-      "server": "5.252.179.15",
-      "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "sino.bestsellers1.site",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🏳️ ShatakVPN 839377",
-      "server": "188.241.241.235",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de9.dedushka.top"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸 ShatakVPN 763995",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "ed6c724c-435f-4f83-a781-f57579af320b",
-      "tls": {
-        "enabled": true,
-        "server_name": "alman.5f2vvtqh5syot.info",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "unsafe"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/9d9fdbc18c834cffab4276811501fbae",
+        "path": "/",
         "headers": {
-          "Host": "alman.5f2vvtqh5syot.info"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🏳️ ShatakVPN 842038",
-      "server": "188.241.241.102",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de4.dedushka.top"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1843553931",
-      "server": "2.27.69.128",
-      "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc",
-          "short_id": "e696e744"
+          "Host": "sino.bestsellers1.site"
         }
       }
     },
