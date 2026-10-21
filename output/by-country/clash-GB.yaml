@@ -1,0 +1,39 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  name: vless-1827154835
+  port: 2053
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: 🆔anty_filter 🔒 VL-TCP- 🇱🇹 LT down
+  port: 443
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: dda5f542d835
+  server: webdisk.jaggyslawa.org
+  servername: www.foxsports.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1827154835
+  - 🆔anty_filter 🔒 VL-TCP- 🇱🇹 LT down
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

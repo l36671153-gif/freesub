@@ -3,39 +3,91 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- name: vless-1837324384
+  port: 10000
+  server: connect.wecantos.site
+  type: vless
+  udp: true
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: trojan-1855916778
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de2.dedushka.top
+  sni: de2.dedushka.top
+  type: trojan
+  udp: true
+- name: 🏳️ ShatakVPN 917787
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.122
+  sni: de2.dedushka.top
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1854108408
+  port: 443
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: 🏳️ ShatakVPN 839377
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.235
+  sni: de9.dedushka.top
+  type: trojan
+  udp: true
+- client-fingerprint: unsafe
+  name: 🇺🇸 ShatakVPN 763995
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: alman.5f2vvtqh5syot.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  ws-opts:
+    headers:
+      Host: alman.5f2vvtqh5syot.info
+    path: /9d9fdbc18c834cffab4276811501fbae
+- name: 🏳️ ShatakVPN 842038
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.102
+  sni: de4.dedushka.top
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853451835
+  name: vless-1843553931
   port: 443
   reality-opts:
     public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
     short-id: e696e744
-  server: 2.27.35.55
+  server: 2.27.69.128
   servername: addons.mozilla.org
   tls: true
   type: vless
   udp: true
   uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: safari
-  grpc-opts:
-    grpc-service-name: 43f41cd7fee0
-  name: vless-1876710468
-  network: grpc
-  port: 25363
-  reality-opts:
-    public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
-    short-id: 7a8e24da4eb2c1b5
-  server: 193.148.253.53
-  servername: www.chip.de
-  tls: true
-  type: vless
-  udp: true
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853451835
-  - vless-1876710468
+  - vless-1837324384
+  - trojan-1855916778
+  - 🏳️ ShatakVPN 917787
+  - vless-1854108408
+  - 🏳️ ShatakVPN 839377
+  - 🇺🇸 ShatakVPN 763995
+  - 🏳️ ShatakVPN 842038
+  - vless-1843553931
   type: select
 rules:
 - MATCH,PROXY
