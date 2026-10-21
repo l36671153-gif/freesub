@@ -3,23 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1853340475
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1875790288
-  port: 13672
+  name: vless-1853651617
+  port: 18967
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -36,26 +23,11 @@ proxies:
   skip-cert-verify: true
   sni: bing.com
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828529970
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853340475
-  - vless-1875790288
+  - vless-1853651617
   - hysteria2-1832881372
-  - vless-1828529970
   type: select
 rules:
 - MATCH,PROXY

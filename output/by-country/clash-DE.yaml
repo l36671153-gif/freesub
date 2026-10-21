@@ -3,24 +3,44 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 66ms
   network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
+  port: 443
+  server: 903.rtgpu.com
   tls: true
   type: vless
   udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
   ws-opts:
-    headers:
-      Host: sino.bestsellers1.site
-    path: /
+    headers: {}
+    path: /nmd2
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1828169058
+  port: 443
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: 🏳️ ShatakVPN 841143
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.236
+  sni: de10.dedushka.top
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 66ms
+  - vless-1828169058
+  - 🏳️ ShatakVPN 841143
   type: select
 rules:
 - MATCH,PROXY

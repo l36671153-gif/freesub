@@ -2,25 +2,9 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🆔surfboardv2ray 🔓 VM-WS-N/A 🇵🇱 PL 214ms",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🏳️ ShatakVPN 976939",
-      "server": "62.210.91.2",
+      "tag": "🏳️ ShatakVPN 290416",
+      "server": "62.210.91.10",
       "server_port": 23576,
       "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
       "flow": "xtls-rprx-vision",
@@ -37,6 +21,13 @@
           "short_id": "01"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A 🇫🇷 FR down_1",
+      "server": "13.36.145.160",
+      "server_port": 22222,
+      "uuid": "e4514801-0d5a-42ba-869f-39bd605aef9e"
     },
     {
       "type": "direct",

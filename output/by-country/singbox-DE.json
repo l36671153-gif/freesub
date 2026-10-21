@@ -3,24 +3,54 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083",
-      "server": "91.107.247.173",
-      "server_port": 2083,
-      "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
+      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 66ms",
+      "server": "903.rtgpu.com",
+      "server_port": 443,
+      "uuid": "c6438331-a79b-4471-fd5e-42c2eeac29fa",
       "tls": {
         "enabled": true,
-        "server_name": "sino.bestsellers1.site",
+        "server_name": "903.rtgpu.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "sino.bestsellers1.site"
+        "path": "/nmd2",
+        "headers": {}
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1828169058",
+      "server": "5.252.179.15",
+      "server_port": 443,
+      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
+          "short_id": "296f27de82dad7ff"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🏳️ ShatakVPN 841143",
+      "server": "188.241.241.236",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de10.dedushka.top"
       }
     },
     {

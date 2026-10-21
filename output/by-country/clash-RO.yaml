@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1873913825
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de1.dedushka.top
-  sni: de1.dedushka.top
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS 🇷🇴 RO 489ms
+  password: U83u9OGpvSatIUW7LsWffr
+  port: 64546
+  server: 194.68.44.42
+  type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1873913825
+  - 🆔ar14n24b 🔒 SS-TCP-TLS 🇷🇴 RO 489ms
   type: select
 rules:
 - MATCH,PROXY

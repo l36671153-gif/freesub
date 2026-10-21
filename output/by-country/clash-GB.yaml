@@ -15,31 +15,23 @@ proxies:
   type: vless
   udp: true
   uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-- cipher: rc4-md5
-  name: shadowsocks-1870576143
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 98.98.207.163
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- 🇷🇺 RU 140ms
-  port: 43000
+- client-fingerprint: firefox
+  name: vless-1827975201
+  port: 2053
   reality-opts:
-    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
-    short-id: 725e6ea0
-  server: 144.48.11.97
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  server: 46.250.250.149
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
 proxy-groups:
 - name: PROXY
   proxies:
   - vless-1827153943
-  - shadowsocks-1870576143
-  - 🆔ar14n24b 🔒 VL-TCP- 🇷🇺 RU 140ms
+  - vless-1827975201
   type: select
 rules:
 - MATCH,PROXY
