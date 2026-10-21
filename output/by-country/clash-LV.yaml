@@ -3,7 +3,7 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1879502323
+- name: trojan-1878526852
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: lv1.dedushka.top
@@ -13,7 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1879502323
+  - trojan-1878526852
   type: select
 rules:
 - MATCH,PROXY

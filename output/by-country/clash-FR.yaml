@@ -3,30 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 290416
-  port: 23576
+- client-fingerprint: firefox
+  name: vless-1832881467
+  port: 2053
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- name: 🆔ar14n24b 🔓 VL-TCP-N/A 🇫🇷 FR down_1
-  port: 22222
-  server: 13.36.145.160
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 290416
-  - 🆔ar14n24b 🔓 VL-TCP-N/A 🇫🇷 FR down_1
+  - vless-1832881467
   type: select
 rules:
 - MATCH,PROXY
