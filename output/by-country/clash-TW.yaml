@@ -3,12 +3,26 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1828371723
+- name: hysteria2-1853489224
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 103.115.109.49
   skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https%3a
+  type: hysteria2
+- name: 🏳️ ShatakVPN 859394
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: 🏳️ ShatakVPN 301505
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
   type: hysteria2
 - name: hysteria2-1854131186
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
@@ -17,35 +31,65 @@ proxies:
   skip-cert-verify: true
   sni: vpn-tw-002.fastervpn.world
   type: hysteria2
-- name: hysteria2-1828371613
+- name: hysteria2-1828372344
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vk.com
+  type: hysteria2
+- name: hysteria2-1877087157
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: hysteria2-1832765364
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 160.187.100.109
   skip-cert-verify: true
-  sni: 160.187.100.109
+  sni: 127.0.0.1
   type: hysteria2
-- name: hysteria2-1828371253
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- alterId: 0
+  cipher: auto
+  name: vmess-1883512301
+  network: ws
   port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: 103.115.109.49
-  type: hysteria2
-- name: hysteria2-1830466990
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  server: 9641684.sdf65h4.top
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  ws-opts:
+    headers: {}
+    path: /
+- alterId: 0
+  cipher: auto
+  name: vmess-1883665264
+  network: ws
   port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  type: hysteria2
+  server: 9641684.sdf65h4.top
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  ws-opts:
+    headers: {}
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1828371723
+  - hysteria2-1853489224
+  - 🏳️ ShatakVPN 859394
+  - 🏳️ ShatakVPN 301505
   - hysteria2-1854131186
-  - hysteria2-1828371613
-  - hysteria2-1828371253
-  - hysteria2-1830466990
+  - hysteria2-1828372344
+  - hysteria2-1877087157
+  - hysteria2-1832765364
+  - vmess-1883512301
+  - vmess-1883665264
   type: select
 rules:
 - MATCH,PROXY

@@ -3,102 +3,79 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1873104486
+- client-fingerprint: chrome
+  name: 🏳️ ShatakVPN 101271
+  network: ws
+  port: 2087
+  server: 46.225.46.136
+  servername: hoert1rert.localip.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    headers:
+      Host: hoert1rert.localip.ir
+    path: /hokm
+- name: trojan-1876446952
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.49
+  sni: de6.dedushka.top
+  type: trojan
+  udp: true
+- name: trojan-1879681943
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de2.dedushka.top
+  sni: de2.dedushka.top
+  type: trojan
+  udp: true
+- name: 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.236 443
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.236
+  sni: de10.dedushka.top
+  type: trojan
+  udp: true
+- name: trojan-1870104449
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: 188.241.241.122
   sni: de2.dedushka.top
   type: trojan
   udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1854074054
-  port: 443
-  reality-opts:
-    public-key: RTG-xTU5UuKTRrkk8_COe04GiUWrqrSdt9mqSak_XEc
-    short-id: e696e744
-  server: 2.27.35.55
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-- client-fingerprint: firefox
-  name: 🆔ar14n24b 🔒 VL-WS-N/A 🇩🇪 DE 125ms
+- client-fingerprint: chrome
+  name: 🇩🇪 德国 | DEU_1
   network: ws
-  port: 2083
-  server: 91.107.188.129
-  servername: site.check-looks.space
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1840028882
   port: 443
-  reality-opts:
-    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
-    short-id: 670ed9f350bd8ee0
-  server: 82.118.19.153
-  servername: www.cloudflare.com
+  server: 903.rtgpu.com
+  servername: 903.rtgpu.com
   tls: true
   type: vless
   udp: true
-  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
-- client-fingerprint: firefox
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
   ws-opts:
     headers:
-      Host: sino.bestsellers1.site
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827530457
+      Host: 903.rtgpu.com
+    path: /nmd2
+- name: 🆔ar14n24b 🔓 TR--N/A 🇩🇪 DE 182ms
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
+  server: de3.dedushka.top
+  sni: de3.dedushka.top
+  type: trojan
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1832464854
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1873104486
-  - vless-1854074054
-  - 🆔ar14n24b 🔒 VL-WS-N/A 🇩🇪 DE 125ms
-  - vless-1840028882
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  - vless-1827530457
-  - vless-1832464854
+  - 🏳️ ShatakVPN 101271
+  - trojan-1876446952
+  - trojan-1879681943
+  - 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.236 443
+  - trojan-1870104449
+  - 🇩🇪 德国 | DEU_1
+  - 🆔ar14n24b 🔓 TR--N/A 🇩🇪 DE 182ms
   type: select
 rules:
 - MATCH,PROXY

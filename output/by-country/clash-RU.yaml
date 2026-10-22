@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 172398
+  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
+  port: 43558
+  server: 130.49.189.158
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 172398
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
