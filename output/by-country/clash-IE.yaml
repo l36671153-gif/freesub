@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 114ms
+  password: LVMlhvK82To1FGsy
+  port: 443
+  server: 20.166.51.228
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 114ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
