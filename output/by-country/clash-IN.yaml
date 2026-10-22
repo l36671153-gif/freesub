@@ -3,22 +3,34 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1883103903
-  port: 443
-  reality-opts:
-    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
-  server: 165.99.222.161
-  servername: in1.vkusnews.com
-  tls: true
+- alterId: 0
+  cipher: auto
+  name: vmess-1858144134
+  network: ws
+  port: 80
+  server: 152.67.8.205
+  type: vmess
+  udp: true
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  ws-opts:
+    headers: {}
+    path: /
+- name: vless-1832465387
+  network: ws
+  port: 14430
+  server: 13.140.56.100
   type: vless
   udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1883103903
+  - vmess-1858144134
+  - vless-1832465387
   type: select
 rules:
 - MATCH,PROXY
