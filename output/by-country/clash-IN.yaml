@@ -3,59 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1832465387
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-    path: /vless
-- name: vless-1828654996
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-    path: /vless
-- client-fingerprint: random
-  name: vless-1828294489
-  port: 2053
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1883103903
+  port: 443
   reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  server: 194.61.31.126
-  servername: www.apple.com
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  server: 165.99.222.161
+  servername: in1.vkusnews.com
   tls: true
   type: vless
   udp: true
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-- client-fingerprint: firefox
-  name: vless-1828294362
-  port: 2053
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  server: 194.61.31.126
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832465387
-  - vless-1828654996
-  - vless-1828294489
-  - vless-1828294362
+  - vless-1883103903
   type: select
 rules:
 - MATCH,PROXY

@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 101271
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-46.225.46.136 2087
   network: ws
   port: 2087
   server: 46.225.46.136
@@ -17,65 +17,10 @@ proxies:
     headers:
       Host: hoert1rert.localip.ir
     path: /hokm
-- name: trojan-1876446952
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: 188.241.241.49
-  sni: de6.dedushka.top
-  type: trojan
-  udp: true
-- name: trojan-1879681943
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de2.dedushka.top
-  sni: de2.dedushka.top
-  type: trojan
-  udp: true
-- name: 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.236 443
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: 188.241.241.236
-  sni: de10.dedushka.top
-  type: trojan
-  udp: true
-- name: trojan-1870104449
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: 188.241.241.122
-  sni: de2.dedushka.top
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🇩🇪 德国 | DEU_1
-  network: ws
-  port: 443
-  server: 903.rtgpu.com
-  servername: 903.rtgpu.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6438331-a79b-4471-fd5e-42c2eeac29fa
-  ws-opts:
-    headers:
-      Host: 903.rtgpu.com
-    path: /nmd2
-- name: 🆔ar14n24b 🔓 TR--N/A 🇩🇪 DE 182ms
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de3.dedushka.top
-  sni: de3.dedushka.top
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 101271
-  - trojan-1876446952
-  - trojan-1879681943
-  - 🔒 TR-TCP-TLS 🇩🇪 DE-188.241.241.236 443
-  - trojan-1870104449
-  - 🇩🇪 德国 | DEU_1
-  - 🆔ar14n24b 🔓 TR--N/A 🇩🇪 DE 182ms
+  - 🔒 VL-WS-TLS 🇩🇪 DE-46.225.46.136 2087
   type: select
 rules:
 - MATCH,PROXY
