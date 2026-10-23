@@ -3,17 +3,32 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 946087
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- name: hysteria2-1877380230
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
+  skip-cert-verify: true
+  sni: 5.45.100.100
+  type: hysteria2
+- client-fingerprint: firefox
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
+  tls: true
+  type: vless
   udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers:
+      Host: sino.bestsellers1.site
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 946087
+  - hysteria2-1877380230
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
   type: select
 rules:
 - MATCH,PROXY

@@ -4,21 +4,21 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 250ms
+  flow: xtls-rprx-vision
+  name: vless-1887479931
   port: 443
   reality-opts:
-    public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
-    short-id: 6bdc8320
-  server: in.smrtai.top
-  servername: www.cloudflare.com
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  server: 165.99.222.161
+  servername: in1.vkusnews.com
   tls: true
   type: vless
   udp: true
-  uuid: 6bdc8320-7eae-46fc-be08-f5f54e65dfc8
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 250ms
+  - vless-1887479931
   type: select
 rules:
 - MATCH,PROXY
