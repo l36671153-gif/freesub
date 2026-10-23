@@ -3,19 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇱🇻 拉脱维亚 | LVA
-  port: 443
-  reality-opts:
-    public-key: aow1gjMhnsFXqOuIulX3HBWiGI7m488euLPH6G5fcFA
-    short-id: 3446a8095e1788b4
-  server: lv1.himoy.space
-  servername: lv1.himoy.space
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5131b5e9-2c3c-44a0-8f18-0641f3f21cac
 - cipher: chacha20-ietf-poly1305
   name: '🏳[www.v2nodes.com] ss- #5'
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
@@ -23,11 +10,18 @@ proxies:
   server: 132.243.175.144
   type: ss
   udp: true
+- name: hysteria2-1832650664
+  password: 84a506ca5aca505696a454d828420b3f
+  port: 50160
+  server: 140.238.213.114
+  skip-cert-verify: true
+  sni: 140.238.213.114
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇱🇻 拉脱维亚 | LVA
   - '🏳[www.v2nodes.com] ss- #5'
+  - hysteria2-1832650664
   type: select
 rules:
 - MATCH,PROXY

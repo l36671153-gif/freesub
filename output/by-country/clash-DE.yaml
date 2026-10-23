@@ -3,32 +3,58 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1877380230
-  password: miaoge110
-  port: 51511
-  server: 5.45.100.100
-  skip-cert-verify: true
-  sni: 5.45.100.100
-  type: hysteria2
-- client-fingerprint: firefox
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 259ms
+  port: 443
+  reality-opts:
+    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
+    short-id: 2c9a2790ad5900b2
+  server: ge-s-1.pythonmakemigreat.wiki
+  servername: ge-s-1.pythonmakemigreat.wiki
   tls: true
   type: vless
   udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+- alterId: 0
+  cipher: auto
+  name: vmess-1853493211
+  port: 22366
+  server: 31.76.11.83
+  type: vmess
+  udp: true
+  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
+- name: 🏳️ ShatakVPN 906619
+  network: ws
+  port: 80
+  server: 57.129.41.216
+  type: vless
+  udp: true
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   ws-opts:
     headers:
-      Host: sino.bestsellers1.site
-    path: /
+      Host: OV-Germany1.09vpn.com
+    path: /vless/
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1853476037
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1877380230
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 259ms
+  - vmess-1853493211
+  - 🏳️ ShatakVPN 906619
+  - vless-1853476037
   type: select
 rules:
 - MATCH,PROXY
