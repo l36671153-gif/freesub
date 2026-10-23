@@ -3,25 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇵🇱[www.v2nodes.com] trojan-PL-... #1'
+- name: trojan-1863235442
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: pl2.dedushka.top
   sni: pl2.dedushka.top
   type: trojan
   udp: true
-- name: 🔒 TR-TCP-TLS 🇵🇱 PL-31.133.0.186 443
+- name: 🇵🇱[www.v2nodes.com] trojan-PL-...
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  server: 31.133.0.186
+  server: pl1.dedushka.top
+  sni: pl1.dedushka.top
+  type: trojan
+  udp: true
+- name: trojan-1860252936
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
   sni: pl2.dedushka.top
   type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇵🇱[www.v2nodes.com] trojan-PL-... #1'
-  - 🔒 TR-TCP-TLS 🇵🇱 PL-31.133.0.186 443
+  - trojan-1863235442
+  - 🇵🇱[www.v2nodes.com] trojan-PL-...
+  - trojan-1860252936
   type: select
 rules:
 - MATCH,PROXY

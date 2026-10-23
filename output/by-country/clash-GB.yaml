@@ -3,22 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 766370
-  port: 1222
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  server: 23.81.36.148
-  servername: play.google.com
-  tls: true
-  type: vless
+- cipher: rc4-md5
+  name: shadowsocks-1870576322
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.46.199
+  type: ss
   udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 766370
+  - shadowsocks-1870576322
   type: select
 rules:
 - MATCH,PROXY

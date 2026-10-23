@@ -3,48 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1875789279
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de7.dedushka.top
-  sni: de7.dedushka.top
-  type: trojan
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 946087
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
   udp: true
-- name: trojan-1870103762
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de9.dedushka.top
-  sni: de9.dedushka.top
-  type: trojan
-  udp: true
-- name: trojan-1880452272
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de3.dedushka.top
-  sni: de3.dedushka.top
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🏳️ ShatakVPN 699516
-  network: ws
-  port: 2087
-  server: 46.225.46.136
-  servername: hoert1rert.localip.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
-  ws-opts:
-    headers:
-      Host: hoert1rert.localip.ir
-    path: /hokm
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1875789279
-  - trojan-1870103762
-  - trojan-1880452272
-  - 🏳️ ShatakVPN 699516
+  - 🏳️ ShatakVPN 946087
   type: select
 rules:
 - MATCH,PROXY
