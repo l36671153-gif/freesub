@@ -3,39 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853331556
+- name: 🏳️ ShatakVPN 320043
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2рҹүрҹү
+  sni: 202.146.222.29
   type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1882542532
-  port: 443
-  reality-opts:
-    public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
-    short-id: 9b6fa4047c24629f
-  server: 151.242.85.236
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
-- name: hysteria2-1828371354
+- name: hysteria2-1828371507
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.29
+  server: 202.146.222.174
   skip-cert-verify: true
-  sni: speedtest.tinkoff.ru
+  sni: https://t.me/oneclickvpnkeys
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1853331556
-  - vless-1882542532
-  - hysteria2-1828371354
+  - 🏳️ ShatakVPN 320043
+  - hysteria2-1828371507
   type: select
 rules:
 - MATCH,PROXY

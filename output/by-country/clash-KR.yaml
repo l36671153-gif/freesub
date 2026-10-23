@@ -5,8 +5,8 @@ port: 7890
 proxies:
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1883568705
-  port: 18967
+  name: vless-1883568710
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -16,45 +16,6 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1828530158
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1856199582
-  port: 18967
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1860508886
-  port: 443
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
 - client-fingerprint: ios
   flow: xtls-rprx-vision
   name: vless-1856199737
@@ -68,25 +29,10 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- alterId: 0
-  cipher: auto
-  name: vmess-1827160952
-  port: 443
-  server: 140.238.2.250
-  type: vmess
-  udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- name: hysteria2-1832881284
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  port: 50160
-  server: 152.67.200.82
-  skip-cert-verify: true
-  sni: google.com
-  type: hysteria2
-- client-fingerprint: random
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853464490
-  port: 13672
+  name: vless-1833044067
+  port: 18967
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -99,14 +45,9 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1883568705
-  - vless-1828530158
-  - vless-1856199582
-  - vless-1860508886
+  - vless-1883568710
   - vless-1856199737
-  - vmess-1827160952
-  - hysteria2-1832881284
-  - vless-1853464490
+  - vless-1833044067
   type: select
 rules:
 - MATCH,PROXY

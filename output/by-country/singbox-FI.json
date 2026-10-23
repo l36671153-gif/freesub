@@ -2,13 +2,26 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🏳️ ShatakVPN 189428",
-      "server": "65.109.209.239",
-      "server_port": 16911,
-      "uuid": "c5f59d68-5a26-40b8-a086-2f531e06737c",
-      "security": "auto",
-      "alter_id": 0
+      "type": "vless",
+      "tag": "🇺🇸 ShatakVPN 699006",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
+      "tls": {
+        "enabled": true,
+        "server_name": "server8.9966338.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/fdtiouasopeiyre0r95y8?ed=2560",
+        "headers": {
+          "Host": "server8.9966338.xyz"
+        }
+      }
     },
     {
       "type": "direct",

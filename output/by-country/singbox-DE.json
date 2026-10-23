@@ -2,16 +2,19 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 603863",
-      "server": "185.226.172.8",
-      "server_port": 8008,
-      "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "type": "trojan",
+      "tag": "trojan-1875789279",
+      "server": "de7.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de7.dedushka.top"
+      }
     },
     {
       "type": "trojan",
-      "tag": "trojan-1864518819",
+      "tag": "trojan-1870103762",
       "server": "de9.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
@@ -21,65 +24,36 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1875023013",
-      "server": "185.176.204.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "type": "trojan",
+      "tag": "trojan-1880452272",
+      "server": "de3.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de3.dedushka.top"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 | DEU",
-      "server": "149.33.47.172",
-      "server_port": 9443,
-      "uuid": "82eb8419-59f4-4d3e-9106-d05d22af615c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🏳️ ShatakVPN 699516",
+      "server": "46.225.46.136",
+      "server_port": 2087,
+      "uuid": "a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "hoert1rert.localip.ir",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4",
-          "short_id": "b390142456517acc"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 153ms",
-      "server": "de5.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de5.dedushka.top"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🏳️ ShatakVPN 332178",
-      "server": "188.241.241.235",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de9.dedushka.top"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪[www.v2nodes.com] trojan-DE-... #1",
-      "server": "de2.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de2.dedushka.top"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/hokm",
+        "headers": {
+          "Host": "hoert1rert.localip.ir"
+        }
       }
     },
     {

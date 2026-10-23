@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "🇩🇪[www.v2nodes.com] trojan-DE-... #3",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1876710445",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
