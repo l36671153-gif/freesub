@@ -3,17 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: firefox
+  name: vless-1900280871
+  network: ws
+  port: 8443
+  server: 179.255.190.43
+  servername: itly.yandex-api.store
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  ws-opts:
+    headers: {}
+    path: /assets
 - cipher: aes-256-gcm
-  name: 🇮🇹_IT_意大利
+  name: shadowsocks-1875023050
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.81
+  server: 202.50.253.36
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇹_IT_意大利
+  - vless-1900280871
+  - shadowsocks-1875023050
   type: select
 rules:
 - MATCH,PROXY

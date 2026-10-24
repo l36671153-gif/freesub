@@ -2,9 +2,29 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "vless-1900280871",
+      "server": "179.255.190.43",
+      "server_port": 8443,
+      "uuid": "78559873-84ef-4cab-a0b2-46d4cd20de4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "itly.yandex-api.store",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assets",
+        "headers": {}
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇮🇹_IT_意大利",
-      "server": "202.50.253.81",
+      "tag": "shadowsocks-1875023050",
+      "server": "202.50.253.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
