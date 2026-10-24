@@ -4,16 +4,24 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: shadowsocks-1827147481
+  name: 🏳️ ShatakVPN 292211
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 185.164.175.81
+  server: 202.50.253.99
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1875022975
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.81
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827147481
+  - 🏳️ ShatakVPN 292211
+  - shadowsocks-1875022975
   type: select
 rules:
 - MATCH,PROXY

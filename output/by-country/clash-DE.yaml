@@ -5,38 +5,6 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 259ms
-  port: 443
-  reality-opts:
-    public-key: 5fkwwCKZzMsE6Eb_b3iqluu-1AWIfnYl-p0N3EL9Al8
-    short-id: 2c9a2790ad5900b2
-  server: ge-s-1.pythonmakemigreat.wiki
-  servername: ge-s-1.pythonmakemigreat.wiki
-  tls: true
-  type: vless
-  udp: true
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-- alterId: 0
-  cipher: auto
-  name: vmess-1853493211
-  port: 22366
-  server: 31.76.11.83
-  type: vmess
-  udp: true
-  uuid: 632cfa69-ae00-49d1-81e0-554979d1e9fa
-- name: 🏳️ ShatakVPN 906619
-  network: ws
-  port: 80
-  server: 57.129.41.216
-  type: vless
-  udp: true
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  ws-opts:
-    headers:
-      Host: OV-Germany1.09vpn.com
-    path: /vless/
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
   name: vless-1853476037
   port: 443
   reality-opts:
@@ -48,13 +16,53 @@ proxies:
   type: vless
   udp: true
   uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1832754818
+  port: 443
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+- client-fingerprint: firefox
+  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 123ms
+  network: ws
+  port: 2083
+  server: 91.107.188.129
+  servername: site.check-looks.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  ws-opts:
+    headers: {}
+    path: /
+- name: 🏳️ ShatakVPN 834238
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.69.232.199
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: vless-1837324384
+  port: 10000
+  server: connect.wecantos.site
+  type: vless
+  udp: true
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 259ms
-  - vmess-1853493211
-  - 🏳️ ShatakVPN 906619
   - vless-1853476037
+  - vless-1832754818
+  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 123ms
+  - 🏳️ ShatakVPN 834238
+  - vless-1837324384
   type: select
 rules:
 - MATCH,PROXY
