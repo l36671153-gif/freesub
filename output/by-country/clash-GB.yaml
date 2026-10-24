@@ -15,10 +15,18 @@ proxies:
   type: vless
   udp: true
   uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- cipher: rc4-md5
+  name: shadowsocks-1870576322
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.46.199
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
   - vless-1895325335
+  - shadowsocks-1870576322
   type: select
 rules:
 - MATCH,PROXY

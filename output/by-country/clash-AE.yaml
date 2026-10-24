@@ -3,6 +3,28 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- name: vless-1827151042
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+    path: /
+- name: vless-1832465393
+  network: ws
+  port: 22573
+  server: uae.unixzone.us
+  type: vless
+  udp: true
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  ws-opts:
+    headers:
+      Host: uae.unixzone.us
+    path: /
 - name: vless-1827402980
   network: ws
   port: 14430
@@ -17,6 +39,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1827151042
+  - vless-1832465393
   - vless-1827402980
   type: select
 rules:
