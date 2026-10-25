@@ -3,24 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇫🇮 FI-2.27.207.208 8081",
-      "server": "2.27.207.208",
-      "server_port": 8081,
-      "uuid": "9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd",
+      "tag": "vless-1923846542",
+      "server": "45-149-147-213.sslip.io",
+      "server_port": 4443,
+      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
       "tls": {
         "enabled": true,
-        "server_name": "ang-el.ir",
+        "server_name": "45-149-147-213.sslip.io",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "ang-el.ir"
-        }
+        "type": "grpc",
+        "service_name": "kobedin-server1-vless"
       }
     },
     {

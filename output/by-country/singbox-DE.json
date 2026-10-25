@@ -2,63 +2,45 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms",
-      "server": "49.12.253.100",
-      "server_port": 1080,
-      "method": "aes-256-gcm",
-      "password": "Ou_n6HeBKQw2d_N0UmTBBDmC"
-    },
-    {
       "type": "vless",
-      "tag": "vless-1827530457",
-      "server": "5.252.179.15",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 167ms",
+      "server": "201.51.8.163",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "atk.vkusnews.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 238ms",
-      "server": "64.118.156.138",
-      "server_port": 14081,
-      "uuid": "531ce91b-f477-4c15-b68f-948a3eea2f70"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827146150",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1875023013",
-      "server": "185.176.204.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "vless",
-      "tag": "🆔vpnserverrr 🔓 VL-TCP-N/A ❔ XX 122ms",
-      "server": "31.77.148.89",
-      "server_port": 45021,
-      "uuid": "ad263f1c-199e-4aaf-bf22-c3ad0407d377"
+      "tag": "vless-1876912361",
+      "server": "31.70.111.146",
+      "server_port": 443,
+      "uuid": "84ed0e09-6803-4ef9-a977-74b657d971e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE",
+          "short_id": "d7de3a6ff4018957"
+        }
+      }
     },
     {
       "type": "direct",

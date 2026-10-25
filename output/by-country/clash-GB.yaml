@@ -4,7 +4,27 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: firefox
-  name: vless-1827975201
+  flow: xtls-rprx-vision
+  name: vless-1864904111
+  port: 443
+  reality-opts:
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  server: 191.44.108.31
+  servername: www.google.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
+- cipher: rc4-md5
+  name: shadowsocks-1827963919
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.18
+  type: ss
+  udp: true
+- client-fingerprint: firefox
+  name: vless-1827154835
   port: 2053
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
@@ -18,7 +38,9 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827975201
+  - vless-1864904111
+  - shadowsocks-1827963919
+  - vless-1827154835
   type: select
 rules:
 - MATCH,PROXY

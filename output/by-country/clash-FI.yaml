@@ -4,23 +4,21 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇫🇮 FI-2.27.207.208 8081
-  network: ws
-  port: 8081
-  server: 2.27.207.208
-  servername: ang-el.ir
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+  name: vless-1923846542
+  network: grpc
+  port: 4443
+  server: 45-149-147-213.sslip.io
+  servername: 45-149-147-213.sslip.io
   tls: true
   type: vless
   udp: true
-  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
-  ws-opts:
-    headers:
-      Host: ang-el.ir
-    path: /
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇫🇮 FI-2.27.207.208 8081
+  - vless-1923846542
   type: select
 rules:
 - MATCH,PROXY
