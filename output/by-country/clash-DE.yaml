@@ -3,17 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: shadowsocks-1827966278
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1832754818
+  port: 443
+  reality-opts:
+    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
+    short-id: d7de3a6ff4018957
+  server: 31.70.111.146
+  servername: www.apple.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827966278
+  - vless-1832754818
   type: select
 rules:
 - MATCH,PROXY

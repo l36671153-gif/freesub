@@ -3,35 +3,62 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: shadowsocks-1827963019
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 128.199.172.224
-  type: ss
-  udp: true
-- client-fingerprint: chrome
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1889171532
-  port: 443
+  name: vless-1851982457
+  port: 24146
   reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  server: 172.237.88.103
-  servername: zoom.us
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 680267
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1853340306
+  port: 443
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  server: 206.206.76.75
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
 - cipher: rc4-md5
-  name: shadowsocks-1828226862
+  name: shadowsocks-1870576255
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
-  server: 68.183.235.122
+  server: 128.1.186.73
   type: ss
   udp: true
-- client-fingerprint: ios
-  name: vless-1856516252
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1828532191
+  port: 19825
+  reality-opts:
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  server: 146.235.16.130
+  servername: sg2-8sb.6121999.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+- client-fingerprint: firefox
+  name: vless-1884061324
   port: 2053
   reality-opts:
     public-key: TpWeZocgNOygOhMo0l7oJawPu7STkn9D-SOa0UppcyY
@@ -42,87 +69,12 @@ proxies:
   type: vless
   udp: true
   uuid: f46182d1-e13b-47d3-97e2-fa5426a93e7c
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1828532008
-  port: 12512
-  reality-opts:
-    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
-    short-id: e692a8250d2e2fd0
-  server: 46.137.202.178
-  servername: www.intel.com
-  tls: true
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  port: 16263
+  server: 47.237.74.17
   type: vless
   udp: true
-  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
-- alterId: 0
-  cipher: auto
-  name: vmess-1832465402
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1853340296
-  port: 19825
-  reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  server: sg2-8sb.6121999.dpdns.org
-  servername: sg2-8sb.6121999.dpdns.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: vless-1855701589
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- alterId: 0
-  cipher: auto
-  name: vmess-1837386988
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1853501559
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1855698223
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  uuid: c538c9dd-2e3f-488f-a8ca-ac5b7c0773f3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: vless-1891647641
@@ -136,21 +88,35 @@ proxies:
   type: vless
   udp: true
   uuid: f5b93de5-b756-4f87-bb1c-7e5b622688fa
+- alterId: 0
+  cipher: auto
+  name: vmess-1827954165
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1856188518
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827963019
-  - vless-1889171532
-  - shadowsocks-1828226862
-  - vless-1856516252
-  - vless-1828532008
-  - vmess-1832465402
-  - vless-1853340296
-  - vless-1855701589
-  - vmess-1837386988
-  - vless-1853501559
-  - vless-1855698223
+  - vless-1851982457
+  - 🏳️ ShatakVPN 680267
+  - vless-1853340306
+  - shadowsocks-1870576255
+  - vless-1828532191
+  - vless-1884061324
+  - '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
   - vless-1891647641
+  - vmess-1827954165
+  - vmess-1856188518
   type: select
 rules:
 - MATCH,PROXY

@@ -3,23 +3,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇿🇦[www.v2nodes.com] vless-ZA",
-      "server": "139.84.242.103",
+      "tag": "🇺🇸 ShatakVPN 952501",
+      "server": "188.114.98.0",
       "server_port": 443,
-      "uuid": "a1de0630-5786-48a0-84f6-dc6f2de10d6d",
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
-        "server_name": "vlso5.1d.mom",
+        "server_name": "v2ray.simspeedup.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "unsafe"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/socks5=888:888@hkip.1d.mom:1080fp=chrome",
+        "path": "/ws",
         "headers": {
-          "Host": "vlso5.1d.mom"
+          "Host": "v2ray.simspeedup.com"
         }
       }
     },

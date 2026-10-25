@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 | RUS",
+      "server": "46.243.142.104",
+      "server_port": 443,
+      "uuid": "9ba53795-4356-40ab-8067-76ec2ae2a3d8",
+      "tls": {
+        "enabled": true,
+        "server_name": "santehdv.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media/stream/qUWu2oaFgxAw",
+        "headers": {
+          "Host": "santehdv.site"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

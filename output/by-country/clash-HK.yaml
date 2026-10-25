@@ -3,59 +3,41 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853489171
+- name: hysteria2-1832880248
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.174
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: whatsapp.com
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1888150519
-  port: 2091
-  reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  server: 50.7.252.50
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1855697615
+- name: hysteria2-1853331618
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: ac3342a709db
-  server: 82.29.36.250
-  servername: aws.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1854108412
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  type: hysteria2
+- name: 🏳️ ShatakVPN 662645
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  server: 82.29.36.250
-  servername: aws.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: 202.146.222.29
+  type: hysteria2
+- name: hysteria2-1832880229
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2üá®üá≥
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1853489171
-  - vless-1888150519
-  - vless-1855697615
-  - vless-1854108412
+  - hysteria2-1832880248
+  - hysteria2-1853331618
+  - 🏳️ ShatakVPN 662645
+  - hysteria2-1832880229
   type: select
 rules:
 - MATCH,PROXY

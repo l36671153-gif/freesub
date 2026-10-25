@@ -5,48 +5,43 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1900268631
-  port: 443
+  name: vless-1875764254
+  port: 13672
   reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 158.247.241.102
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: random
-  name: vless-1828531985
-  port: 2053
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  server: 151.245.106.49
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853331530
-  port: 443
+  name: vless-1877746097
+  port: 13672
   reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  server: 64.176.231.183
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-1846612834
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  port: 50160
+  server: 150-230-252-217.liao.kdns.fr
+  skip-cert-verify: true
+  sni: 150-230-252-217.liao.kdns.fr
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1900268631
-  - vless-1828531985
-  - vless-1853331530
+  - vless-1875764254
+  - vless-1877746097
+  - hysteria2-1846612834
   type: select
 rules:
 - MATCH,PROXY
