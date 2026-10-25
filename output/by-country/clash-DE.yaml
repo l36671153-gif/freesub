@@ -3,23 +3,61 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: aes-256-gcm
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
+  password: Ou_n6HeBKQw2d_N0UmTBBDmC
+  port: 1080
+  server: 49.12.253.100
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832754818
+  name: vless-1827530457
   port: 443
   reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  servername: www.apple.com
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
   tls: true
   type: vless
   udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 238ms
+  port: 14081
+  server: 64.118.156.138
+  type: vless
+  udp: true
+  uuid: 531ce91b-f477-4c15-b68f-948a3eea2f70
+- cipher: aes-256-gcm
+  name: shadowsocks-1827146150
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 213.202.208.199
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1875023013
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
+  udp: true
+- name: 🆔vpnserverrr 🔓 VL-TCP-N/A ❔ XX 122ms
+  port: 45021
+  server: 31.77.148.89
+  type: vless
+  udp: true
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832754818
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
+  - vless-1827530457
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 238ms
+  - shadowsocks-1827146150
+  - shadowsocks-1875023013
+  - 🆔vpnserverrr 🔓 VL-TCP-N/A ❔ XX 122ms
   type: select
 rules:
 - MATCH,PROXY

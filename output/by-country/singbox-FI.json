@@ -3,23 +3,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 | RUS",
-      "server": "46.243.142.104",
-      "server_port": 443,
-      "uuid": "9ba53795-4356-40ab-8067-76ec2ae2a3d8",
+      "tag": "🔒 VL-WS-TLS 🇫🇮 FI-2.27.207.208 8081",
+      "server": "2.27.207.208",
+      "server_port": 8081,
+      "uuid": "9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd",
       "tls": {
         "enabled": true,
-        "server_name": "santehdv.site",
+        "server_name": "ang-el.ir",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/media/stream/qUWu2oaFgxAw",
+        "path": "/",
         "headers": {
-          "Host": "santehdv.site"
+          "Host": "ang-el.ir"
         }
       }
     },
