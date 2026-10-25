@@ -2,50 +2,21 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🏳️ ShatakVPN 115298",
-      "server": "47.243.153.153",
+      "type": "hysteria2",
+      "tag": "hysteria2-1853489171",
+      "server": "202.146.222.174",
       "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "alter_id": 0,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "i2psm3knof5qjjix.v.3dns.vip"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "i2psm3knof5qjjix.v.3dns.vip"
-        }
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1886714328",
-      "server": "165.154.63.139",
-      "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
-          "short_id": "ca4aedd4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1886904172",
-      "server": "50.7.44.28",
+      "tag": "vless-1888150519",
+      "server": "50.7.252.50",
       "server_port": 2091,
       "uuid": "76b6a658-ce80-4500-b24d-404c94639ac6",
       "flow": "xtls-rprx-vision",
@@ -64,32 +35,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1828371354",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "hysteria2-1853331449",
-      "server": "202.146.222.29",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/wangcai2рҹүҹү",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "vless-1854059547",
+      "tag": "vless-1855697615",
       "server": "82.29.36.250",
       "server_port": 443,
       "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
@@ -99,12 +46,33 @@
         "server_name": "aws.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g",
           "short_id": "ac3342a709db"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1854108412",
+      "server": "82.29.36.250",
+      "server_port": 443,
+      "uuid": "41a7af38-0bb1-4493-aa8d-634af0c2548b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "aws.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g",
+          "short_id": "09353d6dc5b789"
         }
       }
     },

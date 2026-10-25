@@ -1,0 +1,52 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 161106
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: random
+  name: vless-1853464344
+  port: 2053
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- client-fingerprint: chrome
+  name: vless-1910185379
+  port: 443
+  reality-opts:
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  server: ai.smrtai.top
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 161106
+  - vless-1853464344
+  - vless-1910185379
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

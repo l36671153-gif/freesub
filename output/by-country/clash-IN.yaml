@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: random
-  name: vless-1828294489
+  name: vless-1883069704
   port: 2053
   reality-opts:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
@@ -15,7 +15,7 @@ proxies:
   type: vless
   udp: true
   uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-- name: vless-1828654996
+- name: vless-1828534465
   network: ws
   port: 14430
   server: 13.140.56.100
@@ -26,22 +26,11 @@ proxies:
     headers:
       Host: 13.140.56.100
     path: /vless
-- name: vless-1854086904
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
-  udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers: {}
-    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828294489
-  - vless-1828654996
-  - vless-1854086904
+  - vless-1883069704
+  - vless-1828534465
   type: select
 rules:
 - MATCH,PROXY

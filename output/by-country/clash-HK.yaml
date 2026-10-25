@@ -3,64 +3,29 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🏳️ ShatakVPN 115298
-  network: ws
+- name: hysteria2-1853489171
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 47.243.153.153
-  servername: i2psm3knof5qjjix.v.3dns.vip
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1886714328
-  port: 443
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  server: 165.154.63.139
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1886904172
+  name: vless-1888150519
   port: 2091
   reality-opts:
     public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
     short-id: 08a4b1f473932632
-  server: 50.7.44.28
+  server: 50.7.252.50
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
   uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
-- name: hysteria2-1828371354
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: speedtest.tinkoff.ru
-  type: hysteria2
-- name: hysteria2-1853331449
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2рҹүҹү
-  type: hysteria2
-- client-fingerprint: random
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1854059547
+  name: vless-1855697615
   port: 443
   reality-opts:
     public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
@@ -71,15 +36,26 @@ proxies:
   type: vless
   udp: true
   uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1854108412
+  port: 443
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  server: 82.29.36.250
+  servername: aws.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 115298
-  - vless-1886714328
-  - vless-1886904172
-  - hysteria2-1828371354
-  - hysteria2-1853331449
-  - vless-1854059547
+  - hysteria2-1853489171
+  - vless-1888150519
+  - vless-1855697615
+  - vless-1854108412
   type: select
 rules:
 - MATCH,PROXY

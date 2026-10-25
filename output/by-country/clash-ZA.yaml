@@ -3,17 +3,24 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146619
-  password: aduB9HGxQHjA2SBMRjkHX6
+- client-fingerprint: chrome
+  name: 🇿🇦[www.v2nodes.com] vless-ZA
+  network: ws
   port: 443
-  server: 102.37.156.224
-  type: ss
+  server: 139.84.242.103
+  servername: vlso5.1d.mom
+  tls: true
+  type: vless
   udp: true
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  ws-opts:
+    headers:
+      Host: vlso5.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827146619
+  - 🇿🇦[www.v2nodes.com] vless-ZA
   type: select
 rules:
 - MATCH,PROXY

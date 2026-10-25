@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇹🇼 🇨🇳 台湾 | TWN",
+      "server": "forwarded.frnhk.xyz",
+      "server_port": 53002,
+      "uuid": "5ce8f582-1494-4e3f-9a2d-7164491cc6fa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ens.psl.eu",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3lswNoHV1RqK6yO--0ZWoYh1WqHkfhKQph3onxE_1So",
+          "short_id": "fc04"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
