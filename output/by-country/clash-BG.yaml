@@ -1,0 +1,21 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- alterId: 0
+  cipher: auto
+  name: 🇵🇱_PL_波兰->🇧🇬_BG_保加利亚
+  port: 56080
+  server: 45.144.48.32
+  type: vmess
+  udp: true
+  uuid: f4daaec7-0e1e-4c8e-97e8-cff5347c2dae
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇵🇱_PL_波兰->🇧🇬_BG_保加利亚
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

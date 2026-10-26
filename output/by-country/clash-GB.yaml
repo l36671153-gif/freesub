@@ -3,28 +3,27 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1864904111
-  port: 443
+- cipher: rc4-md5
+  name: shadowsocks-1827147777
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.61.37
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: vless-1853340170
+  port: 2053
   reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  server: 191.44.108.31
-  servername: www.google.com
+    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
+    short-id: d051f678212f9d54
+  server: 51.89.194.151
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-- cipher: rc4-md5
-  name: shadowsocks-1827963919
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.61.18
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  name: vless-1827154835
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- client-fingerprint: random
+  name: vless-1827975028
   port: 2053
   reality-opts:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
@@ -35,12 +34,20 @@ proxies:
   type: vless
   udp: true
   uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1888459447
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
+  port: 43385
+  server: sql.popmintxo.cc
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1864904111
-  - shadowsocks-1827963919
-  - vless-1827154835
+  - shadowsocks-1827147777
+  - vless-1853340170
+  - vless-1827975028
+  - shadowsocks-1888459447
   type: select
 rules:
 - MATCH,PROXY

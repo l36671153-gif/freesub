@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇷🇴[www.v2nodes.com] ss-RO-1595...
+  password: U83u9OGpvSatIUW7LsWffr
+  port: 64546
+  server: 194.68.44.42
+  type: ss
+  udp: true
+- name: vless-1857053329
+  port: 2052
+  server: edge10.cyrionflare.com
+  type: vless
+  udp: true
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇷🇴[www.v2nodes.com] ss-RO-1595...
+  - vless-1857053329
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

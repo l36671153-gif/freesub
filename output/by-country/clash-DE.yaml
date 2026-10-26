@@ -3,36 +3,55 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- name: hysteria2-1917575832
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.69.232.199
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- cipher: aes-256-gcm
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
+  password: Ou_n6HeBKQw2d_N0UmTBBDmC
+  port: 1080
+  server: 49.12.253.100
+  type: ss
+  udp: true
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 167ms
+  name: vless-1855705644
   port: 443
   reality-opts:
-    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
-  server: 201.51.8.163
-  servername: atk.vkusnews.com
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1876912361
-  port: 443
-  reality-opts:
-    public-key: ZNmuzIn-zyJi2C0sWRpL9fsMYCgYauXpJElXTqY_LEE
-    short-id: d7de3a6ff4018957
-  server: 31.70.111.146
-  servername: www.apple.com
-  tls: true
-  type: vless
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- cipher: aes-256-gcm
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
   udp: true
-  uuid: 84ed0e09-6803-4ef9-a977-74b657d971e5
+- name: hysteria2-1874696598
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 18.193.79.104
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 167ms
-  - vless-1876912361
+  - hysteria2-1917575832
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
+  - vless-1855705644
+  - 🇩🇪[www.v2nodes.com] ss-DE-1602...
+  - hysteria2-1874696598
   type: select
 rules:
 - MATCH,PROXY
