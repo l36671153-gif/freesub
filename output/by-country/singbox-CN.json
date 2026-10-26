@@ -3,23 +3,23 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1926536419",
-      "server": "122.176.216.52",
+      "tag": "🆔conectvpn10 🔒 VL-WS-N/A ❔ XX 18ms",
+      "server": "8.35.211.242",
       "server_port": 443,
-      "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "app-6ada5023.deploy.meerasolution.com",
+        "server_name": "vpn.cintaku.qzz.io",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "unsafe"
         }
       },
       "transport": {
         "type": "ws",
-        "path": "/ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
+        "path": "/vlessws",
         "headers": {
-          "Host": "app-6ada5023.deploy.meerasolution.com"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },

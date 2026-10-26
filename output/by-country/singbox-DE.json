@@ -2,74 +2,45 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 723879",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
       "type": "vless",
-      "tag": "vless-1923842398",
-      "server": "213.152.165.200",
-      "server_port": 2094,
-      "uuid": "c439a2b1-cef0-4560-b337-eff829991f74",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-179.254.115.14 8443",
+      "server": "179.254.115.14",
+      "server_port": 8443,
+      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "de4.pad-sservice.lat",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs",
-          "short_id": "55986a94e2228791"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/D14E",
+        "headers": {
+          "Host": "de4.pad-service.com"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🍄‍🟫41@oneclickvpnkeys",
-      "server": "5.45.100.100",
-      "server_port": 51511,
-      "password": "miaoge110",
+      "tag": "hysteria2-1927186211",
+      "server": "de2.shvpn.ru",
+      "server_port": 4443,
+      "password": "c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3",
       "tls": {
         "enabled": true,
-        "server_name": "5.45.100.100",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms",
-      "server": "162.55.242.208",
-      "server_port": 2053,
-      "uuid": "659ffdfa-47d2-47d7-af40-5afe0907eead",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY",
-          "short_id": "4d14da19b19cfc8c"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1925464479",
-      "server": "www.gptcloudai.com",
-      "server_port": 443,
-      "uuid": "e70a5b70-f63c-4450-af8b-94990cdf80c0",
-      "security": "auto",
-      "alter_id": 0,
-      "tls": {
-        "enabled": true,
-        "server_name": "www.gptcloudai.com"
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/truth",
-        "headers": {}
+        "server_name": "de2.shvpn.ru",
+        "insecure": false
       }
     },
     {

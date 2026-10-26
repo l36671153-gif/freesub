@@ -4,7 +4,20 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1853959852
+  flow: xtls-rprx-vision
+  name: vless-1923825898
+  port: 2092
+  reality-opts:
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: 716b7eba38125f3a
+  server: 213.152.165.200
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 901cb432-3807-404a-9bb8-987814b000ca
+- client-fingerprint: firefox
+  name: vless-1853488300
   port: 2053
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
@@ -15,7 +28,7 @@ proxies:
   type: vless
   udp: true
   uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- name: vless-1832313914
+- name: '🏳[www.v2nodes.com] vless- #29'
   network: ws
   port: 14430
   server: 138.124.70.41
@@ -26,67 +39,24 @@ proxies:
     headers:
       Host: 138.124.70.41
     path: /vless
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc_common3
-  name: vless-1827152847
-  network: grpc
-  port: 51671
-  reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
-- client-fingerprint: random
-  name: vless-1828149341
-  port: 2053
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
+- name: vless-1828655001
   network: ws
-  port: 80
-  server: 152.228.162.19
+  port: 14430
+  server: 138.124.70.41
   type: vless
   udp: true
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
   ws-opts:
-    headers: {}
-    path: /vless/
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc_common3
-  name: vless-1827531794
-  network: grpc
-  port: 51671
-  reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853959852
-  - vless-1832313914
-  - vless-1827152847
-  - vless-1828149341
-  - '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
-  - vless-1827531794
+  - vless-1923825898
+  - vless-1853488300
+  - '🏳[www.v2nodes.com] vless- #29'
+  - vless-1828655001
   type: select
 rules:
 - MATCH,PROXY

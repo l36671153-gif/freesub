@@ -3,10 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
+  name: vless-1854347682
+  network: grpc
+  port: 443
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  server: 2.29.101.158
+  servername: 36a466g.fi1.h1clayd.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
-  name: vless-1926288598
+  name: vless-1928318117
   network: grpc
   port: 4443
   server: 45.149.147.213
@@ -15,23 +30,11 @@ proxies:
   type: vless
   udp: true
   uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-- client-fingerprint: firefox
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 146ms
-  port: 2053
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  server: 95.216.27.15
-  servername: www.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1926288598
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 146ms
+  - vless-1854347682
+  - vless-1928318117
   type: select
 rules:
 - MATCH,PROXY
