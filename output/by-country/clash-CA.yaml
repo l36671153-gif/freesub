@@ -3,17 +3,58 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 231ms
+  port: 2093
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  server: 213.152.165.203
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+- client-fingerprint: chrome
+  name: vless-1854332946
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
 - cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 708652
+  name: 🇨🇦[www.v2nodes.com] ss-CA-1557...
   password: kDWvXYZoTBcGkC4
   port: 8882
-  server: 51.79.49.116
+  server: 51.222.136.236
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1885194311
+  port: 2093
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  server: 38.145.220.58
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 708652
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 231ms
+  - vless-1854332946
+  - 🇨🇦[www.v2nodes.com] ss-CA-1557...
+  - vless-1885194311
   type: select
 rules:
 - MATCH,PROXY

@@ -3,55 +3,58 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1917575832
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 3.69.232.199
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- cipher: aes-256-gcm
-  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
-  password: Ou_n6HeBKQw2d_N0UmTBBDmC
-  port: 1080
-  server: 49.12.253.100
-  type: ss
-  udp: true
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1855705644
-  port: 443
+  name: vless-1923842398
+  port: 2094
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
+    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+    short-id: 55986a94e2228791
+  server: 213.152.165.200
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- cipher: aes-256-gcm
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.176.204.18
-  type: ss
-  udp: true
-- name: hysteria2-1874696598
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 18.193.79.104
+  uuid: c439a2b1-cef0-4560-b337-eff829991f74
+- name: 🍄‍🟫41@oneclickvpnkeys
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
   skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
+  sni: 5.45.100.100
   type: hysteria2
+- client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
+  port: 2053
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  server: 162.55.242.208
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+- alterId: 0
+  cipher: auto
+  name: vmess-1925464479
+  network: ws
+  port: 443
+  server: www.gptcloudai.com
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  ws-opts:
+    headers: {}
+    path: /truth
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1917575832
-  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 118ms
-  - vless-1855705644
-  - 🇩🇪[www.v2nodes.com] ss-DE-1602...
-  - hysteria2-1874696598
+  - vless-1923842398
+  - 🍄‍🟫41@oneclickvpnkeys
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 120ms
+  - vmess-1925464479
   type: select
 rules:
 - MATCH,PROXY

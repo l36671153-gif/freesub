@@ -3,16 +3,19 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1869963083
-  port: 20001
-  server: site.teslamotor.site
+- client-fingerprint: chrome
+  name: vless-1925464482
+  port: 2087
+  server: 2.26.6.1
+  servername: 2.26.6.1
+  tls: true
   type: vless
   udp: true
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1869963083
+  - vless-1925464482
   type: select
 rules:
 - MATCH,PROXY

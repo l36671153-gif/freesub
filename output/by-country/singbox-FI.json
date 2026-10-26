@@ -3,6 +3,25 @@
   "outbounds": [
     {
       "type": "vless",
+      "tag": "vless-1926288598",
+      "server": "45.149.147.213",
+      "server_port": 4443,
+      "uuid": "9b347a9b-d7a6-4b51-9890-eff62b832834",
+      "tls": {
+        "enabled": true,
+        "server_name": "45-149-147-213.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "kobedin-server1-vless"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 146ms",
       "server": "95.216.27.15",
       "server_port": 2053,

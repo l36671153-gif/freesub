@@ -3,19 +3,40 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: qq
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146270
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+  udp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832754752
-  port: 19645
+  name: vless-1926288582
+  port: 443
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
+    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
+    short-id: bd6f67b6b2152b45
+  server: 31.76.91.98
+  servername: fuji.etherhub.cc
   tls: true
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  password: 3eOFeNssde7PYYMv
+  port: 80
+  server: 84.247.155.196
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146197
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.204
+  type: ss
+  udp: true
 - name: hysteria2-1832764952
   password: 96ab5cd282733fd4c312a61f972f330a
   port: 443
@@ -23,185 +44,6 @@ proxies:
   skip-cert-verify: false
   sni: vp3.yysyy.online
   type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1827153090
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- alterId: 0
-  cipher: auto
-  name: 🔒 VM-WS-TLS 🇺🇸 US-162.159.135.234 2083
-  network: ws
-  port: 2083
-  server: 162.159.135.234
-  servername: or3.sfacg.uk
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  ws-opts:
-    headers:
-      Host: or3.sfacg.uk
-    path: /or3
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-1832754729
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- alterId: 0
-  cipher: auto
-  name: vmess-1853493052
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: none
-    path: /cctv13.m3u8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1828373351
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- cipher: aes-256-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1598...
-  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
-  port: 8388
-  server: 191.223.221.53
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1831119283
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1855771838
-  password: 184cdec28da5a09450803c8debcd2cc9
-  port: 50160
-  server: 138.3.208.26
-  skip-cert-verify: true
-  sni: 138.3.208.26
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: vmess-1869798687
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers: {}
-    path: /cctv13.m3u8
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1855701565
-  port: 10583
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1854335908
-  port: 18007
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- cipher: aes-128-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1291...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1853493043
-  network: ws
-  port: 80
-  server: 168.138.43.75
-  type: vmess
-  udp: true
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  ws-opts:
-    headers:
-      Host: 168.138.43.75
-    path: /cctv13.m3u8
-- client-fingerprint: chrome
-  name: vless-1831066616
-  network: ws
-  port: 443
-  server: 104.16.111.202
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1832754698
-  port: 28573
-  reality-opts:
-    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
-    short-id: 03653bc03be10c97
-  server: 18.183.215.124
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
   name: vless-1832754508
@@ -215,41 +57,23 @@ proxies:
   type: vless
   udp: true
   uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1832754572
-  port: 19645
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.114.220.22
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-1880873612
+  password: 96ab5cd282733fd4c312a61f972f330a
+  port: 443
+  server: vp3.yysyy.online
+  skip-cert-verify: true
+  sni: vp3.yysyy.online
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832754752
+  - shadowsocks-1827146270
+  - vless-1926288582
+  - 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  - shadowsocks-1827146197
   - hysteria2-1832764952
-  - vless-1827153090
-  - 🔒 VM-WS-TLS 🇺🇸 US-162.159.135.234 2083
-  - vless-1832754729
-  - vmess-1853493052
-  - vless-1828373351
-  - 🇯🇵[www.v2nodes.com] ss-JP-1598...
-  - vless-1831119283
-  - hysteria2-1855771838
-  - vmess-1869798687
-  - vless-1855701565
-  - vless-1854335908
-  - 🇯🇵[www.v2nodes.com] ss-JP-1291...
-  - vmess-1853493043
-  - vless-1831066616
-  - vless-1832754698
   - vless-1832754508
-  - vless-1832754572
+  - hysteria2-1880873612
   type: select
 rules:
 - MATCH,PROXY
