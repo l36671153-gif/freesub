@@ -1,0 +1,53 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+  name: vless-1930024310
+  network: grpc
+  port: 4443
+  server: 45-149-147-213.sslip.io
+  servername: 45-149-147-213.sslip.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: kobedin-server1-vless
+  name: vless-1928318117
+  network: grpc
+  port: 4443
+  server: 45.149.147.213
+  servername: 45-149-147-213.sslip.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇫🇮 FI-65.109.212.193 465
+  network: ws
+  port: 465
+  server: 65.109.212.193
+  servername: hw3.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+    path: /
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1930024310
+  - vless-1928318117
+  - 🔒 VL-WS-TLS 🇫🇮 FI-65.109.212.193 465
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

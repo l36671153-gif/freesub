@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 250ms
+  port: 443
+  reality-opts:
+    public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
+    short-id: f4b2a12c
+  server: tr2.tv-quoralyx.top
+  servername: tr2.tv-quoralyx.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 250ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

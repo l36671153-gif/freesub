@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 142ms
+  port: 443
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  server: 92.42.201.107
+  servername: node-slo02.rkitman.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 142ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

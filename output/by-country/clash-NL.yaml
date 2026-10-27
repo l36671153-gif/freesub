@@ -3,55 +3,121 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 390699
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.176
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146148
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.2
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 117ms
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: hysteria2-1908512041
+  password: dd50a499-7e43-4589-8490-f3b9c2451473
   port: 443
-  server: 82.38.31.169
-  type: ss
-  udp: true
-- client-fingerprint: safari
+  server: 109.235.49.234
+  skip-cert-verify: true
+  sni: nl-hy-test.tcp-reset-club.net
+  type: hysteria2
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1929490286
-  port: 443
+  name: 🏳️ ShatakVPN 724968
+  port: 23576
   reality-opts:
-    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
-    short-id: 88d9dc52ef39c8bd
-  server: node-nd02.rkitman.ru
-  servername: node-nd02.rkitman.ru
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.98
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827145964
+  name: shadowsocks-1827146843
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.218
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146763
   password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.61
+  server: 193.29.139.204
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827975754
+  port: 443
+  reality-opts:
+    public-key: W-9zyiOq287RtXVTZlTFbSDJ0Mx8joyBLJoA7ZE7eBw
+    short-id: ef1d3554c652a436
+  server: 87.199.205.28
+  servername: vkvd754.okcdn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 501a2da5-cb22-4a3f-915e-e3b821d1d62d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 733106
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.19
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpcx1
+  name: vless-1929112394
+  network: grpc
+  port: 2087
+  reality-opts:
+    public-key: cHJfClQkyUnSxMCi9kmfC8j5OpMrUpyvrjVboO50YXM
+    short-id: 27abb0897222ef3a
+  server: 13.143.172.34
+  servername: ya.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: fafc7c16-f890-45ee-a856-02df225172dd
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 157452
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 193.29.139.202
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 745273
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.25
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🏳️ ShatakVPN 536638
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 390699
-  - shadowsocks-1827146148
-  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 117ms
-  - vless-1929490286
-  - shadowsocks-1827145964
+  - hysteria2-1908512041
+  - 🏳️ ShatakVPN 724968
+  - shadowsocks-1827146843
+  - shadowsocks-1827146763
+  - vless-1827975754
+  - 🏳️ ShatakVPN 733106
+  - vless-1929112394
+  - 🏳️ ShatakVPN 157452
+  - 🏳️ ShatakVPN 745273
+  - 🏳️ ShatakVPN 536638
   type: select
 rules:
 - MATCH,PROXY

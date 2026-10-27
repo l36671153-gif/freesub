@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1929068628
+  name: vless-1927930032
   port: 2092
   reality-opts:
     public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
@@ -16,28 +16,8 @@ proxies:
   type: vless
   udp: true
   uuid: 901cb432-3807-404a-9bb8-987814b000ca
-- name: 🏳️ ShatakVPN 379490
-  password: dongtaiwang.com
-  port: 22000
-  server: 62.210.124.146
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1926741098
-  port: 2092
-  reality-opts:
-    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
-    short-id: 716b7eba38125f3a
-  server: 213.152.165.201
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 901cb432-3807-404a-9bb8-987814b000ca
-- client-fingerprint: random
-  name: vless-1853464344
+- client-fingerprint: firefox
+  name: vless-1832881467
   port: 2053
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
@@ -51,10 +31,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1929068628
-  - 🏳️ ShatakVPN 379490
-  - vless-1926741098
-  - vless-1853464344
+  - vless-1927930032
+  - vless-1832881467
   type: select
 rules:
 - MATCH,PROXY
