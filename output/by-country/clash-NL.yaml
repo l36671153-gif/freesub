@@ -3,61 +3,55 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1883671171
-  port: 443
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1853341163
-  port: 443
-  reality-opts:
-    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
-    short-id: 1d86d17709852910
-  server: free-amsterdam-node-1.cloudwidecdn.com
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 252915
+  name: 🏳️ ShatakVPN 390699
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 82.38.31.176
   type: ss
   udp: true
-- cipher: aes-128-gcm
-  name: 🏳️ ShatakVPN 914365
-  password: shadowsocks
-  port: 443
-  server: 158.173.20.208
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146148
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.2
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827145990
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 117ms
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 443
+  server: 82.38.31.169
+  type: ss
+  udp: true
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: vless-1929490286
+  port: 443
+  reality-opts:
+    public-key: 8C7evg_SSrJbxMTaUqJoylqB9HSNsmBvmUlgs_c5EiU
+    short-id: 88d9dc52ef39c8bd
+  server: node-nd02.rkitman.ru
+  servername: node-nd02.rkitman.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d0c8aa8d-a535-432a-b521-21f0e561f643
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145964
+  password: oZIoA69Q8yhcQV8ka3Pa3A
   port: 8080
-  server: 82.38.31.204
+  server: 82.38.31.61
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1883671171
-  - vless-1853341163
-  - 🏳️ ShatakVPN 252915
-  - 🏳️ ShatakVPN 914365
-  - shadowsocks-1827145990
+  - 🏳️ ShatakVPN 390699
+  - shadowsocks-1827146148
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 117ms
+  - vless-1929490286
+  - shadowsocks-1827145964
   type: select
 rules:
 - MATCH,PROXY

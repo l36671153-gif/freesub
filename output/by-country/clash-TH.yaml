@@ -3,24 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: unsafe
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.9 443
-  network: ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇹🇭 泰国 | THA
   port: 443
-  server: 104.16.10.9
-  servername: v2ray.simspeedup.com
+  reality-opts:
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  server: 45.154.26.63
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  ws-opts:
-    headers:
-      Host: v2ray.simspeedup.com
-    path: /ws
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.9 443
+  - 🇹🇭 泰国 | THA
   type: select
 rules:
 - MATCH,PROXY

@@ -5,58 +5,56 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1923825898
+  name: vless-1929068628
   port: 2092
   reality-opts:
     public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
     short-id: 716b7eba38125f3a
-  server: 213.152.165.200
+  server: 213.152.165.203
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
   uuid: 901cb432-3807-404a-9bb8-987814b000ca
-- client-fingerprint: firefox
-  name: vless-1853488300
-  port: 2053
+- name: 🏳️ ShatakVPN 379490
+  password: dongtaiwang.com
+  port: 22000
+  server: 62.210.124.146
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1926741098
+  port: 2092
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: 716b7eba38125f3a
+  server: 213.152.165.201
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- name: '🏳[www.v2nodes.com] vless- #29'
-  network: ws
-  port: 14430
-  server: 138.124.70.41
+  uuid: 901cb432-3807-404a-9bb8-987814b000ca
+- client-fingerprint: random
+  name: vless-1853464344
+  port: 2053
+  reality-opts:
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
+  tls: true
   type: vless
   udp: true
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  ws-opts:
-    headers:
-      Host: 138.124.70.41
-    path: /vless
-- name: vless-1828655001
-  network: ws
-  port: 14430
-  server: 138.124.70.41
-  type: vless
-  udp: true
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  ws-opts:
-    headers:
-      Host: 138.124.70.41
-    path: /vless
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1923825898
-  - vless-1853488300
-  - '🏳[www.v2nodes.com] vless- #29'
-  - vless-1828655001
+  - vless-1929068628
+  - 🏳️ ShatakVPN 379490
+  - vless-1926741098
+  - vless-1853464344
   type: select
 rules:
 - MATCH,PROXY

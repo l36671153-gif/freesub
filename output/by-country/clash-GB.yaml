@@ -3,43 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1916684515
+  password: uvKNudV-N8AUCrykPiyznA
+  port: 56137
+  server: location15.cpanel-host16.ir
+  type: ss
+  udp: true
+- client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX 135ms
+  name: 🆔vpnbaz 🔒 VL-TCP- ❔ XX 150ms
   port: 443
   reality-opts:
     public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: 8f79726c5002
-  server: 107.181.151.128
-  servername: www.mozilla.org
+    short-id: dda5f542d835
+  server: webdisk.jaggyslawa.org
+  servername: www.foxsports.com
   tls: true
   type: vless
   udp: true
-  uuid: 88742d38-3f5c-4b9c-b256-7df5db8257ec
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 179ms
-  port: 443
-  reality-opts:
-    public-key: C-e3vasFC42zQmJblol4foZozTe6j1c7TJMGqjvRm2U
-    short-id: 77479eaf
-  server: uk.2ul.top
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 77479eaf-c35e-4088-ae47-a2beb88a7272
-- name: vless-1929113332
-  port: 10002
-  server: 178.83.45.226
-  type: vless
-  udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔anty_filter 🔒 VL-TCP- ❔ XX 135ms
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 179ms
-  - vless-1929113332
+  - shadowsocks-1916684515
+  - 🆔vpnbaz 🔒 VL-TCP- ❔ XX 150ms
   type: select
 rules:
 - MATCH,PROXY

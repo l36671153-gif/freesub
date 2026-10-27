@@ -3,7 +3,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1853341329",
+      "tag": "vless-1856199737",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -13,7 +13,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -23,23 +23,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1885939693",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "type": "hysteria2",
+      "tag": "hysteria2-1832880226",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "hysteria2-1828529280",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "132.226.226.189",
+        "insecure": true
       }
     },
     {

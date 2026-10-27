@@ -4,7 +4,7 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: vless-1925464482
+  name: '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
   port: 2087
   server: 2.26.6.1
   servername: 2.26.6.1
@@ -12,10 +12,27 @@ proxies:
   type: vless
   udp: true
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+- client-fingerprint: chrome
+  name: 🔒 VL-TCP-TLS 🇵🇱 PL-2.26.6.1 2087
+  port: 2087
+  server: 2.26.6.1
+  servername: 2.26.6.1
+  tls: true
+  type: vless
+  udp: true
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+- name: vless-1883661029
+  port: 20001
+  server: site.teslamotor.site
+  type: vless
+  udp: true
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1925464482
+  - '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
+  - 🔒 VL-TCP-TLS 🇵🇱 PL-2.26.6.1 2087
+  - vless-1883661029
   type: select
 rules:
 - MATCH,PROXY

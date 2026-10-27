@@ -3,8 +3,41 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1923825898",
-      "server": "213.152.165.200",
+      "tag": "vless-1929068628",
+      "server": "213.152.165.203",
+      "server_port": 2092,
+      "uuid": "901cb432-3807-404a-9bb8-987814b000ca",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI",
+          "short_id": "716b7eba38125f3a"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 379490",
+      "server": "62.210.124.146",
+      "server_port": 22000,
+      "password": "dongtaiwang.com",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1926741098",
+      "server": "213.152.165.201",
       "server_port": 2092,
       "uuid": "901cb432-3807-404a-9bb8-987814b000ca",
       "flow": "xtls-rprx-vision",
@@ -24,49 +57,21 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1853488300",
-      "server": "54.37.136.194",
+      "tag": "vless-1853464344",
+      "server": "51.77.217.70",
       "server_port": 2053,
-      "uuid": "e8a432c8-5d84-49a5-b822-67ed761a58f9",
+      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A",
-          "short_id": "50ba05992b05c1c3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🏳[www.v2nodes.com] vless- #29",
-      "server": "138.124.70.41",
-      "server_port": 14430,
-      "uuid": "6cc745e3-4eb9-46c8-a4a1-85dee7b87edc",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "138.124.70.41"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1828655001",
-      "server": "138.124.70.41",
-      "server_port": 14430,
-      "uuid": "6cc745e3-4eb9-46c8-a4a1-85dee7b87edc",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "138.124.70.41"
+          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
+          "short_id": "bfe58beb41f1d09f"
         }
       }
     },

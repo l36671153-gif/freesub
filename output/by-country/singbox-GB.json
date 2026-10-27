@@ -2,52 +2,33 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1916684515",
+      "server": "location15.cpanel-host16.ir",
+      "server_port": 56137,
+      "method": "chacha20-ietf-poly1305",
+      "password": "uvKNudV-N8AUCrykPiyznA"
+    },
+    {
       "type": "vless",
-      "tag": "🆔anty_filter 🔒 VL-TCP- ❔ XX 135ms",
-      "server": "107.181.151.128",
+      "tag": "🆔vpnbaz 🔒 VL-TCP- ❔ XX 150ms",
+      "server": "webdisk.jaggyslawa.org",
       "server_port": 443,
-      "uuid": "88742d38-3f5c-4b9c-b256-7df5db8257ec",
+      "uuid": "b62e3646-b84d-443c-9c94-718b646502e0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.mozilla.org",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
           "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
-          "short_id": "8f79726c5002"
+          "short_id": "dda5f542d835"
         }
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 179ms",
-      "server": "uk.2ul.top",
-      "server_port": 443,
-      "uuid": "77479eaf-c35e-4088-ae47-a2beb88a7272",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C-e3vasFC42zQmJblol4foZozTe6j1c7TJMGqjvRm2U",
-          "short_id": "77479eaf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1929113332",
-      "server": "178.83.45.226",
-      "server_port": 10002,
-      "uuid": "c6362720-0931-4b91-b187-d8ecf3149734"
     },
     {
       "type": "direct",
