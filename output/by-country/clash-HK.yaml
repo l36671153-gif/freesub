@@ -3,41 +3,39 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1874927573
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1926142867
+  port: 2091
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  server: 50.7.44.28
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+- name: hysteria2-1853488298
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  type: hysteria2
+- name: hysteria2-1832880265
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2üá®üá
-  type: hysteria2
-- name: hysteria2-1871753077
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: 202.146.222.89
-  type: hysteria2
-- name: hysteria2-1853331608
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: google.com
-  type: hysteria2
-- name: hysteria2-1853331545
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: httpst.mewangcai2
+  sni: "https://t.me/wangcai2ð\x9F\x87"
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1874927573
-  - hysteria2-1871753077
-  - hysteria2-1853331608
-  - hysteria2-1853331545
+  - vless-1926142867
+  - hysteria2-1853488298
+  - hysteria2-1832880265
   type: select
 rules:
 - MATCH,PROXY

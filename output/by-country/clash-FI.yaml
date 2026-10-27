@@ -20,7 +20,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
-  name: 🇫🇮[www.v2nodes.com] vless-FI-1...
+  name: vless-1930024310
   network: grpc
   port: 4443
   server: 45-149-147-213.sslip.io
@@ -29,11 +29,26 @@ proxies:
   type: vless
   udp: true
   uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+- client-fingerprint: chrome
+  name: 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 321ms
+  network: ws
+  port: 465
+  server: hw3.divarkhaghazi.com
+  servername: hw3.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  ws-opts:
+    headers:
+      Host: hw3.divarkhaghazi.com.
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
   - 🔒 VL-WS-TLS 🇫🇮 FI-65.109.212.193 465
-  - 🇫🇮[www.v2nodes.com] vless-FI-1...
+  - vless-1930024310
+  - 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 321ms
   type: select
 rules:
 - MATCH,PROXY

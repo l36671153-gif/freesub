@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-1934231606",
+      "server": "nl.puflino.com",
+      "server_port": 8443,
+      "uuid": "c7270753-bd18-4696-956d-57dbde1183fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.reddotcorp.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VDZdbh_RzDDZsHpYF58yUuuvXh93XnmkvpSqb50qG2U",
+          "short_id": "1be482b8e08aa0ef"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

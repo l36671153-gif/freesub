@@ -3,17 +3,36 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: 2022-blake3-aes-256-gcm
-  name: shadowsocks-1930064810
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
-  port: 19999
-  server: 206.1.103.237
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827150153
+  port: 443
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  server: 78.135.73.47
+  servername: www.datadoghq.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+- client-fingerprint: chrome
+  name: vless-1856635916
+  port: 2053
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  server: 151.241.226.201
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1930064810
+  - vless-1827150153
+  - vless-1856635916
   type: select
 rules:
 - MATCH,PROXY

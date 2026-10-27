@@ -2,10 +2,18 @@ allow-lan: false
 log-level: info
 mode: rule
 port: 7890
-proxies: []
+proxies:
+- cipher: aes-256-cfb
+  name: shadowsocks-1827145960
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
-  proxies: []
+  proxies:
+  - shadowsocks-1827145960
   type: select
 rules:
 - MATCH,PROXY

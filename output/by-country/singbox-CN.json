@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "vless-1934644723",
+      "server": "172.67.166.188",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

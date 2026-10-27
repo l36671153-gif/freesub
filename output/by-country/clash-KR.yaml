@@ -3,6 +3,19 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1832754567
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - client-fingerprint: chrome
   name: vless-1848101875
   port: 2053
@@ -15,10 +28,19 @@ proxies:
   type: vless
   udp: true
   uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- cipher: aes-256-cfb
+  name: shadowsocks-1827145960
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1832754567
   - vless-1848101875
+  - shadowsocks-1827145960
   type: select
 rules:
 - MATCH,PROXY
