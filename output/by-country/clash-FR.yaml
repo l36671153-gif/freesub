@@ -3,18 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
-  network: ws
-  port: 14430
-  server: 138.124.70.41
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc_common3
+  name: vless-1891687512
+  network: grpc
+  port: 51671
+  reality-opts:
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
+  server: 152.228.139.33
+  servername: www.sony.com
+  tls: true
   type: vless
   udp: true
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  ws-opts:
-    headers: {}
-    path: /vless
-- client-fingerprint: chrome
-  name: vless-1831128588
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+- client-fingerprint: random
+  name: vless-1853464344
   port: 2053
   reality-opts:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
@@ -25,46 +30,67 @@ proxies:
   type: vless
   udp: true
   uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- alterId: 0
+  cipher: auto
+  name: 🆔surfboardv2ray 🔓 VM-WS-N/A 🇵🇱 PL 326ms
+  network: ws
+  port: 80
+  server: 54.37.131.126
+  type: vmess
+  udp: true
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827267285
-  port: 443
+  name: vless-1927168552
+  port: 2092
   reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  server: 137.74.16.237
-  servername: www.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-- name: hysteria2-1929114010
-  password: 4b1be712-774c-4b65-8491-a3339e124a70
-  port: 443
-  server: fr2-cl3.happy-glonaris.top
-  skip-cert-verify: false
-  sni: fr2-cl3.happy-glonaris.top
-  type: hysteria2
-- client-fingerprint: chrome
-  name: vless-1827532596
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: 716b7eba38125f3a
+  server: 213.152.165.201
   servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: 901cb432-3807-404a-9bb8-987814b000ca
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1920323175
+  port: 2092
+  reality-opts:
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: 716b7eba38125f3a
+  server: 213.152.165.204
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 41e9280c-818c-4939-b5d6-332bf4d872e6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1929289761
+  port: 2092
+  reality-opts:
+    public-key: zeyIqmHylDrPbbtdG9BleBt0-fqKCHpZ0OZ9OY2_WUI
+    short-id: 716b7eba38125f3a
+  server: 213.152.165.200
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 901cb432-3807-404a-9bb8-987814b000ca
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
-  - vless-1831128588
-  - vless-1827267285
-  - hysteria2-1929114010
-  - vless-1827532596
+  - vless-1891687512
+  - vless-1853464344
+  - 🆔surfboardv2ray 🔓 VM-WS-N/A 🇵🇱 PL 326ms
+  - vless-1927168552
+  - vless-1920323175
+  - vless-1929289761
   type: select
 rules:
 - MATCH,PROXY

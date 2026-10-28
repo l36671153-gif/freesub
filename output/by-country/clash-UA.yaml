@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1923819861
+  password: G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP
+  port: 49917
+  server: 104.253.216.227
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-1923819861
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
