@@ -4,27 +4,8 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.188.129 2083
-  network: ws
-  port: 2083
-  server: 91.107.188.129
-  servername: site.check-looks.space
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
-  ws-opts:
-    headers: {}
-    path: /
-- name: vless-1857069357
-  port: 10000
-  server: connect.wecantos.site
-  type: vless
-  udp: true
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1927193139
+  name: vless-1925510505
   port: 2094
   reality-opts:
     public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
@@ -37,24 +18,79 @@ proxies:
   uuid: 2ddcb519-ac96-48fe-8f91-4af4254c7d90
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827530457
-  port: 443
+  name: vless-1926729184
+  port: 2094
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
+    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+    short-id: 55986a94e2228791
+  server: 213.152.165.201
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: 2ddcb519-ac96-48fe-8f91-4af4254c7d90
+- name: hysteria2-1936405458
+  password: d62s7ghfehm742us
+  port: 12824
+  server: derfderf.ru
+  skip-cert-verify: false
+  sni: derfderf.ru
+  type: hysteria2
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 204ms
+  port: 27774
+  server: 5.175.205.190
+  type: vless
+  udp: true
+  uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1936420103
+  port: 2094
+  reality-opts:
+    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+    short-id: 55986a94e2228791
+  server: 213.152.180.104
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 372af4ce-2153-4061-822c-b657172308f6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1936420062
+  port: 2094
+  reality-opts:
+    public-key: jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs
+    short-id: 55986a94e2228791
+  server: 213.152.165.202
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 372af4ce-2153-4061-822c-b657172308f6
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1841767889
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.188.129 2083
-  - vless-1857069357
-  - vless-1927193139
-  - vless-1827530457
+  - vless-1925510505
+  - vless-1926729184
+  - hysteria2-1936405458
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 204ms
+  - vless-1936420103
+  - vless-1936420062
+  - vless-1841767889
   type: select
 rules:
 - MATCH,PROXY

@@ -3,10 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-1832754454
-  port: 18967
+  name: vless-1832754451
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -16,17 +16,17 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1827145587
-  password: 9cfc9458e48c028ec03ff86ebc71c744
+- name: hysteria2-1832881362
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   port: 50160
-  server: 150-230-252-217.liao.kdns.fr
-  skip-cert-verify: false
-  sni: 150-230-252-217.liao.kdns.fr
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: speedtest.tinkoff.ru
   type: hysteria2
-- client-fingerprint: safari
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1853651680
-  port: 18967
+  name: vless-1883568710
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -36,10 +36,17 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-1832880226
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: whatsapp.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1833044067
-  port: 18967
+  name: vless-1875790288
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -62,14 +69,29 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1853651617
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832754454
-  - hysteria2-1827145587
-  - vless-1853651680
-  - vless-1833044067
+  - vless-1832754451
+  - hysteria2-1832881362
+  - vless-1883568710
+  - hysteria2-1832880226
+  - vless-1875790288
   - vless-1832754726
+  - vless-1853651617
   type: select
 rules:
 - MATCH,PROXY

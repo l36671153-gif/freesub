@@ -3,36 +3,32 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX down
-  network: ws
-  port: 14430
-  server: 5.178.109.174
-  type: vless
-  udp: true
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  ws-opts:
-    headers:
-      Host: 5.178.109.174
-    path: /vless
+- name: hysteria2-1910185368
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  port: 443
+  server: promo.betust.net
+  skip-cert-verify: false
+  sni: promo.betust.net
+  type: hysteria2
 - client-fingerprint: firefox
-  name: 🔒 VL-WS-TLS 🇸🇪 SE-191.44.114.179 2096
+  name: vless-1925123170
   network: ws
   port: 2096
-  server: 191.44.114.179
-  servername: st33614.rumedia-cdn.com
+  server: 191.44.114.154
+  servername: st5ff8a.rumedia-cdn.com
   tls: true
   type: vless
   udp: true
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   ws-opts:
     headers:
-      Host: st33614.rumedia-cdn.com
+      Host: st5ff8a.rumedia-cdn.com
     path: /cdn/v3/live
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX down
-  - 🔒 VL-WS-TLS 🇸🇪 SE-191.44.114.179 2096
+  - hysteria2-1910185368
+  - vless-1925123170
   type: select
 rules:
 - MATCH,PROXY
