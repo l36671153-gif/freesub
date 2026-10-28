@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 239ms",
+      "server": "20.164.216.117",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qJo9gTes7nI3Alxi"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 995507",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

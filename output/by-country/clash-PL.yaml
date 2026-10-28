@@ -1,0 +1,19 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1869963083
+  port: 20001
+  server: site.teslamotor.site
+  type: vless
+  udp: true
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1869963083
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
