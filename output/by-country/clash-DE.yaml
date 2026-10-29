@@ -3,31 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 521236
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 18.153.65.67
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1854342782
-  port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
+- name: vless-1854281190
+  port: 10000
+  server: connect.wecantos.site
   type: vless
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 521236
-  - vless-1854342782
+  - vless-1854281190
   type: select
 rules:
 - MATCH,PROXY

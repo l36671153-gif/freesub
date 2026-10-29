@@ -3,20 +3,80 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1936405432
-  port: 8080
-  server: 155.117.5.208
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827155547
+  port: 443
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
+  tls: true
   type: vless
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: vless-1934391038
-  port: 8080
-  server: 155.117.5.208
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+- client-fingerprint: chrome
+  name: vless-1831043235
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
   type: vless
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1891867409
+  port: 443
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  server: 209.200.246.148
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
 - client-fingerprint: random
   name: vless-1828531993
+  port: 2053
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+    short-id: 83f8317a948bb769
+  server: 66.70.179.198
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- client-fingerprint: chrome
+  name: vless-1940442202
+  port: 32355
+  server: ca001.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+- name: trojan-1939845075
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.152
+  sni: learn.connectingpeoplewithgreatjobs.com
+  type: trojan
+  udp: true
+- name: trojan-1939845055
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.74
+  sni: api.connectingpeoplewithgreatjobs.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: vless-1854332946
   port: 2053
   reality-opts:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
@@ -30,9 +90,14 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1936405432
-  - vless-1934391038
+  - vless-1827155547
+  - vless-1831043235
+  - vless-1891867409
   - vless-1828531993
+  - vless-1940442202
+  - trojan-1939845075
+  - trojan-1939845055
+  - vless-1854332946
   type: select
 rules:
 - MATCH,PROXY

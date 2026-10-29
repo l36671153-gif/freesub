@@ -1,0 +1,36 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1936326087
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  type: vless
+  udp: true
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    headers: {}
+    path: /
+- client-fingerprint: chrome
+  name: vless-1841361328
+  port: 2053
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1936326087
+  - vless-1841361328
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

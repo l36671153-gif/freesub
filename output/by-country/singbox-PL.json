@@ -3,7 +3,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1869963083",
+      "tag": "vless-1935969593",
+      "server": "45.148.119.127",
+      "server_port": 443,
+      "uuid": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
+          "short_id": "50"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1876388819",
       "server": "site.teslamotor.site",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"

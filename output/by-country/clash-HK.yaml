@@ -3,13 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853489155
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  type: hysteria2
 - name: 🔒 TR-TCP-TLS 🇭🇰 HK-2.27.109.179 45464
   password: XuMweB2PWs
   port: 45464
@@ -17,85 +10,18 @@ proxies:
   sni: 2.27.109.179.sslip.io
   type: trojan
   udp: true
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1932272350
-  port: 27509
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  server: 38.22.88.248
-  servername: www.suffolk.edu
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1929919148
-  port: 27509
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  server: 38.22.88.248
-  servername: www.suffolk.edu
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-- name: hysteria2-1853331565
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
+- name: hysteria2-1853501557
+  password: b0917015b656b3dd2286b5633af0c5c1
+  port: 50160
+  server: 31.57.248.176
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
-  type: hysteria2
-- name: 🏳️ ShatakVPN 649247
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: 202.146.222.29
-  type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1929919146
-  port: 27509
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  server: 38.22.88.248
-  servername: www.suffolk.edu
-  tls: true
-  type: vless
-  udp: true
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-- name: hysteria2-1853331603
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2ⁿß«ⁿß
-  type: hysteria2
-- name: hysteria2-1828371507
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/oneclickvpnkeys
+  sni: www.bing.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1853489155
   - 🔒 TR-TCP-TLS 🇭🇰 HK-2.27.109.179 45464
-  - vless-1932272350
-  - vless-1929919148
-  - hysteria2-1853331565
-  - 🏳️ ShatakVPN 649247
-  - vless-1929919146
-  - hysteria2-1853331603
-  - hysteria2-1828371507
+  - hysteria2-1853501557
   type: select
 rules:
 - MATCH,PROXY
