@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🔒 TR-TCP-TLS 🇨🇱 CL-64.176.7.205 443
+- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 174ms
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 64.176.7.205
-  sni: advanceyouremploymentskillsandcareerdevelopmenthub.com
+  server: 208.69.78.19
+  sni: www.yourultimateprofessionalcareerhub.com
   type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 TR-TCP-TLS 🇨🇱 CL-64.176.7.205 443
+  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 174ms
   type: select
 rules:
 - MATCH,PROXY

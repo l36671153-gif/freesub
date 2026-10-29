@@ -3,16 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1832465389
-  port: 2052
-  server: edge10.cyrionflare.com
+- name: vless-1928873678
+  port: 31157
+  server: 112.169.175.199
   type: vless
   udp: true
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832465389
+  - vless-1928873678
   type: select
 rules:
 - MATCH,PROXY

@@ -3,13 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- name: vless-1832867644
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
+  udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers: {}
+    path: /vless
 - client-fingerprint: chrome
-  name: vless-1885509385
+  name: vless-1928317282
   port: 443
   reality-opts:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
-  server: in.smrtai.top
+  server: 178.212.35.198
   servername: www.cloudflare.com
   tls: true
   type: vless
@@ -18,7 +28,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1885509385
+  - vless-1832867644
+  - vless-1928317282
   type: select
 rules:
 - MATCH,PROXY
