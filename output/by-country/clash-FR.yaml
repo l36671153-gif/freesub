@@ -3,34 +3,30 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1932646633
+  password: 6heexyz
+  port: 443
+  server: 54.36.174.140
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: vless-1827532596
-  port: 2053
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
+  port: 443
   reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
+    public-key: R-w7BpNgtryZRBMyRoHx81OnjzAwrKhVtV1EUKLFJzc
+    short-id: 086bf957
+  server: ai.smrtai.top
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- name: '🏳[www.v2nodes.com] vless- #20'
-  network: ws
-  port: 14430
-  server: 138.124.70.41
-  type: vless
-  udp: true
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  ws-opts:
-    headers:
-      Host: 138.124.70.41
-    path: /vless
+  uuid: 086bf957-9cd0-4e55-8280-bbef10435b41
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827532596
-  - '🏳[www.v2nodes.com] vless- #20'
+  - shadowsocks-1932646633
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX down
   type: select
 rules:
 - MATCH,PROXY
