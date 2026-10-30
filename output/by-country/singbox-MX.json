@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "trojan-1947242982",
+      "server": "mx001.zestapp778.com",
+      "server_port": 15083,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "mx001.zestapp778.com"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}

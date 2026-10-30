@@ -2,16 +2,51 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🏳[www.v2nodes.com] ss- #10",
-      "server": "149.22.87.204",
+      "type": "vless",
+      "tag": "vless-1853654571",
+      "server": "104.21.70.21",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 49ms",
+      "tag": "vless-1943752974",
+      "server": "ga1data.xyy123.bid",
+      "server_port": 443,
+      "uuid": "81f686e2-0700-4e7d-b3aa-2f7fc544bcc3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.amzn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Z7B8VKvjAiBH93XEkHFWCVBfK8Mu5HTLtAwfr5LuYlk",
+          "short_id": "00b0389a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.156.147 443",
       "server": "172.67.156.147",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
@@ -33,37 +68,30 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1828374772",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.111.102 443",
+      "server": "104.16.111.102",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "jp3.yohototo.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1828124796",
-      "server": "154.36.158.197",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "BeaUf9c0AEWH40Pu"
-    },
-    {
       "type": "vless",
-      "tag": "vless-1897614124",
-      "server": "104.24.0.1",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-162.159.254.3 443",
+      "server": "162.159.254.3",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -81,6 +109,14 @@
           "Host": "jp3.yohototo.top"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827146270",
+      "server": "149.22.87.240",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "direct",

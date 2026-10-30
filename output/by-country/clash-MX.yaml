@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-cfb
-  name: shadowsocks-1827969068
-  password: qwerREWQ@@
-  port: 4652
-  server: 218.237.185.234
-  type: ss
+- name: trojan-1947242982
+  password: 5t6i121em5lkmsmk
+  port: 15083
+  server: mx001.zestapp778.com
+  sni: mx001.zestapp778.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827969068
+  - trojan-1947242982
   type: select
 rules:
 - MATCH,PROXY

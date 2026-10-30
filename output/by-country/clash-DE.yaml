@@ -3,72 +3,44 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1945028548
-  port: 47443
-  reality-opts:
-    public-key: MnW49sASUaQ1Sm8SbCWlU8eKfNR8x1O03YSZdj5vM3Y
-    short-id: ae97223a8f799003
-  server: 217.60.151.187
-  servername: ge-3.waspguard.ru
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
   tls: true
   type: vless
   udp: true
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers: {}
+    path: /
+- name: vless-1932466729
+  port: 10000
+  server: 178.83.45.226
+  type: vless
+  udp: true
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 - client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1879632165
+  name: vless-1828532152
   port: 443
   reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
   tls: true
   type: vless
   udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- client-fingerprint: unsafe
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97.124 443
-  network: ws
-  port: 443
-  server: 188.114.97.124
-  servername: nisit-h7qx.matinnnamiri.workers.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: aef32408-b6f3-4ed9-8d70-983b2df79991
-  ws-opts:
-    headers:
-      Host: nisit-h7qx.matinnnamiri.workers.dev
-    path: /stream/DEVCOP/983b2df79991/loc-0
-- name: 🏳️ ShatakVPN 182135
-  network: ws
-  port: 80
-  server: 57.129.41.216
-  type: vless
-  udp: true
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  ws-opts:
-    headers:
-      Host: OV-Germany1.09vpn.com
-    path: /vless/
-- cipher: aes-256-gcm
-  name: shadowsocks-1827146722
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1945028548
-  - vless-1879632165
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97.124 443
-  - 🏳️ ShatakVPN 182135
-  - shadowsocks-1827146722
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - vless-1932466729
+  - vless-1828532152
   type: select
 rules:
 - MATCH,PROXY

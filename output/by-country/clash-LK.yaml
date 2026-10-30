@@ -1,0 +1,24 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1943482613
+  network: ws
+  port: 8080
+  server: support.zoom.us
+  type: vless
+  udp: true
+  uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
+  ws-opts:
+    headers:
+      Host: free.nadun.store
+    path: /
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1943482613
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
