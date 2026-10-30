@@ -3,23 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: vless-1935966863
-  port: 10444
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  server: 178.172.227.228
-  servername: ads.x5.ru
-  tls: true
+- name: vless-1941512530
+  port: 10443
+  server: 178.172.227.124
   type: vless
   udp: true
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1935966863
+  - vless-1941512530
   type: select
 rules:
 - MATCH,PROXY

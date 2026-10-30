@@ -3,18 +3,24 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: vmess-1876880820
-  port: 443
-  server: 140.238.2.250
-  type: vmess
+- cipher: aes-256-cfb
+  name: shadowsocks-1827969068
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.234
+  type: ss
   udp: true
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-- client-fingerprint: firefox
+- name: 🏳️ ShatakVPN 635998
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152.69.231.175
+  skip-cert-verify: false
+  sni: 152-69-231-175.liao.kdns.fr
+  type: hysteria2
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1853651617
-  port: 18967
+  name: vless-1832754484
+  port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
@@ -24,54 +30,57 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: vless-1928873678
-  port: 31157
-  server: 112.169.175.199
-  type: vless
-  udp: true
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- client-fingerprint: random
-  name: vless-1937258367
-  network: ws
-  port: 443
-  server: sg2-xr.zgrelay.com
-  servername: sg2-xr.zgrelay.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  ws-opts:
-    headers: {}
-    path: /700gvl-kr3
-- name: trojan-1943668037
-  password: 5t6i121em5lkmsmk
-  port: 48851
-  server: kr002.zestapp778.com
-  sni: kr002.zestapp778.com
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
-  name: vless-1944436569
-  network: ws
-  port: 443
-  server: sg2-xr.zgrelay.com
-  servername: sg2-xr.zgrelay.com
+  flow: xtls-rprx-vision
+  name: vless-1827153005
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: E221699D-E705-4664-9162-A75A82AA3997
-  ws-opts:
-    headers: {}
-    path: /700gvl-kr3
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 299025
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+- client-fingerprint: chrome
+  name: vless-1848101875
+  port: 2053
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 840481
+  port: 443
+  server: 140.238.2.250
+  type: vmess
+  udp: true
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1876880820
-  - vless-1853651617
-  - vless-1928873678
-  - vless-1937258367
-  - trojan-1943668037
-  - vless-1944436569
+  - shadowsocks-1827969068
+  - 🏳️ ShatakVPN 635998
+  - vless-1832754484
+  - vless-1827153005
+  - 🏳️ ShatakVPN 299025
+  - vless-1848101875
+  - 🏳️ ShatakVPN 840481
   type: select
 rules:
 - MATCH,PROXY

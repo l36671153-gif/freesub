@@ -3,6 +3,13 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1925513121
+  password: 6heexyz
+  port: 443
+  server: pl140.vpnbook.com
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: grpc_common3
@@ -18,10 +25,45 @@ proxies:
   type: vless
   udp: true
   uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 943629
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: grpc
+  name: vless-1946055078
+  network: grpc
+  port: 443
+  server: 82.22.2.225
+  servername: b-wl.fr-2.bnc-gt.co.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b22dce8-7ebd-425b-8ca4-7b6190321985
+- client-fingerprint: chrome
+  name: vless-1827188320
+  port: 2053
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
 proxy-groups:
 - name: PROXY
   proxies:
+  - shadowsocks-1925513121
   - vless-1827531794
+  - 🏳️ ShatakVPN 943629
+  - vless-1946055078
+  - vless-1827188320
   type: select
 rules:
 - MATCH,PROXY

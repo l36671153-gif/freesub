@@ -3,7 +3,47 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 417738
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1945028548
+  port: 47443
+  reality-opts:
+    public-key: MnW49sASUaQ1Sm8SbCWlU8eKfNR8x1O03YSZdj5vM3Y
+    short-id: ae97223a8f799003
+  server: 217.60.151.187
+  servername: ge-3.waspguard.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1879632165
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- client-fingerprint: unsafe
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97.124 443
+  network: ws
+  port: 443
+  server: 188.114.97.124
+  servername: nisit-h7qx.matinnnamiri.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: aef32408-b6f3-4ed9-8d70-983b2df79991
+  ws-opts:
+    headers:
+      Host: nisit-h7qx.matinnnamiri.workers.dev
+    path: /stream/DEVCOP/983b2df79991/loc-0
+- name: 🏳️ ShatakVPN 182135
   network: ws
   port: 80
   server: 57.129.41.216
@@ -14,31 +54,21 @@ proxies:
     headers:
       Host: OV-Germany1.09vpn.com
     path: /vless/
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1828532152
-  port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: shadowsocks-1827146722
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
+  type: ss
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- name: vless-1837324384
-  port: 10000
-  server: connect.wecantos.site
-  type: vless
-  udp: true
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 417738
-  - vless-1828532152
-  - vless-1837324384
+  - vless-1945028548
+  - vless-1879632165
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-188.114.97.124 443
+  - 🏳️ ShatakVPN 182135
+  - shadowsocks-1827146722
   type: select
 rules:
 - MATCH,PROXY

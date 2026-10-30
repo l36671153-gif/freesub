@@ -3,16 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1928873678
-  port: 31157
-  server: 112.169.175.199
-  type: vless
+- cipher: aes-256-cfb
+  name: shadowsocks-1827969068
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.234
+  type: ss
   udp: true
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1928873678
+  - shadowsocks-1827969068
   type: select
 rules:
 - MATCH,PROXY

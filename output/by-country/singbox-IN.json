@@ -2,6 +2,17 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 | IND #1",
+      "server": "in002.zestapp778.com",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "in002.zestapp778.com"
+      }
+    },
+    {
       "type": "vless",
       "tag": "vless-1832867644",
       "server": "13.140.56.100",
@@ -31,6 +42,17 @@
           "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
           "short_id": "6bdc8320"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1939846025",
+      "server": "in002.zestapp778.com",
+      "server_port": 42733,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "in002.zestapp778.com"
       }
     },
     {
