@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1945511616
+  port: 443
+  reality-opts:
+    public-key: DCpi9-1rSXxBnEIAQ9U3mTqHivk7vHJRV_T2pWw5vCc
+    short-id: 681fc2dd643bc2f3
+  server: 130.49.177.193
+  servername: de-2.ffpn.pro
+  tls: true
+  type: vless
+  udp: true
+  uuid: 727a9178-d7f0-4142-8205-b0d19959ded0
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1945511616
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

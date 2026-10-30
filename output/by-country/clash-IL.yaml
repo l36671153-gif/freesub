@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '🏳[www.v2nodes.com] trojan- #3'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 64.176.163.182
+  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🏳[www.v2nodes.com] trojan- #3'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

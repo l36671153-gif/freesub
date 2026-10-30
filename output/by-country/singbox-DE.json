@@ -2,51 +2,43 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083",
-      "server": "91.107.247.173",
-      "server_port": 2083,
-      "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
+      "type": "trojan",
+      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms",
+      "server": "193.108.119.96",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "sino.bestsellers1.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {}
+        "server_name": "learn.iloverussia2026.com"
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1932466729",
-      "server": "178.83.45.226",
+      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms",
+      "server": "155.117.5.208",
       "server_port": 10000,
       "uuid": "a05ecf37-c661-4247-ab09-4432cf0f3cc1"
     },
     {
-      "type": "vless",
-      "tag": "vless-1828532152",
-      "server": "5.252.179.15",
+      "type": "trojan",
+      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1",
+      "server": "193.108.119.78",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
-        }
+        "server_name": "www.iloverussia2026.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2",
+      "server": "193.108.119.29",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.iloverussia2026.com"
       }
     },
     {

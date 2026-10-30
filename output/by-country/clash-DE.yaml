@@ -3,44 +3,40 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
-  tls: true
-  type: vless
+- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.96
+  sni: learn.iloverussia2026.com
+  type: trojan
   udp: true
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
-  ws-opts:
-    headers: {}
-    path: /
-- name: vless-1932466729
+- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms
   port: 10000
-  server: 178.83.45.226
+  server: 155.117.5.208
   type: vless
   udp: true
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: vless-1828532152
+- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
+  server: 193.108.119.78
+  sni: www.iloverussia2026.com
+  type: trojan
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.29
+  sni: blog.iloverussia2026.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  - vless-1932466729
-  - vless-1828532152
+  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms
+  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms
+  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1
+  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2
   type: select
 rules:
 - MATCH,PROXY

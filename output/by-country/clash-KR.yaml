@@ -3,21 +3,37 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1939847007
-  network: ws
-  port: 25555
-  server: 152.69.226.63
+- client-fingerprint: edge
+  flow: xtls-rprx-vision
+  name: vless-1832754691
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
   type: vless
   udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers:
-      Host: 152.69.226.63
-    path: /
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: qq
+  flow: xtls-rprx-vision
+  name: vless-1832754451
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1939847007
+  - vless-1832754691
+  - vless-1832754451
   type: select
 rules:
 - MATCH,PROXY
