@@ -3,40 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- name: 🏳️ ShatakVPN 424636
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
-  type: trojan
-  udp: true
-- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms
-  port: 10000
-  server: 155.117.5.208
+  server: 18.193.79.104
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 132ms
+  port: 8442
+  reality-opts:
+    public-key: pFRfJJDY6TYJq-OVgAqFXhdaeur7gJWJM-RZT8g8yAA
+    short-id: 59b75803
+  server: 213.108.198.158
+  servername: creativecommons.org
+  tls: true
   type: vless
   udp: true
-  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.78
-  sni: www.iloverussia2026.com
-  type: trojan
-  udp: true
-- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.29
-  sni: blog.iloverussia2026.com
-  type: trojan
-  udp: true
+  uuid: 35352039-3820-4532-a031-303120313030
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms
-  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms
-  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1
-  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2
+  - 🏳️ ShatakVPN 424636
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 132ms
   type: select
 rules:
 - MATCH,PROXY

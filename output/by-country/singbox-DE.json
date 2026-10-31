@@ -2,43 +2,36 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms",
-      "server": "193.108.119.96",
+      "type": "hysteria2",
+      "tag": "🏳️ ShatakVPN 424636",
+      "server": "18.193.79.104",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "learn.iloverussia2026.com"
+        "server_name": "127.0.0.1",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 142ms",
-      "server": "155.117.5.208",
-      "server_port": 10000,
-      "uuid": "a05ecf37-c661-4247-ab09-4432cf0f3cc1"
-    },
-    {
-      "type": "trojan",
-      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_1",
-      "server": "193.108.119.78",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 132ms",
+      "server": "213.108.198.158",
+      "server_port": 8442,
+      "uuid": "35352039-3820-4532-a031-303120313030",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.iloverussia2026.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 135ms_2",
-      "server": "193.108.119.29",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "blog.iloverussia2026.com"
+        "server_name": "creativecommons.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pFRfJJDY6TYJq-OVgAqFXhdaeur7gJWJM-RZT8g8yAA",
+          "short_id": "59b75803"
+        }
       }
     },
     {

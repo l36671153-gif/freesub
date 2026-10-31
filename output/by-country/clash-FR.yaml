@@ -3,102 +3,29 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 493221
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1932646633
+  password: 6heexyz
+  port: 443
+  server: 54.36.174.140
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: vless-1827532596
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: true
+- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 125ms
+  network: ws
+  port: 14430
+  server: 138.124.70.41
   type: vless
   udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- client-fingerprint: chrome
-  name: 🔒 VL-TCP-TLS 🇫🇷 FR-15.236.109.186 2053
-  port: 2053
-  server: 15.236.109.186
-  servername: w.geogame.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-- name: hysteria2-1853488260
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.36.234.11
-  skip-cert-verify: true
-  sni: 13.36.234.11
-  type: hysteria2
-- client-fingerprint: random
-  name: vless-1891901670
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 133ms
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 137ms
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: firefox
-  name: vless-1853340364
-  port: 2053
-  reality-opts:
-    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
-    short-id: bfe58beb41f1d09f
-  server: 51.77.217.70
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 493221
-  - vless-1827532596
-  - 🔒 VL-TCP-TLS 🇫🇷 FR-15.236.109.186 2053
-  - hysteria2-1853488260
-  - vless-1891901670
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 133ms
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 137ms
-  - vless-1853340364
+  - shadowsocks-1932646633
+  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 125ms
   type: select
 rules:
 - MATCH,PROXY

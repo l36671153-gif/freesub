@@ -3,16 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1874469937
-  port: 8080
-  server: milo.networkforexir.site
-  type: vless
+- name: trojan-1939845052
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.201
+  sni: resources.connectingpeoplewithgreatjobs.com
+  type: trojan
   udp: true
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: trojan-1943481635
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.85
+  sni: cdn.connectingpeoplewithgreatjobs.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1874469937
+  - trojan-1939845052
+  - trojan-1943481635
   type: select
 rules:
 - MATCH,PROXY

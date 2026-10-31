@@ -5,15 +5,15 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1863429494
+  name: vmess-1938562129
   port: 18000
-  server: 169.197.142.22
+  server: 38.91.107.49
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1934952240
+  name: vmess-1935612132
   port: 18000
   server: 23.162.200.198
   type: vmess
@@ -21,36 +21,54 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1934952241
+  name: vmess-1832181415
   port: 18000
-  server: 38.91.107.49
+  server: 134.195.196.211
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1853348260
+  name: 🆔v2ray1_ng 🔓 VM-TCP-N/A ❔ XX 52ms
   port: 18000
-  server: 84.17.41.2
+  server: 67.220.95.3
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1827161859
+  name: vmess-1837386247
   port: 18000
-  server: 38.91.107.49
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1827159670
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1837386220
+  port: 18000
+  server: 67.220.85.46
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1863429494
-  - vmess-1934952240
-  - vmess-1934952241
-  - vmess-1853348260
-  - vmess-1827161859
+  - vmess-1938562129
+  - vmess-1935612132
+  - vmess-1832181415
+  - 🆔v2ray1_ng 🔓 VM-TCP-N/A ❔ XX 52ms
+  - vmess-1837386247
+  - vmess-1827159670
+  - vmess-1837386220
   type: select
 rules:
 - MATCH,PROXY

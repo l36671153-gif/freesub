@@ -3,21 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1935807325
+- name: 🇱🇰[www.v2nodes.com] vless-LK-6...
   network: ws
   port: 8080
-  server: 170.114.45.6
+  server: support.zoom.us
   type: vless
   udp: true
   uuid: 990bf436-f1b9-4e7f-857d-14378acc4ae5
   ws-opts:
     headers:
-      Host: free.nadun.store
+      Host: Free.nadun.store
     path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1935807325
+  - 🇱🇰[www.v2nodes.com] vless-LK-6...
   type: select
 rules:
 - MATCH,PROXY

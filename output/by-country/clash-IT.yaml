@@ -4,32 +4,40 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🇮🇹[www.v2nodes.com] ss-IT-1597...
+  name: 🇺🇸 美国 | USA
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 185.164.175.81
+  server: 202.50.253.81
   type: ss
   udp: true
 - cipher: aes-256-gcm
   name: 🇮🇹 意大利 | ITA
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.99
+  server: 202.50.253.36
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #8'
+  name: '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.63
+  server: 202.50.253.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1875023009
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.27
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇹[www.v2nodes.com] ss-IT-1597...
+  - 🇺🇸 美国 | USA
   - 🇮🇹 意大利 | ITA
-  - '🇮🇹 意大利 | ITA #8'
+  - '🇮🇹[www.v2nodes.com] ss-IT-1602... #3'
+  - shadowsocks-1875023009
   type: select
 rules:
 - MATCH,PROXY

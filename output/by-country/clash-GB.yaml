@@ -3,53 +3,30 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 152ms
+  name: vless-1873913777
   port: 443
   reality-opts:
-    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
-    short-id: b2baf331493d3de1
-  server: 191.44.108.30
-  servername: c8.qwyak.ru
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  server: 191.44.108.31
+  servername: www.google.com
   tls: true
   type: vless
   udp: true
   uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 110193
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.176.206.9
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: shadowsocks-1827146143
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-  udp: true
-- name: 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 146ms
+- name: vless-1927184289
   port: 10002
-  server: 178.83.45.226
-  type: vless
-  udp: true
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: '🏳[www.v2nodes.com] vless- #11'
-  port: 10002
-  server: 178.83.45.226
+  server: connect.hondamotor.site
   type: vless
   udp: true
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 152ms
-  - 🏳️ ShatakVPN 110193
-  - shadowsocks-1827146143
-  - 🆔ar14n24b 🔓 VL-TCP-N/A ❔ XX 146ms
-  - '🏳[www.v2nodes.com] vless- #11'
+  - vless-1873913777
+  - vless-1927184289
   type: select
 rules:
 - MATCH,PROXY

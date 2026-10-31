@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1938585287
+  port: 8443
+  reality-opts:
+    public-key: laG5BxoSbdRozpauATNFBPPTwhuDuu0JFl_SCP2ZQlU
+    short-id: 14fbf992
+  server: 177.7.51.29
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c6b1b2d0-ed5e-48ce-99e6-112ff330030d
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1938585287
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
