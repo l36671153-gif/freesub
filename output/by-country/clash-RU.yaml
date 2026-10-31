@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  name: 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 441ms
+  network: ws
+  port: 443
+  server: lvi.su
+  servername: lvi.su
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7b91b2c3-8af3-449b-a555-00c9460989f4
+  ws-opts:
+    headers:
+      Host: lvi.su
+    path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔v2ray1_ng 🔒 VL-WS-N/A ❔ XX 441ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

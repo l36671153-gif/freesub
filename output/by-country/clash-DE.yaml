@@ -3,60 +3,48 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827530457
-  port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 250758
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1828169058
-  port: 443
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
 - client-fingerprint: chrome
-  name: 🇩🇪 德国 | DEU
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
   network: ws
-  port: 8443
-  server: 104.17.70.206
-  servername: free.sahanwickramasinghe.com
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
   tls: true
   type: vless
   udp: true
-  uuid: 5f704d93-7e7f-45b5-81f5-08db4a946220
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   ws-opts:
     headers:
-      Host: free.sahanwickramasinghe.com
+      Host: sino.bestsellers1.site
     path: /
-- name: hysteria2-1932656534
-  password: d62s7ghfehm742us
-  port: 12824
-  server: derfderf.ru
-  skip-cert-verify: false
-  sni: derfderf.ru
+- name: 🏳️ ShatakVPN 333794
+  password: mhsl
+  port: 14444
+  server: 88.99.213.222
+  skip-cert-verify: true
+  sni: bing.com
   type: hysteria2
+- cipher: aes-256-gcm
+  name: shadowsocks-1875023013
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827530457
-  - vless-1828169058
-  - 🇩🇪 德国 | DEU
-  - hysteria2-1932656534
+  - 🏳️ ShatakVPN 250758
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - 🏳️ ShatakVPN 333794
+  - shadowsocks-1875023013
   type: select
 rules:
 - MATCH,PROXY

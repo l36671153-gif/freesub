@@ -2,56 +2,22 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "vless-1827530457",
-      "server": "5.252.179.15",
-      "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 250758",
+      "server": "185.176.204.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "vless",
-      "tag": "vless-1828169058",
-      "server": "5.252.179.15",
-      "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083",
+      "server": "91.107.247.173",
+      "server_port": 2083,
+      "uuid": "7858128a-6b5e-4f86-9bff-52c1f1e6439d",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 | DEU",
-      "server": "104.17.70.206",
-      "server_port": 8443,
-      "uuid": "5f704d93-7e7f-45b5-81f5-08db4a946220",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.com",
+        "server_name": "sino.bestsellers1.site",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -61,21 +27,29 @@
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "free.sahanwickramasinghe.com"
+          "Host": "sino.bestsellers1.site"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-1932656534",
-      "server": "derfderf.ru",
-      "server_port": 12824,
-      "password": "d62s7ghfehm742us",
+      "tag": "🏳️ ShatakVPN 333794",
+      "server": "88.99.213.222",
+      "server_port": 14444,
+      "password": "mhsl",
       "tls": {
         "enabled": true,
-        "server_name": "derfderf.ru",
-        "insecure": false
+        "server_name": "bing.com",
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1875023013",
+      "server": "185.176.204.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "direct",
