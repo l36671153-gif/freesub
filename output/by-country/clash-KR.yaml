@@ -4,21 +4,20 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1875790288
-  port: 13672
+  name: vless-1848101875
+  port: 2053
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: chrome
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1875764254
+  name: vless-1883568710
   port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -32,8 +31,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1875790288
-  - vless-1875764254
+  - vless-1848101875
+  - vless-1883568710
   type: select
 rules:
 - MATCH,PROXY
