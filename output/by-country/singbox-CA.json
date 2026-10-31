@@ -3,25 +3,41 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "trojan-1939845052",
-      "server": "216.152.147.201",
+      "tag": "🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 63ms",
+      "server": "216.152.147.48",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.connectingpeoplewithgreatjobs.com"
+        "server_name": "courses.connectingpeoplewithgreatjobs.com"
       }
     },
     {
+      "type": "vless",
+      "tag": "vless-1827153130",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
       "type": "trojan",
-      "tag": "trojan-1943481635",
-      "server": "216.152.147.85",
+      "tag": "trojan-1939845055",
+      "server": "216.152.147.74",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "cdn.connectingpeoplewithgreatjobs.com"
+        "server_name": "api.connectingpeoplewithgreatjobs.com"
       }
+    },
+    {
+      "type": "vmess",
+      "tag": "vmess-1828149315",
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto",
+      "alter_id": 0
     },
     {
       "type": "direct",

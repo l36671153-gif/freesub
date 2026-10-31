@@ -3,30 +3,16 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  name: vless-1873913777
-  port: 443
-  reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  server: 191.44.108.31
-  servername: www.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-- name: vless-1927184289
+- name: vless-1947301952
   port: 10002
-  server: connect.hondamotor.site
+  server: 155.117.5.208
   type: vless
   udp: true
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1873913777
-  - vless-1927184289
+  - vless-1947301952
   type: select
 rules:
 - MATCH,PROXY
