@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: rc4-md5
+  name: shadowsocks-1870576128
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.142.161
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: shadowsocks-1870576143
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.207.163
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-1870576128
+  - shadowsocks-1870576143
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

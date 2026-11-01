@@ -3,34 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1827735104
-  network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
+- name: trojan-1947359314
+  password: 5t6i121em5lkmsmk
+  port: 42733
+  server: in002.zestapp778.com
+  sni: in002.zestapp778.com
+  type: trojan
   udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  ws-opts:
-    headers:
-      Host: 13.140.56.100
-    path: /vless
-- client-fingerprint: firefox
-  name: vless-1832650490
-  port: 2053
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  server: 194.61.31.126
-  servername: www.apple.com
-  tls: true
-  type: vless
+- name: trojan-1945992019
+  password: 5t6i121em5lkmsmk
+  port: 42733
+  server: in002.zestapp778.com
+  sni: in002.zestapp778.com
+  type: trojan
   udp: true
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827735104
-  - vless-1832650490
+  - trojan-1947359314
+  - trojan-1945992019
   type: select
 rules:
 - MATCH,PROXY

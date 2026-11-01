@@ -3,41 +3,65 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1871753077
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.89
-  skip-cert-verify: true
-  sni: 202.146.222.89
-  type: hysteria2
-- name: hysteria2-1828371606
+- name: hysteria2-1828371651
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  sni: vk.com
   type: hysteria2
-- name: hysteria2-1945000637
+- name: hysteria2-1828371510
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%e2%89%a1%c6%92%c3%a7
+  sni: css.rbxcdn.com
   type: hysteria2
-- name: hysteria2-1828371657
+- name: hysteria2-1828371354
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.89
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: 202.146.222.89
+  sni: speedtest.tinkoff.ru
+  type: hysteria2
+- name: hysteria2-1832880261
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: t.me
+  type: hysteria2
+- name: hysteria2-1853331618
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  type: hysteria2
+- name: hysteria2-1828371598
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2üá
+  type: hysteria2
+- name: hysteria2-1853331597
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1871753077
-  - hysteria2-1828371606
-  - hysteria2-1945000637
-  - hysteria2-1828371657
+  - hysteria2-1828371651
+  - hysteria2-1828371510
+  - hysteria2-1828371354
+  - hysteria2-1832880261
+  - hysteria2-1853331618
+  - hysteria2-1828371598
+  - hysteria2-1853331597
   type: select
 rules:
 - MATCH,PROXY

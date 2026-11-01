@@ -5,66 +5,50 @@ port: 7890
 proxies:
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827530457
+  name: vless-1841767889
   port: 443
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  server: 5.252.179.15
-  servername: www.bing.com
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
   tls: true
   type: vless
   udp: true
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- name: 🏳️ ShatakVPN 418277
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 18.153.65.67
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- client-fingerprint: chrome
+  name: 🆔madshopx 🔒 VL-WS-N/A ❔ XX 121ms
+  network: ws
+  port: 465
+  server: hw7.divarkhaghazi.com
+  servername: hw7.divarkhaghazi.com.
+  tls: true
+  type: vless
+  udp: true
+  uuid: d0d3d49c-56e8-40e1-9e83-793d03f83d93
+  ws-opts:
+    headers:
+      Host: hw7.divarkhaghazi.com.
+    path: /?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1946632475
-  port: 47443
+  name: vless-1943683222
+  port: 10105
   reality-opts:
-    public-key: g5am2VhZkx_xH2TSKfUU8OYLxAzFrmcszNQg8AbOenE
-    short-id: ae97223a8f799872
-  server: 187.52.44.20
-  servername: nl4.waspnest.space
+    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
+    short-id: 12e321badd07906e
+  server: 91.107.179.0
+  servername: play.google.com
   tls: true
   type: vless
   udp: true
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 127ms
-  port: 63053
-  server: 179.253.179.109
-  servername: de2.derevohom.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: e3aa3d22-a95e-407b-aacc-d855b90a5d70
-- client-fingerprint: ios
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 225ms
-  port: 1240
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  server: p1real2.greewebservices.ir
-  servername: play.googleapis.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
+  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827530457
-  - 🏳️ ShatakVPN 418277
-  - vless-1946632475
-  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 127ms
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 225ms
+  - vless-1841767889
+  - 🆔madshopx 🔒 VL-WS-N/A ❔ XX 121ms
+  - vless-1943683222
   type: select
 rules:
 - MATCH,PROXY

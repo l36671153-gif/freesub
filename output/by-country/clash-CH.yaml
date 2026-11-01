@@ -1,0 +1,49 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🏳️ ShatakVPN 514615
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.33
+  sni: courses.yourultimateprofessionalcareerhub.com
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: vless-1827188328
+  port: 2053
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  server: 208.69.78.217
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+- name: trojan-1945021228
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.19
+  sni: www.yourultimateprofessionalcareerhub.com
+  type: trojan
+  udp: true
+- name: 🏳️ ShatakVPN 811566
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.29
+  sni: learn.yourultimateprofessionalcareerhub.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 514615
+  - vless-1827188328
+  - trojan-1945021228
+  - 🏳️ ShatakVPN 811566
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
