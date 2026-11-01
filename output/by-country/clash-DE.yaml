@@ -3,25 +3,54 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🏳️ ShatakVPN 854076
-  password: mhsl
-  port: 14444
-  server: 88.99.213.222
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1854108408
+  port: 443
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: hysteria2-1875823307
+  password: miaoge110
+  port: 51511
+  server: 5.45.100.100
   skip-cert-verify: true
-  sni: bing.com
+  sni: www.bing.com
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 965322
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  network: ws
+  port: 2083
+  server: 91.107.247.173
+  servername: sino.bestsellers1.site
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  ws-opts:
+    headers:
+      Host: sino.bestsellers1.site
+    path: /
+- name: 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 101ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  sni: courses.iloverussia2026.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 854076
-  - 🏳️ ShatakVPN 965322
+  - vless-1854108408
+  - hysteria2-1875823307
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
+  - 🆔v2ray1_ng 🔒 TR-TCP-N/A ❔ XX 101ms
   type: select
 rules:
 - MATCH,PROXY

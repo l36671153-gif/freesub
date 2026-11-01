@@ -2,14 +2,17 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1947359314",
-      "server": "in002.zestapp778.com",
-      "server_port": 42733,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "in002.zestapp778.com"
+      "type": "vless",
+      "tag": "vless-1828534465",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
       }
     },
     {

@@ -3,17 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1947359314
-  password: 5t6i121em5lkmsmk
-  port: 42733
-  server: in002.zestapp778.com
-  sni: in002.zestapp778.com
-  type: trojan
+- name: vless-1828534465
+  network: ws
+  port: 14430
+  server: 13.140.56.100
+  type: vless
   udp: true
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  ws-opts:
+    headers:
+      Host: 13.140.56.100
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1947359314
+  - vless-1828534465
   type: select
 rules:
 - MATCH,PROXY
