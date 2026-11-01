@@ -1,0 +1,25 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  name: 🇷🇺 俄罗斯 | RUS
+  port: 443
+  reality-opts:
+    public-key: OIWmjOL9lOxVRm-ejEvQf_G-Km-5Rw3L-w5d8rhVzQw
+    short-id: 69b1363a7dfd97d3
+  server: 135.106.153.131
+  servername: rug.tems.bet
+  tls: true
+  type: vless
+  udp: true
+  uuid: a5212bcb-ab85-459a-bec6-9f259eeeebfa
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇷🇺 俄罗斯 | RUS
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

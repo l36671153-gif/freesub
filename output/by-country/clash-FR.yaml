@@ -3,33 +3,43 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853502854
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.36.234.11
-  skip-cert-verify: true
-  sni: 13.36.234.11
-  type: hysteria2
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc_common3
-  name: vless-1827531794
-  network: grpc
-  port: 51671
+  name: vless-1832690682
+  port: 2053
   reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
+    public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
+    short-id: bfe58beb41f1d09f
+  server: 51.77.217.70
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  uuid: bf16ee0c-8b3c-41e4-ab3a-8b48033c404e
+- name: vless-1933857901
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  type: vless
+  udp: true
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers: {}
+    path: /vless
+- client-fingerprint: chrome
+  name: 🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 136ms
+  port: 2053
+  server: w.geogame.ir
+  servername: w.geogame.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: fbda2834-b1e7-4148-afb9-deda31036a30
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1853502854
-  - vless-1827531794
+  - vless-1832690682
+  - vless-1933857901
+  - 🆔v2ray1_ng 🔒 VL-TCP-N/A ❔ XX 136ms
   type: select
 rules:
 - MATCH,PROXY

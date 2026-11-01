@@ -3,51 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1853340233
-  port: 2053
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  server: 151.245.106.49
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-- name: vless-1940466750
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: vless-1875764254
-  port: 13672
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.39.4.109
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: 🏳️ ShatakVPN 393145
-  password: 5t6i121em5lkmsmk
-  port: 48851
-  server: 158.247.255.150
-  sni: kr002.zestapp778.com
-  type: trojan
-  udp: true
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1832754798
+  name: vless-1828531953
   port: 18967
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -58,22 +16,51 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1832880243
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+- name: trojan-1941945474
+  password: 5t6i121em5lkmsmk
+  port: 48851
+  server: kr002.zestapp778.com
+  sni: kr002.zestapp778.com
+  type: trojan
+  udp: true
+- name: vless-1947361111
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  type: vless
+  udp: true
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    headers: {}
+    path: /
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1832754454
+  port: 18967
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-1828373224
+  password: 1671a252e2a97dc2bda4e515475931da
   port: 50160
-  server: 152.67.200.82
+  server: 132.226.226.189
   skip-cert-verify: true
-  sni: t.me
+  sni: www.bing.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1853340233
-  - vless-1940466750
-  - vless-1875764254
-  - 🏳️ ShatakVPN 393145
-  - vless-1832754798
-  - hysteria2-1832880243
+  - vless-1828531953
+  - trojan-1941945474
+  - vless-1947361111
+  - vless-1832754454
+  - hysteria2-1828373224
   type: select
 rules:
 - MATCH,PROXY
