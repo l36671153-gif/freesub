@@ -3,28 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1929114993
+- cipher: rc4-md5
+  name: shadowsocks-1870576356
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 146.70.20.147
+  type: ss
+  udp: true
+- name: hysteria2-1938971779
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 3.64.194.247
+  server: 3.76.221.4
   skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
+  sni: 3.76.221.4
   type: hysteria2
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 223ms
-  port: 2112
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  server: mci.amir12.ir
-  servername: play.google.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1853501621
+  name: vless-1828371278
   port: 443
   reality-opts:
     public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
@@ -35,20 +30,20 @@ proxies:
   type: vless
   udp: true
   uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- name: 🏳️ ShatakVPN 641668
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: trojan-1941511538
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 3.76.221.4
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
+  server: 193.108.119.193
+  sni: resources.iloverussia2026.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1929114993
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 223ms
-  - vless-1853501621
-  - 🏳️ ShatakVPN 641668
+  - shadowsocks-1870576356
+  - hysteria2-1938971779
+  - vless-1828371278
+  - trojan-1941511538
   type: select
 rules:
 - MATCH,PROXY
