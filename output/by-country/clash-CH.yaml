@@ -3,15 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1943480647
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.60
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  type: trojan
-  udp: true
-- client-fingerprint: random
-  name: vless-1853464381
+- client-fingerprint: chrome
+  name: vless-1827188328
   port: 2053
   reality-opts:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
@@ -25,8 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1943480647
-  - vless-1853464381
+  - vless-1827188328
   type: select
 rules:
 - MATCH,PROXY

@@ -3,25 +3,43 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: grpc_common3
-  name: vless-1891687512
-  network: grpc
-  port: 51671
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 140ms
+  port: 23576
   reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.10
+  servername: fuck.rkn
   tls: true
   type: vless
   udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
-- client-fingerprint: random
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 136ms
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 261041
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
+  udp: true
+- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-common3
-  name: vless-1891687510
+  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 144ms
   network: grpc
   port: 35108
   reality-opts:
@@ -33,14 +51,21 @@ proxies:
   type: vless
   udp: true
   uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- name: hysteria2-1853488260
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.36.234.11
+  skip-cert-verify: true
+  sni: 13.36.234.11
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 132ms
+  name: 🏳️ ShatakVPN 460180
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 62.210.91.2
+  server: 62.210.91.10
   servername: fuck.rkn
   tls: true
   type: vless
@@ -49,9 +74,12 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1891687512
-  - vless-1891687510
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 132ms
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 140ms
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 136ms
+  - 🏳️ ShatakVPN 261041
+  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 144ms
+  - hysteria2-1853488260
+  - 🏳️ ShatakVPN 460180
   type: select
 rules:
 - MATCH,PROXY

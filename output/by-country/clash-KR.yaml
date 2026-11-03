@@ -3,28 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853331559
+- name: trojan-1943668037
+  password: 5t6i121em5lkmsmk
+  port: 48851
+  server: kr002.zestapp778.com
+  sni: kr002.zestapp778.com
+  type: trojan
+  udp: true
+- name: hysteria2-1828374270
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   port: 50160
   server: 152.67.200.82
   skip-cert-verify: true
-  sni: 152.67.200.82
+  sni: vk.com
   type: hysteria2
-- client-fingerprint: firefox
-  name: vless-1827153357
-  port: 2053
-  reality-opts:
-    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
-    short-id: 429499c03d4cc8a0
-  server: 151.245.106.49
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
-- client-fingerprint: edge
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1832754656
+  name: vless-1832754726
   port: 13672
   reality-opts:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
@@ -35,12 +30,34 @@ proxies:
   type: vless
   udp: true
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827153005
+  port: 13672
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.39.4.109
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: hysteria2-1853331559
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: 152.67.200.82
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
+  - trojan-1943668037
+  - hysteria2-1828374270
+  - vless-1832754726
+  - vless-1827153005
   - hysteria2-1853331559
-  - vless-1827153357
-  - vless-1832754656
   type: select
 rules:
 - MATCH,PROXY
