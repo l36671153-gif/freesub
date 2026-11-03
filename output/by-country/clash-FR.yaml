@@ -4,42 +4,9 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 140ms
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 136ms
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.2
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 261041
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
-  type: ss
-  udp: true
-- client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: grpc-common3
-  name: 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 144ms
+  name: vless-1827188342
   network: grpc
   port: 35108
   reality-opts:
@@ -51,16 +18,9 @@ proxies:
   type: vless
   udp: true
   uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
-- name: hysteria2-1853488260
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.36.234.11
-  skip-cert-verify: true
-  sni: 13.36.234.11
-  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 460180
+  name: vless-1853341185
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
@@ -71,15 +31,71 @@ proxies:
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔v2ray1_ng 🔒 VL-TCP- 🇫🇷 FR 96ms
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 62.210.91.2
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 85ms
+  port: 443
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  server: 103.82.101.94
+  servername: www.porsche.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-common3
+  name: vless-1891687510
+  network: grpc
+  port: 35108
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  server: 152.228.139.33
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: grpc-common3
+  name: vless-1831094059
+  network: grpc
+  port: 35108
+  reality-opts:
+    public-key: X_lOw5Zz4SJBa1cRHV4dAq5msYE-ClY5-WNcBmBWRxg
+    short-id: 52add08b86a5ccea
+  server: 152.228.139.33
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 140ms
-  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 136ms
-  - 🏳️ ShatakVPN 261041
-  - 🆔ar14n24b 🔒 VL-GRPC- ❔ XX 144ms
-  - hysteria2-1853488260
-  - 🏳️ ShatakVPN 460180
+  - vless-1827188342
+  - vless-1853341185
+  - 🆔v2ray1_ng 🔒 VL-TCP- 🇫🇷 FR 96ms
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 85ms
+  - vless-1891687510
+  - vless-1831094059
   type: select
 rules:
 - MATCH,PROXY
