@@ -3,6 +3,59 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827155341
+  port: 443
+  reality-opts:
+    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
+    short-id: b2efed6d157e7bb0
+  server: 5.34.177.164
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1853652549
+  port: 10574
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- client-fingerprint: chrome
+  name: vless-1827145778
+  network: ws
+  port: 2096
+  server: 139.162.27.96
+  servername: free-server.techsonic.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /free-server.techsonic.dev
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1855701613
+  port: 12972
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
 - name: trojan-1941064096
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -10,24 +63,44 @@ proxies:
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
   udp: true
-- client-fingerprint: random
+- cipher: rc4-md5
+  name: shadowsocks-1870576255
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 128.1.186.73
+  type: ss
+  udp: true
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: vless-1874689114
-  port: 41688
+  name: vless-1853652396
+  port: 10574
   reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  server: 3.0.111.82
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+- name: 🔒 TR-TCP-TLS 🇸🇬 SG-149.28.130.108 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 149.28.130.108
+  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1827155341
+  - vless-1853652549
+  - vless-1827145778
+  - vless-1855701613
   - trojan-1941064096
-  - vless-1874689114
+  - shadowsocks-1870576255
+  - vless-1853652396
+  - 🔒 TR-TCP-TLS 🇸🇬 SG-149.28.130.108 443
   type: select
 rules:
 - MATCH,PROXY

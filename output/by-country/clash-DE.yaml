@@ -3,23 +3,51 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: shadowsocks-1870576356
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 146.70.20.147
-  type: ss
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.245.247 465
+  network: ws
+  port: 465
+  server: 91.107.245.247
+  servername: hw6.divarkhaghazi.com.
+  tls: true
+  type: vless
   udp: true
-- name: hysteria2-1938971779
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  ws-opts:
+    headers:
+      Host: hw6.divarkhaghazi.com.
+    path: /
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.244.35 465
+  network: ws
+  port: 465
+  server: 91.107.244.35
+  servername: hw5.roghanmo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  ws-opts:
+    headers:
+      Host: hw5.roghanmo.com
+    path: /
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.110.179 443
+  network: ws
   port: 443
-  server: 3.76.221.4
-  skip-cert-verify: true
-  sni: 3.76.221.4
-  type: hysteria2
+  server: 172.67.110.179
+  servername: tepar-k4j9.jounet.workers.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
+  ws-opts:
+    headers:
+      Host: tepar-k4j9.jounet.workers.dev
+    path: /stream/DEVCOP/8651a8ada76c/loc-1
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1828371278
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 138ms
   port: 443
   reality-opts:
     public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
@@ -30,20 +58,35 @@ proxies:
   type: vless
   udp: true
   uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- name: trojan-1941511538
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.193
-  sni: resources.iloverussia2026.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 | DEU
+  network: ws
+  port: 8018
+  server: d2.anonix.cloud
+  type: vmess
   udp: true
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  ws-opts:
+    headers:
+      Host: shit.67133767.xyz
+    path: /websocket/transfer/gayporn
+- name: 🏳️ ShatakVPN 632325
+  password: mhsl
+  port: 14444
+  server: 88.99.213.222
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1870576356
-  - hysteria2-1938971779
-  - vless-1828371278
-  - trojan-1941511538
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.245.247 465
+  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.244.35 465
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-172.67.110.179 443
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 138ms
+  - 🇩🇪 德国 | DEU
+  - 🏳️ ShatakVPN 632325
   type: select
 rules:
 - MATCH,PROXY
