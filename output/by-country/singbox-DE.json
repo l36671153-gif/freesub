@@ -2,42 +2,38 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-GRPC-TLS 🇷🇺 RU-89.169.47.96 443",
-      "server": "89.169.47.96",
-      "server_port": 443,
-      "uuid": "27653b37-603c-4c90-b1f5-25c4d23f8932",
-      "tls": {
-        "enabled": true,
-        "server_name": "renderer-bridge-2-129.mirra.now",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
+      "type": "vmess",
+      "tag": "🏳️ ShatakVPN 225700",
+      "server": "2.26.54.200",
+      "server_port": 8018,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto",
+      "alter_id": 0,
       "transport": {
-        "type": "grpc",
-        "service_name": "VideoRenderer"
+        "type": "ws",
+        "path": "/websocket/transfer/gayporn",
+        "headers": {
+          "Host": "shit.67133767.xyz"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1883362924",
-      "server": "5.252.179.15",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX down",
+      "server": "201.10.90.113",
       "server_port": 443,
-      "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
+      "uuid": "610ac982-04eb-34c0-80b1-5dd3c2ca131e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "undef-aut-0.undef.network",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY",
-          "short_id": "296f27de82dad7ff"
+          "public_key": "6z3VlbF2v0C3FTWQQemYDxX-MIzwaz_k8_B-xyc0Xyg"
         }
       }
     },

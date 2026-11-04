@@ -3,57 +3,43 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1832313914
-  network: ws
-  port: 14430
-  server: 138.124.70.41
-  type: vless
+- cipher: aes-256-gcm
+  name: 🇵🇱 ShatakVPN 515583
+  password: itzvpn@321
+  port: 8388
+  server: 51.83.192.80
+  type: ss
   udp: true
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  ws-opts:
-    headers:
-      Host: 138.124.70.41
-    path: /vless
-- name: 🇫🇷 ShatakVPN 811900
-  password: dongtaiwang.com
-  port: 22000
-  server: 62.210.124.146
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 85ms
-  port: 443
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  server: 103.82.101.94
-  servername: www.porsche.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 998727
-  port: 23576
+  name: 🆔anty_filter 🔒 VL-TCP- 🇵🇱 PL down
+  port: 2053
   reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 62.210.91.10
-  servername: fuck.rkn
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
   tls: true
   type: vless
   udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+- client-fingerprint: chrome
+  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX down
+  port: 2053
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  server: 54.37.136.194
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1832313914
-  - 🇫🇷 ShatakVPN 811900
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 85ms
-  - 🏳️ ShatakVPN 998727
+  - 🇵🇱 ShatakVPN 515583
+  - 🆔anty_filter 🔒 VL-TCP- 🇵🇱 PL down
+  - 🆔anty_filter 🔒 VL-TCP- ❔ XX down
   type: select
 rules:
 - MATCH,PROXY
