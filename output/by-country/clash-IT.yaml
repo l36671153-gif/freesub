@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #1'
+  name: 🇮🇹_IT_意大利_IPV4
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.63
+  server: 202.50.253.27
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇮🇹 意大利 | ITA #1'
+  - 🇮🇹_IT_意大利_IPV4
   type: select
 rules:
 - MATCH,PROXY
