@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146619
-  password: aduB9HGxQHjA2SBMRjkHX6
-  port: 443
-  server: 102.37.156.224
+  name: 🇷🇴[www.v2nodes.com] ss-RO-1595...
+  password: U83u9OGpvSatIUW7LsWffr
+  port: 64546
+  server: 194.68.44.42
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827146619
+  - 🇷🇴[www.v2nodes.com] ss-RO-1595...
   type: select
 rules:
 - MATCH,PROXY

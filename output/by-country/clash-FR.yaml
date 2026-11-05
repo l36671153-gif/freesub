@@ -3,15 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🇵🇱 ShatakVPN 515583
-  password: itzvpn@321
-  port: 8388
-  server: 51.83.192.80
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 🆔anty_filter 🔒 VL-TCP- 🇵🇱 PL down
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 718488
+  port: 443
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  server: 161.97.160.224
+  servername: passport.yandex.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+- client-fingerprint: chrome
+  name: 🆔vpnserverrr 🔒 VL-TCP- ❔ XX down
   port: 2053
   reality-opts:
     public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
@@ -22,24 +28,27 @@ proxies:
   type: vless
   udp: true
   uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-- client-fingerprint: chrome
-  name: 🆔anty_filter 🔒 VL-TCP- ❔ XX down
-  port: 2053
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc_common3
+  name: vless-1891687512
+  network: grpc
+  port: 51671
   reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  server: 54.37.136.194
-  servername: www.cloudflare.com
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
+  server: 152.228.139.33
+  servername: www.sony.com
   tls: true
   type: vless
   udp: true
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇵🇱 ShatakVPN 515583
-  - 🆔anty_filter 🔒 VL-TCP- 🇵🇱 PL down
-  - 🆔anty_filter 🔒 VL-TCP- ❔ XX down
+  - 🏳️ ShatakVPN 718488
+  - 🆔vpnserverrr 🔒 VL-TCP- ❔ XX down
+  - vless-1891687512
   type: select
 rules:
 - MATCH,PROXY

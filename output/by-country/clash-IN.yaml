@@ -3,21 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1827735104
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 490417
   network: ws
-  port: 14430
-  server: 13.140.56.100
-  type: vless
+  port: 80
+  server: 152.67.8.205
+  type: vmess
   udp: true
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
   ws-opts:
     headers:
-      Host: 13.140.56.100
-    path: /vless
+      Host: in-152.67.8.205-0202
+    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827735104
+  - 🏳️ ShatakVPN 490417
   type: select
 rules:
 - MATCH,PROXY

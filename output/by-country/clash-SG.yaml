@@ -3,71 +3,45 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1879502454
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1853651551
-  port: 17623
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: vless-1887782053
-  port: 24146
-  reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  server: 54.251.9.130
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
 - alterId: 0
   cipher: auto
-  name: vmess-1855792815
+  name: vmess-1853343605
   port: 18000
   server: 149.88.23.207
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1855706467
-  port: 443
+  name: vless-1855702996
+  port: 24146
   reality-opts:
-    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
-    short-id: b2efed6d157e7bb0
-  server: 5.34.177.164
-  servername: gateway.icloud.com
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
-- client-fingerprint: unsafe
-  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.233 443
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1854346730
+  port: 24146
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  server: 54.251.9.130
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+- client-fingerprint: chrome
+  name: 🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.178.244 443
   network: ws
   port: 443
-  server: 104.16.10.233
+  server: 104.19.178.244
   servername: u.srilankangrill.online
   tls: true
   type: vless
@@ -77,57 +51,45 @@ proxies:
     headers:
       Host: u.srilankangrill.online
     path: /
+- alterId: 0
+  cipher: auto
+  name: vmess-1853354966
+  port: 18000
+  server: 149.88.23.202
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1853343494
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: vless-1892877751
-  port: 41688
+  name: vless-1855696465
+  port: 12512
   reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
+    public-key: sO0RBMr_l8TLtZaYBX8n3NdI9AtaugUqJpCR1szNsyA
+    short-id: e692a8250d2e2fd0
+  server: 46.137.202.178
   servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827151831
-  port: 41688
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  server: 54.169.200.246
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1827155341
-  port: 443
-  reality-opts:
-    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
-    short-id: b2efed6d157e7bb0
-  server: 5.34.177.164
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
+  uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1879502454
-  - vless-1853651551
-  - vless-1887782053
-  - vmess-1855792815
-  - vless-1855706467
-  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.233 443
-  - vless-1892877751
-  - vless-1827151831
-  - vless-1827155341
+  - vmess-1853343605
+  - vless-1855702996
+  - vless-1854346730
+  - 🔒 VL-WS-TLS 🏴‍☠️ NA-104.19.178.244 443
+  - vmess-1853354966
+  - vmess-1853343494
+  - vless-1855696465
   type: select
 rules:
 - MATCH,PROXY
