@@ -3,65 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  port: 443
-  reality-opts:
-    public-key: 6z3VlbF2v0C3FTWQQemYDxX-MIzwaz_k8_B-xyc0Xyg
-  server: 201.10.90.113
-  servername: undef-aut-0.undef.network
-  tls: true
-  type: vless
-  udp: true
-  uuid: 610ac982-04eb-34c0-80b1-5dd3c2ca131e
-- name: trojan-1941511538
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.193
-  sni: resources.iloverussia2026.com
-  type: trojan
-  udp: true
-- name: trojan-1943021601
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1841767889
-  port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
-- cipher: aes-256-gcm
-  name: 🆔ar14n24b 🔒 SS-TCP-TLS 🇩🇪 DE 138ms
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 213.202.208.199
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: vless-1828371278
-  port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 130.12.242.106
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 - client-fingerprint: random
   flow: xtls-rprx-vision
   name: vless-1853464460
@@ -75,16 +16,38 @@ proxies:
   type: vless
   udp: true
   uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 540047
+  network: ws
+  port: 8018
+  server: 2.26.54.200
+  type: vmess
+  udp: true
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  ws-opts:
+    headers:
+      Host: shit.67133767.xyz
+    path: /websocket/transfer/gayporn
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1827154808
+  port: 443
+  reality-opts:
+    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
+    short-id: 15affa0af66dfc79
+  server: 130.12.242.106
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: bc058e69-0444-4c7b-98da-bd67f0b143da
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX down
-  - trojan-1941511538
-  - trojan-1943021601
-  - vless-1841767889
-  - 🆔ar14n24b 🔒 SS-TCP-TLS 🇩🇪 DE 138ms
-  - vless-1828371278
   - vless-1853464460
+  - 🏳️ ShatakVPN 540047
+  - vless-1827154808
   type: select
 rules:
 - MATCH,PROXY
