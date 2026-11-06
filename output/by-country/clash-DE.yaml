@@ -3,30 +3,9 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1943021601
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
-  type: trojan
-  udp: true
-- name: 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.78 443
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 193.108.119.78
-  sni: www.iloverussia2026.com
-  type: trojan
-  udp: true
-- name: hysteria2-1875823307
-  password: miaoge110
-  port: 51511
-  server: 5.45.100.100
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: random
+- client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: vless-1828532152
+  name: vless-1883362924
   port: 443
   reality-opts:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
@@ -37,21 +16,48 @@ proxies:
   type: vless
   udp: true
   uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-- cipher: rc4-md5
-  name: shadowsocks-1827966278
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 169.150.210.233
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 117378
+  password: XKFKl2rULjIp74
+  port: 8008
+  server: 185.226.172.8
   type: ss
+  udp: true
+- name: trojan-1943021601
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.96
+  sni: learn.iloverussia2026.com
+  type: trojan
+  udp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1854108408
+  port: 443
+  reality-opts:
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  server: 5.252.179.15
+  servername: www.bing.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+- name: trojan-1941511538
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.193
+  sni: resources.iloverussia2026.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
+  - vless-1883362924
+  - 🏳️ ShatakVPN 117378
   - trojan-1943021601
-  - 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.78 443
-  - hysteria2-1875823307
-  - vless-1828532152
-  - shadowsocks-1827966278
+  - vless-1854108408
+  - trojan-1941511538
   type: select
 rules:
 - MATCH,PROXY
