@@ -3,8 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-1883866163
+- client-fingerprint: firefox
+  name: vless-1827926874
   port: 2053
   reality-opts:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
@@ -15,24 +15,10 @@ proxies:
   type: vless
   udp: true
   uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇩🇪 德国 | DEU
-  port: 443
-  reality-opts:
-    public-key: 3p6W4rMBh1HCwbjq4lcbWO0KjkqTshJU5lkTix5nwTc
-    short-id: 1cfa55abe4d2dc7a
-  server: 178.214.109.1
-  servername: promo-digital.wb.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: 40a86b1b-239d-455e-b53f-4c270788ba6e
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1883866163
-  - 🇩🇪 德国 | DEU
+  - vless-1827926874
   type: select
 rules:
 - MATCH,PROXY
