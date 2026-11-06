@@ -10,10 +10,22 @@ proxies:
   server: pl134.vpnbook.com
   type: ss
   udp: true
+- name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  type: vless
+  udp: true
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
   - shadowsocks-1930537302
+  - 🇫🇷[www.v2nodes.com] vless-FR-1...
   type: select
 rules:
 - MATCH,PROXY

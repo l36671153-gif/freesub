@@ -3,41 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1938640639
+- name: hysteria2-1853331601
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
+  sni: https://t.me/wangcai2üáüá
   type: hysteria2
-- name: 🏳️ ShatakVPN 166521
+- name: hysteria2-1828371510
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: 202.146.222.29
-  type: hysteria2
-- name: hysteria2-1874927576
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2üá
-  type: hysteria2
-- name: 🏳️ ShatakVPN 289866
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: 202.146.222.29
+  sni: css.rbxcdn.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1938640639
-  - 🏳️ ShatakVPN 166521
-  - hysteria2-1874927576
-  - 🏳️ ShatakVPN 289866
+  - hysteria2-1853331601
+  - hysteria2-1828371510
   type: select
 rules:
 - MATCH,PROXY

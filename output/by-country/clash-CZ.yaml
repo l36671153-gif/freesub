@@ -1,0 +1,27 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: unsafe
+  name: 🏳️ ShatakVPN 282050
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: n.bitpulse.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: f27b6f65-6e59-4f89-b929-afa397ca587f
+  ws-opts:
+    headers:
+      Host: n.bitpulse.me
+    path: /019bcbad-3813-7cce-8786-3ac0e418f128?ed
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🏳️ ShatakVPN 282050
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

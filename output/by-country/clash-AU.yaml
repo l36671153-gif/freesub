@@ -5,47 +5,7 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1837386988
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1853343605
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1853343574
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1853354891
-  port: 18000
-  server: 149.88.23.207
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1853452248
-  port: 18000
-  server: 38.91.107.49
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1837386176
+  name: vmess-1938106389
   port: 18000
   server: 84.17.41.2
   type: vmess
@@ -53,30 +13,62 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1873127533
+  name: 🆔ar14n24b 🔒 VM-TCP- ❔ XX 38ms
   port: 18000
-  server: ww11.levikogjgfdd.ir
+  server: 67.220.95.3
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇦🇺[www.v2nodes.com] trojan-AU-...
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 45.63.30.142
-  sni: connectwithemployerstohireyouridealteam.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: vmess-1837386500
+  port: 18000
+  server: 23.162.200.198
+  type: vmess
   udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1934952237
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1827160969
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1853357735
+  port: 18000
+  server: 38.91.107.49
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: 🆔anty_filter 🔓 VM-TCP-N/A ❔ XX 40ms
+  port: 18000
+  server: 67.220.95.3
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1837386988
-  - vmess-1853343605
-  - vmess-1853343574
-  - vmess-1853354891
-  - vmess-1853452248
-  - vmess-1837386176
-  - vmess-1873127533
-  - 🇦🇺[www.v2nodes.com] trojan-AU-...
+  - vmess-1938106389
+  - 🆔ar14n24b 🔒 VM-TCP- ❔ XX 38ms
+  - vmess-1837386500
+  - vmess-1934952237
+  - vmess-1827160969
+  - vmess-1853357735
+  - 🆔anty_filter 🔓 VM-TCP-N/A ❔ XX 40ms
   type: select
 rules:
 - MATCH,PROXY
