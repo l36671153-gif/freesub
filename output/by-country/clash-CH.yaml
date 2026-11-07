@@ -3,17 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1945028567
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 208.69.78.29
-  sni: learn.yourultimateprofessionalcareerhub.com
-  type: trojan
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+  name: 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
+  tls: true
+  type: vless
   udp: true
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1945028567
+  - 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
   type: select
 rules:
 - MATCH,PROXY

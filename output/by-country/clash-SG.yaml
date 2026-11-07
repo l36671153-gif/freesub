@@ -3,65 +3,46 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: rc4-md5
-  name: shadowsocks-1828226862
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.235.122
-  type: ss
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1828373764
+  port: 41688
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  server: 54.169.200.246
+  servername: www.intel.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
 - alterId: 0
   cipher: auto
-  name: vmess-1877155143
+  name: vmess-1863422776
   port: 18000
   server: 149.88.23.207
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1855792725
-  port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- cipher: rc4-md5
-  name: shadowsocks-1828226964
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 68.183.227.236
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: vless-1827613951
-  port: 12972
+  name: vless-1854301954
+  port: 41688
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  server: 3.0.111.82
-  servername: www.apple.com
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  server: 54.169.200.246
+  servername: www.intel.com
   tls: true
   type: vless
   udp: true
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-- name: hysteria2-1828373659
-  password: f87376e17da040ed04c9665ce8972930
-  port: 50160
-  server: 138.2.73.238
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1828226862
-  - vmess-1877155143
-  - vmess-1855792725
-  - shadowsocks-1828226964
-  - vless-1827613951
-  - hysteria2-1828373659
+  - vless-1828373764
+  - vmess-1863422776
+  - vless-1854301954
   type: select
 rules:
 - MATCH,PROXY

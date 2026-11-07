@@ -2,8 +2,16 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827146143",
+      "server": "141.98.101.181",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
       "type": "vless",
-      "tag": "vless-1827926874",
+      "tag": "vless-1843512943",
       "server": "51.89.194.151",
       "server_port": 2053,
       "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",

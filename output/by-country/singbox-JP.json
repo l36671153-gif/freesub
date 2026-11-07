@@ -3,8 +3,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "vless-1832764135",
-      "server": "104.16.111.102",
+      "tag": "vless-1832764138",
+      "server": "104.17.210.74",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -24,20 +24,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1868110673",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "1",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "vless-1828372435",
+      "tag": "vless-1827152774",
       "server": "3.114.220.22",
       "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -58,8 +46,8 @@
     },
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.24.0.1 443",
-      "server": "104.24.0.1",
+      "tag": "vless-1863464818",
+      "server": "104.18.42.98",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
@@ -80,7 +68,29 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1832754807",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.111.102 443",
+      "server": "104.16.111.102",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "vless-1851981528",
       "server": "3.114.220.22",
       "server_port": 19645,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -90,7 +100,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -101,34 +111,35 @@
     },
     {
       "type": "vless",
-      "tag": "vless-1878596000",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "tag": "🔒 VL-WS-TLS 🏴‍☠️ NA-104.16.10.72 443",
+      "server": "104.16.10.72",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "jp3.yohototo.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "hysteria2-1828374754",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
+      "tag": "hysteria2-1853487432",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "138.3.208.26",
+        "server_name": "8.211.175.236",
         "insecure": true
       }
     },

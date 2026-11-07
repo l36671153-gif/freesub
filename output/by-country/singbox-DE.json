@@ -2,20 +2,8 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1917575832",
-      "server": "3.69.232.199",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "vless-1827150257",
+      "tag": "vless-1934853863",
       "server": "5.252.179.15",
       "server_port": 443,
       "uuid": "0ab273e4-cea6-41d0-bbab-41071d2fc455",
@@ -25,7 +13,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
