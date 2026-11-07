@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '🇹🇭[www.v2nodes.com] trojan-TH-... #1'
+  password: 5t6i121em5lkmsmk
+  port: 33079
+  server: th001.zestapp778.com
+  sni: th001.zestapp778.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🇹🇭[www.v2nodes.com] trojan-TH-... #1'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

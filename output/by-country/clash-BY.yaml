@@ -3,21 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1828140795
+- name: vless-1832691494
   network: ws
   port: 14430
-  server: 178.172.227.228
+  server: 178.172.227.124
   type: vless
   udp: true
-  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   ws-opts:
     headers:
-      Host: 178.172.227.228
+      Host: 178.172.227.124
     path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1828140795
+  - vless-1832691494
   type: select
 rules:
 - MATCH,PROXY
