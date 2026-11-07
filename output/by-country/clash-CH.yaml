@@ -3,22 +3,22 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-  name: 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
-  network: grpc
-  port: 48115
-  server: 138.124.86.230
-  servername: 138-124-86-230.sslip.io
+- client-fingerprint: random
+  name: vless-1891867407
+  port: 2053
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  server: 208.69.78.217
+  servername: www.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
+  - vless-1891867407
   type: select
 rules:
 - MATCH,PROXY

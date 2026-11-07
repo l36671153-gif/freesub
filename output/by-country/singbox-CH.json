@@ -3,21 +3,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115",
-      "server": "138.124.86.230",
-      "server_port": 48115,
-      "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
+      "tag": "vless-1891867407",
+      "server": "208.69.78.217",
+      "server_port": 2053,
+      "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
       "tls": {
         "enabled": true,
-        "server_name": "138-124-86-230.sslip.io",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0",
+          "short_id": "ad86e2d52ff40ebd"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "138-124-86-230-sslip-io"
       }
     },
     {
