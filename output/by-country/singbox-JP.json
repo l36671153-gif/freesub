@@ -2,18 +2,21 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827146270",
-      "server": "149.22.87.240",
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇯🇵 JP-167.179.108.225 443",
+      "server": "167.179.108.225",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "discoverparttimepositionsandsupplementyourincomeguide.com"
+      }
     },
     {
       "type": "vless",
-      "tag": "vless-1827152863",
+      "tag": "vless-1854019640",
       "server": "3.114.220.22",
-      "server_port": 19645,
+      "server_port": 10583,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -31,12 +34,16 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827146287",
-      "server": "149.22.87.241",
+      "type": "hysteria2",
+      "tag": "hysteria2-1832764816",
+      "server": "45.32.10.7",
       "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "password": "96ab5cd282733fd4c312a61f972f330a",
+      "tls": {
+        "enabled": true,
+        "server_name": "vp3.yysyy.online",
+        "insecure": false
+      }
     },
     {
       "type": "direct",

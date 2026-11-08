@@ -3,31 +3,33 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 114ms
-  port: 443
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  server: 179.43.166.190
-  servername: perevodchiki.su
-  tls: true
-  type: vless
-  udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
 - cipher: aes-256-gcm
-  name: 🇨🇭[www.v2nodes.com] ss-CH-1616...
+  name: 🇨🇭[www.v2nodes.com] ss-CH-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 23.166.88.127
+  server: 186.190.215.251
   type: ss
+  udp: true
+- name: 🏳️ ShatakVPN 569581
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.208
+  sni: resources.yourultimateprofessionalcareerhub.com
+  type: trojan
+  udp: true
+- name: 🔒 TR-TCP-TLS 🇨🇭 CH-208.69.78.208 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.208
+  sni: resources.yourultimateprofessionalcareerhub.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 114ms
-  - 🇨🇭[www.v2nodes.com] ss-CH-1616...
+  - 🇨🇭[www.v2nodes.com] ss-CH-1615...
+  - 🏳️ ShatakVPN 569581
+  - 🔒 TR-TCP-TLS 🇨🇭 CH-208.69.78.208 443
   type: select
 rules:
 - MATCH,PROXY
