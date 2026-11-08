@@ -3,12 +3,23 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "vmess-1935612132",
-      "server": "23.162.200.198",
+      "tag": "vmess-1853452287",
+      "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto",
       "alter_id": 0
+    },
+    {
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇨🇦 CA-216.152.147.152 443",
+      "server": "216.152.147.152",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.connectingpeoplewithgreatjobs.com"
+      }
     },
     {
       "type": "direct",

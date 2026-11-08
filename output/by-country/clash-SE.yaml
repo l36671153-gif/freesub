@@ -1,0 +1,22 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  name: '🏳[www.v2nodes.com] vless- #9'
+  port: 443
+  server: se3.shtil.io
+  servername: se3.shtil.io
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '🏳[www.v2nodes.com] vless- #9'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
