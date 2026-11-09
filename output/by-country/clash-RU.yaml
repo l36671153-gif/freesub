@@ -1,0 +1,28 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇦🇱[www.v2nodes.com] ss-AL-1490...
+  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
+  port: 43558
+  server: 130.49.189.158
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇷🇺[www.v2nodes.com] ss-RU-1617...
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
+  port: 13108
+  server: 38.60.223.125
+  type: ss
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇦🇱[www.v2nodes.com] ss-AL-1490...
+  - 🇷🇺[www.v2nodes.com] ss-RU-1617...
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

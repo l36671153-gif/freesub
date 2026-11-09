@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: vless-1929913739
+  port: 47881
+  reality-opts:
+    public-key: 6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4
+    short-id: 38d72071
+  server: 134.185.81.5
+  servername: www.tesla.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1929913739
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

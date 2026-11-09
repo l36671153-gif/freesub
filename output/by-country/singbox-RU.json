@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇱[www.v2nodes.com] ss-AL-1490...",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺[www.v2nodes.com] ss-RU-1617...",
+      "server": "38.60.223.125",
+      "server_port": 13108,
+      "method": "aes-128-gcm",
+      "password": "8722de56b6c0b3f6a4d01cf91c07e6aa"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
