@@ -1,0 +1,25 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: vless-1937256465
+  port: 59539
+  reality-opts:
+    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
+  server: 46.29.255.123
+  servername: cloudflare-dns.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1937256465
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

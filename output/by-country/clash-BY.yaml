@@ -14,10 +14,17 @@ proxies:
     headers:
       Host: 178.172.227.228
     path: /vless
+- name: vless-1947360253
+  port: 10443
+  server: 178.172.227.124
+  type: vless
+  udp: true
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
 proxy-groups:
 - name: PROXY
   proxies:
   - vless-1828140795
+  - vless-1947360253
   type: select
 rules:
 - MATCH,PROXY

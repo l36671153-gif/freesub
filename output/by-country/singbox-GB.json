@@ -2,22 +2,38 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🏳️ ShatakVPN 817419",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "alter_id": 0,
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "vless-1880851304",
-      "server": "51.89.194.151",
+      "tag": "vless-1853989191",
+      "server": "46.250.250.149",
       "server_port": 2053,
-      "uuid": "8e790f25-1d71-4601-9fb0-d503931dcfca",
+      "uuid": "b4caaf57-ad77-4948-a6f5-51b3513799bf",
       "tls": {
         "enabled": true,
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0",
-          "short_id": "d051f678212f9d54"
+          "public_key": "hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M",
+          "short_id": "9922313fffed1c63"
         }
       }
     },

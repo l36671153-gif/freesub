@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 157548",
+      "server": "51.79.85.185",
+      "server_port": 8118,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "trojan",
+      "tag": "🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 21ms",
+      "server": "216.152.147.152",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.connectingpeoplewithgreatjobs.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇨🇦 CA-216.152.147.48 443",
+      "server": "216.152.147.48",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.connectingpeoplewithgreatjobs.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇨🇦 CA-216.152.147.152 443",
+      "server": "216.152.147.152",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.connectingpeoplewithgreatjobs.com"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "trojan-1947400782",
+      "server": "216.152.147.79",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.connectingpeoplewithgreatjobs.com"
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
