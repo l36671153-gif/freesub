@@ -3,17 +3,21 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇺🇸 7@exclavevpn
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  port: 443
-  server: fi1.obxodvpn.us
-  skip-cert-verify: false
-  sni: fi1.obxodvpn.us
-  type: hysteria2
+- name: vless-1832465388
+  network: ws
+  port: 14430
+  server: 45.144.234.157
+  type: vless
+  udp: true
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  ws-opts:
+    headers:
+      Host: 45.144.234.157
+    path: /vless
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇺🇸 7@exclavevpn
+  - vless-1832465388
   type: select
 rules:
 - MATCH,PROXY

@@ -2,15 +2,17 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 7@exclavevpn",
-      "server": "fi1.obxodvpn.us",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi1.obxodvpn.us",
-        "insecure": false
+      "type": "vless",
+      "tag": "vless-1832465388",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
       }
     },
     {
