@@ -3,21 +3,74 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 147ms
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.80
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
 - cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 276419
+  name: shadowsocks-1827146388
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.198
+  server: 82.38.31.184
   type: ss
   udp: true
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 235764
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.26
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱 ShatakVPN 662922
+  password: QCXDxuDlTTMD7jtgHUjIoj
+  port: 8080
+  server: 193.29.139.168
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 364782
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.97
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827146769
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.66
+  type: ss
+  udp: true
+- client-fingerprint: edge
   grpc-opts:
-    grpc-service-name: stats.v2.StreamService
-  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 276ms
+    grpc-service-name: home.v1.ObjectService
+  name: 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.147 443
   network: grpc
   port: 443
-  server: cdn.mediacorphub.org
-  servername: cdn.mediacorphub.org
+  server: 89.105.195.147
+  servername: tracker.mediacorphub.org
   tls: true
   type: vless
   udp: true
@@ -25,7 +78,52 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: hub.v1.ObjectService
-  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 102ms
+  name: 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.151 443
+  network: grpc
+  port: 443
+  server: 89.105.195.151
+  servername: assets.mediacorphub.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 451879
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.98
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: chacha20-ietf-poly1305
+  name: shadowsocks-1827145964
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  port: 8080
+  server: 82.38.31.61
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔capoit 🔒 VL-TCP- ❔ XX 150ms
+  port: 23576
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  server: 51.158.206.86
+  servername: fuck.rkn
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: hub.v1.ObjectService
+  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 156ms
   network: grpc
   port: 443
   server: edge.mediacorphub.org
@@ -34,66 +132,21 @@ proxies:
   type: vless
   udp: true
   uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: api.v1.FeedService
-  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 92ms
-  network: grpc
-  port: 443
-  server: 89.105.195.152
-  servername: fetch.mediacorphub.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🔒 VL-TCP-TLS 🇳🇱 NL-177.177.215.45 444
-  port: 444
-  server: 177.177.215.45
-  servername: ams2.shtil.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: 254f28cb-d0c1-41e9-a06b-f2155213ff04
-- cipher: chacha20-ietf-poly1305
-  name: 🏳️ ShatakVPN 970776
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.179
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 339230
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.96
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146306
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 82.38.31.190
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 276419
-  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 276ms
-  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 102ms
-  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 92ms
-  - 🔒 VL-TCP-TLS 🇳🇱 NL-177.177.215.45 444
-  - 🏳️ ShatakVPN 970776
-  - 🏳️ ShatakVPN 339230
-  - shadowsocks-1827146306
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 147ms
+  - shadowsocks-1827146388
+  - 🏳️ ShatakVPN 235764
+  - 🇳🇱 ShatakVPN 662922
+  - 🏳️ ShatakVPN 364782
+  - shadowsocks-1827146769
+  - 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.147 443
+  - 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.151 443
+  - 🏳️ ShatakVPN 451879
+  - shadowsocks-1827145964
+  - 🆔capoit 🔒 VL-TCP- ❔ XX 150ms
+  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 156ms
   type: select
 rules:
 - MATCH,PROXY

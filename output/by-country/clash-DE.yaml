@@ -1,0 +1,58 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: vless-1854341793
+  port: 443
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 82.39.171.12
+  servername: yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.193 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.193
+  sni: resources.iloverussia2026.com
+  type: trojan
+  udp: true
+- name: 🆔ar14n24b 🔓 TR--N/A ❔ XX 144ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  sni: courses.iloverussia2026.com
+  type: trojan
+  udp: true
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.29
+  sni: blog.iloverussia2026.com
+  type: trojan
+  udp: true
+- name: trojan-1941511538
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.193
+  sni: resources.iloverussia2026.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1854341793
+  - 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.193 443
+  - 🆔ar14n24b 🔓 TR--N/A ❔ XX 144ms
+  - '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
+  - trojan-1941511538
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
