@@ -3,150 +3,86 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🏳️ ShatakVPN 492673
+  port: 443
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  server: 89.105.218.148
+  servername: golos.mail.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 147ms
+  name: 🏳️ ShatakVPN 345811
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.80
+  server: 51.158.206.93
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: vless-1879638656
+  port: 443
+  reality-opts:
+    public-key: PryGoq51ilG0eLUPl9i0xCvmk1xpwkyFSr_tG4GNLlU
+    short-id: 1d86d17709852910
+  server: free-amsterdam-node-1.cloudwidecdn.com
+  servername: www.apple.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 44ae52b9-76fc-444d-8e43-186b4384b80a
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: api.v1.FeedService
+  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 140ms
+  network: grpc
+  port: 443
+  server: 89.105.195.152
+  servername: fetch.mediacorphub.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1653818d-532e-46be-b825-384107fb7c3a
 - cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146388
+  name: shadowsocks-1827146782
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
-  server: 82.38.31.184
+  server: 82.38.31.208
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 235764
+  name: 🏳️ ShatakVPN 722497
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 51.158.206.26
+  server: 51.158.206.34
   servername: fuck.rkn
   tls: true
   type: vless
   udp: true
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱 ShatakVPN 662922
-  password: QCXDxuDlTTMD7jtgHUjIoj
-  port: 8080
-  server: 193.29.139.168
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 364782
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.97
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146769
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.66
-  type: ss
-  udp: true
-- client-fingerprint: edge
-  grpc-opts:
-    grpc-service-name: home.v1.ObjectService
-  name: 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.147 443
-  network: grpc
-  port: 443
-  server: 89.105.195.147
-  servername: tracker.mediacorphub.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: hub.v1.ObjectService
-  name: 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.151 443
-  network: grpc
-  port: 443
-  server: 89.105.195.151
-  servername: assets.mediacorphub.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 451879
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.98
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827145964
-  password: oZIoA69Q8yhcQV8ka3Pa3A
-  port: 8080
-  server: 82.38.31.61
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🆔capoit 🔒 VL-TCP- ❔ XX 150ms
-  port: 23576
-  reality-opts:
-    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
-    short-id: '01'
-  server: 51.158.206.86
-  servername: fuck.rkn
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: hub.v1.ObjectService
-  name: 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 156ms
-  network: grpc
-  port: 443
-  server: edge.mediacorphub.org
-  servername: edge.mediacorphub.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1653818d-532e-46be-b825-384107fb7c3a
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 147ms
-  - shadowsocks-1827146388
-  - 🏳️ ShatakVPN 235764
-  - 🇳🇱 ShatakVPN 662922
-  - 🏳️ ShatakVPN 364782
-  - shadowsocks-1827146769
-  - 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.147 443
-  - 🔒 VL-GRPC-TLS 🇳🇱 NL-89.105.195.151 443
-  - 🏳️ ShatakVPN 451879
-  - shadowsocks-1827145964
-  - 🆔capoit 🔒 VL-TCP- ❔ XX 150ms
-  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 156ms
+  - 🏳️ ShatakVPN 492673
+  - 🏳️ ShatakVPN 345811
+  - vless-1879638656
+  - 🆔v2ray1_ng 🔒 VL-GRPC-N/A ❔ XX 140ms
+  - shadowsocks-1827146782
+  - 🏳️ ShatakVPN 722497
   type: select
 rules:
 - MATCH,PROXY

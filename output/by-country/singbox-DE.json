@@ -2,8 +2,27 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "trojan",
+      "tag": "🇩🇪[www.v2nodes.com] trojan-DE-... #3",
+      "server": "193.108.119.29",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "blog.iloverussia2026.com"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱[www.v2nodes.com] ss-NL-1618...",
+      "server": "156.67.120.205",
+      "server_port": 51628,
+      "method": "chacha20-ietf-poly1305",
+      "password": "29ZZXVa34x7sC48w9FKQ54UKHiJJGTVgKFppBRgviLrVCAYVVyKZdD3obbpjCyk31V5b2G2d7xzqmaPBFdcheCVB9UQ4ZghF"
+    },
+    {
       "type": "vless",
-      "tag": "vless-1854341793",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 148ms",
       "server": "82.39.171.12",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -20,50 +39,6 @@
           "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
           "short_id": "c39cc7310a"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.193 443",
-      "server": "193.108.119.193",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.iloverussia2026.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🆔ar14n24b 🔓 TR--N/A ❔ XX 144ms",
-      "server": "193.108.119.15",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.iloverussia2026.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇩🇪[www.v2nodes.com] trojan-DE-... #5",
-      "server": "193.108.119.29",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "blog.iloverussia2026.com"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "trojan-1941511538",
-      "server": "193.108.119.193",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "resources.iloverussia2026.com"
       }
     },
     {

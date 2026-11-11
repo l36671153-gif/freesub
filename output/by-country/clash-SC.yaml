@@ -5,21 +5,20 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 773530
-  port: 443
+  name: vless-1937256465
+  port: 59539
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  server: 185.215.184.53
-  servername: dvizhok.su
+    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
+  server: 46.29.255.123
+  servername: cloudflare-dns.com
   tls: true
   type: vless
   udp: true
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 773530
+  - vless-1937256465
   type: select
 rules:
 - MATCH,PROXY
