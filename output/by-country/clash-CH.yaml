@@ -3,30 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🔒 HYSTERIA-UDP 🇱🇻 LV-104.165.205.42 8443
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  port: 8443
-  server: 104.165.205.42
-  skip-cert-verify: false
-  sni: speedtestmark.com
+- name: hysteria2-1854030070
+  password: 84a506ca5aca505696a454d828420b3f
+  port: 50160
+  server: 140.238.213.114
+  skip-cert-verify: true
+  sni: 'off'
   type: hysteria2
-- client-fingerprint: chrome
-  name: vless-1827154380
-  port: 2053
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  server: 208.69.78.217
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 HYSTERIA-UDP 🇱🇻 LV-104.165.205.42 8443
-  - vless-1827154380
+  - hysteria2-1854030070
   type: select
 rules:
 - MATCH,PROXY

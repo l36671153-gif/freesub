@@ -2,44 +2,34 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1853488260",
-      "server": "13.36.234.11",
+      "type": "shadowsocks",
+      "tag": "🇫🇷 法国 | FRA",
+      "server": "51.44.170.122",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "13.36.234.11",
-        "insecure": true
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",
-      "tag": "vless-1891901670",
-      "server": "51.77.217.70",
-      "server_port": 2053,
-      "uuid": "bf16ee0c-8b3c-41e4-ab3a-8b48033c404e",
+      "tag": "🔒 VL-WS-TLS 🇺🇸 US-3.168.217.188 443",
+      "server": "3.168.217.188",
+      "server_port": 443,
+      "uuid": "67cd3349-f789-4cbb-8b91-4b6b1654ce7c",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "djzrntowvoo42.cloudfront.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w",
-          "short_id": "bfe58beb41f1d09f"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "djzrntowvoo42.cloudfront.net"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇷[www.v2nodes.com] ss-FR-1616...",
-      "server": "23.162.152.22",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "direct",
