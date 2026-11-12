@@ -3,22 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  name: vless-1885413435
-  port: 2053
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-    short-id: 83f8317a948bb769
-  server: 66.70.179.198
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.79
+  sni: blog.connectingpeoplewithgreatjobs.com
+  type: trojan
   udp: true
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+- name: trojan-1939845081
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.93
+  sni: connectingpeoplewithgreatjobs.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1885413435
+  - '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
+  - trojan-1939845081
   type: select
 rules:
 - MATCH,PROXY

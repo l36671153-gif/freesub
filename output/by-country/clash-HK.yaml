@@ -3,31 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰 香港 | HKG
-  network: ws
-  port: 23026
-  server: 47.244.120.197
-  type: vmess
-  udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    headers:
-      Host: 47.244.120.197
-    path: /arki
-- name: hysteria2-1832880258
+- name: hysteria2-1853331608
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 202.146.222.89
+  server: 202.146.222.29
   skip-cert-verify: true
-  sni: vk.com
+  sni: google.com
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇭🇰 香港 | HKG
-  - hysteria2-1832880258
+  - hysteria2-1853331608
   type: select
 rules:
 - MATCH,PROXY

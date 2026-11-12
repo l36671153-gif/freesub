@@ -3,22 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-  name: 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
-  network: grpc
-  port: 48115
-  server: 138.124.86.230
-  servername: 138-124-86-230.sslip.io
-  tls: true
-  type: vless
+- name: 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 146ms
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.158
+  sni: api.yourultimateprofessionalcareerhub.com
+  type: trojan
   udp: true
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+- name: 🔒 TR-TCP-TLS 🇨🇭 CH-208.69.78.29 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 208.69.78.29
+  sni: learn.yourultimateprofessionalcareerhub.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-GRPC-TLS 🇨🇭 CH-138.124.86.230 48115
+  - 🆔ar14n24b 🔒 TR-TCP-N/A ❔ XX 146ms
+  - 🔒 TR-TCP-TLS 🇨🇭 CH-208.69.78.29 443
   type: select
 rules:
 - MATCH,PROXY

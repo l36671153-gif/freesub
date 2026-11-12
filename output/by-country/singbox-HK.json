@@ -2,30 +2,14 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 香港 | HKG",
-      "server": "47.244.120.197",
-      "server_port": 23026,
-      "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21",
-      "security": "auto",
-      "alter_id": 0,
-      "transport": {
-        "type": "ws",
-        "path": "/arki",
-        "headers": {
-          "Host": "47.244.120.197"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "hysteria2-1832880258",
-      "server": "202.146.222.89",
+      "tag": "hysteria2-1853331608",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "google.com",
         "insecure": true
       }
     },
