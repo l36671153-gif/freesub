@@ -4,16 +4,40 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🇮🇹 意大利 | ITA
+  name: 🇮🇹IT_5|2.1MB/s
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.81
+  server: 202.50.253.99
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇮🇹IT_2|2.8MB/s
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.63
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇮🇹_IT_意大利_IPV4 (2)
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.36
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: shadowsocks-1875022929
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.90
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇹 意大利 | ITA
+  - 🇮🇹IT_5|2.1MB/s
+  - 🇮🇹IT_2|2.8MB/s
+  - 🇮🇹_IT_意大利_IPV4 (2)
+  - shadowsocks-1875022929
   type: select
 rules:
 - MATCH,PROXY
