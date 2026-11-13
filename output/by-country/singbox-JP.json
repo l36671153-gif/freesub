@@ -2,39 +2,6 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "hysteria2-1827145159",
-      "server": "8.209.247.109",
-      "server_port": 443,
-      "password": "usqmqUKJFIlCmvkCNSY64L3k",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1854299385",
-      "server": "3.114.220.22",
-      "server_port": 18007,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "vless",
       "tag": "vless-1851981706",
       "server": "3.114.220.22",
@@ -56,24 +23,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1878596000",
-      "server": "3.114.220.22",
-      "server_port": 19645,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "hysteria2-1868110673",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
+        "server_name": "1",
+        "insecure": true
       }
     },
     {

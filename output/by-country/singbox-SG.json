@@ -2,83 +2,44 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🏳️ ShatakVPN 381516",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vless",
-      "tag": "vless-1843512947",
-      "server": "139.162.27.96",
-      "server_port": 2096,
-      "uuid": "6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2",
+      "type": "trojan",
+      "tag": "🇸🇬[www.v2nodes.com] trojan-SG-... #1",
+      "server": "149.28.130.108",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "free-server.techsonic.dev",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/free-server.techsonic.dev",
-        "headers": {
-          "Host": "free-server.techsonic.dev"
-        }
+        "server_name": "searchcreativejobsandshowcaseyourartistictalents.com"
       }
     },
     {
-      "type": "vmess",
-      "tag": "vmess-1855792815",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1853342777",
-      "server": "ww11.levikogjgfdd.ir",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
-      "type": "vmess",
-      "tag": "vmess-1832844237",
-      "server": "149.88.23.207",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto",
-      "alter_id": 0
-    },
-    {
       "type": "vless",
-      "tag": "vless-1855701589",
-      "server": "3.0.111.82",
-      "server_port": 17623,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "tag": "vless-1929913735",
+      "server": "134.185.81.5",
+      "server_port": 47881,
+      "uuid": "59b203b2-b1bc-4e9c-a9e5-ccb8f691bf72",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.tesla.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "6XmXX1QXGodmtqU37Zx9CDHnCnPtonRdq8ieLmt__g4",
+          "short_id": "38d72071"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬[www.v2nodes.com] ss-SG-1615...",
+      "server": "15.235.164.133",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "direct",

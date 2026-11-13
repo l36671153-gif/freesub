@@ -3,38 +3,41 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🇹🇼 🇨🇳 台湾 | TWN
-  port: 8443
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  server: 83.147.13.74
-  servername: github.githubassets.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-- name: hysteria2-1828371723
+- name: 🏳️ ShatakVPN 251688
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world
+  type: hysteria2
+- name: hysteria2-1828371338
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 103.115.109.49
   skip-cert-verify: true
-  sni: https://t.me/wangcai2🇨🇳
+  sni: https://t.me/wangcai2
   type: hysteria2
-- name: hysteria2-1854059937
+- name: hysteria2-1853489128
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: www.bing.com
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
+  type: hysteria2
+- name: hysteria2-1832765364
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 160.187.100.109
+  skip-cert-verify: true
+  sni: 127.0.0.1
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇹🇼 🇨🇳 台湾 | TWN
-  - hysteria2-1828371723
-  - hysteria2-1854059937
+  - 🏳️ ShatakVPN 251688
+  - hysteria2-1828371338
+  - hysteria2-1853489128
+  - hysteria2-1832765364
   type: select
 rules:
 - MATCH,PROXY
