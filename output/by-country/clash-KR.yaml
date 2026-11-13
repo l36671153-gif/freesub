@@ -3,7 +3,26 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1936326087
+- name: hysteria2-1946062452
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152.69.231.175
+  skip-cert-verify: true
+  sni: 152.69.231.175
+  type: hysteria2
+- client-fingerprint: random
+  name: vless-1828531985
+  port: 2053
+  reality-opts:
+    public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
+    short-id: 429499c03d4cc8a0
+  server: 151.245.106.49
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a2de9567-9646-45a9-a410-7303a43bdb6c
+- name: vless-1936418362
   network: ws
   port: 25555
   server: 152.69.226.63
@@ -13,10 +32,20 @@ proxies:
   ws-opts:
     headers: {}
     path: /
+- name: hysteria2-1828374520
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  port: 50160
+  server: 152.67.200.82
+  skip-cert-verify: true
+  sni: css.rbxcdn.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1936326087
+  - hysteria2-1946062452
+  - vless-1828531985
+  - vless-1936418362
+  - hysteria2-1828374520
   type: select
 rules:
 - MATCH,PROXY
