@@ -2,8 +2,16 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇱[www.v2nodes.com] ss-NL-1620...",
+      "server": "104.222.183.180",
+      "server_port": 47195,
+      "method": "chacha20-ietf-poly1305",
+      "password": "DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP"
+    },
+    {
       "type": "vmess",
-      "tag": "🏳️ ShatakVPN 317854",
+      "tag": "🆔v2ray1_ng 🔓 VM-WS-N/A ❔ XX 81ms",
       "server": "57.129.132.223",
       "server_port": 80,
       "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
@@ -11,7 +19,7 @@
       "alter_id": 0,
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
+        "path": "/vmess/?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
         "headers": {
           "Host": "google.com"
         }

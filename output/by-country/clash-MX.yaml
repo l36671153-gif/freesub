@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: trojan-1945021230
+  password: 5t6i121em5lkmsmk
+  port: 15083
+  server: mx001.zestapp778.com
+  sni: mx001.zestapp778.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - trojan-1945021230
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
