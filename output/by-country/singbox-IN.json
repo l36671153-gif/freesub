@@ -3,23 +3,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇮🇳 IN-13.140.253.35 443",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "f1a7e2c8-b140-50d1-8acf-e62090f96599",
+      "tag": "vless-1883069704",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
       "tls": {
         "enabled": true,
-        "server_name": "xray-bprkdwje-clever-comet-4.cloady.io",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/27dbf143acdd7bca",
-        "headers": {
-          "Host": "xray-bprkdwje-clever-comet-4.cloady.io"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
         }
       }
     },

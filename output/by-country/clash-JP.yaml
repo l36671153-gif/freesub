@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-128-gcm
-  name: 🆔ar14n24b 🔒 SS-TCP-TLS 🇯🇵 JP 153ms
-  password: Bwlqh7GcFB
-  port: 53758
-  server: 168.138.205.100
-  type: ss
-  udp: true
+- name: hysteria2-1827145159
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  port: 443
+  server: 8.209.247.109
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 SS-TCP-TLS 🇯🇵 JP 153ms
+  - hysteria2-1827145159
   type: select
 rules:
 - MATCH,PROXY
