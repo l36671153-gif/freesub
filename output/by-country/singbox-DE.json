@@ -2,31 +2,29 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.193 443",
-      "server": "193.108.119.193",
+      "type": "vless",
+      "tag": "vless-1853462756",
+      "server": "82.39.171.12",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "resources.iloverussia2026.com"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🏳️ ShatakVPN 125926",
-      "server": "18.194.242.173",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg",
+          "short_id": "c39cc7310a"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1853464460",
+      "tag": "vless-1841767889",
       "server": "130.12.242.106",
       "server_port": 443,
       "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
@@ -36,7 +34,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,51 +44,30 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "vless-1943683222",
-      "server": "91.107.179.0",
-      "server_port": 10105,
-      "uuid": "ad3f4a0a-a89f-498e-9869-a93c8fa185b1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es",
-          "short_id": "12e321badd07906e"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 468821",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪[www.v2nodes.com] ss-DE-1615... #2",
-      "server": "193.108.119.2",
+      "tag": "🇩🇪[www.v2nodes.com] ss-DE-1616...",
+      "server": "57.129.83.85",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🔒 VL-GRPC-TLS 🇩🇪 DE-5.83.129.236 443",
-      "server": "5.83.129.236",
+      "type": "trojan",
+      "tag": "🏳️ ShatakVPN 185875",
+      "server": "193.108.119.29",
       "server_port": 443,
-      "uuid": "d86e6fda-e519-46ab-98eb-9ff9a9da5984",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "host-de-upscale.cdn.cachefleet.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "a9w9wmko0k2od14hv8v"
+        "server_name": "blog.iloverussia2026.com"
       }
     },
     {
