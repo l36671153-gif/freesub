@@ -3,22 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: random
-  name: vless-1891686774
-  port: 2053
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  server: 151.241.226.201
-  servername: www.apple.com
-  tls: true
-  type: vless
+- name: 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4 (2)
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20027
+  server: sclass-b1.catcat321.com
+  sni: hk.catxstar.com
+  type: trojan
   udp: true
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1891686774
+  - 🇨🇳_CN_中国->🇹🇷_TR_土耳其_IPV4 (2)
   type: select
 rules:
 - MATCH,PROXY

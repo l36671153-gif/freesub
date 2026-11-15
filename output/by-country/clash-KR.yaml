@@ -3,36 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1936418362
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
-  udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers: {}
-    path: /
-- name: 🔒 HYSTERIA-UDP 🇰🇷 KR-132.226.226.189 50160
+- name: hysteria2-1828529012
   password: 1671a252e2a97dc2bda4e515475931da
   port: 50160
   server: 132.226.226.189
   skip-cert-verify: true
-  sni: 132.226.226.189
-  type: hysteria2
-- name: hysteria2-1853488242
-  password: 1671a252e2a97dc2bda4e515475931da
-  port: 50160
-  server: 132.226.226.189
-  skip-cert-verify: true
-  sni: 132.226.226.189
+  sni: 'off'
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1936418362
-  - 🔒 HYSTERIA-UDP 🇰🇷 KR-132.226.226.189 50160
-  - hysteria2-1853488242
+  - hysteria2-1828529012
   type: select
 rules:
 - MATCH,PROXY
