@@ -2,6 +2,14 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷[www.v2nodes.com] ss-KR-1126...",
+      "server": "115.161.136.145",
+      "server_port": 10099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "12242"
+    },
+    {
       "type": "direct",
       "tag": "direct"
     },

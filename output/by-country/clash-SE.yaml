@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🔒 TR-TCP-TLS 🇸🇪 SE-95.143.196.97 443
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  port: 443
+  server: 95.143.196.97
+  sni: connect-se.mimowhat.online
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 TR-TCP-TLS 🇸🇪 SE-95.143.196.97 443
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

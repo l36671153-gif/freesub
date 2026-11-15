@@ -3,22 +3,39 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: vless-1856657052
-  port: 2053
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇪🇸 西班牙 | ESP
+  port: 443
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  server: 212.227.235.66
-  servername: www.apple.com
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  server: 196.199.122.2
+  servername: 7aa271t.es1.h1clayd.click
   tls: true
   type: vless
   udp: true
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+- cipher: aes-256-gcm
+  name: '🇪🇸[www.v2nodes.com] ss-ES-1615... #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 79.127.139.242
+  type: ss
+  udp: true
+- name: 🔒 TR-TCP-TLS 🇪🇸 ES-66.163.118.203 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 66.163.118.203
+  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1856657052
+  - 🇪🇸 西班牙 | ESP
+  - '🇪🇸[www.v2nodes.com] ss-ES-1615... #2'
+  - 🔒 TR-TCP-TLS 🇪🇸 ES-66.163.118.203 443
   type: select
 rules:
 - MATCH,PROXY
