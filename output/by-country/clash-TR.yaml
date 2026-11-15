@@ -3,30 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: GunService
-  name: vless-1876710177
-  network: grpc
-  port: 8444
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  server: 62.133.63.45
-  servername: github.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-- name: 🔒 TR-TCP-TLS 🇺🇸 US-157.254.38.210 20028
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  port: 20028
-  server: 157.254.38.210
-  sni: hk.catxstar.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: vless-1853488230
+- client-fingerprint: random
+  name: vless-1891686774
   port: 2053
   reality-opts:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
@@ -40,9 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1876710177
-  - 🔒 TR-TCP-TLS 🇺🇸 US-157.254.38.210 20028
-  - vless-1853488230
+  - vless-1891686774
   type: select
 rules:
 - MATCH,PROXY

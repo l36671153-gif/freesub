@@ -10,10 +10,18 @@ proxies:
   skip-cert-verify: true
   sni: css.rbxcdn.com
   type: hysteria2
+- name: hysteria2-1853489128
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-tw-002.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - hysteria2-1828373437
+  - hysteria2-1853489128
   type: select
 rules:
 - MATCH,PROXY
