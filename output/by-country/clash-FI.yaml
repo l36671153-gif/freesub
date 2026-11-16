@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🇮🇷 12@exclavevpn
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  port: 24433
+  server: 94.183.164.119
+  skip-cert-verify: true
+  sni: 94.183.164.119
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🇮🇷 12@exclavevpn
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

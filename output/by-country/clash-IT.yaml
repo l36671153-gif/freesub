@@ -4,24 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 149ms
+  name: 🇮🇹_IT_意大利_IPV4 (8)
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 202.50.253.81
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 🇮🇹 意大利 | ITA
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 202.50.253.72
-  type: ss
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 149ms
-  - 🇮🇹 意大利 | ITA
+  - 🇮🇹_IT_意大利_IPV4 (8)
   type: select
 rules:
 - MATCH,PROXY
