@@ -3,17 +3,20 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🇮🇷 12@exclavevpn
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  port: 24433
-  server: 94.183.164.119
-  skip-cert-verify: true
-  sni: 94.183.164.119
-  type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇷🇺 RU-104.171.133.213 443
+  port: 443
+  server: 104.171.133.213
+  servername: mirror-75.topp-con.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇷 12@exclavevpn
+  - 🔒 VL-TCP-TLS 🇷🇺 RU-104.171.133.213 443
   type: select
 rules:
 - MATCH,PROXY

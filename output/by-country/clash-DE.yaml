@@ -3,64 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  name: 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  network: ws
-  port: 2083
-  server: 91.107.247.173
-  servername: sino.bestsellers1.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0386df1b-7abd-4676-f3c6-d65d691023b9
-  ws-opts:
-    headers: {}
-    path: /
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 247ms
-  network: ws
+- name: hysteria2-1917575832
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: n1.topingr.ir
-  servername: cdn2.zovip2.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3ffb0799-5047-420a-90af-6a4b3fef91b0
-  ws-opts:
-    headers:
-      Host: cdn2.zovip2.ir
-    path: /api/v3/pulse
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 243740
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.176.204.18
-  type: ss
-  udp: true
-- name: trojan-1943021601
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  server: 3.69.232.199
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+- name: hysteria2-1933850831
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
   port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 🆔madshopx 🔒 VL-TCP-N/A ❔ XX 168ms
-  port: 443
-  server: base.hosamobenl.co.uk
-  servername: base.hosamobenl.co.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
+  server: steel7.hadsvpn.com
+  skip-cert-verify: false
+  sni: steel7.hadsvpn.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 VL-WS-TLS 🇩🇪 DE-91.107.247.173 2083
-  - 🆔ar14n24b 🔒 VL-WS-N/A ❔ XX 247ms
-  - 🏳️ ShatakVPN 243740
-  - trojan-1943021601
-  - 🆔madshopx 🔒 VL-TCP-N/A ❔ XX 168ms
+  - hysteria2-1917575832
+  - hysteria2-1933850831
   type: select
 rules:
 - MATCH,PROXY

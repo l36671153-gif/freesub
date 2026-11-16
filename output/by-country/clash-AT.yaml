@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🇮🇹_IT_意大利_IPV4 (8)
+  name: 🇦🇹[www.v2nodes.com] ss-AT-1595...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.81
+  server: 82.110.60.9
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇹_IT_意大利_IPV4 (8)
+  - 🇦🇹[www.v2nodes.com] ss-AT-1595...
   type: select
 rules:
 - MATCH,PROXY
