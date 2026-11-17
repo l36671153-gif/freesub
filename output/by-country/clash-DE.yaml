@@ -3,76 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1932656534
-  password: d62s7ghfehm742us
-  port: 12824
-  server: derfderf.ru
-  skip-cert-verify: false
-  sni: derfderf.ru
-  type: hysteria2
 - client-fingerprint: chrome
-  name: 🔒 VL-TCP-TLS 🇮🇷 IR-194.60.228.97 443
+  flow: xtls-rprx-vision
+  name: vless-1854341793
   port: 443
-  server: 194.60.228.97
-  servername: base.hosamobenl.co.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 809224
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 🆔ar14n24b 🔒 VL-TCP-N/A 🇩🇪 DE 118ms
-  port: 39653
-  server: 91.107.255.63
-  servername: online.shop.ir.eeso.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: baded307-189c-4ffc-a271-9acdab51a324
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪 德国 | DEU #1'
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  port: 443
-  server: 47.254.175.2
-  type: ss
-  udp: true
-- client-fingerprint: edge
-  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 346ms
-  port: 1155
   reality-opts:
-    public-key: o6UTWdONnTOvDOWmhfxXUoeOEtlw7VUkoAWkmOk_FWI
-    short-id: 4e4aaad65cc07da8
-  server: s1.berluno.ir
-  servername: tgju.org
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 82.39.171.12
+  servername: yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 7f4a7b46-c436-4bc4-8699-c34aa8368caf
-- client-fingerprint: firefox
-  name: 🆔madshopx 🔒 VL-TCP-N/A ❔ XX 163ms
-  port: 443
-  server: 87.248.149.50
-  servername: base.hosamobenl.co.uk
-  tls: true
-  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- cipher: rc4-md5
+  name: shadowsocks-1827966278
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 169.150.210.233
+  type: ss
   udp: true
-  uuid: 667016ca-f02e-4b5f-bfc3-3d8ed81e9bec
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1932656534
-  - 🔒 VL-TCP-TLS 🇮🇷 IR-194.60.228.97 443
-  - 🏳️ ShatakVPN 809224
-  - 🆔ar14n24b 🔒 VL-TCP-N/A 🇩🇪 DE 118ms
-  - '🇩🇪 德国 | DEU #1'
-  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 346ms
-  - 🆔madshopx 🔒 VL-TCP-N/A ❔ XX 163ms
+  - vless-1854341793
+  - shadowsocks-1827966278
   type: select
 rules:
 - MATCH,PROXY
