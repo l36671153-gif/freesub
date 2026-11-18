@@ -3,25 +3,49 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1828371651
+- name: hysteria2-1828371598
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: vk.com
+  sni: https://t.me/wangcai2üá
   type: hysteria2
-- name: hysteria2-1832880319
+- name: hysteria2-1856441679
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2рҹүёрҹүі
+  sni: 'off'
+  type: hysteria2
+- name: hysteria2-1874927573
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2üá®üá
+  type: hysteria2
+- name: hysteria2-1832880301
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.29
+  skip-cert-verify: true
+  sni: https://t.me/wangcai2
+  type: hysteria2
+- name: hysteria2-1853489171
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.174
+  skip-cert-verify: true
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1828371651
-  - hysteria2-1832880319
+  - hysteria2-1828371598
+  - hysteria2-1856441679
+  - hysteria2-1874927573
+  - hysteria2-1832880301
+  - hysteria2-1853489171
   type: select
 rules:
 - MATCH,PROXY
