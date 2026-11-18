@@ -5,7 +5,7 @@ port: 7890
 proxies:
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: vless-1937256465
+  name: vless-1947501543
   port: 59539
   reality-opts:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
@@ -18,7 +18,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1937256465
+  - vless-1947501543
   type: select
 rules:
 - MATCH,PROXY
