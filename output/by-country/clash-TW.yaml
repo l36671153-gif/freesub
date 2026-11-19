@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1828372442
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+- name: 🔒 TR-TCP-TLS 🇹🇼 TW-34.80.15.95 443
+  password: '123456'
   port: 443
-  server: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-tw-002.fastervpn.world
-  type: hysteria2
+  server: 34.80.15.95
+  sni: tw.ctt25.uk
+  type: trojan
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1828372442
+  - 🔒 TR-TCP-TLS 🇹🇼 TW-34.80.15.95 443
   type: select
 rules:
 - MATCH,PROXY

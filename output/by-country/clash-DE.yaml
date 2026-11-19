@@ -1,0 +1,39 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🔒 VL-TCP-TLS 🇩🇪 DE-84.32.98.168 443
+  port: 443
+  server: 84.32.98.168
+  servername: app.streamru14.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+- name: trojan-1943021601
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.96
+  sni: learn.iloverussia2026.com
+  type: trojan
+  udp: true
+- name: hysteria2-1938971779
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.76.221.4
+  skip-cert-verify: true
+  sni: 3.76.221.4
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 VL-TCP-TLS 🇩🇪 DE-84.32.98.168 443
+  - trojan-1943021601
+  - hysteria2-1938971779
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

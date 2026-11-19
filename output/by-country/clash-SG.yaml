@@ -4,39 +4,24 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: '🇸🇬[www.v2nodes.com] ss-SG-1615... #3'
+  name: '🏳[www.v2nodes.com] ss- #16'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 149.88.107.47
+  server: 51.79.228.131
   type: ss
   udp: true
-- name: 🔒 HYSTERIA-UDP 🇸🇬 SG-47.129.241.99 443
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: 47.129.241.99
+- name: hysteria2-1854030130
+  password: f87376e17da040ed04c9665ce8972930
+  port: 50160
+  server: 138.2.73.238
   skip-cert-verify: true
-  sni: 127.0.0.1
+  sni: 'off'
   type: hysteria2
-- client-fingerprint: chrome
-  name: vless-1827145778
-  network: ws
-  port: 2096
-  server: 139.162.27.96
-  servername: free-server.techsonic.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🇸🇬[www.v2nodes.com] ss-SG-1615... #3'
-  - 🔒 HYSTERIA-UDP 🇸🇬 SG-47.129.241.99 443
-  - vless-1827145778
+  - '🏳[www.v2nodes.com] ss- #16'
+  - hysteria2-1854030130
   type: select
 rules:
 - MATCH,PROXY

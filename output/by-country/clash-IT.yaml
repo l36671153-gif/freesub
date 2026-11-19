@@ -3,25 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 163ms
-  password: n4uygjtq54pz1oiv
-  port: 8080
-  server: 57.131.21.102
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇮🇹 意大利 | ITA #7'
+  name: shadowsocks-1875023009
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 202.50.253.45
+  server: 202.50.253.27
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 163ms
-  - '🇮🇹 意大利 | ITA #7'
+  - shadowsocks-1875023009
   type: select
 rules:
 - MATCH,PROXY
