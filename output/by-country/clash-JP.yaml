@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-128-gcm
-  name: '🏳[www.v2nodes.com] ss- #12'
+  name: shadowsocks-1827146197
   password: shadowsocks
   port: 443
-  server: 149.22.87.241
+  server: 149.22.87.204
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🏳[www.v2nodes.com] ss- #12'
+  - shadowsocks-1827146197
   type: select
 rules:
 - MATCH,PROXY

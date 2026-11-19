@@ -5,21 +5,13 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1842122475
+  name: vmess-1827954165
   port: 18000
-  server: 149.88.23.202
+  server: 149.88.23.207
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1853333213
-  port: 18000
-  server: 134.195.196.211
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: trojan-1931768144
+- name: 🇦🇺[www.v2nodes.com] trojan-AU-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 45.63.30.142
@@ -28,7 +20,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: vmess-1827158929
+  name: vmess-1853343494
   port: 18000
   server: ww11.levikogjgfdd.ir
   type: vmess
@@ -36,15 +28,7 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1853452236
-  port: 18000
-  server: 38.91.107.49
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- alterId: 0
-  cipher: auto
-  name: vmess-1827161063
+  name: 🇸🇬 ShatakVPN 743666
   port: 18000
   server: 149.88.23.207
   type: vmess
@@ -52,39 +36,20 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1853342649
+  name: vmess-1837386284
   port: 18000
-  server: 149.88.23.202
-  type: vmess
-  udp: true
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: trojan-1929965333
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 45.63.30.142
-  sni: connectwithemployerstohireyouridealteam.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: vmess-1827954165
-  port: 18000
-  server: 149.88.23.207
+  server: 38.110.1.246
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1842122475
-  - vmess-1853333213
-  - trojan-1931768144
-  - vmess-1827158929
-  - vmess-1853452236
-  - vmess-1827161063
-  - vmess-1853342649
-  - trojan-1929965333
   - vmess-1827954165
+  - 🇦🇺[www.v2nodes.com] trojan-AU-...
+  - vmess-1853343494
+  - 🇸🇬 ShatakVPN 743666
+  - vmess-1837386284
   type: select
 rules:
 - MATCH,PROXY

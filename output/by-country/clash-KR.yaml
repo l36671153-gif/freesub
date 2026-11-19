@@ -1,0 +1,44 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- cipher: aes-256-cfb
+  name: shadowsocks-1827145973
+  password: qwerREWQ@@
+  port: 6123
+  server: 211.178.105.134
+  type: ss
+  udp: true
+- name: hysteria2-1946062452
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  port: 50160
+  server: 152.69.231.175
+  skip-cert-verify: true
+  sni: 152.69.231.175
+  type: hysteria2
+- name: hysteria2-1832881372
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: bing.com
+  type: hysteria2
+- name: hysteria2-1853341738
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: 152.70.237.123
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - shadowsocks-1827145973
+  - hysteria2-1946062452
+  - hysteria2-1832881372
+  - hysteria2-1853341738
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

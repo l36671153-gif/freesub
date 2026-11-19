@@ -2,14 +2,15 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇹🇼 TW-34.80.15.95 443",
-      "server": "34.80.15.95",
+      "type": "hysteria2",
+      "tag": "hysteria2-1828372442",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
-      "password": "123456",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "tw.ctt25.uk"
+        "server_name": "vpn-tw-002.fastervpn.world",
+        "insecure": true
       }
     },
     {
