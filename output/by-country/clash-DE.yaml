@@ -3,17 +3,28 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 617383
-  password: XKFKl2rULjIp74
-  port: 8008
-  server: 185.226.172.8
-  type: ss
+- name: 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.15 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 193.108.119.15
+  sni: courses.iloverussia2026.com
+  type: trojan
   udp: true
+- name: 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 159ms
+  network: ws
+  port: 80
+  server: ov-germany1.09vpn.com
+  type: vless
+  udp: true
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  ws-opts:
+    headers: {}
+    path: /vless/
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 617383
+  - 🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.15 443
+  - 🆔ar14n24b 🔓 VL-WS-N/A ❔ XX 159ms
   type: select
 rules:
 - MATCH,PROXY

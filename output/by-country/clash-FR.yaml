@@ -1,0 +1,23 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🆔ar14n24b 🔓 VL-WS-N/A 🇫🇷 FR 148ms
+  network: ws
+  port: 80
+  server: 152.228.162.19
+  type: vless
+  udp: true
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    headers: {}
+    path: /vless/
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔓 VL-WS-N/A 🇫🇷 FR 148ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
