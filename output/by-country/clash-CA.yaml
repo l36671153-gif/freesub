@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: trojan-1947502321
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- cipher: aes-128-gcm
+  name: shadowsocks-1827146224
+  password: shadowsocks
   port: 443
-  server: 216.152.147.48
-  sni: courses.connectingpeoplewithgreatjobs.com
-  type: trojan
+  server: 149.22.95.183
+  type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - trojan-1947502321
+  - shadowsocks-1827146224
   type: select
 rules:
 - MATCH,PROXY

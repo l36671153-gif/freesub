@@ -1,0 +1,19 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: socks_103.14.164.30_42000
+  password: VAwyJQX0iKMJiyCw5UVK9wGH
+  port: 42000
+  server: 103.14.164.30
+  type: socks5
+  username: route164JIa2CBPxfy
+proxy-groups:
+- name: PROXY
+  proxies:
+  - socks_103.14.164.30_42000
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891

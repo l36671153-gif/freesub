@@ -2,15 +2,12 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "trojan-1947502321",
-      "server": "216.152.147.48",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1827146224",
+      "server": "149.22.95.183",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.connectingpeoplewithgreatjobs.com"
-      }
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "direct",

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "socks",
+      "tag": "socks_103.14.164.30_42000",
+      "server": "103.14.164.30",
+      "server_port": 42000,
+      "username": "route164JIa2CBPxfy",
+      "password": "VAwyJQX0iKMJiyCw5UVK9wGH"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
