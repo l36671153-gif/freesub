@@ -3,20 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: vless-1936418362
-  network: ws
-  port: 25555
-  server: 152.69.226.63
-  type: vless
+- name: 🏳️ ShatakVPN 693824
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 158.247.253.243
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  type: trojan
   udp: true
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
-  ws-opts:
-    headers: {}
-    path: /
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1936418362
+  - 🏳️ ShatakVPN 693824
   type: select
 rules:
 - MATCH,PROXY

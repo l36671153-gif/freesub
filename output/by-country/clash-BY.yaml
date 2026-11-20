@@ -3,31 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-128-gcm
-  name: '🏳[www.v2nodes.com] ss- #7'
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-  udp: true
-- client-fingerprint: random
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: vless-1934551297
+  name: vless-1935966863
   port: 10444
   reality-opts:
     public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
     short-id: 8debcf36f1cc69ff
-  server: 138.124.125.193
+  server: 178.172.227.228
   servername: ads.x5.ru
   tls: true
   type: vless
   udp: true
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
+  uuid: b6e5dc56-836f-48c1-9163-b0b0b43b647d
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🏳[www.v2nodes.com] ss- #7'
-  - vless-1934551297
+  - vless-1935966863
   type: select
 rules:
 - MATCH,PROXY

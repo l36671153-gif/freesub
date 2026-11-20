@@ -2,19 +2,38 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🔒 TR-TCP-TLS 🇩🇪 DE-193.108.119.15 443",
-      "server": "193.108.119.15",
+      "type": "shadowsocks",
+      "tag": "shadowsocks-1870576356",
+      "server": "146.70.20.147",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🆔ar14n24b 🔒 VL-WS-N/A ❔ XX down",
+      "server": "harbor.gerqix.online",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f",
       "tls": {
         "enabled": true,
-        "server_name": "courses.iloverussia2026.com"
+        "server_name": "harbor.gerqix.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de1/stream",
+        "headers": {
+          "Host": "harbor.gerqix.online"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "vless-1853501621",
+      "tag": "🆔ar14n24b 🔒 VL-TCP- ❔ XX 87ms",
       "server": "130.12.242.106",
       "server_port": 443,
       "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
@@ -24,7 +43,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -34,12 +53,32 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🔒 VL-WS-TLS 🇷🇺 RU-194.87.131.9 443",
+      "server": "194.87.131.9",
+      "server_port": 443,
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f",
+      "tls": {
+        "enabled": true,
+        "server_name": "cinderbrook.elvano.website",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "api/de2/stream",
+        "headers": {}
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 883960",
-      "server": "57.129.83.85",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "tag": "🏳[www.v2nodes.com] ss- #2",
+      "server": "79.76.105.62",
+      "server_port": 59924,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "FmB4HBM/+63LZr+sjxs5zkFIvZmB//5BPqdf8W+wntg="
     },
     {
       "type": "direct",
