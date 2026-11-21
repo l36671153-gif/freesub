@@ -5,33 +5,78 @@ port: 7890
 proxies:
 - alterId: 0
   cipher: auto
-  name: vmess-1837386188
+  name: vmess-1827158900
   port: 18000
-  server: 38.91.107.49
+  server: 84.17.41.2
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 - alterId: 0
   cipher: auto
-  name: vmess-1853332266
+  name: vmess-1853354966
   port: 18000
-  server: 134.195.196.211
+  server: 149.88.23.202
   type: vmess
   udp: true
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-- name: 🇦🇺[www.v2nodes.com] trojan-AU-...
+- name: trojan-1932448314
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 45.63.30.142
   sni: connectwithemployerstohireyouridealteam.com
   type: trojan
   udp: true
+- alterId: 0
+  cipher: auto
+  name: vmess-1855789997
+  port: 18000
+  server: 134.195.196.211
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1827161907
+  port: 18000
+  server: 38.110.1.246
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1871754031
+  port: 18000
+  server: 149.88.23.207
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1853452241
+  port: 18000
+  server: ww11.levikogjgfdd.ir
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+- alterId: 0
+  cipher: auto
+  name: vmess-1842123401
+  port: 18000
+  server: 84.17.41.2
+  type: vmess
+  udp: true
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
 proxy-groups:
 - name: PROXY
   proxies:
-  - vmess-1837386188
-  - vmess-1853332266
-  - 🇦🇺[www.v2nodes.com] trojan-AU-...
+  - vmess-1827158900
+  - vmess-1853354966
+  - trojan-1932448314
+  - vmess-1855789997
+  - vmess-1827161907
+  - vmess-1871754031
+  - vmess-1853452241
+  - vmess-1842123401
   type: select
 rules:
 - MATCH,PROXY
