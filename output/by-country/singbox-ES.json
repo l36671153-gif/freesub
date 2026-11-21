@@ -2,25 +2,14 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🔒 VL-WS-TLS 🇪🇸 ES-194.76.168.133 443",
-      "server": "194.76.168.133",
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇪🇸 ES-66.163.118.40 443",
+      "server": "66.163.118.40",
       "server_port": 443,
-      "uuid": "ef5a57c7-84d5-4f86-b99c-875a16da485f",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "nemicro487.gangtype.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/realtime/client/connect",
-        "headers": {
-          "Host": "nemicro487.gangtype.com"
-        }
+        "server_name": "cdn.discovergreatjobsandadvanceyourcareer.com"
       }
     },
     {

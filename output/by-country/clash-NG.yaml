@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🔒 TR-TCP-TLS 🇺🇸 US-157.254.38.210 20103
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20103
+  server: 157.254.38.210
+  sni: hk.catxstar.com
+  type: trojan
+  udp: true
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🔒 TR-TCP-TLS 🇺🇸 US-157.254.38.210 20103
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
