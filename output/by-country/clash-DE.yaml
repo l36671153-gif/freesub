@@ -4,16 +4,24 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🆔madshopx 🔒 SS-TCP-TLS ❔ XX 99ms
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 213.202.208.199
+  name: 🏳️ ShatakVPN 338829
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 193.108.117.111
   type: ss
   udp: true
+- name: ⚙️32@oneclickvpnkeys
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  port: 443
+  server: steel7.hadsvpn.com
+  skip-cert-verify: false
+  sni: steel7.hadsvpn.com
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🆔madshopx 🔒 SS-TCP-TLS ❔ XX 99ms
+  - 🏳️ ShatakVPN 338829
+  - ⚙️32@oneclickvpnkeys
   type: select
 rules:
 - MATCH,PROXY

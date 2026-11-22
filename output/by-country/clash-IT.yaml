@@ -4,16 +4,16 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🇮🇹[www.v2nodes.com] ss-IT-1623...
-  password: itzvpn@321
-  port: 8388
-  server: 57.131.27.21
+  name: 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 102ms
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 202.50.253.18
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🇮🇹[www.v2nodes.com] ss-IT-1623...
+  - 🆔ar14n24b 🔒 SS-TCP-TLS ❔ XX 102ms
   type: select
 rules:
 - MATCH,PROXY

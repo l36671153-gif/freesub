@@ -3,25 +3,10 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc_common3
-  name: vless-1827531794
-  network: grpc
-  port: 51671
-  reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  server: 152.228.139.33
-  servername: www.sony.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
-- client-fingerprint: chrome
+- client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-common3
-  name: vless-1827188342
+  name: vless-1891687510
   network: grpc
   port: 35108
   reality-opts:
@@ -33,11 +18,29 @@ proxies:
   type: vless
   udp: true
   uuid: 81dc0b61-f9fe-4ad6-8b4e-b8c067b73712
+- name: hysteria2-1853488260
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.36.234.11
+  skip-cert-verify: true
+  sni: 13.36.234.11
+  type: hysteria2
+- name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  network: ws
+  port: 2083
+  server: 54.36.102.152
+  type: vless
+  udp: true
+  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
+  ws-opts:
+    headers: {}
+    path: /vless-kulo
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1827531794
-  - vless-1827188342
+  - vless-1891687510
+  - hysteria2-1853488260
+  - 🇫🇷[www.v2nodes.com] vless-FR-1...
   type: select
 rules:
 - MATCH,PROXY
