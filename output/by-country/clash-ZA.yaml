@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: shadowsocks-1827146619
-  password: aduB9HGxQHjA2SBMRjkHX6
+- name: 🔒 TR-TCP-TLS 🇿🇦 ZA-139.84.231.142 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 102.37.156.224
-  type: ss
+  server: 139.84.231.142
+  sni: explorecareerpathsandunlockprofessionalsuccesstoday.com
+  type: trojan
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - shadowsocks-1827146619
+  - 🔒 TR-TCP-TLS 🇿🇦 ZA-139.84.231.142 443
   type: select
 rules:
 - MATCH,PROXY

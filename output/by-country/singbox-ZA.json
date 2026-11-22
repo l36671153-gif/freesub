@@ -2,12 +2,15 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "shadowsocks-1827146619",
-      "server": "102.37.156.224",
+      "type": "trojan",
+      "tag": "🔒 TR-TCP-TLS 🇿🇦 ZA-139.84.231.142 443",
+      "server": "139.84.231.142",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "explorecareerpathsandunlockprofessionalsuccesstoday.com"
+      }
     },
     {
       "type": "direct",
