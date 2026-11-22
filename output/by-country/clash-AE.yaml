@@ -1,0 +1,26 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🆔ar14n24b 🔒 VL-TCP- ❔ XX 97ms
+  port: 8459
+  reality-opts:
+    public-key: mTSn98b4yZG3im3ITn-kNLPbT8ljc9ILvAqiT4jyKXk
+    short-id: 0f0e381ec0c4690d
+  server: 31.59.154.82
+  servername: nl-edge.airlinesvpn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 11f48e58-bdd8-4251-ba00-ad05d05d9dcf
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔ar14n24b 🔒 VL-TCP- ❔ XX 97ms
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
