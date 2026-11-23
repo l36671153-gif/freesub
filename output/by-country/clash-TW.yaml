@@ -3,33 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1827145810
+- name: hysteria2-1828373437
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 103.115.109.49
+  server: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
-  sni: t.me
+  sni: css.rbxcdn.com
   type: hysteria2
-- name: hysteria2-1827534209
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https://t.me/oneclickvpnkeys
-  type: hysteria2
-- name: 🔒 TR-TCP-TLS 🇹🇼 TW-34.80.15.95 443
-  password: '123456'
-  port: 443
-  server: 34.80.15.95
-  sni: tw.ctt25.uk
-  type: trojan
-  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1827145810
-  - hysteria2-1827534209
-  - 🔒 TR-TCP-TLS 🇹🇼 TW-34.80.15.95 443
+  - hysteria2-1828373437
   type: select
 rules:
 - MATCH,PROXY

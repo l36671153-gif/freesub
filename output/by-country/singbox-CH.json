@@ -2,31 +2,8 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🏳️ ShatakVPN 654351",
-      "server": "193.233.89.130",
-      "server_port": 8443,
-      "uuid": "7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe",
-      "tls": {
-        "enabled": true,
-        "server_name": "g.play2go.gay",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🏳[www.v2nodes.com] ss- #1",
+      "tag": "🇨🇭[www.v2nodes.com] ss-CH-1615...",
       "server": "186.190.215.251",
       "server_port": 19999,
       "method": "aes-256-gcm",

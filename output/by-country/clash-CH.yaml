@@ -3,22 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: grpc
-  name: 🏳️ ShatakVPN 654351
-  network: grpc
-  port: 8443
-  reality-opts:
-    public-key: xx8KWdR4HbVmvqPb0wRPAstBHGN2Uk99m7AF794_E3c
-  server: 193.233.89.130
-  servername: g.play2go.gay
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7bd7c4aa-52c4-482c-bdcc-e7380fa6b5fe
 - cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #1'
+  name: 🇨🇭[www.v2nodes.com] ss-CH-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 186.190.215.251
@@ -27,8 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 654351
-  - '🏳[www.v2nodes.com] ss- #1'
+  - 🇨🇭[www.v2nodes.com] ss-CH-1615...
   type: select
 rules:
 - MATCH,PROXY

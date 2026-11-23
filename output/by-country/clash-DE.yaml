@@ -3,39 +3,23 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 650412
-  password: itzvpn@321
-  port: 8388
-  server: 178.162.254.38
-  type: ss
-  udp: true
-- name: '🏳[www.v2nodes.com] vless- #4'
-  port: 50955
-  server: 152.53.120.90
-  type: vless
-  udp: true
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
 - client-fingerprint: chrome
-  name: 🆔soskeynet 🔒 VL-WS-N/A 🇩🇪 DE 138ms
-  network: ws
+  flow: xtls-rprx-vision
+  name: vless-1854341793
   port: 443
-  server: o685y.save-node.com
-  servername: o685y.save-node.com
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  server: 82.39.171.12
+  servername: yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
-  ws-opts:
-    headers:
-      Host: o685y.save-node.com
-    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 650412
-  - '🏳[www.v2nodes.com] vless- #4'
-  - 🆔soskeynet 🔒 VL-WS-N/A 🇩🇪 DE 138ms
+  - vless-1854341793
   type: select
 rules:
 - MATCH,PROXY
