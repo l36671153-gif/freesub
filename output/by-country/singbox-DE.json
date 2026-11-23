@@ -3,22 +3,39 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🏳️ ShatakVPN 338829",
-      "server": "193.108.117.111",
-      "server_port": 19999,
+      "tag": "🏳️ ShatakVPN 650412",
+      "server": "178.162.254.38",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "password": "itzvpn@321"
     },
     {
-      "type": "hysteria2",
-      "tag": "⚙️32@oneclickvpnkeys",
-      "server": "steel7.hadsvpn.com",
+      "type": "vless",
+      "tag": "🏳[www.v2nodes.com] vless- #4",
+      "server": "152.53.120.90",
+      "server_port": 50955,
+      "uuid": "5ab065b0-2c7a-45a0-829d-9af9af7d8e05"
+    },
+    {
+      "type": "vless",
+      "tag": "🆔soskeynet 🔒 VL-WS-N/A 🇩🇪 DE 138ms",
+      "server": "o685y.save-node.com",
       "server_port": 443,
-      "password": "23c82941-70f4-4381-90db-bd28e9a902e9",
+      "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198",
       "tls": {
         "enabled": true,
-        "server_name": "steel7.hadsvpn.com",
-        "insecure": false
+        "server_name": "o685y.save-node.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
+        "headers": {
+          "Host": "o685y.save-node.com"
+        }
       }
     },
     {
