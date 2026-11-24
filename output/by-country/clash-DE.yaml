@@ -3,23 +3,25 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: vless-1854341793
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪 德国 | DEU_1
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   port: 443
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  server: 82.39.171.12
-  servername: yahoo.com
-  tls: true
-  type: vless
+  server: 47.85.238.210
+  type: ss
   udp: true
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+- name: '@OutlineReleasedKey #8'
+  password: fa937345-6d3e-4ff4-8127-1a836987a0db
+  port: 5443
+  server: 195.63.128.21
+  skip-cert-verify: false
+  sni: germany.cloudhouse1.ru
+  type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
-  - vless-1854341793
+  - 🇩🇪 德国 | DEU_1
+  - '@OutlineReleasedKey #8'
   type: select
 rules:
 - MATCH,PROXY
