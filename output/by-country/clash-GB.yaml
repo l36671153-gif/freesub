@@ -3,15 +3,8 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #10'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 142.202.51.22
-  type: ss
-  udp: true
 - cipher: aes-128-gcm
-  name: shadowsocks-1827146143
+  name: '🏳[www.v2nodes.com] ss- #3'
   password: shadowsocks
   port: 443
   server: 141.98.101.181
@@ -20,8 +13,7 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - '🏳[www.v2nodes.com] ss- #10'
-  - shadowsocks-1827146143
+  - '🏳[www.v2nodes.com] ss- #3'
   type: select
 rules:
 - MATCH,PROXY

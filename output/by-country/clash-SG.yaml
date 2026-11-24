@@ -3,17 +3,48 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1854030130
+- client-fingerprint: firefox
+  name: 🆔soskeynet 🔒 VL-WS-N/A 🇺🇸 US 7ms
+  network: ws
+  port: 8443
+  server: 141.193.213.21
+  servername: matrix.learnpodedu.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4d8d9640-7cc7-4c55-ba54-6ce0d1709541
+  ws-opts:
+    headers:
+      Host: matrix.learnpodedu.com
+    path: /
+- cipher: aes-256-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 15.235.182.183
+  type: ss
+  udp: true
+- name: hysteria2-1828150748
   password: f87376e17da040ed04c9665ce8972930
   port: 50160
   server: 138.2.73.238
   skip-cert-verify: true
-  sni: 'off'
+  sni: 138.2.73.238
   type: hysteria2
+- cipher: rc4-md5
+  name: shadowsocks-1827147315
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.4
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1854030130
+  - 🆔soskeynet 🔒 VL-WS-N/A 🇺🇸 US 7ms
+  - 🇸🇬[www.v2nodes.com] ss-SG-1616...
+  - hysteria2-1828150748
+  - shadowsocks-1827147315
   type: select
 rules:
 - MATCH,PROXY
