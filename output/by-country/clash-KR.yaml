@@ -3,13 +3,6 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1853341738
-  password: maintell
-  port: 2053
-  server: 152.70.237.123
-  skip-cert-verify: true
-  sni: 152.70.237.123
-  type: hysteria2
 - name: hysteria2-1832880243
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
   port: 50160
@@ -20,7 +13,6 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1853341738
   - hysteria2-1832880243
   type: select
 rules:
