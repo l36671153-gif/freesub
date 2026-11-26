@@ -1,0 +1,31 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: vless-1941978700
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  type: vless
+  udp: true
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    headers: {}
+    path: /
+- name: hysteria2-1828529345
+  password: maintell
+  port: 2053
+  server: 152.70.237.123
+  skip-cert-verify: true
+  sni: 152.70.237.123
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - vless-1941978700
+  - hysteria2-1828529345
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
