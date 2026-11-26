@@ -10,42 +10,18 @@ proxies:
   skip-cert-verify: true
   sni: whatsapp.com
   type: hysteria2
-- name: hysteria2-1827534250
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- name: hysteria2-1832765364
+- name: hysteria2-1854030061
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 160.187.100.109
   skip-cert-verify: true
-  sni: 127.0.0.1
-  type: hysteria2
-- name: hysteria2-1828374855
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https
-  type: hysteria2
-- name: hysteria2-1830467063
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 103.115.109.49
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: 'off'
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - hysteria2-1827145791
-  - hysteria2-1827534250
-  - hysteria2-1832765364
-  - hysteria2-1828374855
-  - hysteria2-1830467063
+  - hysteria2-1854030061
   type: select
 rules:
 - MATCH,PROXY

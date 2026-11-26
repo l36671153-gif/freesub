@@ -10,18 +10,26 @@ proxies:
   skip-cert-verify: true
   sni: https://t.me/wangcai2ⁿß«ⁿß
   type: hysteria2
-- name: hysteria2-1832880319
+- name: hysteria2-1874927573
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.29
   skip-cert-verify: true
-  sni: https://t.me/wangcai2рҹүёрҹүі
+  sni: https://t.me/wangcai2üá®üá
+  type: hysteria2
+- name: hysteria2-1871753077
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 202.146.222.89
+  skip-cert-verify: true
+  sni: 202.146.222.89
   type: hysteria2
 proxy-groups:
 - name: PROXY
   proxies:
   - hysteria2-1853331603
-  - hysteria2-1832880319
+  - hysteria2-1874927573
+  - hysteria2-1871753077
   type: select
 rules:
 - MATCH,PROXY
