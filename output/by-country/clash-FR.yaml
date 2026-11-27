@@ -1,0 +1,32 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: 🆔configx2ray 🔓 VL-WS-N/A ❔ XX down
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  type: vless
+  udp: true
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  ws-opts:
+    headers:
+      Host: ov-france1.09vpn.com
+    path: /vless/
+- name: hysteria2-1853502854
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.36.234.11
+  skip-cert-verify: true
+  sni: 13.36.234.11
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - 🆔configx2ray 🔓 VL-WS-N/A ❔ XX down
+  - hysteria2-1853502854
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
