@@ -3,41 +3,31 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: hysteria2-1856442510
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  type: hysteria2
-- name: hysteria2-1874927573
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.29
-  skip-cert-verify: true
-  sni: https://t.me/wangcai2üá®üá
-  type: hysteria2
-- name: hysteria2-1828371507
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 202.146.222.174
-  skip-cert-verify: true
-  sni: https://t.me/oneclickvpnkeys
-  type: hysteria2
-- name: hysteria2-1871753077
+- name: hysteria2-1832765391
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: 202.146.222.89
   skip-cert-verify: true
-  sni: 202.146.222.89
+  sni: https://t.me/clashv8
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 🏳️ ShatakVPN 576630
+  network: ws
+  port: 44867
+  server: 47.244.120.197
+  type: vmess
+  udp: true
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-opts:
+    headers:
+      Host: 47.244.120.197
+    path: /arki
 proxy-groups:
 - name: PROXY
   proxies:
-  - hysteria2-1856442510
-  - hysteria2-1874927573
-  - hysteria2-1828371507
-  - hysteria2-1871753077
+  - hysteria2-1832765391
+  - 🏳️ ShatakVPN 576630
   type: select
 rules:
 - MATCH,PROXY

@@ -1,0 +1,20 @@
+allow-lan: false
+log-level: info
+mode: rule
+port: 7890
+proxies:
+- name: '@OutlineReleasedKey #2'
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  port: 443
+  server: 136.148.83.69
+  skip-cert-verify: false
+  sni: szqbx-ru-77dc.my-fade.cloud
+  type: hysteria2
+proxy-groups:
+- name: PROXY
+  proxies:
+  - '@OutlineReleasedKey #2'
+  type: select
+rules:
+- MATCH,PROXY
+socks-port: 7891
