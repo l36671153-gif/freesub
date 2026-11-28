@@ -4,16 +4,32 @@ mode: rule
 port: 7890
 proxies:
 - cipher: aes-256-gcm
-  name: 🏳️ ShatakVPN 584627
+  name: 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 113ms
   password: '123456'
   port: 5555
-  server: 8.211.174.60
+  server: 8.209.249.205
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1291...
+  password: shadowsocks
+  port: 443
+  server: 149.22.87.240
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🏳️ ShatakVPN 747557
+  password: '123456'
+  port: 5555
+  server: 8.216.6.223
   type: ss
   udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 584627
+  - 🆔v2ray1_ng 🔒 SS-TCP-TLS ❔ XX 113ms
+  - 🇯🇵[www.v2nodes.com] ss-JP-1291...
+  - 🏳️ ShatakVPN 747557
   type: select
 rules:
 - MATCH,PROXY

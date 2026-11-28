@@ -3,17 +3,17 @@ log-level: info
 mode: rule
 port: 7890
 proxies:
-- name: 🔒 HYSTERIA-UDP 🇦🇪 AE-128.254.186.57 13337
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  port: 13337
-  server: 128.254.186.57
-  skip-cert-verify: true
-  sni: mother-earth.fyi
-  type: hysteria2
+- cipher: aes-128-gcm
+  name: 🏳️ ShatakVPN 827108
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.179
+  type: ss
+  udp: true
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🔒 HYSTERIA-UDP 🇦🇪 AE-128.254.186.57 13337
+  - 🏳️ ShatakVPN 827108
   type: select
 rules:
 - MATCH,PROXY

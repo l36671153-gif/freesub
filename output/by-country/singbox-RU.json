@@ -2,16 +2,31 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "@OutlineReleasedKey #2",
-      "server": "136.148.83.69",
+      "type": "vless",
+      "tag": "🔒 VL-GRPC-TLS 🇷🇺 RU-201.51.12.98 443",
+      "server": "201.51.12.98",
       "server_port": 443,
-      "password": "87bb2ac4-b7a1-0001-b11d-2107709ea6cb",
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
-        "server_name": "szqbx-ru-77dc.my-fade.cloud",
-        "insecure": false
+        "server_name": "vps3.nemnogogo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇱[www.v2nodes.com] ss-AL-1490...",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
     },
     {
       "type": "direct",

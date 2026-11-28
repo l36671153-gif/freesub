@@ -2,16 +2,12 @@
   "version": 1,
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🔒 HYSTERIA-UDP 🇦🇪 AE-128.254.186.57 13337",
-      "server": "128.254.186.57",
-      "server_port": 13337,
-      "password": "900c8c92-1979-4c7c-8f2f-63e87d53d8fe",
-      "tls": {
-        "enabled": true,
-        "server_name": "mother-earth.fyi",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🏳️ ShatakVPN 827108",
+      "server": "141.98.101.179",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "direct",
