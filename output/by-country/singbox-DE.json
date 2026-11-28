@@ -2,8 +2,20 @@
   "version": 1,
   "outbounds": [
     {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 | DEU_1",
+      "server": "135.126.21.107",
+      "server_port": 443,
+      "password": "6ac6d17d-040c-4fab-940e-8f5d72c3fed6",
+      "tls": {
+        "enabled": true,
+        "server_name": "de2-balance.rezproffx.ru",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "vless-1874447386",
+      "tag": "vless-1855705644",
       "server": "130.12.242.106",
       "server_port": 443,
       "uuid": "bc058e69-0444-4c7b-98da-bd67f0b143da",
@@ -13,7 +25,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

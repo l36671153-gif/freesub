@@ -4,13 +4,22 @@ mode: rule
 port: 7890
 proxies:
 - client-fingerprint: chrome
+  name: 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 14ms
+  port: 443
+  server: kuruish.org
+  servername: kuruish.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🏳️ ShatakVPN 670409
+  name: 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 150ms
   port: 23576
   reality-opts:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
-  server: 62.210.91.10
+  server: 62.210.91.2
   servername: fuck.rkn
   tls: true
   type: vless
@@ -19,7 +28,8 @@ proxies:
 proxy-groups:
 - name: PROXY
   proxies:
-  - 🏳️ ShatakVPN 670409
+  - 🆔ar14n24b 🔒 VL-TCP-N/A ❔ XX 14ms
+  - 🆔v2ray1_ng 🔒 VL-TCP- ❔ XX 150ms
   type: select
 rules:
 - MATCH,PROXY

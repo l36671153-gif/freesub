@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🏳️ ShatakVPN 234222",
+      "server": "147.93.171.8",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
+      "tls": {
+        "enabled": true,
+        "server_name": "147-93-171-8.sslip.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpn-live",
+        "headers": {
+          "Host": "147-93-171-8.sslip.io"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "dns",
+      "tag": "dns-out"
+    }
+  ]
+}
